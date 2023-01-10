@@ -1,0 +1,15 @@
+.top-line {
+    border-top: 1px solid black;
+}
+
+
+
+.img-f-scale {
+    width: 460px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-scale { 
+        width: 100%;
+    }
+}

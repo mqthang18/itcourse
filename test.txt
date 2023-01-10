@@ -1,0 +1,13 @@
+Hub là thiết bị lặp hoạt động ở tầng vật lý:
+Sao chép tín hiệu đến từ một cổng ra tất cả các cổng còn lại với cùng tốc độ.
+Tạo ra điểm kết nối tập trung để nối mạng theo kiểu hình sao.
+Có 3 loại Hub
+Hub thụ động
+Hub chủ động
+Hub thông minh
+Hub thụ động (Passive Hub): Chỉ đảm bảo chức năng kết nối, không xử lý lại
+tín hiệu.
+Hub chủ động (Active Hub): Có khả năng khuếch đại tín hiệu để chống suy hao.
+Hub thông minh (Intelligent Hub): là Hub chủ động nhưng có thêm khả năng tạo
+ra các gói tin thông báo hoạt động của mình giúp cho việc quản trị mạng dễ
+dàng hơn
