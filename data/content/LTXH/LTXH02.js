@@ -130,7 +130,7 @@ const LTXH02 = {
                     <li>Khi đó mô hình biểu diễn hệ thống theo ký pháp Kendall có dạng: M/M/1</li>
                 </ul>
                 <center>
-                    <img src="./assets/img/LTXH/MM1_1.jpg" alt="MM1_1">
+                    <img style="width: 100%;" src="./assets/img/LTXH/MM1_1.jpg" alt="MM1_1">
                 </center>
                 <hr>
                 <h5>Ý nghĩa một số ký hiệu</h5>
@@ -282,7 +282,7 @@ const LTXH02 = {
                             <li>Mật độ bệnh nhân ra khỏi phòng khám khi trong phòng khám còn bệnh nhân:
                                 &micro;=1/<span style="border-top: 1px solid black;">t<sub>s</sub></span>=1/10
                                 BN</li>
-                            <li>Hệ số sử dụng &phi; = &lambda;/&micro;=(2/3)/(1-(2/3)) = 2 (bệnh nhân)</li>
+                            <li>Hệ số sử dụng &phi; = &lambda;/&micro;=(1/15)/(1/10) = 2/3 =><span style="color: red; border-top: 1px solid;">n</span> = (2/3)/(1-(2/3)) = 2 (bệnh nhân)</li>
                             <li>Thời gian trung bình của 1 bệnh nhân trong phòng khám theo luật little: <span
                                     style="border-top: 1px solid black;">t</span> = <span
                                     style="border-top: 1px solid black;">n</span>/&lambda;=30 phút</li>
