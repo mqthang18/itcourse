@@ -101,7 +101,7 @@ const LTXH02 = {
                     <li>PS: Processor Sharing</li>
                 </ul>
             `],
-            ['Ký pháp Kendall', 'LTXH033', `
+            ['Ký pháp Kendall', 'LTXH034', `
                 <p>Ký pháp Kendall là một hệ thống chuẩn được sử dụng để mô tả và phân loại mô hình xếp hàng cho
                 phù hợp với một hệ thống xếp hàng. Hệ thống đầy đủ gồm 6 yếu tố được biểu diễn theo thứ tự
                 quan trọng dưới dạng: A/B/s/K/N/Z, trong đó:</p>

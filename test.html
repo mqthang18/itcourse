@@ -10,660 +10,409 @@
     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Chap 5. Hệ thống tệp tin</title>
+    <title>Chap 3. Phân tích và đánh giá hệ thống</title>
 </head>
 
 <body>
-    <h1>Chương 2. Lý thuyết xếp hàng</h1>
+    <h1>Phân tích và đánh giá hệ thống</h1>
+    <h2>Mục tiêu</h2>
+    <p>Hiểu được các tham số, các yếu tố ảnh hưởng đến một hệ thống hàng chờ thông qua một số ví dụ cụ thể</p>
+    <h2>Nội dung</h2>
+    <ol>
+        <li>Mô hình mạng các hàng chờ</li>
+        <li>Mạng đơn với 1 hàng chờ</li>
+        <li>Mạng đa liên kết các trung tâm phục vụ</li>
+        <li>Mô hình mạng đa lớp</li>
+        <li>Ứng dụng mô hình xếp hàng</li>
+    </ol>
 
-    <section name="Mục tiêu">
-        <h3>Mục tiêu</h3>
-        <ul>
-            <li>Mục tiêu của chương này là trình bày những nguyên lý chung của Lý thuyết xếp hàng và phân tích tính toán
-                đối với một số hệ thống xếp hàng phổ biến trong thực tế như: M/M/1, M/M/2, và M/M/s</li>
-            <li>Bài toán đánh giá tính hiệu quả của hệ thống cũng sẽ được đề cập đến thông qua giá trị của thông số đặc
-                trưng</li>
-        </ul>
-    </section>
+    <h2>Mô hình mạng các hàng chờ</h2>
+    <ul>
+        <li>Mô hình mạng các hàng chờ (Queucing Network Modelling) là một tiếp cận của mô hình hệ thống máy tính (Computer System Modelling), trong đó hệ thống máy tính được biểu diễn dưới dạng một mạng các hàng chờ (Network of Queues) nhờ nó mà có thể đánh giá được hiệu năng của hệ thống máy tính</li>
+        <li>Một mạng các hàng chờ là một sơ đồ nối mạng các trung tâm phục vụ (Service Centers).</li>
+        <li>Các trung tâm phục vụ chứa toàn bộ các tài nguyên của hệ thống về phần cứng, phần mềm cũng như dữ liệu</li>
+        <li>Một trung tâm phục vụ thường ở hai dạng: 
+            <ul>
+                <li>(1) Hệ thống xếp hàng (Queucing System)</li>
+                <li>(2) Hệ thống trì hoãn (Delay System)</li>
+            </ul>
+        </li>
+    </ul>
 
-    <section name="Nội dung">
-        <h3>Nội dung</h3>
-        <ol>
-            <li>Lý thuyết xếp hàng</li>
-            <li>Hệ thống M/M/1</li>
-            <li>Hệ thống M/M/2</li>
-            <li>Hệ thống M/M/s</li>
-        </ol>
-    </section>
+    <h2>Hệ thống trì hoãn</h2>
+    <ul>
+        <li>Hệ thống trì hoãn còn được gọi là hệ thống có số lượng hữu hạn khách hàng sử dụng đầu cuối (Terminals). Mỗi khách hàng trong hệ thống này hoàn toàn độc lập với khách hàng khác và không có hàng chờ, khách hàng cần phải suy nghĩ một thời gian (Think Time) trước khi thoát khỏi hệ thống này để đi vào một hệ thống có phục vụ và có hàng chờ</li>
+        <li>Sau khi hoàn tất các nhu cầu phục vụ khách hàng sẽ quay về hệ thống trì hoãn nơi mà khách hàng xuất phát và tiếp tục một chu kỳ mới</li>
+        <li>Thông thường các hệ thống đăng nhập cũng là các hệ thống trì hoãn</li>
+        <li>Đánh giá hiệu năng mạng được thực hiện sau khi mô hình hóa sự hoạt động của mạng các hàng chờ, từ đó xây dựng được một phương pháp tính toán các đặc trưng định lượng. Với các đặc trưng của mạng người ta có thể đánh giá được sự hoạt động của mạng và từ đó mà nhận định về hiệu năng của mạng.</li>
+    </ul>
 
-    <section name="Lý thuyết xếp hàng">
-        <p>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#HeThongXepHang" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Hệ thống xếp hàng
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#UngDungHeThongXepHang" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Ứng dụng của hệ thống xếp hàng
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#KyPhapKendall" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Ký pháp Kendall
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MohinhMM1" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Mô hình M/M/1
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MohinhMM2" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Mô hình M/M/2
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MohinhMMs" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Mô hình M/M/s
-            </a>
-            <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MotSoMoHinhKhac" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-            Một số mô hình khác
-            </a>
-        </p>
-        <div class="collapse" id="HeThongXepHang">
-            <div class="card card-body">
-                <ul>
-                    <li>Hế thống xếp hàng (Queueing System) - "Hệ thống phục vụ đám đông"</li>
-                    <li>Ý nghĩa của bài toàn được phản ánh từ cái tên gọi: 'Xếp hàng là quy tắc Phục vụ một đám đông
-                        cùng có một nhu cầu'</li>
-                    <li>Ví dụ: Khách hàng sắp hàng mua xăng</li>
-                    <li>Vấn đề đặt ra là đánh giá một hệ thống xếp hàng như thế nào khi có đông khách hàng và dẫn đến sự
-                        quá tải trong phục vụ?</li>
-                </ul>
-                <hr style="border: 4px solid black;">
-                <ul>
-                    <li>
-                        Bài toán đặt ra
-                        <ul>
-                            <li>Các đặc trưng của hiện tượng quá tải là gì?</li>
-                            <li>Tính toán và đánh giá hiện tượng quá tải qua các đặc trưng đó? và </li>
-                            <li>Biện pháp giải quyết như thế nào?</li>
-                        </ul>
-                    </li>
-                    <li>Hệ thống xếp hàng đặt ra một bài toán phức tạp và được xây dựng thành một lý thuyết có tên là Lý
-                        thuyết Xếp hàng (Queueing theory)</li>
-                    <li>Lý thuyết xếp hàng sẽ đi sâu phân tích ba quá trình ngẫu nhiên gắn liền với nhau theo trình tự:
-                        <ul>
-                            <li>Khách hàng đi đến hệ thống với một mật độ ngẫu nhiên ở cuối hàng chờ (Back of the Queue)
-                            </li>
-                            <li>Khách hàng chờ trước khi được phục vụ (Waiting in the Queue), và</li>
-                            <li>Khách hàng được phục vụ với thời lượng ngẫu nhiên ở đầu hàng chờ (Front of the Queue)
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Kết quả của phân tích này chính là mục tiêu của Lý thuyết xếp hàng</li>
-                </ul>
-            </div>
-        </div>
-        <div class="collapse" id="UngDungHeThongXepHang">
-            <div class="card card-body">
-                <ul>
-                    <li>Hệ thống tính tiền tại các siêu thị</li>
-                    <li>Hệ thống mạng máy tính</li>
-                    <li>Hệ thống quản lý đường bay hạ cánh</li>
-                    <li>Hệ thống tính toán đám mây</li>
-                    <li>Hệ thống điều khiển lưu thông tại các xa lộ</li>
-                </ul>
-            </div>
-        </div>
-        <div class="collapse" id="KyPhapKendall">
-            <div class="card card-body">
-                <p>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#Motahethong" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Mô tả hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#Quytacanhhuong" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Các quy tắc ảnh hưởng
-                    </a>
-                    <a class="btn btn-primary mt-1" data-bs-toggle="collapse" href="#Quytacphucvukhachhang"
-                        role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Quy tắc phục vụ khách hàng
-                    </a>
-                    <a class="btn btn-primary mt-1" data-bs-toggle="collapse" href="#KPKendall" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Ký pháp Kendall
-                    </a>
-                </p>
-                <div class="collapse" id="Motahethong">
-                    <div class="card card-body">
-                        <h5>Mô tả hệ thống</h5>
-                        <center>
-                            <img src="./assets/img/LTXH/Kendal1.jpg" alt="Kendall">
-                        </center>
-                        <ul>
-                            <li>
-                                <b>Khi hệ thống hoạt động cần có các yếu tố sau tham gia:</b>
-                                <ul>
-                                    <li>Khách hàng (Client/Customer) có nhu cầu đi tới hệ thống để được đáp ứng</li>
-                                    <li>Nguồn gốc của khách hàng phải là một quần thể tiềm (Potential Population) đủ lớn
-                                        để có thể tạo ra được một lượng khách hàng thường xuyên đi tới hệ thống</li>
-                                    <li>Hệ thống phải có một hoặc nhiều trạm phục vụ (Service stations) để đáp ứng nhu
-                                        cầu của khách hàng. Mỗi khách hàng cần được phục vụ trong một khoảng thời gian
-                                        (Service Time) nào đó.</li>
-                                    <li>Khi một khách hàng được phục vụ chưa chưa ra khỏi hệ thống đã có một lượng khách
-                                        hàng khác tới, thì số khách hàng này phải xếp hàng vào tạo ra một hàng chờ
-                                        (Queue Line). Như vậy, hệ thống phải có một khu vực dành cho khách hàng chờ.
-                                    </li>
-                                    <li>Khách hàng trong hàng chờ sẽ được phục vụ theo quy tắc (Discipline) nhất định.
-                                        Chẳng hạn: "Tới trước phục vụ trươc", "Tới sau phục vụ trước", "Khách hàng ưu
-                                        tiên được phục vụ trước", ..</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="collapse" id="Quytacanhhuong">
-                    <div class="card card-body">
-                        <h5>Các thuộc tính ảnh hưởng đến hệ thống</h5>
-                        <ul>
-                            <li>Khách hàng có nhu cầu đi tới hệ thống làm phát sinh sự hoạt động của nó</li>
-                            <li>Khách hàng phát sinh phải có nguồn gốc</li>
-                            <li>Khách hàng tới hệ thống và được đáp ứng tại các trạm phục vụ</li>
-                            <li>Khi khách hàng vào hệ thống và phải chờ, nó sẽ tạo ra một hàng chờ trong khu vực khách
-                                hàng</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="collapse" id="Quytacphucvukhachhang">
-                    <div class="card card-body">
-                        <h5>Quy tắc phục vụ</h5>
-                        <ul>
-                            <li>FIFO/FCFS: First In First Out, First come First serve</li>
-                            <li>LIFO, LCFS: Last In, First Out; Last Come First Serve</li>
-                            <li>SIRO: Service in Random Order</li>
-                            <li>PNPN: Priority service</li>
-                            <li>PS: Processor Sharing</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="collapse" id="KPKendall">
-                    <div class="card card-body">
-                        <h5>Ký pháp Kendall</h5>
-                        <p>Ký pháp Kendall là một hệ thống chuẩn được sử dụng để mô tả và phân loại mô hình xếp hàng cho
-                            phù hợp với một hệ thống xếp hàng. Hệ thống đầy đủ gồm 6 yếu tố được biểu diễn theo thứ tự
-                            quan trọng dưới dạng: A/B/s/K/N/Z, trong đó:</p>
-                        <ul>
-                            <li>A: là quá trình khách hàng tới được đặc trưng bởi mật độ X ở đầu vào.</li>
-                            <li>B: là quá trình khách hàng ra được đặc trưng bởi thời gian T<sub>s</sub> phục vụ một
-                                hàng</li>
-                            <li>s: Số trạm phục vụ khách hàng trong hệ thống</li>
-                            <li>K: sức chứa của hệ thống</li>
-                            <li>N: Số cá thể trong quần thể tiềm năng</li>
-                            <li>Z: Qui tắc phục vụ của hệ thống</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="collapse" id="MohinhMM1">
-            <div class="card card-body">
-                <p>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MoTaHeThong" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Mô tả hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#PhanPhoiSoKhachHang" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Phân phối số khác hàng trong hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#DoThiCanBang" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Đồ thị cân bằng
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#Saudactrungcoban" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Sáu đặc trưng cơ bản
-                    </a>
+    <h2>Mạng đơn với một hàng chờ (Single Center Network)</h2>
+    <ul>
+        <li>Mô hình: Mạng đơn với một hàng chờ hay còn được gọi là mạng với một trung tâm phục vụ (Single Center)
+            <center>
+                <img style="width: 100%;" src="./assets/img/LTXH/chuong31.jpg" alt="chuong31">
+            </center>
+        </li>
+        <li>Mô hình này có hai loại dữ liệu đầu vào:
+            <ul>
+                <li>Cường độ lưu lượng (Workload Intensity) đầu vào: X, hay còn được hiểu là mật độ khách hàng tới hệ thống.</li>
+                <li>Yêu cầu phục vụ (Service Demand) hay Thời gian phục vụ trung bình một khách hàng: S</li>
+            </ul>
+        </li>
+        <li>Các tham số đầu ra của mô hình mang đơn gồm:
+            <ul>
+                <li>Chỉ số sử dụng mạng (Utilisation): U.</li>
+                <li>Thời gian đáp ứng (Response Time) hay Thời gian lưu trú (Residence Time) của một khách hàng (Customer) trong trung tâm phục vụ</li>
+                <li>Ký hiệu: R. Thời gian này còn được hiểu là thời gian trung bình ở trong hệ thống của một khách hàng.</li>
+                <li>Độ dài hàng (Queue Length) trong một trung tâm phục vụ hay số lượng khách hàng trung bình ở trong trung tâm: Q.</li>
+            </ul>
+        </li>
+        <li>Đối chiếu các tham số tương đương từ hai mô hình
+            <center>
+                <table>
+                    <tr>
+                        <th colspan="2">Mô hình mạng đơn</th>
+                        <th colspan="2">Mô hình xếp hàng</th>
+                    </tr>
+                    <tr>
+                        <td>Diễn giải</td>
+                        <td>Tham số</td>
+                        <td>Diễn giải</td>
+                        <td>Tham số</td>
+                    </tr>
+                    <tr>
+                        <td>Cường độ lưu lượng</td>
+                        <td>X</td>
+                        <td>&lambda;</td>
+                        <td>Mật độ đầu vào</td>
+                    </tr>
+                    <tr>
+                        <td>Yêu cầu phục vụ</td>
+                        <td>S</td>
+                        <td><span style="border-top: 1px solid black;">t<sub>s</sub></span></td>
+                        <td>Thời gian phục vụ</td>
+                    </tr>
+                    <tr>
+                        <td>Chỉ số sử dụng</td>
+                        <td>U</td>
+                        <td>&phi;</td>
+                        <td>Hệ số sử dụng</td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian đáp ứng</td>
+                        <td>R</td>
+                        <td><span style="border-top: 1px solid black;">t</span></td>
+                        <td>Thời gian trong hệ thống</td>
+                    </tr>
+                    <tr>
+                        <td>Độ dài hàng</td>
+                        <td>Q</td>
+                        <td><span style="border-top: 1px solid black;">n</span></td>
+                        <td>Số khách hàng trong hệ thống</td>
+                    </tr>
+                </table>
+            </center>
+        </li>
+        <li>Một số trung tâm phục vụ như kênh truyền tin với khách hàng là các thông báo (Message, viết tắt: msg) lại có dữ liệu đầu vào là độ dài trung bình L (bit) của thông báo và tốc độ truyền tin B (bps)</li>
+        <li>Bps là viết tắt của cụm từ Bits per second (bit/giây)</li>
+        <li>Thời gian phục vụ trung bình được tính theo công thức: <span style="border-top: 1px solid black;">t</span> = L/B</li>
+    </ul>
 
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#LuatLittle" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Luật Little
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#TinhChatDacTrungHeThong"
-                        role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Các tính chất đặc trưng của hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#ViDu" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Ví dụ
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#DanhGiaHeThong" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Đánh giá hệ thống
-                    </a>
-                </p>
-                <div class="collapse" id="MoTaHeThong">
-                    <div class="card card-body">
-                        <h5>Mô tả hệ thống</h5>
-                        <ul>
-                            <li>Hoạt động với một trạm phục vụ khách hàng có nhu cầu A nào. Giả sử số lượng khách hàng
-                                phát sinh ngẫu nhiên từ một quần thể đồng đều và có tần số trung bình là &lambda;. Cũng
-                                tương tự như vậy ở đầu ra của hệ thống mỗi khách hàng đều được phục vụ sau một thời gian
-                                ngẫu nhiên và đi ra với mật độ trung bình &micro; với điều kiện trong hệ thống còn khách
-                                hàng</li>
-                            <li>Khi đó mô hình biểu diễn hệ thống theo ký pháp Kendall có dạng: M/M/1</li>
-                        </ul>
-                        <center>
-                            <img src="./assets/img/LTXH/MM1_1.jpg" alt="MM1_1">
-                        </center>
-                        <hr>
-                        <h5>Ý nghĩa một số ký hiệu</h5>
-                        <center>
-                            <img style="width: 100%;" src="./assets/img/LTXH/Ynghiamotsothongso.jpg" alt="">
-                        </center>
-                    </div>
-                </div>
-                <div class="collapse" id="PhanPhoiSoKhachHang">
-                    <div class="card card-body">
-                        <h5>Phân phối số khách hàng</h5>
-                        <p>
-                            Gọi {N<sub>t</sub>}<sub>t&isin;T</sub> là quá trình ngẫu nhiên phát sinh một số khách hàng
-                            trong hệ thống. Người ta cũng chỉ ra rằng đây là một xích Markov và thỏa các điều kiện dùng.
-                            Giả sử rằng biến dùng {N<sub>t</sub>}<sub>t&isin;T</sub>. Bài toán ở đây là tìm phân phối
-                            của biến dùng N.
-                        </p>
-                        <p>Giả sử: &lambda;&lt;1 và &micro;&lt;1. Như vậy đơn vị thời gian hợp lý thì &micro;
-                        <ul>
-                            <li>Xác xuất để hệ thống có thêm &lambda; khách hàng là A</li>
-                            <li>Xác xuất để hệ thống giảm bớt 1 khách hàng là &micro; với điều kiện có khách hàng trong
-                                hệ thống</li>
-                        </ul>
-                        </p>
-                        <p>
-                            Phương pháp tìm phân phối của N, số khách hàng trong hệ thống sẽ dựa vào đồ thị cân bằng
-                            ngẫu nhiên và từ đó có thể viết ra hệ phương trình C-K. Các đặc trưng trung bình khác của hệ
-                            thống tính từ phân phối của N
-                        </p>
-                    </div>
-                </div>
-                <div class="collapse" id="DoThiCanBang">
-                    <div class="card card-body">
-                        <p>Đặt N là số khách hàng ngẫu nhiên trong hệ thống ở trạng thái dừng. Giá trị phát sinh của N
-                            cũng là trạng thái của không gian E={0,4,...,k-1, k, k+1}, hay ta còn viết N=k&isin;E. Khi
-                            đó, các tham số của đồ thị cân bằng ngẫu nhiên biểu diễn trạng thái dùng của hệ thống như
-                            sau:
-                        <ol>
-                            <li>Sau một đơn vị thời gian, xác xuất tăng 1 khách hàng với mật độ là A</li>
-                            <li>Sau một đơn vị thời gian, xác xuất giảm 1 khách hàng với mật độ là &micro; khi trong hệ
-                                thống vẫn còn khách hàng</li>
-                            <li>Nếu hệ thống đạt chế độ dừng, thì phân phối dùng của số khách hàng trong hệ thống là
-                                P(N=i) = q<sub>i</sub>, i = 0, 1, 2,..., n,...</li>
-                        </ol>
-                        </p>
-                        <center>
-                            <img src="./assets/img/LTXH/DoThiCanBang1.jpg" alt="DoThiCanBang">
-                        </center>
-                    </div>
-                </div>
-                <div class="collapse" id="Saudactrungcoban">
-                    <div class="card card-body">
-                        <h5>6 đặc trưng cơ bản</h5>
-                        <p>Mỗi hệ thống xếp hàng có 6 đặc trưng cơ bản (số lượng trung bình, thời gian trung bình)</p>
-                        <ul>
-                            <ol>
-                                <li>Cặp đặc trưng (<span style="border-top: 1px solid black;">n</span>,<span
-                                        style="border-top: 1px solid black;">t</span>) = (số khách hàng trung bình trong
-                                    hệ thống thời gian trung bình ở trong hệ thống của một khách hàng). Thời gian trung
-                                    bình ở trong hệ thống của một khách hàng được tính từ lúc khách hàng xuất hiện đi
-                                    vào hệ thống đến khi được phục vụ xong và đi ra</li>
-                                <li>Cặp đặc trưng (<span style="border-top: 1px solid black;">m</span>, <span
-                                        style="border-top: 1px solid black;">t<sub>f</sub></span> = (số khách hàng trung
-                                    bình ở trong hàng đợi thời gian trung bình ở trong hàng đợi của một khách hàng).
-                                    Trong hệ thống có một trạm phục vụ nên nếu số khách hàng vượt quá 1 thì khách hàng
-                                    thứ 2 trở đi sẽ phải xếp hàng và trạm phục vụ sẽ phục vụ theo quy tắc FIFO</li>
-                                <li>Cặp đặc trưng (<span style="border-top: 1px solid black;">g</span>, <span
-                                        style="border-top: 1px solid black;">t<sub>s</sub></span>) = (số khách hàng
-                                    trung bình đang được phục vụ, thời gian trung bình phục vụ một khách hàng). Thời
-                                    gian phục vụ trung bình một khách hàng <span
-                                        style="border-top: 1px solid black;">t<sub>s</sub></span> cũng chính là giá trị
-                                    trung bình của luật dãy lũy thừa E(&micro;) đối với thời gian phục vụ của một trạm
-                                    phục vụ và: <span style="border-top: 1px solid black;">t<sub>s</sub></span> =
-                                    1/&micro;</li>
-                            </ol>
-                        </ul>
-                    </div>
-                </div>
-                <div class="collapse" id="LuatLittle">
-                    <div class="card card-body">
-                        Luật Little trình bày mối quan hệ giữa số lượng phát sinh ngẫu nhiên N trong khoảng thời gian
-                        ngẫu nhiên T với mật độ phát sinh ngẫu nhiên trên 1 đơn vị thời gian là A. Giả sử mật độ A được
-                        tính trên đơn vị phút, tức là trong mỗi phút phát sinh ngẫu nhiên A khách hàng. Nếu xét T là một
-                        khoảng thời gian ngẫu nhiên (đơn vị tính: phút) thì số khách hàng N ngẫu nhiên phát sinh trong
-                        khoảng thời gian này được tính theo công thức:
-                        <br>
-                        <center>
-                            <img src="./assets/img/LTXH/luatlittle.jpg" alt="luatlittle">
-                        </center>
-                        <center>
-                            <b style="color: red;">Tính trung bình, số lượng khách hàng nằm trong hệ thống được tính
-                                bằng tích của tốc độ đến và thời gian phục vụ</b>
-                        </center>
-                    </div>
-                </div>
-                <div class="collapse" id="TinhChatDacTrungHeThong">
-                    <div class="card card-body">
-                        <ul>
-                            <li><span style="border-top: 1px solid black;">n</span> = &lambda;<span
-                                    style="border-top: 1px solid black;">t</span></li>
-                            <li><span style="border-top: 1px solid black;">m</span>=&lambda;<span
-                                    style="border-top: 1px solid black;">t<sub>f</sub></span></li>
-                            <li><span style="border-top: 1px solid black;">g</span>=&lambda;<span
-                                    style="border-top: 1px solid black;">t<sub>s</sub></span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="collapse" id="ViDu">
-                    <div class="card card-body">
-                        <p>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#VD" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                Ví dụ
-                            </a>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#VDPKbenh" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                Ví dụ 2: Phòng khám (PK) bệnh
-                            </a>
-                        </p>
-                        <div class="collapse" id="VD">
-                            <div class="card card-body">
-                                <p>
-                                    Xét hệ thống tính tiền trong siêu thị. Người ta muốn biết một khách hàng trung bình
-                                    phải đợi bao lâu mới được tính tiền. Biết rằng số trung bình khách hàng đến quầy
-                                    tính tiền là 100 người/giờ và số khách hàng trung bình đứng trong hàng chờ là 5
-                                    người. Trước hết, để dễ theo dõi ta sử dụng các ký hiệu trong mô hình M/M/l:
-                                    &lambda; là mật độ khách hàng tới, còn m là độ dài trung bình của hàng chờ và, <span
-                                        style="border-top: 1px solid black;">t<sub>f</sub></span> là thời gian xếp hàng
-                                    trung bình của mỗi khách hàng
-                                </p>
-                                <hr style="border: 1px solid black;">
-                                <ul>
-                                    <li>Từ giả thuyết ta có: &lambda; = 100 / 60 = 1.67 (KH/1 phút) và m = 5 khách hàng
-                                    </li>
-                                    <li>
-                                        <span style="border-top: 1px solid black;">t<sub>f</sub></span>=
-                                        m/&lambda;=5x60/100=3 phút. Thời gian trung bình của một khách hàng phải đợi
-                                        trong hàng chờ là 3 phút</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="collapse" id="VDPKbenh">
-                            <div class="card card-body">
-                                <ul>
-                                    <li>Tại một PK bệnh của một bác sĩ, BN đến nhận số và ngồi đợi ở phòng chờ. Trung
-                                        bình cứ 15 phút thì cô hộ lý gọi một BN theo số thứ tự vào PK. Thời gian khám
-                                        trung bình cho mỗi BN là 10 phút</li>
-                                    <li>Yêu cầu
-                                        <br>
-                                        <ul>
-                                            <li>Tính số BN trung bình trong PK</li>
-                                            <li>Tính thời gian chờ trung bình của một BN trong PK.
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <hr style="border: 4px solid black;">
-                                <ul>
-                                    <li>Mật độ phát sinh bệnh nhân vào PK &lambda; = 1/15 (bn/1 phút)</li>
-                                    <li>Thời gian khám bệnh trung bình 1 bệnh nhân: <span
-                                            style="border-top: 1px solid black;">t<sub>s</sub></span> = 10 phút</li>
-                                    <li>Mật độ bệnh nhân ra khỏi phòng khám khi trong phòng khám còn bệnh nhân:
-                                        &micro;=1/<span style="border-top: 1px solid black;">t<sub>s</sub></span>=1/10
-                                        BN</li>
-                                    <li>Hệ số sử dụng &phi; = &lambda;/&micro;=(2/3)/(1-(2/3)) = 2 (bệnh nhân)</li>
-                                    <li>Thời gian trung bình của 1 bệnh nhân trong phòng khám theo luật little: <span
-                                            style="border-top: 1px solid black;">t</span> = <span
-                                            style="border-top: 1px solid black;">n</span>/&lambda;=30 phút</li>
-                                    <li>Thời gian đợi trung bình của 1 bệnh nhân trong phòng khám là <span
-                                            style="border-top: 1px solid black;">t</span><sub>f</sub> = <span
-                                            style="border-top: 1px solid black;">t</span> - <span
-                                            style="border-top: 1px solid black;">t</span><sub>s</sub> = 30 - 10 = 20
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse" id="DanhGiaHeThong">
-                    <div class="card card-body">
-                        <p>
-                            Trong thực tế người ta thường đưa ra chỉ số để nhận biết hệ thống có xu hướng chậm chạp và
-                            cần được nghiên cứu cải tiến. Chị số nhận biết này chính là, hệ số khai thác trạm phục vụ,
-                            và nó được phân thành 3 đoạn để đánh giá hệ thống:
-                        </p>
-                        <ul>
-                            <li>&phi; &lt; 0.4: thấp, hệ thống hoạt động lãng phí</li>
-                            <li>&phi; = [0.4; 0.6]: trung bình, hệ thống hoạt động hiệu quả</li>
-                            <li>&phi; > 0.6: cao, hệ thống hoạt động chậm chạp và cần được cải tiến</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="collapse" id="MohinhMM2">
-            <div class="card card-body">
-                <p>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#MoTaHeThongMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Mô tả hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#PPSoKhachHangMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Phân phối số khách hàng trong hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#CacDacTrungMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Các đặc trưng M/M/2
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#DoThiCanBangMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Đồ thị cân bằng
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#LuatLittleMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Luật Little
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#TCDacTrungMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Các tính chất đặc trưng của hệ thống
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#VDMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Ví dụ
-                    </a>
-                    <a class="btn btn-primary mt-2" data-bs-toggle="collapse" href="#DanhGiaMM2" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Đánh giá hệ thống
-                    </a>
-                </p>
-                <div class="collapse" id="MoTaHeThongMM2">
-                    <div class="card card-body">
-                        <p>
-                            Mô tả hệ thống: Mô hình MM/1 được mở rộng thêm một trạm phục vụ nhằm giảm sức ép lên 1 trạm
-                            khi số lượng khách hàng trong trạm ngày càng tăng. Khi đó số trạm phục vụ là s = 2 và hệ
-                            thống hoạt động như trong Hình. Mô hình của hệ thống lúc này là M/M/2.
-                        </p>
-                        <center>
-                            <img style="width: 100%;" src="./assets/img/LTXH/MM2_1.jpg" alt="MM2_1">
-                        </center>
-                        <p>Đối với mô hình M/M/2 đồ thị cân bằng được biểu diễn tương tự, chỉ khác đối với các cung giảm
-                            khách hàng, trọng lượng treo trên cung phụ thuộc số trạm phục vụ:</p>
-                        <ul>
-                            <li>Nếu trong hệ thống chỉ có 1 khách hàng thì chỉ có 1 trạm hoạt động và khi đó mật độ giảm
-                                khách hàng là &micro; treo trên cung đi từ đỉnh 1 về đỉnh 0</li>
-                            <li>Nếu số khách hàng trong hệ thống lớn hơn hoặc bằng số trạm phục vụ (s=2) thì có 2 trạm
-                                phục vụ hoạt động đồng thời. Khi đó mật độ giảm khách hàng là 2&micro; treo trên các
-                                cung đi từ đỉnh lớn n về đỉnh nhỏ hơn n-1 với n = 2,3</li>
-                        </ul>
-                        <center>
-                            <img style="width: 100%;" src="assets/img/LTXH/MM2_2.jpg" alt="MM2_2">
-                        </center>
-                    </div>
-                </div>
-                <div class="collapse" id="PPSoKhachHangMM2">
-                    <div class="card card-body">
-                        <p>Phân phối của N được tính bằng hai công thức sau</p>
-                        <ul>
-                            <li>q<sub>n</sub> = [&phi;<sup>n</sup>/(2<sup>n+1</sup>)]*q<sub>0</sub> với n = 1,2,3,...,n
-                            </li>
-                            <li>q<sub>0</sub>=(2-&phi;)/(2+&phi;)</li>
-                        </ul>
+    <h2>Tính hường: Mạng truyền tin với 1 kênh truyền</h2>
+    <ul>
+        <li>Xét một hệ thống truyền tin với một kênh truyền thông qua Modem.
+            <br>
+            Các thông số trên kênh được ghi nhận như sau:
+            <ul>
+                <li>Tốc độ truyền tin của Modem: B = 9600 bps.</li>
+                <li>Thông báo được truyền trên mạng có độ dài trung bình: L = 3600 ký tự.
+                    Mỗi ký tự có 8 bit,</li>
+                <li>Lưu lượng phát tin qua Modem là: X = 10 msg/ phút</li>
+            </ul>
+        </li>
+        <li>Yêu cầu
+            <ul>
+                <li>Tính chỉ số sử dụng kênh truyền: U.</li>
+                <li>Tính thời gian lưu trú trung bình một thông báo trên kênh: R.</li>
+                <li>Tính xác suất để có ít nhất có một thông báo cần truyền: p(N&ge;1), N là số thông báo cần truyền,</li>
+            </ul>
+        </li>
+        <li><span style="border-top: 1px solid black;">t</span> = L/B = 28000/9600 = 3 (s)</li>
+        <li>Từ mô hình M/M/1 ta suy ra các kết quả lần lượt:
+            <ul>
+                <li>&phi; = &lambda;<span style="border-top: 1px solid black;">t</span> = (1/6)*3 = 1/2</li>
+                <li><span style="border-top: 1px solid black;">n</span> = &phi;/(1-&phi;) = 1 (msg) => <span style="border-top: 1px solid black;">t</span> = <span style="border-top: 1px solid black;">n</span>/&lambda; = 1/(1/6) = 6 (s)</li>
+                <li>q<sub>0</sub> = 1 - &phi; = 1/2 => p(N &ge; 1) = 1 - q<sub>0</sub> = 1/2</li>
+                <li>Đối chiếu với các tham số của mạng truyền tin ta có: <br> U = &phi; = 1/2, R = <span style="border-top: 1px solid black;">t</span> = 6 (s) và p(N &ge; 1) = 1/2</li>
+            </ul>
+        </li>
+    </ul>
 
-                        <p>Đặt <span style="border-top: 1px solid black;">n</span> = E(n) trung bình số khách hàng trong
-                            hệ thống đồng thời cũng là kỳ vọng của N</p>
-                        <p>
-                            <center>
-                                <span style="border-top: 1px solid black;">n</span> = 4&phi;/(4-&phi;<sup>2</sup>)
-                            </center>
-                        </p>
-                    </div>
-                </div>
-                <div class="collapse" id="CacDacTrungMM2">
-                    <div class="card card-body">
-                        <p>Các đặc trưng khác:</p>
-                        <p><span style="border-top: 1px solid black;">t</span>=<span
-                                style="border-top: 1px solid black;">n</span>/&lambda;</p>
-                        <p><span style="border-top: 1px solid black;">t</span> = <span
-                                style="border-top: 1px solid black;">t</span> - <span
-                                style="border-top: 1px solid black;">t</span><sub>f</sub></p>
-                        <p>
-                            <span style="border-top: 1px solid black;">m</span> = &lambda;<span
-                                style="border-top: 1px solid black;">t</span><sub>f</sub>
-                        </p>
-                        <p>
-                            <span style="border-top: 1px solid black;">g</span>=&lambda;<span
-                                style="border-top: 1px solid black;">t</span><sub>s</sub>
-                        </p>
-                        <p>&phi;: hệ số hoạt động của hai trạm và cũng là số khách hàng trung bình đang được phục vụ</p>
-                        <p>&phi;<sub>1</sub>: hệ số hoạt động của một trạm, khi s = 1 thì &phi;<sub>1</sub> = &phi;</p>
-                    </div>
-                </div>
-                <div class="collapse" id="DoThiCanBangMM2">
-                    <div class="card card-body">
+    <h2>Mạng đa liên kết các trung tâm phục vụ</h2>
+    <p>Trong thực tế, mô hình một trung tâm phục vụ quá đặc biệt và chỉ là mô hình cơ bản để mở rộng cho các tình huống thường xảy ra hơn, Hình 3.2 là sơ đồ của mô hình 1 CPU và 3 đĩa tài nguyên.</p>
+    <center>
+        <img style="width: 100%;" src="./assets/img/LTXH/chuong32.jpg" alt="chuong32">
+    </center>
 
-                    </div>
-                </div>
-                <div class="collapse" id="LuatLittleMM2">
-                    <div class="card card-body">
+    <h2>Mô hình tổng quát</h2>
+    <ul>
+        <li>Hệ thống nối mạng các trung tâm phục vụ được phân loại thành 3 lớp:
+            <ol>
+                <li>Lớp thứ nhất: Mạng phân nhánh và nối kết (Fork-Joint Network). Mạng này có một
+                    trung tâm phục vụ chính điều phối các lưu lượng (Workload) các công việc hay
+                    khách hàng tới các trung tâm phục vụ khác là một ví dụ của mạng phân nhánh và
+                    nối kết). Một công việc (Job) khi vào Trung tâm điều phối sẽ được xem xét và xử lý.
+                    Nếu nó có yêu cầu kết nối với các trung tâm khác sẽ được Trung tâm điều hành gửi
+                    tới trung tâm tương ứng để xử lý. Các yêu cầu xuất phát từ một công việc còn được
+                    gọi là các công việc con (Sub-jobs hay Siblings). Sau khi hoàn tất xử lý, các công việc
+                    con sẽ trở về Trung tâm điều hành đề được đồng bộ hóa và hoàn thiện xử lý công
+                    việc.</li>
+                <li>Lớp thứ hai: Mạng xếp hàng mở (Open Quencing Network) còn được gọi là Mạng
+                    Jackson (Jackson’s Network Khách hàng đi tới mạng từ bên ngoài hay từ Mạng
+                    nguồn (Mạng s) và tạo thành lưu lượng đi tới hệ thống với một phân phối ngẫu
+                    nhiên q, (i có thể chạy trên nhiều trung tâm khác nhau trong hệ thống). Nói chung,
+                    một khách hàng di chuyển trong mạng được phân phối ngẫu nhiên tới một trung
+                    tâm phục vụ nào đó để xử lý, sau đó: hoặc “thất lạc” đi ra khỏi mạng và xem như tới
+                    Mạng đích (Mạng d), hoặc được phân phối ngẫu nhiên tiếp tới một trung tâm phục
+                    vụ khác.</li>
+                <li>Lớp thứ ba: Mạng xếp hàng đóng (Close Queucing Network) còn được gọi là Mạng
+                    Gordon & Newell (Gordon & Newell Network) hay Mạng Tuần hoàn (Cyclic
+                    Queueing Network) . Đối với mạng này quần thể khách hàng được giới hạn bởi M
+                    khách hàng sử dụng đầu cuối (Terminals). Mỗi khách hàng trước khi đi vào mạng
+                    đều cần một lượng thời gian suy nghĩ (Think Time). M khách hàng đầu cuối sau khi
+                    suy nghĩ sẽ tạo ra một lưu lượng truy cập ngẫu nhiên đến các trung tâm khác nhau
+                    trong mạng để được xử lý. Mỗi khách hàng di chuyển trong mạng đóng sẽ được
+                    phân phối ngẫu nhiên đến một trung tâm phục vụ và sau đó cũng có thể được phân
+                    phối ngẫu nhiên tới các trung tâm phục vụ khác trước khi trả về nơi nó xuất phát.</li>
+                <li>Ví dụ mô hình mạng mở Jackson
+                    <center>
+                        <img style="width: 100%;" src="./assets/img/LTXH/chuong33.jpg" alt="chuong33">
+                    </center>
+                </li>
+                <li>
+                    Ví dụ mô hình mạng đóng Gordon - Newell
+                    <center>
+                        <img style="width: 100%;" src="./assets/img/LTXH/chuong34.jpg" alt="chuong34">
+                    </center>
+                </li>
+            </ol>
+        </li>
+    </ul>
 
-                    </div>
-                </div>
-                <div class="collapse" id="TCDacTrungMM2">
-                    <div class="card card-body">
+    <h2>3 loại mạng theo lưu lượng khách hàng lưu thông</h2>
+    <ul>
+        <li>Mạng với lưu lượng giao dịch (Transaction Workload): từng khách hàng
+            một sẽ lưu thông trên mạng, do đó trên một đơn vị thời gian sẽ có một
+            mật độ khách khách hàng lưu thông còn được gọi là lưu lượng giao dịch X.
+            Mạng được xét là mở và bao hàm cả mạng Fork-Joint.</li>
+        <li>Mạng với lưu lượng lô (Batch Workload): đây là một mạng xử lý từng lô với
+            số lượng khách hàng trong lộ là N. Mạng này có thể đóng hoặc mở. Nói
+            chung số lượng khách hàng trong lô thay đổi, nên phải sử dụng N là số
+            khách hàng trung bình trong lỗ. Vì vậy N có thể không nguyên,</li>
+        <li>Mạng đóng xử lý khách hàng sử dụng đầu cuối (Ternimals), sau khi suy nghĩ với thời gian Z, theo lưu lượng giao dịch/lô.</li>
 
-                    </div>
-                </div>
-                <div class="collapse" id="VDMM2">
-                    <div class="card card-body">
-                        <p>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="VDPKMM2">
-                                Ví dụ: PK bệnh
-                            </a>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <ul>
-                                    <li>Trong PK có trung bình 2 BN</li>
-                                    <li>Thời gian đợi trung bình trong PK của 1 BN của 20 phút. Nếu công thêm thời gian
-                                        đợi ở phòng chờ trước khi vào PK thì khoảng thời gian đợi là khá lớn. Một hệ
-                                        thống đợi lâu có cần được cải tiến.</li>
-                                    <li>Tăng thêm 1 bác sĩ. Khi đó mô hình có dạng M/M/2</li>
-                                </ul>
-                                <p><b>Các kết quả từ mô hình M/M/1</b></p>
-                                <ul>
-                                    <li>Mật độ phát sinh BN vào PK: &lambda; = 1/15 BN / 1 phút</li>
-                                    <li>Thời gian khám trung bình BN <span style="border-top: 1px solid black;">t</span>
-                                        = 10 phút</li>
-                                    <li>Hệ số sử dụng PK &phi; = 2/3</li>
-                                    <li>Số BN trung bình trong PK n = 2 BN</li>
-                                    <li>Thời gian trung bình một BN trong PK: <span
-                                            style="border-top: 1px solid black;">t</span> = 30 phút</li>
-                                    <li>Thời gian đợi trung bình một BN trong PK: <span
-                                            style="border-top: 1px solid black;">t</span> = 20 phút</li>
-                                </ul>
-                                <p><b>Các kết quả từ mô hình M/M/2:</b></p>
-                                <ul>
-                                    <li>Mật độ phát sinh BN vào PK = &lambda; = 1/15 BN / 1 phút</li>
-                                    <li>Thời gian khám trung bình một BN: <span
-                                            style="border-top: 1px solid black;">t</span><sub>s</sub> = 10 phút</li>
-                                    <li>Hệ số sử dụng PK &phi;=2/3</li>
-                                </ul>
-                                <hr style="border: 4px solid black;">
-                                <p><b style="color: red;">Số bệnh nhân trung bình trong phòng khám <span
-                                            style="border-top: 1px solid black;">n</span> =
-                                        4&phi;/(4-&phi;<sup>2</sup>)=(8/3)/(4-4/9)</b> = 3/4 = 0.75 BN</p>
-                                <p>Theo luật Little, thời gian TB một BN trong PK: <span
-                                        style="border-top: 1px solid black;">t</span> = <span
-                                        style="border-top: 1px solid black;">n</span>/&lambda; = (3/4)/(1/15) = 11.25
-                                    phút</p>
-                                <p>Thời gian đợi trung bình một BN trong PK = <span
-                                        style="border-top: 1px solid black;">t</span><sub>f</sub> = <span
-                                        style="border-top: 1px solid black;">t</span>-<span
-                                        style="border-top: 1px solid black;">t</span><sub>s</sub> = 11.25 - 10 - 1.25
-                                    phút</p>
-                                <p><b>Theo luật Little, số BN đợi TB trong phòng khám: <span
-                                            style="border-top: 1px solid black;">m</span> = &lambda;<span
-                                            style="border-top: 1px solid black;"></span><sub>f</sub> = 1.25*1/15 = 0.08
-                                        BN</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse" id="DanhGiaMM2">
-                    <div class="card card-body">
-                        <h5>Đánh giá MM2</h5>
-                        <p>Hệ số phục vụ trên một bác sĩ p = p/2 = 1/3 ~0.33. Nếu chú ý đến tính hiệu quả của hệ thống
-                            thì chưa cần thiết phải tăng thêm bác sĩ</p>
-                        <p>Xét về khía cạnh khách hàng, có thể thấy thời gian xếp hàng của khách hàng đã giảm từ 20 phút
-                            xuống còn 1.25 phút, tức là giảm hơn 15 lần. Như vậy khách hàng sẽ nhận được dịch vụ rất
-                            tốt, trong khi đó người quản lý hệ thống lại phải đương đầu với sự lãng phí cũng lớn tương
-                            ứng khi tổ chức 2 bác sĩ khám bệnh. Rõ ràng việc tổ chức một hệ thống dịch vụ như vậy cần
-                            phải phải đưa ra tiêu chí tối ưu hệ thống.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="collapse" id="MohinhMMs">
-            <div class="card card-body">
-                <p>Bài toán tổng quát hóa từ các mô hình M/M/1 và M/M/2 lên mô hình M/M/s với s&ge;1 được giải quyết một
-                    cách tương tự</p>
-                <ul>
-                    <li>Thời gian trung bình một KH trong hệ thống: <span style="border-top: 1px solid black;">t</span>
-                        = n/&lambda;</li>
-                    <li>Thời gian đợi trung bình một KH <span style="border-top: 1px solid black;">t</span><sub>f</sub>
-                        = <span style="border-top: 1px solid black;">t</span> - <span
-                            style="border-top: black;">t</span><sub>s</sub></li>
-                    <li><b style="color: red;"><span style="border-top: 1px solid;">m</span> = &lambda;<span
-                                style="border-top: 1px solid;">t</span><sub>f</sub></b></li>
-                    <li>Số khách hàng được phục vụ trung bình <span style="border-top: 1px solid;">G</span> =
-                        &lambda;<span style="border-top: 1px solid;">t</span><sub>s</sub>=<span
-                            style="border-top: 1px solid;">n</span>/&lambda;</li>
-                </ul>
-            </div>
-        </div>
-        <div class="collapse" id="MotSoMoHinhKhac">
-            <div class="card card-body">
-                <ul>
-                    <li>Mô hình M/G/1: sử dụng trong trường hợp khách hàng đa dạng về dịch vụ. Khi đó hệ thống có k lớp
-                        khách hàng</li>
-                    <li>Mô hình M/G/1 có ưu tiên: sử dụng trong trường hợp các lớp khách hàng được gán tính ưu tiên theo
-                        cấp độ để tăng cường tính linh hoạt</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </ul>
 
+    <h2>Đầu vào của mô hình: Khách hàng</h2>
+    <ul>
+        <li>Ký hiệu theo mô hình mạng
+            <br>
+            Cường độ của lưu lượng khách hàng tới được xác định bởi một trong các tham số:
+            <ul>
+                <li>(1) Lưu lượng giao dịch (Transaction Workload): X.</li>
+                <li>(2) Số lượng trung bình Q các khách hàng lưu thông trên mạng hay còn được gọi là
+                    lưu lượng lô (Batch Workloads). Nói chung Q không phải là số nguyên.</li>
+                <li>(3) Cặp giá trị (Q, Z), trong đó:
+                    <br>
+                    <ul>
+                        <li>Q là số lượng trung bình khách hàng (không nguyên) đi vào mạng từ N khách
+                            hàng đầu cuối,/li>
+                        <li>Z là thời gian suy nghĩ trung bình (Average Think Time) của một khách hàng tại
+                            thiết bị đầu cuối (Teminal) trước khi đi vào mạng.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Khách hàng: Cường độ lưu lượng công việc (Workload Intensity) được diễn giải một
+            cách phù hợp theo tình huống của mạng:</li>
+        <li>Mỗi lưu lượng giao dịch có một cường độ: X.</li>
+        <li>Một lưu lượng lô là số lượng trung bình N khách hàng đi vào hệ thống từ một quần thể
+            cố định. Nói chung số N không nguyên (vì đây là giá trị trung bình).</li>
+        <li>Một lưu lượng đầu cuối (Terminal Workload) có cường độ được chuyên biệt theo hai
+            tham số: (i) Q số lượng khách hàng trung bình đang hoạt động trong hệ thống (xuất
+            phát tử N khách hàng sử dụng đầu cuối, nên Q ≤ N và có giá trị không nguyên) và (i) Z
+            thời gian trung bình phải “tư duy” trước khi thực hiện yêu cầu đi vào hệ thống, còn
+            được gọi là thời gian suy nghĩ (Think Time) của khách hàng.</li>
+    </ul>
+
+    <h2>Đầu vào của mô hình: Trung tâm phục vụ</h2>
+    <ul>
+        <li>Tham số cho các trung tâm phục vụ gồm:
+            <ul>
+                <li>(1) Số lượng K các trung tâm phục vụ.</li>
+                <li>(2) Đối với mỗi trung tâm phục vụ thứ k:
+                    <ul>
+                        <li>Phân loại trung tâm: Xếp hàng (Queneing) hay Có độ trễ (Delay).</li>
+                        <li>Lưu lượng thông qua trung tâm (Throughput): X<sub>k</sub></li>
+                        <li>Thời gian phục vụ trung bình: S<sub>k</sub></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Trung tâm phục vụ có 2 dạng:
+            <center>
+                <img style="width: 100%;" src="./assets/img/LTXH/chuong35.jpg" alt="chuong35">
+            </center>
+        </li>
+        <li>Yêu cầu phục vụ: <br>
+            Đối với mỗi trung tâm phục vụ, yêu cầu phục vụ được đo bằng tổng thời
+            gian D xử lý một công việc. Tại trung tâm k, tổng thời gian phục vụ là 
+            <center>
+                D<sub>k</sub> = V<sub>k</sub>S<sub>k</sub>
+            </center>
+            <br>
+            Trong đó V<sub>k</sub> là số lần mà một công việc hoặc công việc con của nó được xử lý tại hay còn được gọi là số lần viếng thăm (Visit Number) của một khách hàng tại trung tâm k.
+        </li>
+        <li>
+            Đầu ra của mô hình là các tham số đặc trưng của mô hình và thông qua giá trị của nó mà người ta có thể đánh giá được mô hình
+        </li>
+        <li>Các tham số chung:
+            <ul>
+                <li>R: Thời gian đáp ứng (Response Time) trung bình của mạng.</li>
+                <li>X: Lưu lượng trung bình thông qua mạng (Network
+                    Throughput)</li>
+                <li>Q: Số khách hàng trung bình trên toàn mạng</li>
+            </ul>
+        </li>
+        <li>Các tham số riêng trên từng trung tâm phục vụ:
+            <ul>
+                <li>U: Chỉ số sử dụng trung tâm thứ k</li>
+                <li>R<sub>k</sub>: Thời gian lưu trú (Residence Time) trung bình của một</li>
+                <li>X. Lưu lượng trung bình (Throughput) số khách hàng hoàn
+                    trung tâm | tất dịch vụ tại trung tâm thứ k, hay còn được gọi là
+                    lưu lượng phục vụ thông qua trung tâm thứ k.</li>
+                <li>Q<sub>k</sub>: Độ dài hàng trung bình (Queue Length) tại trung tâm thứ k.</li>
+            </ul>
+        </li>
+        <li>Các tham số đầu ra phụ thuộc vào các tham số đầu vào và đặc
+            biệt là phụ thuộc vào cường độ lưu lượng ở đầu vào.
+            <ul>
+                <li>Nếu cường độ lưu lượng đầu vào là N (số khách hàng trong hệ
+                    thống) thì lưu lượng thông qua mạng được tính thông qua
+                    hàm số X(N).</li>
+                <li>Nếu cường độ lưu lượng là X thì ta lại có số lượng khách hàng
+                    trong mạng N = Q lại là hàm số dưới dạng Q(X).</li>
+            </ul>
+        </li>
+        <li>Chỉ số sử dụng (Utilisation) U<sub>k</sub> là tỷ lệ thời gian bận của trạm phục vụ tại trung tâm thứ k. Nếu T là khoảng thời gian quan sát và B<sub>k</sub> là tổng thời gian "bận" của Trung tâm trong khoảng T. Từ cách nhìn khác thì By cũng là tổng thời gian phục vụ tất cả các khách hàng, khi đó: U = B<sub>k</sub>/T</li>
+        <li>Thời gian lưu trú (Residence Time) và thời gian đáp ứng (Response Time): <br>
+            Nếu xét trên một mạng đơn với một trung tâm phục vụ thì thời gian lưu trú gồm thời gian chờ và thời gian được phục vụ cũng chính là thời gian một khách hàng phải bỏ ra để hoàn tất yêu cầu của mình trên mạng và đây cũng là thời gian đáp ứng của mạng cho một khách hàng. Nhưng nếu mạng gồm nhiều trung tâm dịch vụ thì tại trung tâm thứ k thời gian lưu trú tại đây Ra lại là tổng thời gian khách hàng phải bỏ ra tại trung tâm thứ k.</li>
+        <li>Thời gian đáp ứng của mạng cho khách hàng là tổng của tất cả các thời gian lưu trú tại tất cả các trung tâm trong mạng.</li>
+        <li>Lưu lượng thông qua mạng: đại lượng này có dạng rất đơn giản trong trường hợp của mạng đơn. Trong trường hợp tổng quát thì lưu lượng này không rõ ràng vì bị thay đổi thông qua mỗi trung tâm trên mạng. Giả sử nếu từ các dữ liệu đầu vào tính được thời gian đáp ứng trên mạng là R thì theo luật Little ta có thể suy ra ngay X = Q/R. Trong nhiều trường hợp mô hình đầu vào chỉ có Dk (tổng thời gian phục vụ một khách hàng tại trung tâm thứ k) khi đó ta chỉ tính được D, sau đó Q và X mà không thể tính được lưu lượng X<sub>k</sub></li>
+        <li>Để tính được lưu lượng thông qua tại trung tâm thứ k thì mô hình đầu vào phải có: V<sub>k</sub> và S<sub>k</sub>. Khi đó, luật ép luồng (Forced Flow Law) được áp dụng tại trung tâm k: X = V<sub>k</sub>X</li>
+        <li>(4) Độ dài hàng (Queue Length): độ dài hàng tại trung tâm thứ k (Q) là cách gọi khác của số lượng khách hàng trong trung tâm thứ k bao gồm cả khách hàng xếp hàng và khách hàng được phục vụ. Giả sử Q là số lượng khách hang trung bình trên toàn mạng. Ta có thể tính được Q trong từng trường hợp đặc thù của mạng:
+            <ul>
+                <li>Mạng với lưu lượng lô (Batch Workload): Q=N (mô hình đầu vào).</li>
+                <li>Mạng với lưu lượng giao dịch (Transaction Workload): Q (luật Little).</li>
+            </ul>
+        </li>
+        <li>Mạng với trung tâm có độ trễ (Delay Sevice Center) hay mạng đóng Q=N-XZ, do Q=XR, còn R = NX - Z. Nếu đặt T là thời gian lưu trú Gorden & Newell với N khách hàng đầu cuối (N Terminals). của khách hàng ở trong hệ thống thì theo luật Little: T = N/X và ta cũng có: R = T-Z</li>
+    </ul>
+
+    <h2>Tình huống: Máy tính với hai thiết bị ngoại vi</h2>
+    <ul>
+        <li>Xét một mạng máy tính kết nối máy tính chủ với 2 thiết bị ngoại vi, đĩa cứng lưu dữ liệu và Máy in.</li>
+        <li>Mỗi giao dịch có thể sinh các giao dịch con tới các thiết bị ngoại vi. Các giao dịch con này còn được gọi là truy cập (Access). Số lần truy cập trung bình trên một giao dịch tại một thiết bị có thể hiểu là số lần viếng thăm của giao dịch đó.</li>
+        <li>Mỗi giao dịch tại máy chủ sinh trung bình V = 20 truy cập (Access) đĩa dữ liệu. Chỉ số sử dụng của đĩa là U, = 50%. Thời gian xử lý trung bình một truy cập tại đĩa là: S=0,025 s. Có N 25 giao dịch sử dụng đầu cuối. Thời gian “suy nghĩ” trung bình của một giao dịch đầu cuối là: Z=18s Tính cường độ lưu lượng Xo tại máy chủ, thời gian đáp ứng R của mạng và số lượng giao dịch Q lưu thông trên Mạng.
+            <center>
+                <img style="width: 100%;" src="./assets/img/LTXH/chuong36.jpg" alt="">
+            </center>
+        </li>
+        <li>
+            X = X<sub>0</sub> và N = Q + M
+            <br>
+            Theo luật ép luồng X<sub>1</sub> = V<sub>1</sub>X<sub>0</sub>
+            <br>
+            X<sub>0</sub> = X<sub>1</sub>/V<sub>1</sub> = U<sub>1</sub>/S<sub>1</sub>.V<sub>1</sub>
+            <br>
+            X<sub>0</sub> = 0.5/0.025x20 = 1 (giao dịch)
+            <br>
+            R = N/X<sub>0</sub> - Z = (25/1)-18 = 7s và Q = X<sub>0</sub>R = 7 giao dịch
+        </li>
+        <li>Dữ liêu đầu vào
+            <ul>
+                <li>Khi mạng các hàng chờ chấp nhận nhiều thành phần khách hàng thì các trung tâm phục vụ phải chia sẻ phục vụ cho các thành phần khách hàng khác nhau. Trường hợp này mạng còn được gọi là Mạng đa lớp hay còn được gọi Hệ thống chia sẻ thời gian phục vụ (Time Sharing System).</li>
+                <li>Như vậy, mô hình Mạng da lớp là một mô hình mạng liên kết các trung tâm phục vụ để cùng chia sẻ thời gian phục vụ cho nhiều lớp khách hàng khác nhau. Khách hàng đầu vào được phân ra C lớp khác nhau.</li>
+                <li>Lớp khách hàng thứ c có cường độ lưu lượng riêng: Xo, hay No, hay N. và Z; và thời gian phục vụ tại trung tâm thứ k: Dak. Như vậy mô hình Mạng đa lớp đều có thể xét trong từng trường hợp mạng mở (Opened Network) với lưu lượng giao dịch, hay mạng đóng (Closed Network) với lưu lượng lô hoặc có độ trễ, hay mạng hỗn hợp vừa mở vừa đóng (Mixed Network).
+                </li>
+                <li>Như vậy: cường độ lưu lượng của mỗi lớp được phân thành bốn dạng dẫn đến cường độ lưu lượng của tất cả các lớp sẽ là các vector dưới bốn dạng:
+                    <ul>
+                        <li>Trường hợp mạng đa lớp với lưu lượng giao dịch: X = (X<sub>1</sub>,...,X<sub>c</sub>)</li>
+                        <li>Trường hợp mạng đa lớp với lưu lượng lô: N = (N<sub>1</sub>,...,N<sub>c</sub>)</li>
+                        <li>Trường hợp mạng đa lớp với N đầu cuối có độ trễ: N = (N<sub>1</sub>, ..., N<sub>c</sub>) và Z(Z<sub>1</sub>,...,Z<sub>c</sub>)</li>
+                        <li>Trường hợp mạng đa lớp hỗn hợp: I=N hoặc X hoặc Z.</li>
+                    </ul>
+                </li>
+                <li>Kết quả các tham số đầu vào: Khách hàng (C, X<sub>c</sub>, N<sub>c</sub>, Z<sub>c</sub>), Trung tâm phục vụ (K), Yêu cầu phục vụ (D<sub>c,k</sub> = V<sub>c,k</sub>S<sub>c,k</sub></li>
+                <li>Tham số đầu ra:
+                    <ul>
+                        <li>Tham số chung trên toàn mạng:
+                            <ul>
+                                <li>Tổng hợp các lớp: R, X, Q</li>
+                                <li>Riêng từng lớp: R<sub>c</sub>, X<sub>c</sub>, Q<sub>c</sub></li>
+                            </ul>
+                        </li>
+                        <li>Tham số riêng trên từng trung tâm phục vụ:
+                            <ul>
+                                <li>Tổng hợp các lớp tại trung tâm k (U<sub>k</sub>, R<sub>k</sub>, X<sub>k</sub>, Q<sub>k</sub>)</li>
+                                <li>Riêng từng lớp tại trung tâm k (U<sub>c,k</sub>, R<sub>c,k</sub>, X<sub>c,k</sub>, Q<sub>k</sub>)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Ứng dụng mô hình xếp hàng</h2>
+    <ul>
+        <li>Như đã thấy trong trường hợp mạng đơn với một hàng chờ, mô hình của mạng đơn và
+            mô hình xếp hàng là như nhau và chỉ khác ký hiệu, do đó ta đã xây dựng bảng đối chiếu
+            ký hiệu để thuận tiện cho việc ứng dụng mô hình xếp hàng trong tính toán</li>
+        <li>Trường hợp tổng quát, người ta cũng có thể tính được các tham số đầu ra dựa vào một
+            số luật cơ bản: luật về chỉ số sử dụng, luật Little, luật ép luồng và luật cân bằng luồng Ở
+            các phần ví dụ về tính toán các tham số đầu ra của mạng, chúng ta phải sử dụng cường
+            độ lưu lượng theo lô đổi với mạng đóng. Do dữ liệu đầu vào của mạng đóng đã có N số
+            khách hang trung bình trong hệ thống nên dễ dàng suy ra thời gian đáp ứng của mạng.</li>
+        <li>Nhưng đối với trường mạng mở thì vấn đề này trở nên phức tạp không dễ dàng tính
+            toán thời gian đáp ứng chỉ dựa vào một số luật cơ bản. Điều này dẫn đến phương pháp
+            đưa mô hình xếp hàng vào hỗ trợ tính toán các tham số cho một mạng bất kỳ các hàng
+            chờ.</li>
+        <li>Bảng đối chiếu các tham số
+            <center>
+                <img style="width: 100%;" src="./assets/img/LTXH/chuong37.jpg" alt="chuong37">
+            </center>
+        </li>
+    </ul>
+
+    <h2>Ví dụ</h2>
+    <p>Một luồng gói đến một thiết bị chuyển mạch gói với tốc độ trung bình là 180 packets/minute. Chiều dài gói trung bình là 1000 byte. Tốc độ của dòng số đầu ra là 20000byte/s. Giả thiết dung lượng đệm là đủ lớn. Hãy tính thời gian trễ trung bình tại hệ thống, số bản tin trung bình trong mỗi hệ thống, chiều dài hàng đợi và thời gian đợi trung bình. Hãy tính tốc độ đến 𝜆, thời gian phục vụ trung bình 𝜇, mật độ lưu lượng 𝜑, thời gian trong hệ thống,</p>
+    
+    <h2>Ý nghĩa một số ký hiệu</h2>
+    <center>
+        <img style="width: 100%;" src="./assets/img/LTXH/chuong38.jpg" alt="chuong38">
+    </center>
+
+    <h2>Gợi ý</h2>
+    <ul>
+        <li>Tốc độ đến &lambda; = 240/60= 4 </li>
+        <li>Thời gian phục vụ trung bình &micro;=500/100=5</li>
+        <li>Mật độ lưu lượng &phi;=&lambda;/&micro;=4/5=0.8</li>
+        <li>Số bản tin trong hệ thống: <span style="border-top: 1px solid black;">n</span>=(1/1-&phi;)*(0.8/1-0.8)=4</li>
+        <li>Thời gian trong hệ thống = <span style="border-top: 1px solid black;">t</span>=<span style="border-top: 1px solid black;">n</span>/&lambda;=4/4=1</li>
+        <li>Chiều dài hàng đợi: &phi;<sup>2</sup>/1-&phi; = 3.2</li>
+    </ul>
 </body>
-
 
 </html>
