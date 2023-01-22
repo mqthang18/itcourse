@@ -448,7 +448,32 @@ const Subject = [
         chapter: {
             LTXH1: {
                 'title': 'Tổng quan về lý thuyết xếp hàng',
-                'outside': ``,
+                'outside': `
+                    <h4>Mục tiêu</h4>
+                    <ul>
+                        <li>Hiểu và nắm vững các khái niệm lý thuyết xếp hang, xích Markov
+                            và các định nghĩa, đặc trưng của phân phối xác xuất.</li>
+                        <li>Nắm cơ bản các phương pháp dự báo và đồ thị cân bằng</li>
+                    </ul>
+                    <h4>Nội dung</h4>
+                    <ol>
+                        <li>Khái niệm
+                            <ul>
+                                <li>Lý thuyết xếp hàng</li>
+                                <li>Xích Markov</li>
+                                <li>Các khái niệm xác xuất cơ bản</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Các phương pháp
+                            <ul>
+                                <li>Hệ thức Chapman-Kolmogorov và dự báo ngắn hạn</li>
+                                <li>Phân phối dừng và dự báo dài hạn</li>
+                            </ul>
+                        </li>
+                        <li>Phương pháp Đồ thị cân bằng ngẫu nhiên</li>
+                    </ol>
+                `,
                 'tableContent': LTXH01 
             },
             LTXH2: {
@@ -473,7 +498,18 @@ const Subject = [
             },
             LTXH3: {
                 title: 'Phân tích và đánh giá hệ thống',
-                outside: ``,
+                outside: `
+                <h2>Mục tiêu</h2>
+                <p>Hiểu được các tham số, các yếu tố ảnh hưởng đến một hệ thống hàng chờ thông qua một số ví dụ cụ thể</p>
+                <h2>Nội dung</h2>
+                <ol>
+                    <li>Mô hình mạng các hàng chờ</li>
+                    <li>Mạng đơn với 1 hàng chờ</li>
+                    <li>Mạng đa liên kết các trung tâm phục vụ</li>
+                    <li>Mô hình mạng đa lớp</li>
+                    <li>Ứng dụng mô hình xếp hàng</li>
+                </ol>
+                `,
                 tableContent: LTXH03
             }
         }
