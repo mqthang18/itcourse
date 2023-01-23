@@ -2,9 +2,7 @@
 
 var subjectTemplate = `
 <div id="subject" class="bg-light min-vh-30 rounded">
-    
     <div v-for="subject in Subjects">
-
         <button :id="'btn'+subject.id" type="button" class="btn btn-light w-100" v-on:click="collapsible('btn'+subject.id, subject.id)">
         <i class="fa fa-angle-right"></i>
         <a :href="'#'+subject.id" class="text-decoration-none">{{subject.label}}</a>
@@ -511,6 +509,81 @@ const Subject = [
                 </ol>
                 `,
                 tableContent: LTXH03
+            }
+        }
+    }, 
+    {
+        id: 'TMDT',
+        outside: `
+            <h2>Tình huống khởi động bài</h2>
+            <div id="TinhHuongKhoiDong">
+                <p>Theo Hiệp hội Thương mại điện tử Việt Nam (VECOM), thương mại điện tử nước ta năm 2020 tăng trưởng
+                    khoảng 15% so với 2019, đạt quy mô khoảng 13,2 tỷ USD và tiếp tục tăng trưởng vững chắc trong năm 2021
+                    ở mức trên 30% và đạt quy mô 15 tỷ USD. Tốc độ tăng trưởng trung bình của thương mại điện tử giai đoạn
+                    2016 – 2019 khoảng 30%</p>
+                <p>Theo Báo cáo Thương mại điện tử Đông Nam Á 2020 của Google, Temasek và Bain&Company, thương mại
+                    điện tử Việt Nam năm 2020 tăng 16% và đạt quy mô trên 14 tỷ USD. Trong đó, lĩnh vực bán lẻ hàng hóa trực
+                    tuyến tăng 46%, gọi xe và đồ ăn công nghệ tăng 34%, tiếp thị, giải trí và trò chơi trực tuyến tăng 18%, riêng
+                    lĩnh vực du lịch trực tuyến giảm 28%. Báo cáo này cũng dự đoán tốc độ tăng trưởng trung bình giai đoạn 2020
+                    – 2025 là 29% và tới năm 2025 quy mô thương mại điện tử nước ta đạt 52 tỷ USD.</p>
+                <p>Theo Hội thẻ Ngân hàng Việt Nam, doanh số thanh toán chi tiêu theo kênh thương mại điện tử sáu tháng đầu
+                    năm 2020 tăng trưởng 17%. Trong đó, doanh số thanh toán chi tiêu thẻ nội địa theo kênh thương mại điện tử
+                    tăng tới 81%. Ngược lại, chi tiêu thẻ quốc tế tại kênh thương mại điện tử giảm 16%.
+                    Câu hỏi: Lĩnh vực bán lẻ trực tuyến gọi xe, đồ ăn được thực hiện thông qua hệ thống mạng Internet, Intranet
+                    hay Extranet?
+                    2</p>
+            </div>
+            
+            <h2>Mục tiêu bài học</h2>
+            <ul>
+                <li>Hiểu được thế nào là giao dịch thương mại điện tử</li>
+                <li>Nắm được các cách phân loại thương mại điện tử</li>
+                <li>Hiểu các điều kiện để thương mại điện tử phát triển được</li>
+                <li>Biết phân biệt và áp dụng các mô hình doanh thu thương mại điện tử</li>
+                <li>Hiểu các giai đoạn phát triển của thương mại điện tử.</li>
+            </ul>
+        
+            <h2>Cấu trúc nội dung</h2>
+            <div>
+                <p>1.1. Định nghĩa và đặc trưng của thương mại điện tử</p>
+                <p>1.2. Các loại hình giao dịch trong thương mại điện tử</p>
+                <p>1.3. Lợi ích và hạn chế của thương mại điện tử</p>
+                <p>1.4. Ảnh hưởng của thương mại điện tử</p>
+                <p>1.5. Điều kiện để phát triển thương mại điện tử</p>
+            </div>
+    
+        `,
+        label: 'Thương mại điện tử',
+        chapter: {
+            TMDT1: {
+                'title': 'Tổng quan về thương mại điện tử',
+                'outside': ``,
+                'tableContent': TMDT01
+            },
+            TMDT2: {
+                'title': 'Nền tảng hạ tầng của thương mại điện tử',
+                'outside': ``,
+                'tableContent': TMDT02
+            },
+            TMDT3: {
+                'title': 'Các mô hình kinh doanh trong thương mại điện tử',
+                'outside': ``,
+                'tableContent': TMDT03
+            },
+            TMDT4: {
+                'title': 'Thanh toán trong thương mại điện tử',
+                'outside': ``,
+                'tableContent': TMDT04
+            },
+            TMDT5: {
+                'title': 'Chiến lược kinh doanh thương mại điện tử và marketing trực tuyến',
+                'outside': ``,
+                'tableContent': TMDT05
+            },
+            TMDT6: {
+                'title': 'An ninh/an toàn thương mại điện tử',
+                'outside': ``,
+                'tableContent': TMDT06
             }
         }
     }
