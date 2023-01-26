@@ -514,75 +514,244 @@ const Subject = [
     }, 
     {
         id: 'TMDT',
-        outside: `
-            <h2>Tình huống khởi động bài</h2>
-            <div id="TinhHuongKhoiDong">
-                <p>Theo Hiệp hội Thương mại điện tử Việt Nam (VECOM), thương mại điện tử nước ta năm 2020 tăng trưởng
-                    khoảng 15% so với 2019, đạt quy mô khoảng 13,2 tỷ USD và tiếp tục tăng trưởng vững chắc trong năm 2021
-                    ở mức trên 30% và đạt quy mô 15 tỷ USD. Tốc độ tăng trưởng trung bình của thương mại điện tử giai đoạn
-                    2016 – 2019 khoảng 30%</p>
-                <p>Theo Báo cáo Thương mại điện tử Đông Nam Á 2020 của Google, Temasek và Bain&Company, thương mại
-                    điện tử Việt Nam năm 2020 tăng 16% và đạt quy mô trên 14 tỷ USD. Trong đó, lĩnh vực bán lẻ hàng hóa trực
-                    tuyến tăng 46%, gọi xe và đồ ăn công nghệ tăng 34%, tiếp thị, giải trí và trò chơi trực tuyến tăng 18%, riêng
-                    lĩnh vực du lịch trực tuyến giảm 28%. Báo cáo này cũng dự đoán tốc độ tăng trưởng trung bình giai đoạn 2020
-                    – 2025 là 29% và tới năm 2025 quy mô thương mại điện tử nước ta đạt 52 tỷ USD.</p>
-                <p>Theo Hội thẻ Ngân hàng Việt Nam, doanh số thanh toán chi tiêu theo kênh thương mại điện tử sáu tháng đầu
-                    năm 2020 tăng trưởng 17%. Trong đó, doanh số thanh toán chi tiêu thẻ nội địa theo kênh thương mại điện tử
-                    tăng tới 81%. Ngược lại, chi tiêu thẻ quốc tế tại kênh thương mại điện tử giảm 16%.
-                    Câu hỏi: Lĩnh vực bán lẻ trực tuyến gọi xe, đồ ăn được thực hiện thông qua hệ thống mạng Internet, Intranet
-                    hay Extranet?
-                    2</p>
-            </div>
-            
-            <h2>Mục tiêu bài học</h2>
-            <ul>
-                <li>Hiểu được thế nào là giao dịch thương mại điện tử</li>
-                <li>Nắm được các cách phân loại thương mại điện tử</li>
-                <li>Hiểu các điều kiện để thương mại điện tử phát triển được</li>
-                <li>Biết phân biệt và áp dụng các mô hình doanh thu thương mại điện tử</li>
-                <li>Hiểu các giai đoạn phát triển của thương mại điện tử.</li>
-            </ul>
-        
-            <h2>Cấu trúc nội dung</h2>
-            <div>
-                <p>1.1. Định nghĩa và đặc trưng của thương mại điện tử</p>
-                <p>1.2. Các loại hình giao dịch trong thương mại điện tử</p>
-                <p>1.3. Lợi ích và hạn chế của thương mại điện tử</p>
-                <p>1.4. Ảnh hưởng của thương mại điện tử</p>
-                <p>1.5. Điều kiện để phát triển thương mại điện tử</p>
-            </div>
-    
-        `,
         label: 'Thương mại điện tử',
         chapter: {
             TMDT1: {
-                'title': 'Tổng quan về thương mại điện tử',
-                'outside': ``,
-                'tableContent': TMDT01
+                title: 'Tổng quan về thương mại điện tử',
+                outside: `
+                    <h2>Tình huống khởi động bài</h2>
+                    <div id="TinhHuongKhoiDong">
+                        <p>Theo Hiệp hội Thương mại điện tử Việt Nam (VECOM), thương mại điện tử nước ta năm 2020 tăng trưởng
+                            khoảng 15% so với 2019, đạt quy mô khoảng 13,2 tỷ USD và tiếp tục tăng trưởng vững chắc trong năm 2021
+                            ở mức trên 30% và đạt quy mô 15 tỷ USD. Tốc độ tăng trưởng trung bình của thương mại điện tử giai đoạn
+                            2016 – 2019 khoảng 30%</p>
+                        <p>Theo Báo cáo Thương mại điện tử Đông Nam Á 2020 của Google, Temasek và Bain&Company, thương mại
+                            điện tử Việt Nam năm 2020 tăng 16% và đạt quy mô trên 14 tỷ USD. Trong đó, lĩnh vực bán lẻ hàng hóa trực
+                            tuyến tăng 46%, gọi xe và đồ ăn công nghệ tăng 34%, tiếp thị, giải trí và trò chơi trực tuyến tăng 18%, riêng
+                            lĩnh vực du lịch trực tuyến giảm 28%. Báo cáo này cũng dự đoán tốc độ tăng trưởng trung bình giai đoạn 2020
+                            – 2025 là 29% và tới năm 2025 quy mô thương mại điện tử nước ta đạt 52 tỷ USD.</p>
+                        <p>Theo Hội thẻ Ngân hàng Việt Nam, doanh số thanh toán chi tiêu theo kênh thương mại điện tử sáu tháng đầu
+                            năm 2020 tăng trưởng 17%. Trong đó, doanh số thanh toán chi tiêu thẻ nội địa theo kênh thương mại điện tử
+                            tăng tới 81%. Ngược lại, chi tiêu thẻ quốc tế tại kênh thương mại điện tử giảm 16%.
+                            Câu hỏi: Lĩnh vực bán lẻ trực tuyến gọi xe, đồ ăn được thực hiện thông qua hệ thống mạng Internet, Intranet
+                            hay Extranet?
+                            2</p>
+                    </div>
+                    
+                    <h2>Mục tiêu bài học</h2>
+                    <ul>
+                        <li>Hiểu được thế nào là giao dịch thương mại điện tử</li>
+                        <li>Nắm được các cách phân loại thương mại điện tử</li>
+                        <li>Hiểu các điều kiện để thương mại điện tử phát triển được</li>
+                        <li>Biết phân biệt và áp dụng các mô hình doanh thu thương mại điện tử</li>
+                        <li>Hiểu các giai đoạn phát triển của thương mại điện tử.</li>
+                    </ul>
+                
+                    <h2>Cấu trúc nội dung</h2>
+                    <div>
+                        <p>1.1. Định nghĩa và đặc trưng của thương mại điện tử</p>
+                        <p>1.2. Các loại hình giao dịch trong thương mại điện tử</p>
+                        <p>1.3. Lợi ích và hạn chế của thương mại điện tử</p>
+                        <p>1.4. Ảnh hưởng của thương mại điện tử</p>
+                        <p>1.5. Điều kiện để phát triển thương mại điện tử</p>
+                    </div>
+            
+                `,
+                tableContent: TMDT01
             },
             TMDT2: {
-                'title': 'Nền tảng hạ tầng của thương mại điện tử',
-                'outside': ``,
-                'tableContent': TMDT02
+                title: 'Nền tảng hạ tầng của thương mại điện tử',
+                outside: `
+                    <h2>Tính huống khởi động bài</h2>
+                    <ul>
+                        <li>Amazon là một công ty công nghệ quốc gia của Mỹ được thành lập vào năm 1994 tại Bellevue, Washington
+                            do Jeff Bezos sáng lập, tập trung chủ yếu vào các hoạt động thương mại điện tử, trí tuệ nhân tạo cũng như
+                            điện toán đám mây. Ngày nay, Amazon được xem là một trong 4 ông lớn của công nghệ thế giới, bên cạnh
+                            Google, Apple và Facebook.</li>
+                        <li>Ban đầu từ mảng bán sách, Amazon đã mở rộng thêm đa dạng lĩnh vực từ bán sách trực tuyến, cung cấp
+                            video, âm thanh (mp3), audiobook,... đến các sản phẩm công nghệ như phần mềm, trò chơi, đồ may mặc,
+                            thực phẩm, trang sức,... Từ một nhà sách trực tuyến phục vụ nhu cầu mua bán và trao đổi hàng hóa trên
+                            internet, sau nhiều năm phát triển, giờ đây, Amazon đã trở thành một trong các công ty hàng đầu về lĩnh
+                            vực thương mại điện tử đa quốc gia trên toàn thế giới</li>
+                        <li>Hiện nay, “Amazon” đã trở thành một trong những tập đoàn bán lẻ trực tuyến hàng đầu thế giới nổi tiếng
+                            trên toàn thế giới, với doanh số bán hàng chiếm khoảng 44% tổng doanh số thương mại điện tử tại Hoa Kỳ.</li>
+                        <li>Cơ sở hạ tầng đám mây toàn cầu AWS là nền tảng đám mây bảo mật, rộng lớn và đáng tin cậy nhất, cung
+                            cấp trên 200 dịch vụ với đầy đủ tính năng từ các trung tâm dữ liệu trên toàn cầu.
+                            <br>
+                            Câu hỏi: AWS là gì?
+                        </li>
+                    </ul>
+                
+                    <h2>Mục tiêu bài học</h2>
+                    <ul>
+                        <li>Hiểu về mạng máy tính, các loại mạng máy tính, mạng Internet và một số thuật ngữ về internet ứng dụng trong thương mại điện tử</li>
+                        <li>Biết và trình bày được những nguyên lý cơ bản về xây dựng hệ thống website thương mại điện tử trong doanh nghiệp.</li>
+                        <li>Hiểu và phân biệt được một số mô hình website thương mại điện tử và website bán hàng điển hình.</li>
+                        <li>Hiểu và trình bày được quy trình xây dựng kế hoạch kinh doanh điện tử.</li>
+                        <li>Thực hành xây dựng website bằng wordpress.</li>
+                    </ul>
+
+                    <h2>Cấu trúc nội dung</h2>
+                    <div>
+                        <p>2.1. Tổng quan về cơ sở hạ tầng của thương mại điện tử</p>
+                        <p>2.2. Hạ tầng công nghệ của thương mại điện tử</p>
+                        <p>2.3. website thương mại điện tử</p>
+                        <p>2.4. Ứng dụng wordpress xây dựng website thương mại điện tử</p>
+                    </div>
+                `,
+                tableContent: TMDT02
             },
             TMDT3: {
                 'title': 'Các mô hình kinh doanh trong thương mại điện tử',
-                'outside': ``,
+                'outside': `
+                    <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
+                    <div>
+                    <p>Thương mại điện tử Tiki kinh doanh theo mô hình kết nối giữa doanh nghiệp, người bán hàng nhỏ lẻ với người
+                        tiêu dùng nhằm tạo sự nhanh chóng, thuận tiện, tiết kiệm thời gian cho quá trình mua sắm trực tuyến.</p>
+                    <p>Trên thương mại điện tử Tiki hiện nay có rất nhiều cá nhân, doanh nghiệp, các nhãn hàng, thương hiệu với đủ
+                        sản phẩm khác nhau tham gia kinh doanh.</p>
+                    <p>Khách hàng có thể dễ dàng thấy một sản phẩm cùng lúc nhưng với các mức giá khác nhau. Do đó, dù là mua
+                        sắm offline hay online, người tiêu dùng cần tìm hiểu kỹ các thông tin sản phẩm, xem review, bình luận từ
+                        những người mua trước để tránh mua sản phẩm kém chất lượng.</p>
+                    <p>Về phía Tiki cũng đã và đang kiểm soát chặt chẽ về chất lượng sản phẩm của người bán. Đồng thời cũng gợi
+                        ý những thương hiệu, nhãn hàng được kiểm duyệt để giúp khách hàng yên tâm hơn.</p>
+                    <p>Câu hỏi: Mô hình của Tiki là mô hình kinh doanh nào?</p>
+                    </div>
+                
+                    <h2>MỤC TIÊU BÀI HỌC</h2>
+                    <ul>
+                    <li>Giúp sinh viên hiểu về loại hình kinh doanh B2C, B2B, B2C.</li>
+                    <li>Hiểu thế nào là giao dịch TMĐT B2C.</li>
+                    <li>Hiểu được các yếu tố thúc đẩy phát triển TMĐT B2B.</li>
+                    <li>Hiểu được bản chất khái niệm TMĐT B2B.</li>
+                    <li>Biết cách tìm hiểu thông tin về giao dịch TMĐT B2C của Việt Nam và thế giới.</li>
+                    <li>Nắm bắt được các loại công nghệ ứng dụng trong giao dịch điện tử bán lẻ.</li>
+                    <li>Nắm bắt xu hướng biến đổi trong giao dịch điện tử bán lẻ B2C.</li>
+                    <li>Nắm được những ưu điểm, nhược điểm của giao dịch B2B.</li>
+                    <li>Ứng dụng TMĐT B2B trong các hoạt động TMQT.</li>
+                    </ul>
+                
+                    <h2>CẤU TRÚC NỘI DUNG</h2>
+                    <div>
+                    <p>3.1 Thị trường trong thương mại điện tử</p>
+                    <p>3.2 Một số mô hình kinh doanh chủ yếu trong thương mại điện tử B2C</p>
+                    <p>3.3 Một số mô hình kinh doanh chủ yếu trong thương mại điện tử B2B</p>
+                    <p>3.4 Chính phủ điện tử</p>
+                    </div>
+                `,
                 'tableContent': TMDT03
             },
             TMDT4: {
                 'title': 'Thanh toán trong thương mại điện tử',
-                'outside': ``,
+                'outside': `
+                    <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
+                    <div>
+                        <p>Nhằm giảm thiểu ô nhiễm môi trường và giải quyết vấn đề tắc nghẽn giao thông, Ủy ban nhân dân Thành phố
+                            Hà Nội phát động chương trình “Tháng không khói xe”. Căn cứ vào chương trình này, công ty sản xuất xe đạp
+                            A đã cung cấp dịch vụ cho thuê xe đạp trực tuyến. Công ty A triển khai dịch vụ này tới 30 điểm cho thuê trong
+                            nội thành Hà Nội, khách hàng có nhu cầu thuê xe đạp sẽ lên website để xem kiểu dáng sản phẩm, điểm thuê
+                            nào phù hợp nhất với lộ trình, điều kiện thuê và chi phí, các điều kiện và điều khoản trong hợp đồng ký kết...
+                            sau đó sẽ kê khai thông tin chi tiết và ký hợp đồng thuê xe</p>
+                        <p><b>Câu hỏi</b></p>
+                        <p>Các hình thức thanh toán trực tuyến nào có thể được công ty A sử dụng để chấp nhận thanh toán từ phía
+                            khách hàng và thực hiện hợp đồng?</p>
+                    </div>
+                    
+                    <h2>MỤC TIÊU BÀI HỌC</h2>
+                    <ul>
+                        <li>Xác định được các công cụ/công nghệ sử dụng trong thanh toán trực tuyến, các rủi ro có thể xảy ra</li>
+                        <li>Hiểu được giao dịch thanh toán thẻ, các thương hiệu thẻ quốc tế, và hệ thống vận hành giao dịch sử dụng thẻ</li>
+                    </ul>
+                
+                    <h2>CẤU TRÚC NỘI DUNG</h2>
+                    <div>
+                        <p>4.1 Các công cụ thanh toán trực tuyến</p>
+                        <p>4.2 Thẻ thanh toán</p>
+                        <p>4.3 Các công cụ thanh toán khác</p>
+                    </div>
+                `,
                 'tableContent': TMDT04
             },
             TMDT5: {
                 'title': 'Chiến lược kinh doanh thương mại điện tử và marketing trực tuyến',
-                'outside': ``,
+                'outside': `
+                    <h2>Tình huống khởi động bài</h2>
+                    <div>
+                        <p>Tequila Cascahuin được thành lập năm 1904 tại Jalisco, Mexico. Năm 1999 công ty sử dụng 80 lao động, chủ yếu
+                            phục vụ công việc trồng cây và chưng cất tinh dầu. Vào giữa năm 1998, công ty đưa lên mạng một website có hai
+                            ngôn ngữ là Tiếng Anh và Tây Ban Nha và khuếch trương bằng cách giới thiệu nó cho các phòng thương mại, các
+                            trung tâm thương mại thế giới và các nhà nhập khẩu. Website của công ty cũng được đăng ký trên các danh bạ về
+                            ngành rượu bia. Trong vòng một năm, công ty đã giành được nhiều khách hàng mới từ Achentina, Trung Quốc,
+                            Pháp, Philippine, Mỹ với kết quả là doanh số bán hàng bổ sung lên tới 3,5 triệu USD/năm.</p>
+                        <ul>
+                            <li>Điểm mạnh: Được công nhận và ổn định như một doanh nghiệp có tiếng tăm ở Mexico cung cấp loại rượu Tequila
+                                tốt nhất</li>
+                            <li>Điểm yếu: Nhận thư điện tử mất nhiều thời gian, nhưng chiến lược thư điện tử cũng lại là nguyên nhân cho sự
+                                thành công của công ty.</li>
+                            <li>Cơ hội: Mở rộng hoạt động của công ty thông qua việc sử dụng Internet và tiếp thị bằng thư điện tử</li>
+                            <li>Thách thức: Ngày càng có nhiều công ty hiểu ra sức mạnh của chiến lược tiếp thị bằng thư điện tử và điều đó làm
+                                cho chiến lược của công ty không còn là độc nhất nữa và hiệu quả của nó sẽ giảm đi</li>
+                        </ul>
+                        <p>Câu hỏi: Công ty Tequila Cascahuin đã sử dụng kỹ thuật chiến lược nào để làm rõ mục tiêu đầu tư và xác định
+                            những yếu tố khách quan – chủ quan có thể ảnh hưởng đến quá trình đạt được mục tiêu đó?</p>
+                    </div>
+                    
+                    <h2>Mục tiêu bài học</h2>
+                    <ul>
+                        <li>Hiểu được khái niệm về chiến lược kinh doanh thương mại điện tử trong doanh nghiệp.</li>
+                        <li>Biết được chu trình xây dựng chiến lược trong doanh nghiệp.</li>
+                        <li>Áp dụng được các mô hình phân tích các yếu tố ảnh hưởng đến hoạt động kinh doanh thương mại điện tử
+                        của doanh nghiệp.</li>
+                        <li>Hiểu được marketing trực tuyến ảnh hưởng như thế nào tới chiến lược kinh doanh thương mại điện tử.</li>
+                        <li>Triển khai được một số hoạt động liên quan đến marketing trực tuyến</li>
+                    </ul>
+                    
+                    <h2>Cấu trúc nội dung</h2>
+                    <div>
+                        <p>5.1 Chiến lược kinh doanh thương mại điện tử</p>
+                        <p>5.2 Phân tích thị trường</p>
+                        <p>5.3 Marketing trực tuyến</p>
+                        <p>5.4 Mối quan hệ giữa thương mại điện tử và marketing trực tuyến</p>
+                    </div>
+                `,
                 'tableContent': TMDT05
             },
             TMDT6: {
                 'title': 'An ninh/an toàn thương mại điện tử',
-                'outside': ``,
+                'outside': `                
+                    <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
+                    <div>
+                        <p>Trong bài nghiên cứu đăng trên trang web của Viện Chính sách công và các vấn đề toàn cầu của Canada,
+                            Ông Pesic, chuyên gia về các vấn đề chính trị, kinh tế, quốc phòng và an ninh cho rằng, thương mại điện tử là
+                            lĩnh vực đang phải đối mặt với các mối đe dọa an ninh mạng nhiều nhất, bao gồm cả những ảnh hưởng đến
+                            tính riêng tư, chủ quyền dữ liệu, vị trí của các trung tâm dữ liệu, an ninh dữ liệu và luật pháp. Cách đây 30
+                            năm, chỉ có 32% giá trị thị trường của 500 công ty dựa trên các tài sản vô hình, chủ yếu là sở hữu trí tuệ. Ngày
+                            nay, con số này là 80%, đặt ra vấn đề bảo vệ những tài sản này trước nguy cơ bị tội phạm mạng đánh cắp là
+                            điều quan trọng. Do đó, an ninh mạng nhằm bảo vệ quyền sở hữu trí tuệ có tầm quan trọng lớn hơn đối với
+                            doanh nghiệp, Chính phủ và giới học giả.</p>
+                        <p>Theo ông Pesic, các doanh nghiệp thương mại điện tử phải tự bảo vệ mình bằng cách đảm bảo an ninh cho
+                            hệ thống máy tính, kênh truyền thông, máy chủ và mã hóa dữ liệu của khách hàng. Bảo vệ nên bắt đầu với
+                            các chiến dịch giáo dục về phạm vi và các loại rủi ro xâm nhập khu vực thương mại điện tử và các thành phố
+                            thông minh bằng cách sử dụng mạng Internet.</p>
+                        <p>Câu hỏi: Theo ông Pesic, các doanh nghiệp thương mại điện tử phải tự bảo vệ mình bằng cách đảm bảo an
+                            ninh như mã hóa dữ liệu của khách hàng, vậy có thể mã hóa như thế nào?</p>
+                    </div>
+
+                    <h2>Mục tiêu bài học</h2>
+                    <ul>
+                        <li>Nhận diện được những rủi ro về an ninh, an toàn trong kinh doanh thương mại điện tử.</li>
+                        <li>Nắm được các phương pháp phòng rủi ro về an ninh, an toàn thương mại điện tử.</li>
+                        <li>Hiểu được các giải pháp an ninh/an toàn dành cho thương mại điện tử.</li>
+                    </ul>
+
+                    <h2>Cấu trúc nội dung</h2>
+                    <div>
+                        <p>6.1 Rủi ro trong thương mại điện tử</p>
+                        <p>6.2 Các đặc điểm có thể phát sinh rủi ro</p>
+                        <p>6.3 Một số giải pháp đảm bảo an ninh trong thương mại điện tử</p>
+                        <p>6.4 Chính sách và pháp luật của Việt Nam về thương mại điện tử</p>
+                    </div>
+                `,
                 'tableContent': TMDT06
             }
         }
