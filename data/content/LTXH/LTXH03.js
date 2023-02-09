@@ -192,36 +192,9 @@ const LTXH03 = {
                 </ul>
             `],
             ['3 loại mạng theo lưu lượng khách hàng lưu thông', 'LTXH053', `
-                <ul>
-                    <li>Ký hiệu theo mô hình mạng
-                        <br>
-                        Cường độ của lưu lượng khách hàng tới được xác định bởi một trong các tham số:
-                        <ul>
-                            <li>(1) Lưu lượng giao dịch (Transaction Workload): X.</li>
-                            <li>(2) Số lượng trung bình Q các khách hàng lưu thông trên mạng hay còn được gọi là
-                                lưu lượng lô (Batch Workloads). Nói chung Q không phải là số nguyên.</li>
-                            <li>(3) Cặp giá trị (Q, Z), trong đó:
-                                <br>
-                                <ul>
-                                    <li>Q là số lượng trung bình khách hàng (không nguyên) đi vào mạng từ N khách
-                                        hàng đầu cuối</li>
-                                    <li>Z là thời gian suy nghĩ trung bình (Average Think Time) của một khách hàng tại
-                                        thiết bị đầu cuối (Teminal) trước khi đi vào mạng.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Khách hàng: Cường độ lưu lượng công việc (Workload Intensity) được diễn giải một
-                        cách phù hợp theo tình huống của mạng:</li>
-                    <li>Mỗi lưu lượng giao dịch có một cường độ: X.</li>
-                    <li>Một lưu lượng lô là số lượng trung bình N khách hàng đi vào hệ thống từ một quần thể
-                        cố định. Nói chung số N không nguyên (vì đây là giá trị trung bình).</li>
-                    <li>Một lưu lượng đầu cuối (Terminal Workload) có cường độ được chuyên biệt theo hai
-                        tham số: (i) Q số lượng khách hàng trung bình đang hoạt động trong hệ thống (xuất
-                        phát tử N khách hàng sử dụng đầu cuối, nên Q ≤ N và có giá trị không nguyên) và (i) Z
-                        thời gian trung bình phải “tư duy” trước khi thực hiện yêu cầu đi vào hệ thống, còn
-                        được gọi là thời gian suy nghĩ (Think Time) của khách hàng.</li>
-                </ul>
+                <p>Mạng với lưu lượng giao dịch (Transaction Workload): từng khách hàng một sẽ lưu thông trên mạng, do đó trên một đơn vị thời gian sẽ có một mật độ khách khách hàng lưu thông còn được gọi là lưu lượng giao dịch X. Mạng được xét là mở và bao hàm cả mạng Fork-Joint.</p>
+                <p>Mạng với lưu lượng lô (Batch Workload): đây là một mạng xử lý từng lô với số lượng khách hàng trong lộ là N. Mạng này có thể đóng hoặc mở. Nói chung số lượng khách hàng trong lô thay đổi, nên phải sử dụng N là số khách hàng trung bình trong lỗ. Vì vậy N có thể không nguyên</p>
+                <p>Mạng đóng xử lý khách hàng sử dụng đầu cuối (Ternimals), sau khi suy nghĩ với thời gian Z, theo lưu lượng giao dịch/lô.</p>
             `],
             ['Đầu vào của mô hình là Khách hàng', 'LTXH054', `
                 <ul>
@@ -236,7 +209,7 @@ const LTXH03 = {
                                 <br>
                                 <ul>
                                     <li>Q là số lượng trung bình khách hàng (không nguyên) đi vào mạng từ N khách
-                                        hàng đầu cuối,/li>
+                                        hàng đầu cuối</li>
                                     <li>Z là thời gian suy nghĩ trung bình (Average Think Time) của một khách hàng tại
                                         thiết bị đầu cuối (Teminal) trước khi đi vào mạng.</li>
                                 </ul>
