@@ -514,6 +514,8 @@ const Subject = [
                 title: 'Các công thức cần nhớ',
                 outside: `
                     <p>Công thức cần nhớ: <a href="https://docs.google.com/document/d/1xCQO9RyL4ueG8OD6S7GlI_rYYg9FGoPhdgBrYuILUEE/edit?usp=sharing" target="_blank">Link</a></p>
+                    <p>Các bài toán chương 2: <a href="https://docs.google.com/document/d/1UcDCdMaDPLKsEhFYcwS9sLukmwOUTq4HJfHFF3JpOFA/edit?usp=sharing" target="_blank">Link</a></p>
+                    <p>Các bài toán chương 3: <a href="https://docs.google.com/document/d/1XNgezU9buR0hyVZqajnUK3iw9rHBNQttcBAcb_1lunw/edit?usp=sharing" target="_blank">Link</a></p>
                 `,
                 tableContent: ''
             }
