@@ -762,6 +762,15 @@ const Subject = [
                     </div>
                 `,
                 'tableContent': TMDT06
+            },
+            TMDT7: {
+                title: 'Một số câu hỏi khó nhớ',
+                outside: `
+                    <p>Tên tổ chức: <a href="https://docs.google.com/document/d/1yTep71iose10AHzfhZ_11to2N_ZgVH76pGo-JsT3cWY/edit?usp=sharing" target="_blank">Link</a></p>
+                    <p>Các bộ luật: <a href="https://docs.google.com/document/d/1h49H021GAQVn-cGdmSNZrlieBLS2r8xZHCcGMfcdVRc/edit?usp=sharing" target="_blank">Link</a></p>
+                    <p>Các hình thức kinh doanh điện tử: <a href="https://docs.google.com/document/d/1t9TZ1bR42eJ4D5WOs8ORiFVwWJ6nT6F3Q8kvreZdYsY/edit?usp=sharing" target="_blank">Link</a></p>
+                `,
+                tableContent: {}
             }
         }
     }
