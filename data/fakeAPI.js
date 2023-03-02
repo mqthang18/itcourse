@@ -773,6 +773,83 @@ const Subject = [
                 tableContent: {}
             }
         }
+    },
+    {
+        id: 'PTTKHT',
+        label: 'Phân tích thiết kế hệ thống',
+        chapter: {
+            PTTKHT1: {
+                title: `Tổng quan về phân tích, thiết kế hệ thống thông tin`,
+                outside: `
+                <div>
+                    <h3>Tình huống khởi động bài</h3>
+                    <p>Ngày nay, ứng dụng công nghệ thông tin vào các hoạt động sản xuất, kinh doanh của doanh nghiệp đã mang
+                    lại những hiệu quả nhất định. Việc ứng dụng công nghệ thông tin không chỉ đơn giản là áp dụng tốt cho hoạt
+                    động sản xuất kinh doanh của doanh nghiệp mà chúng ta không thể phủ nhận vai trò của CNTT trong các hoạt
+                    động cũng như lĩnh vực của đời sống xã hội. Hiện nay các trang web thương mại điện tử trên thế giới cũng
+                    như ở Việt Nam đã áp dụng hết sức thành công. Ví dụ: 10 năm trở về trước trang web Amazon là một trang
+                    web hết sức hiệu quả, Amazon đang kinh doanh thua lỗ đã trở nên lãi khoảng 70.000.000$/năm. Ngoài ra,
+                    Ebay, Shopee hay những trang web thương mại điện tử khác ở Việt Nam như: Vật giá, Chợ điện tử, Tiki,
+                    Lazada.vn, Sendo.vn... cũng đang phát triển rất thành công.</p>
+                    <p>Câu hỏi: Các website thương mại điện tử (Amazon, Ebay, Shopee, Vật giá, Chợ điện tử, Tiki, Lazada.vn,
+                    Sendo.vn) trên có phải hệ thống thông tin không? Nó có vai trò như thứ nào đối với doanh nghiệp?</p>
+                </div>
+                
+                <div>
+                    <h3>Mục tiêu bài học</h3>
+                
+                    <ul>
+                    <li>Trình bày được định nghĩa, đặc điểm, các thành phần của hệ thống thông tin, các mô hình, chu kỳ và các giai
+                        đoạn phát triển hệ thống thông tin như mô hình thác nước (waterfall), mô hình lặp, mô hình tăng trưởng, quy
+                        trình phát triển hệ thống thông tin,...</li>
+                    <li>Xác định được bản chất, vai trò và vị trí của hệ thống thông tin quản lý trong một tổ chức.</li>
+                    <li>Tổng quan được cách thức tiến hành theo từng bước để phát triển được một hệ thống thông tin có hiệu quả và
+                        hiệu lực cho một tổ chức kinh tế xã hội.</li>
+                    <li>Chỉ ra được phác họa những nguyên nhân cơ bản của yêu cầu đổi mới hệ thống thông tin.</li>
+                    <li>Xác định được cơ cấu tổ chức và vai trò của đội ngũ phát triển hệ thống thông tin quản lý</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Cấu trúc nội dung</h3>
+                
+                    <ol>
+                    <li>Tổng quan về hệ thống thông tin</li>
+                    <li>Phát triển hệ thống thông tin</li>
+                    <li>Các mô hình phát triển hệ thống thông tin</li>
+                    <li>Quy trình phát triển hệ thống thông tin</li>
+                    <li>Quy trình tổng quát phân tích và thiết kế hệ thống thông tin</li>
+                    </ol>
+                </div>
+                `,
+                tableContent: PTTKHT1
+            },
+            PTTKHT2: {
+                title: `Khảo sát và lập kế hoạch`,
+                outside: ``,
+                tableContent: PTTKHT2
+            },
+            PTTKHT3: {
+                title: `Phân tích hệ thống hướng chức năng`,
+                outside: ``,
+                tableContent: PTTKHT3
+            },
+            PTTKHT4: {
+                title: `Thiết kế hệ thống`,
+                outside: ``,
+                tableContent: PTTKHT4
+            },
+            PTTKHT5: {
+                title: `Thiết kế cơ sở dữ liệu`,
+                outside: ``,
+                tableContent: PTTKHT5
+            },
+            PTTKHT5: {
+                title: `Phân tích và thiết kế hệ thống thông tin theo hướng đối tượng`,
+                outside: ``,
+                tableContent: PTTKHT6
+            }
+        }
     }
 ]
 
