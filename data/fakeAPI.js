@@ -826,7 +826,47 @@ const Subject = [
             },
             PTTKHT2: {
                 title: `Khảo sát và lập kế hoạch`,
-                outside: ``,
+                outside: `
+                    <div id="1">
+                        <h3>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h3>
+                        <p>Một cơ quan hành chính sự nghiệp cần cần xây dựng hệ thống thông tin quản lý cán bộ công chức của cơ
+                        quan mình. Để xây dựng được hệ thống các phân tích viên cần biết các thông tin về hiện trạng của
+                        cơ quan như:</p>
+                        <ul>
+                        <li>Về cơ quan: cơ quan có bao nhiêu phòng ban, chức năng nhiệm vụ của phòng ban, tên, địa chỉ, số điện
+                            thoại và trưởng của các phòng ban</li>
+                        <li>Về công nhân viên chức của cơ quan: cơ quan có bao nhiêu nhân viên, mỗi nhân viên cần biết thông tin về
+                            họ tên, đơn vị công tác, giới tính, ngày sinh, nơi sinh, địa chỉ, dân tộc, tôn giáo, chính trị, trình độ văn
+                            hóa,
+                            ngoại ngữ, loại hình đào tạo, cựu chiến binh, ngày vào cơ quan, ngày vào biên chế, cha mẹ, vợ, chồng,
+                            con, khen thưởng, kỷ luật</li>
+                        </ul>
+                        <p>Câu hỏi: Để biết được các thông tin trên thì cán bộ xây dựng hệ thống thông tin cần thực hiện công việc gì?
+                        Và thực hiện công việc đó như thế nào?</p>
+                    </div>
+                    
+                    <div id="2">
+                        <ul>
+                        <li>Xác định được vấn đề hoặc cơ hội của tổ chức.</li>
+                        <li>Ước định được phạm vi của dự án phát triển HTTT.</li>
+                        <li>Dự kiến được những thay đổi có thể sẽ xảy ra</li>
+                        <li>Đánh giá được tác động của những thay đổi từ dự án.</li>
+                        <li>Đánh giá được tính khả thi của dự án và đưa ra những khuyến nghị.</li>
+                        <li>Trình bày được các công việc theo từng bước phải làm kể từ khi nhận được yêu cầu phát triển HTTT quản
+                            lý cho đến khi viết bản dự án sơ bộ và dự án được ký duyệt thực hiện</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="3">
+                        <h3>Cấu trúc nội dung</h3>
+                        <ol>
+                        <li>Khảo sát hiện trạng hệ thống</li>
+                        <li>Xác định yêu cầu</li>
+                        <li>Các phương pháp thu thập thông tin</li>
+                        <li>Lập kế hoạch xây dựng hệ thống thông tin</li>
+                        </ol>
+                    </div>
+                `,
                 tableContent: PTTKHT2
             },
             PTTKHT3: {
