@@ -871,7 +871,57 @@ const Subject = [
             },
             PTTKHT3: {
                 title: `Phân tích hệ thống hướng chức năng`,
-                outside: ``,
+                outside: `
+                <div id="1">
+    <h3>Tình huống khởi động bài</h3>
+
+    <p>Một doanh nghiệp bán buôn có một số kho hàng. Bộ phận mua hàng lập đơn mua hàng dựa trên báo giá để
+      đặt hàng với nhà cung cấp, sau đó theo dõi hàng về. Nếu nhận được hóa đơn giao hàng thì viết phiếu nhập
+      kho để nhập hàng vào kho và viết séc chuyển khoản qua ngân hàng để thanh toán với nhà cung cấp. Bộ phận
+      bán hàng nhận đơn đặt hàng của khách, viết phiếu xuất kho để xuất hàng cho khách và viết phiếu thu để thu
+      tiền của khách hàng. Bộ phận bán hàng phải thường xuyên theo dõi các đơn hàng và khi chấp ký kết hợp
+      đồng bán hàng cho khách thì cần biết hàng trong kho còn hay hết, số lượng hàng còn có đủ cho đơn hàng hay
+      không, đơn giá bán từng mặt hàng. Vì hiện tại doanh nghiệp đang quản lý thủ công nên các bộ phận rất khó
+      theo dõi và cung cấp thông tin cho nhau. Doanh nghiệp muốn xây dựng HTTT quản lý hoạt động kinh doanh.
+      Câu hỏi: Phân tích hệ thống thông tin quản lý doanh nghiệp có thể phân thành mấy chức năng? Gồm những
+      chức năng nào?</p>
+  </div>
+
+  <div id="2">
+    <h3>MỤC TIÊU BÀI HỌC</h3>
+
+    <ul>
+      <li>Hiểu rõ hệ thống thông tin quản lý của tổ chức, xác định những nguyên nhân gốc rễ của những bất cập
+        trong hệ thống quản lý của tổ chức/doanh nghiệp.</li>
+      <li>Sử dụng được các công cụ mô hình hóa như sơ đồ luồng thông tin, sơ đồ luồng dữ liệu, sơ chức năng kinh
+        doanh hay mô hình quan hệ thực thể để mô tả HTTT quản lý tổ chức/doanh nghiệp</li>
+      <li>Xác định được những mục tiêu cần đạt được cho hệ thống thông tin mới và cuối cùng là đưa ra những giải
+        pháp hệ thống thông tin mới nhằm đạt được những mục tiêu đã đề ra.</li>
+    </ul>
+  </div>
+
+  <div id="3">
+    <h3>CẤU TRÚC NỘI DUNG</h3>
+
+    <ul>
+      <li>Các mức độ mô tả chức năng</li>
+      <li>Mô hình hóa hệ thống thông tin</li>
+      <li>Các công cụ mô hình hóa trong phân tích hệ thống</li>
+    </ul>
+  </div>
+
+  <div id="4">
+    <h3>Giới thiệu giai đoạn phân tích hệ thống</h3>
+    <ul>
+      <li>Phân tích thiết kế hệ thống nói chung là sự nhận thức và mô tả một hệ thống; bởi vậy người ta thường dùng
+        các mô hình, các biểu đồ để trừu tượng hóa và là công cụ giúp con người trao đổi với nhau trong quá trình
+        phát triển hệ thống. Mỗi mô hình là một khuôn dạng để nhận thức về hệ thống và nó mang ý thức chủ quan.</li>
+      <li>Mục tiêu của phân tích mô hình xử lý là đưa ra một cách xác định các yêu cầu của người dùng trong quá
+        trình phát triển hệ thống, những yêu cầu này được bám sát từ một loạt các sự kiện mà người phân tích thu
+        được qua phỏng vấn, điều tra bằng bảng hỏi, nghiên cứu tài liệu và qua quan sát.</li>
+    </ul>
+  </div>
+                `,
                 tableContent: PTTKHT3
             },
             PTTKHT4: {
