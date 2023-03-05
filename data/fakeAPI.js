@@ -1022,12 +1022,82 @@ const Subject = [
         chapter: {
             TKPTDL1: {
                 title: `Lý thuyết xác xuất`,
-                outside: ``,
+                outside: `
+                <div id="1">
+                <h3>Tình huống khởi động bài</h3>
+                <p>Thời gian bảo hành sản phẩm được quy định là 3 năm. Nếu bán được một sản phẩm thì lãi 1,5 triệu đồng, nếu
+                  sản phẩm bị hỏng trong thời gian bảo hành thì cửa hàng phải chi phí 1 triệu cho việc bảo hành. Biết rằng tuổi
+                  thọ của sản phẩm là biến ngẫu nhiên tuân theo phân phối chuẩn với tuổi thọ trung bình là 4,2 năm và độ lệch
+                  chuẩn là 1,4 năm.</p>
+                <ul>
+                  <li>Tìm trung bình số tiền lãi khi bán mỗi sản phẩm</li>
+                  <li>Nếu muốn trung bình số tiền lãi cho mỗi sản phẩm bán ra là 1 triệu thì phải quy định thời gian bảo hành là
+                    bao nhiêu?</li>
+                </ul>
+              </div>
+            
+              <div id="2">
+                <h3>Mục tiêu bài học</h3>
+            
+                <ul>
+                  <li>Hiểu được một số khái niệm cơ bản của lý thuyết xác suất như: biến cố, xác suất của biến cố, biến ngẫu
+                    nhiên, kỳ vọng, phương sai,...</li>
+                  <li>Biết cách tính xác suất, các tham số đặc trưng của biến ngẫu nhiên</li>
+                  <li>Vận dụng được các kiến thức trên để giải quyết một số bài toán mẫu hoặc bài toán thực tế.</li>
+                </ul>
+              </div>
+                `,
                 tableContent: TKPTDL1
             },
-            TKPTDL1: {
+            TKPTDL2: {
                 title: `Phân tích thống kê mô tả`,
-                outside: ``,
+                outside: `
+                
+  <div id="1">
+    <h3>Tình huống khởi động bài</h3>
+    <p>
+      Trọng lượng một loại gói bánh 250g được đóng bằng máy tự động. Để kiểm tra người ta cân ngẫu nhiên 100 gói bánh ta
+      thu được:
+    </p>
+    <table>
+      <tr>
+      <tr>
+        <th>Trọng lượng (g)</th>
+        <td>245</td>
+        <td>247</td>
+        <td>248</td>
+        <td>250</td>
+        <td>252</td>
+        <td>253</td>
+        <td>254</td>
+      </tr>
+      <tr>
+        <td>Số gói</td>
+        <td>8</td>
+        <td>12</td>
+        <td>20</td>
+        <td>32</td>
+        <td>16</td>
+        <td>8</td>
+        <td>4</td>
+      </tr>
+      </tr>
+    </table>
+    <p>Hãy ước lượng cho trọng lượng trung bình của gói bánh.</p>
+    <p>Hãy ước lượng cho mức độ sai lệch (đo bằng độ lệch chuẩn) của trọng lượng gói bánh</p>
+  </div>
+
+  <div id="2">
+    <h3>Mục tiêu bài học</h3>
+    <ul>
+      <li>Hiểu được một số khái niệm cơ bản của thống kê cơ bản: lấy mẫu, biểu diễn dữ liệu.</li>
+      <li>Tính được một số chỉ số cơ bản: trung bình mẫu, trung vị, phương sai mẫu hiệu chỉnh, độ lệch chuẩn mẫu
+        hiệu chỉnh.</li>
+      <li>Sử dụng được R để biểu diễn dữ liệu và tính các chỉ số trên</li>
+    </ul>
+  </div>
+
+                `,
                 tableContent: TKPTDL2
             }
         }
