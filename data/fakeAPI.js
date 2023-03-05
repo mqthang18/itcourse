@@ -956,6 +956,8 @@ const Subject = [
                     <li>Tiến hóa qua các phiên bản .Net FrameWork</li>
                     </ol>
                 </div>
+
+                <p><b>Hướng dẫn cài đặt run C# trên VS code:</b> <a href="https://www.youtube.com/watch?v=RdFgAXUvhYY&feature=youtu.be&ab_channel=GhostTogether" target="_blank">Link Youtube</a></p>
                 `,
                 tableContent: LTUDWindows1
             },
