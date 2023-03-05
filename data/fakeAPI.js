@@ -940,6 +940,97 @@ const Subject = [
                 tableContent: PTTKHT6
             }
         }
+    },
+    {
+        id: 'LTUDWindowws',
+        label: 'Lập trình ứng dụng Windows',
+        chapter: {
+            LTUDWindows1: {
+                title: 'Tổng quan về .NET FRAMEWORK',
+                outside: `
+                <div id="1">
+                    <h3>Nội dung bài học</h3>
+                    <ol>
+                    <li>Giới thiệu về .Net FrameWork</li>
+                    <li>Lịch sử phát triển của .Net FrameWork</li>
+                    <li>Tiến hóa qua các phiên bản .Net FrameWork</li>
+                    </ol>
+                </div>
+                `,
+                tableContent: LTUDWindows1
+            },
+            LTUDWindows2: {
+                title: `NGÔN NGỮ LẬP TRÌNH C#`,
+                outside: `
+                    <div id="1">
+                        <h3>MỤC TIÊU – YÊU CẦU</h3>
+                        <ul>
+                        <li>Thực hiện được các thao tác tạo Project trong VS C#</li>
+                        <li>Hiểu được cách thức biên dịch chương trình, Debug</li>
+                        <li>Hiểu rõ các câu lệnh nhập xuất</li>
+                        <li>Thực hiện các câu lệnh cơ bản</li>
+                        <li>Nắm được các kiểu dữ liệu, khai báo biến, ép kiểu</li>
+                        <li>Sử dụng thành thạo các cấu trúc điều khiển cơ bản trong C#</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="2">
+                        <h3>Nội dung bài học</h3>
+                        <ol>
+                        <li>1. GIỚI THIỆU VỀ C#</li>
+                        <li>2. CẤU TRÚC ĐIỀU KHIỂN TRONG C#</li>
+                        <li>3. MẢNG TRONG C#</li>
+                        </ol>
+                    </div>
+                `,
+                tableContent: LTUDWindows2
+            },
+            LTUDWindows3: {
+                title: `Hướng đối tượng`,
+                outside: `
+                <div id="1">
+                    <h3>Mục tiêu bài học</h3>
+                    <ul>
+                    <li>Hiểu và vận dụng được các thành phần của class</li>
+                    <li>Nắm vững các mức độ truy cập của class</li>
+                    <li>Nắm vững các nguyên tắc kế thừa</li>
+                    <li>Hiễu rõ đa hình trong hướng đối tượng</li>
+                    <li>Hiễu được cách dùng interface</li>
+                    </ul>
+                </div>
+                
+                <div id="2">
+                    <h3>Nội dung bài học</h3>
+                    <ol>
+                    <li>TỔNG QUAN VỀ HƯỚNG ĐỐI TƯỢNG</li>
+                    <li>CLASS TRONG C#</li>
+                    <li>PHẠM VI TRUY CẬP</li>
+                    <li>TỪ KHÓA STATIC</li>
+                    <li>KẾ THỪA</li>
+                    <li>ĐA HÌNH</li>
+                    <li>INTERFACE</li>
+                    </ol>
+                </div>
+                `,
+                tableContent: LTUDWindows3
+            }
+        }
+    },
+    {
+        id: 'TKPTDL',
+        label: 'Thông kê phân tích dữ liệu',
+        chapter: {
+            TKPTDL1: {
+                title: `Lý thuyết xác xuất`,
+                outside: ``,
+                tableContent: TKPTDL1
+            },
+            TKPTDL1: {
+                title: `Phân tích thống kê mô tả`,
+                outside: ``,
+                tableContent: TKPTDL2
+            }
+        }
     }
 ]
 
