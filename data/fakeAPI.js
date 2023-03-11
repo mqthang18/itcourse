@@ -1015,6 +1015,31 @@ const Subject = [
                 </div>
                 `,
                 tableContent: LTUDWindows3
+            },
+            LTUDWindows4: {
+                title: `Lập trình Windows (Winforms)`,
+                outside: `
+                <h2>Lập trình window</h2>
+
+                <div id="target">
+                  <h3>Mục tiêu - yêu cầu</h3>
+                  <ul>
+                    <li>Hiểu được các thuộc tính, phương thức, sự kiện của các điều khiển cơ bản</li>
+                    <li>Nắm vững và thao tác thành thạo với các điều khiển cở bản</li>
+                    <li>Hiểu được các thuộc tính, phương thức, sự kiện của các điều khiển nâng cao.</li>
+                    <li>Nắm vững và thao tác thành thạo với các điều khiển nâng cao</li>
+                  </ul>
+                </div>
+              
+                <div id="tableContent">
+                  <ol>
+                    <li>WINDOWS FORMS (WINFORMS)</li>
+                    <li>ĐIỀU KHIỂN CƠ BẢN</li>
+                    <li>ĐIỀU KHIỂN NÂNG CAO</li>
+                  </ol>
+                </div>
+                `,
+                tableContent: LTUDWindows4
             }
         }
     },
