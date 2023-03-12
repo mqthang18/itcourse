@@ -926,7 +926,45 @@ const Subject = [
             },
             PTTKHT4: {
                 title: `Thiết kế hệ thống`,
-                outside: ``,
+                outside: `
+                <div id="Init">
+                <h3>Tình huống khởi động bài</h3>
+            
+                <p>Cửa hàng hoa Anh Đào là một doanh nghiệp mới thành lập. Các mặt hàng kinh doanh chủ yếu của cửa hàng bao gồm: hoa
+                  lụa, cây cảnh và các vật dụng phục vụ trang trí nội thất với nhu cầu giải trí. Là một doanh nghiệp mới thành lập
+                  nên hoạt động chủ yếu vẫn mang tính thủ công, dựa vào kinh nghiệm của hệ thống nhân viên. Do đặc điểm lượng hàng
+                  hóa nhập xuất ngày càng lớn nên công tác quản lí, mua bán rất mất nhiều thời gian, công sức mà độ chính xác không
+                  cao, điều này nhiều khi gây thiệt hại cho công ty. Hoạt động quản lí hàng hóa và mua bán hàng của cửa hàng hoàn
+                  toàn thủ công nên bộc lộ những hạn chế sau: Tra cứu thông tin về hàng hóa, khách hàng, lượng hàng tồn … nhiều khi
+                  rất mất nhiều thời gian, thiếu chính xác. Việc lưu trữ các thông tin phải sử dụng nhiều loại giấy tờ, sổ sách nên
+                  rất cồng kềnh. Tốn nhiều thời gian tổng hợp, báo cáo, thống kê. Không đáp ứng được nhu cầu thông tin phục vụ hàng
+                  ngày và mở rộng cửa hàng trong tương lai. Vì vậy, doanh nghiệp đang từng bước hiện đại hóa hệ thống các máy tính
+                  và đưa hệ thống thông tin vào sử dụng để dần thay thế công tác quản lý thủ công.</p>
+            
+                <p><b>Câu hỏi</b>: Để đưa HTTT quản lý vào sử dụng thay thế công tác quản lý thủ thì doanh nghiệp cần phải thiết kế
+                  những thành phần nào cho hệ thống?</p>
+              </div>
+            
+              <div id="aim">
+                <ul>
+                  <li>Thiết kế được HTTT ở mức khái niệm, theo góc nhìn của nhà quản lý</li>
+                  <li>Tạo ra được hệ thống tiền đề cho giai đoạn thiết vật lý</li>
+                  <li>Thể hiện được HTTT dưới góc nhìn trừu tượng được nhà quản lý, người sử dụng và thiết kế viên hiểu và thống
+                    nhất, thiết kế các yếu tố nhìn thấy được của HTTT</li>
+                </ul>
+              </div>
+            
+              <div id="tableContent">
+                <ol>
+                  <li>Các hoạt động chính của giai đoạn thiết kế hệ thống thông tin</li>
+                  <li>Thiết kế kiến trúc tổng thể</li>
+                  <li>Thiết kế giao diện</li>
+                  <li>Thiết kế mạng máy tính</li>
+                  <li>Thiết kế an ninh an toàn hệ thống
+                  </li>
+                </ol>
+              </div>
+                `,
                 tableContent: PTTKHT4
             },
             PTTKHT5: {
@@ -941,7 +979,7 @@ const Subject = [
             }
         }
     },
-    {
+    { 
         id: 'LTUDWindowws',
         label: 'Lập trình ứng dụng Windows',
         chapter: {
