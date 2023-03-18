@@ -1255,8 +1255,8 @@ const Subject = [
                     đó là <span style="background-color: rgb(234, 36, 72); color: aliceblue;">1 biểu đồ thất bại</span></li>
                   <li>Một đồ thị tốt thì nên là self-explanatory (tự cái hình đã giải thích mọi thứ)</li>
                 </ul>
-            
-                <p>"The simple graph has brought more information to the data analyst’s mind than any other device."
+                <p>Tham khảo: <a href="https://sites.google.com/site/c16tcd/cac-dhieu-khien-thuoc-tinh-va-bien-co-chinh-cua-winform" target="_blank">Link</a></p>
+                <p>"The simple graph has brought more information to the data analyst's mind than any other device."
                   <br>
                   John Tukey
                 </p>
