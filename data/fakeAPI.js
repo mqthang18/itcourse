@@ -969,10 +969,53 @@ const Subject = [
             },
             PTTKHT5: {
                 title: `Thiết kế cơ sở dữ liệu`,
-                outside: ``,
+                outside: `
+                    <h3>Bài 5. THIẾT KẾ CƠ SỞ DỮ LIỆU</h3>
+
+                    <div id="init">
+                    <h4>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h4>
+                
+                    <p>Trong một Viện nghiên cứu Khoa học hàn lâm quản lý các nhà khoa học và các đề tài nghiên cứu thuộc các lĩnh vực.
+                        Lĩnh vực nghiên cứu gồm các thông tin: Mã lĩnh vực, Tên lĩnh vực, Bộ chủ quản; Nhà khoa học gồm các thông tin: Mã
+                        nhà khoa học, Tên nhà khoa học, Địa chỉ, Số điện thoại; Đề tài gồm các thông tin: Mã đề tài, Tên đề tài, Tên chủ
+                        nhiệm đề tài, Thời gian bắt đầu, Thời gian kết thúc. Được biết Lĩnh vực nghiên cứu, Nhà khoa học và Đề tài cùng
+                        liên kết với nhau bởi Nghiên cứu có thông tin Kinh phí, Nguồn và mỗi Lĩnh vực nghiên cứu có thể được Nghiên cứu
+                        bởi nhiều Nhà khoa học và có thể Nghiên cứu nhiều Đề tài, mỗi Nhà Khoa học có thể cùng Nghiên cứu trong nhiều Lĩnh
+                        vực nghiên cứu khác nhau và có thể Nghiên cứu nhiều Đề tài khác nhau, mỗi Đề tài có thể được Nghiên cứu trong
+                        nhiều Lĩnh vực nghiên cứu và có thể được nghiên cứu bời nhiều Nhà khoa học. Viện nghiên cứu đang có nhu cầu thiết
+                        kế cơ sở dữ liệu để quản lý hoạt động nghiên cứu của Viện.</p>
+                
+                    <p><b>Câu hỏi</b>: Cơ sở dữ liệu mô hình quan hệ Viện nghiên cứu chuẩn bị xây dựng để quản lý hoạt động nghiên cứu
+                        của Viện gồm những quan hệ nào?</p>
+                    </div>
+                
+                    <div id="aim">
+                    <h4>MỤC TIÊU BÀI HỌC</h4>
+                
+                    <ul>
+                        <li>Hiểu và thiết kế được cấu trúc cơ sở dữ liệu từ quá trình mô hình hóa nhằm chuyển đổi các đối tượng từ thế
+                        giới thực (Real-world System) sang các bảng trong hệ thống cơ sở dữ liệu (Database System) đáp ứng các yêu cầu
+                        lưu trữ và khai thác dữ liệu</li>
+                        <li>Hướng dẫn sinh viên từ thiết kế CSDL logic đi từ thông tin đầu ra, chuẩn hóa dữ liệu qua các mức đến thiết kế
+                        CSDL vật lý</li>
+                        <li>Thiết kế được một cơ sở dữ liệu đi từ thông tin đầu ra qua các bước chuẩn hóa dữ liệu 1NF, 2NF, 3NF và BCNF
+                        </li>
+                    </ul>
+                    </div>
+                
+                    <div id="tableContent">
+                    <h4>CẤU TRÚC NỘI DUNG</h4>
+                    <ol>
+                        <li>Tổng quan về thiết kế cơ sở dữ liệu</li>
+                        <li>Chuẩn hóa dữ liệu</li>
+                        <li>Thiết kế cơ sở dữ liệu logic</li>
+                        <li>Thiết kế cơ sở dữ liệu vật lý</li>
+                    </ol>
+                    </div>
+                `,
                 tableContent: PTTKHT5
             },
-            PTTKHT5: {
+            PTTKHT6: {
                 title: `Phân tích và thiết kế hệ thống thông tin theo hướng đối tượng`,
                 outside: ``,
                 tableContent: PTTKHT6
@@ -1164,6 +1207,63 @@ const Subject = [
 
                 `,
                 tableContent: TKPTDL2
+            },
+            TKPTDL3: {
+                title: 'Phân tích dữ liệu bằng biểu đồ',
+                outside: `
+                <div id="init">
+                <h4>Tình huống khởi động bài</h4>
+            
+                <ul>
+                  <li>Ta có file chol.txt lưu trữ thông tin thu thập về các bệnh nhân liên quan đến cholesterol</li>
+                  <li>Hãy đánh giá sơ bộ bằng cách vẽ biểu đồ về bệnh nhân trên các phương diện: giới tính, độ tuổi, ...</li>
+                  <li>Mục tiêu:
+                    <ul>
+                      <li>Giới tính có ảnh hưởng đến bệnh</li>
+                      <li>Độ tuổi có ảnh hưởng đến bệnh</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            
+            
+              <div id="aim">
+                <h4>Mục tiêu bài học</h4>
+                <ul>
+                  <li>Hiểu được công dụng của từng loại biểu đồ.</li>
+                  <li>Thể hiện được các biểu đồ bằng R</li>
+                </ul>
+              </div>
+            
+              <div id="tableContent">
+                <ol>
+                  <li>Cửa sổ biểu đồ trong R</li>
+                  <li>Trục biểu đồ</li>
+                  <li>Màu sắc, khung và ký hiệu</li>
+                  <li>Biểu đồ thanh (bar plot) và biểu đồ bánh (Pie chart)</li>
+                  <li>Biểu đồ phân bố (Histogram)</li>
+                  <li>Biểu đồ hộp (Box plot)</li>
+                  <li>Biểu đồ tán xạ (Scatter plot)</li>
+                </ol>
+              </div>
+            
+              <div id="dataVisualization">
+                <ul>
+                  <li>Chức năng của Đồ Thị (graph) là truyền tải các "thông tin một cách chính xác và sâu sắc" cho người tiếp nhận
+                    thông tin</li>
+                  <li>Khi nào chức năng này mà không làm được, hoặc gây hiểu lầm, hoặc não người mất quá nhiều thời gian để hiểu thì
+                    đó là <span style="background-color: rgb(234, 36, 72); color: aliceblue;">1 biểu đồ thất bại</span></li>
+                  <li>Một đồ thị tốt thì nên là self-explanatory (tự cái hình đã giải thích mọi thứ)</li>
+                </ul>
+            
+                <p>"The simple graph has brought more information to the data analyst’s mind than any other device."
+                  <br>
+                  John Tukey
+                </p>
+              </div>
+            
+                `,
+                tableContent: TKPTDL3
             }
         }
     }

@@ -1,8 +1,8 @@
 var LTUDWindows4 = {
-    LTUDWindows1: {
-        title: `Windows forms`,
-        index: [
-            ['Khái niệm', 'LTUDWindows11', `
+  LTUDWindows1: {
+    title: `Windows forms`,
+    index: [
+      ['Khái niệm', 'LTUDWindows11', `
             <h4>Khái niệm</h4>
           <div class="container-fluid">
             <div class="row">
@@ -12,7 +12,7 @@ var LTUDWindows4 = {
               </div>
               <div class="col-12 col-sm-6">
                 <center>
-                  <img src=".\assets\img\LTUDWindows\Chap4\img1.png" alt="" class="w-75">
+                  <img src="./assets/img/LTUDWindows/Chap4/img1.png" alt="" class="w-75">
                 </center>
               </div>
             </div>
@@ -20,7 +20,7 @@ var LTUDWindows4 = {
           </div>
 
             `],
-            ['Thuộc tính thường dùng', 'LTUDWindows12', `
+      ['Thuộc tính thường dùng', 'LTUDWindows12', `
             <h4>Thuộc tính thường dùng</h4>
             <p>
               <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button" aria-expanded="false"
@@ -148,7 +148,7 @@ var LTUDWindows4 = {
               </div>
             </div>
             `],
-            ['Sự kiện thường dùng', 'LTUDWindows13', `
+      ['Sự kiện thường dùng', 'LTUDWindows13', `
             <h4>Sự kiện thường dùng</h4>
             <table>
               <thead>
@@ -197,7 +197,7 @@ var LTUDWindows4 = {
               </tbody>
             </table>
             `],
-            ['Phương thức thường dùng', 'LTUDWindows14', `
+      ['Phương thức thường dùng', 'LTUDWindows14', `
             <h4>Phương thức thường dùng</h4>
             <table class="table">
               <thead>
@@ -236,12 +236,12 @@ var LTUDWindows4 = {
               </tbody>
             </table>
             `]
-        ]
-    },
-    LTUDWindows2: {
-        title: 'Điều khiển cơ bản',
-        index: [
-            ['Label', 'LTUDWindows21', `      
+    ]
+  },
+  LTUDWindows2: {
+    title: 'Điều khiển cơ bản',
+    index: [
+      ['Label', 'LTUDWindows21', `      
             <h4>Label</h4>
             <p>
               <img src="./assets/img/LTUDWindows/Chap4/img2.png" alt=""> thường được dùng để hiển thị nội dung thông báo
@@ -323,7 +323,7 @@ var LTUDWindows4 = {
               </p>
             </div>
             `],
-            ['Button', 'LTUDWindows22', `
+      ['Button', 'LTUDWindows22', `
             <h4>Button</h4>
 
             <p>
@@ -391,7 +391,7 @@ var LTUDWindows4 = {
                 “Đã thay đổi” và ngược lại.</p>
             </div>
             `],
-            ['Class Messagebox', 'LTUDWindows23', `
+      ['Class Messagebox', 'LTUDWindows23', `
             <h4>Class Messagebox</h4>
             <div class="contrainer">
               <div class="row">
@@ -684,7 +684,7 @@ var LTUDWindows4 = {
             </div>
   
             `],
-            ['Textbox', 'LTUDWindows24', `
+      ['Textbox', 'LTUDWindows24', `
             <h4>Textbox</h4>
             <p><img src="./assets/img/LTUDWindows/Chap4/img12.png" alt=""> dùng để nhập hoặc xuất (hiển thị) dữ liệu</p>
   
@@ -802,7 +802,7 @@ var LTUDWindows4 = {
               </div>
             </div>
             `],
-            ['Checkbox', 'LTUDWindows25', `
+      ['Checkbox', 'LTUDWindows25', `
             <p><img src="./assets/img/LTUDWindows/Chap4/img14.png" alt=""> cho phép người dùng chọn 1 trong 2 (hoặc 3)
             trạng thái <i>True/False</i> (<i>Yes/No</i>)</p>
 
@@ -890,7 +890,7 @@ var LTUDWindows4 = {
                     String ht = txtHoTen.Text;
                     int tuoi = DateTime.Now.Year – int.Parse(txtNamSinh.Text);
                     String msg = string.Format("Chào {0} {1}!!!
-                                              \nNăm nay {2} {3} tuổi.“
+                                              /nNăm nay {2} {3} tuổi.“
                                               ,gt,ht,gt,tuoi);
                     MessageBox.Show(msg,caption,MessageBoxButtons.OK);
                   }
@@ -901,7 +901,7 @@ var LTUDWindows4 = {
             </div>
           </div>
             `],
-            ['RadioButton', 'LTUDWindows26', `
+      ['RadioButton', 'LTUDWindows26', `
             <h4>RadioButton</h4>
 
             <p><img src="./assets/img/LTUDWindows/Chap4/img16.png" alt=""> cho phép người dùng chọn 1 tùy chọn trong các
@@ -964,9 +964,34 @@ var LTUDWindows4 = {
             </div>
   
             `],
-            ['Combobox', 'LTUDWindows27', `
-            <h4>Combobox</h4>
-            <p>Dùng để hiển thị danh sách phần tử (tạo tĩnh hoặc được lấy lên từ cơ sở dữ liệu)</p>
+      ['Combobox', 'LTUDWindows27', `
+      <h4>Combobox</h4>
+      <p>Tham khảo: <a href="https://freetuts.net/combobox-listbox-trong-lap-trinh-c-winforms-3433.html"
+          target="_blank">Link</a></p>
+      <p>Dùng để hiển thị danh sách phần tử (tạo tĩnh hoặc được lấy lên từ cơ sở dữ liệu)</p>
+    
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows291" role="button" aria-expanded="false"
+          aria-controls="LTUDWindows291">
+          Các thuộc tính thường dùng
+        </a>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows292" role="button" aria-expanded="false"
+          aria-controls="LTUDWindows292">
+          Các sự kiện thường dùng
+        </a>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows293" role="button" aria-expanded="false"
+          aria-controls="LTUDWindows293">
+          Một số thao tác
+        </a>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows294" role="button" aria-expanded="false"
+          aria-controls="LTUDWindows294">
+          Ví dụ
+        </a>
+      </p>
+    
+      <div>
+        <div class="collapse" id="LTUDWindows291">
+          <div class="card card-body">
             <center>
               <p><b>Các thuộc tính thường dùng</b></p>
               <table>
@@ -1026,12 +1051,13 @@ var LTUDWindows4 = {
                 </tbody>
               </table>
             </center>
-  
-            <br>
-  
+          </div>
+        </div>
+        <div class="collapse" id="LTUDWindows292">
+          <div class="card card-body">
             <center>
               <p><b>Các sự kiện thường dùng</b></p>
-  
+    
               <table class="table">
                 <thead>
                   <td>
@@ -1051,9 +1077,67 @@ var LTUDWindows4 = {
                 </tbody>
               </table>
             </center>
-  
-            <br>
-  
+          </div>
+        </div>
+        <div class="collapse" id="LTUDWindows293">
+          <div class="card card-body">
+            <center>
+              <p>Một số thao thức ComboBox</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <td>Phương thức</td>
+                    <td>Ý nghĩa</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Add()</td>
+                    <td>Thêm một mục chọn vào cuối danh sách ListBox.</td>
+                  </tr>
+                  <tr>
+                    <td>Insert()</td>
+                    <td>Chèn thêm mục chọn vào vị trí i.</td>
+                  </tr>
+                  <tr>
+                    <td>Count</td>
+                    <td>Trả về số muc chọn hiện đang có.</td>
+                  </tr>
+                  <tr>
+                    <td>Item()</td>
+                    <td>Trả về mục chọn ở vị trí thứ i.</td>
+                  </tr>
+                  <tr>
+                    <td>Remove()</td>
+                    <td>Bỏ mục chọn.</td>
+                  </tr>
+                  <tr>
+                    <td>RemoveAt()</td>
+                    <td>Bỏ mục chọn ở vị trí thứ i.</td>
+                  </tr>
+                  <tr>
+                    <td>Contains()</td>
+                    <td>Trả về True nếu có mục chọn trong danh sách, trả vể False nếu không có mục chọn trong danh sách.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Clear</td>
+                    <td>Xóa tất cả các mục chọn.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IndexOf()</td>
+                    <td>Trả về vị trí mục chọn trong danh sách, nếu không tìm thấy sẽ trả về -1.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+    
+          </div>
+        </div>
+        <div class="collapse" id="LTUDWindows294">
+          <div class="card card-body">
             <p>
               <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse271" role="button" aria-expanded="false"
                 aria-controls="collapse271">
@@ -1079,19 +1163,19 @@ var LTUDWindows4 = {
                   <center>
                     <img src="./assets/img/LTUDWindows/Chap4/img18.png" alt="">
                   </center>
-  
+    
                   <p><b>Vào thuộc tính Item</b></p>
                   <div class="container">
                     <div class="row">
                       <div class="col-12 col-sm-6">
                         <pre>
-  private void cmbKhoa_SelectedIndexChanged(object sender, EventArgs e) {
-    MessageBox.Show(cmbKhoa.SelectedIndex.ToString(), "Thông báo");
-  }
-  
-  private void cmbKhoa_SelectedValueChanged(object sender, EventArgs e) {
-    MessageBox.Show(cmbKhoa.SelectedItem.ToString(), "Thông báo")
-  }
+          private void cmbKhoa_SelectedIndexChanged(object sender, EventArgs e) {
+          MessageBox.Show(cmbKhoa.SelectedIndex.ToString(), "Thông báo");
+          }
+          
+          private void cmbKhoa_SelectedValueChanged(object sender, EventArgs e) {
+          MessageBox.Show(cmbKhoa.SelectedItem.ToString(), "Thông báo")
+          }
                       </pre>
                       </div>
                       <div class="col-12 col-sm-6">
@@ -1109,33 +1193,33 @@ var LTUDWindows4 = {
                   <center>
                     <img src="./assets/img/LTUDWindows/Chap4/img20.png" alt="">
                   </center>
-  
+    
                   <pre>
-  List<String> dulieu; 
-  public Frm2() {
-    InitializeComponent();
-    LoadData();
-  }
-  
-  public void LoadData() {
-    dulieu = new List<string>() {
-      "Khoa kỹ thuật công nghệ",
-      "Khoa ngoại ngữ",
-      "Khoa ngữ văn",
-      "Khoa nông nghiệp"
-    };
-    cmbKhoa.DataSource = dulieu;
-  }
-  
-  private void btnIndex_Click(object sender, EventArgs e) {
-    MessageBox.Show(cmbKhoa.SelectedIndex.ToString());
-  }
-  
-  private void btnValue_Click(object sender, EventArgs e) {
-    MessageBox.Show(cmbKhoa.SelectedValue.ToString());
-  }
+          List<String> dulieu; 
+          public Frm2() {
+          InitializeComponent();
+          LoadData();
+          }
+          
+          public void LoadData() {
+          dulieu = new List<string>() {
+          "Khoa kỹ thuật công nghệ",
+          "Khoa ngoại ngữ",
+          "Khoa ngữ văn",
+          "Khoa nông nghiệp"
+          };
+          cmbKhoa.DataSource = dulieu;
+          }
+          
+          private void btnIndex_Click(object sender, EventArgs e) {
+          MessageBox.Show(cmbKhoa.SelectedIndex.ToString());
+          }
+          
+          private void btnValue_Click(object sender, EventArgs e) {
+          MessageBox.Show(cmbKhoa.SelectedValue.ToString());
+          }
                   </pre>
-  
+    
                 </div>
               </div>
               <div class="collapse" id="collapse273">
@@ -1145,41 +1229,41 @@ var LTUDWindows4 = {
                     <img src="./assets/img/LTUDWindows/Chap4/img21.png" alt="">
                   </center>
                   <pre>
-  class Khoa {
-    public String maKhoa {get; set;}
-    public String tenKhoa {get; set;}
-  }
-  
-  void LoadData() {
-    dulieu = new List<Khoa>()
-    {
-      new Khoa() {maKhoa = "010", tenKhoa = "Khoa kỹ thuật công nghệ"},
-      new Khoa() {maKhoa = "020", tenKhoa = "Khoa ngoại ngữ"},
-      new Khoa() {maKhoa = "030", tenKhoa = "Khoa Ngữ Văn"},
-      new Khoa() {maKhoa = "040", tenKhoa = "Khoa nông nghiệp"}
-    }
-    cmbKhoa.DataSource = dulieu;
-    cmbKhoa.DisplayMember = "tenKhoa";
-  }
-  
-  List<Khoa> dulieu;
-  public Frm3() {
-    InitializeComponent();
-    LoadData();
-  }
-  
-  private void btnMa_Click(object sender, EventArgs e)
-  {
-    Khoa k = cmbKhoa.SelectedValue as Khoa;
-    MessageBox.Show(k.maKhoa.ToString());
-  }
-  
-  private void btnTen_Click(object sender, EventArgs e)
-  {
-    Khoa k = cmbKhoa.SelectedValue as Khoa;
-    MessageBox.Show(k.tenKhoa .ToString());
-  }
-  
+          class Khoa {
+          public String maKhoa {get; set;}
+          public String tenKhoa {get; set;}
+          }
+          
+          void LoadData() {
+          dulieu = new List<Khoa>()
+          {
+          new Khoa() {maKhoa = "010", tenKhoa = "Khoa kỹ thuật công nghệ"},
+          new Khoa() {maKhoa = "020", tenKhoa = "Khoa ngoại ngữ"},
+          new Khoa() {maKhoa = "030", tenKhoa = "Khoa Ngữ Văn"},
+          new Khoa() {maKhoa = "040", tenKhoa = "Khoa nông nghiệp"}
+          }
+          cmbKhoa.DataSource = dulieu;
+          cmbKhoa.DisplayMember = "tenKhoa";
+          }
+          
+          List<Khoa> dulieu;
+          public Frm3() {
+          InitializeComponent();
+          LoadData();
+          }
+          
+          private void btnMa_Click(object sender, EventArgs e)
+          {
+          Khoa k = cmbKhoa.SelectedValue as Khoa;
+          MessageBox.Show(k.maKhoa.ToString());
+          }
+          
+          private void btnTen_Click(object sender, EventArgs e)
+          {
+          Khoa k = cmbKhoa.SelectedValue as Khoa;
+          MessageBox.Show(k.tenKhoa .ToString());
+          }
+          
                   </pre>
                 </div>
               </div>
@@ -1189,84 +1273,88 @@ var LTUDWindows4 = {
                   <center>
                     <img src="./assets/img/LTUDWindows/Chap4/img22.png" alt="">
                   </center>
-  
+    
                   <pre>
-  class Khoa
-  {
-    public String maKhoa { get; set; }
-    public String tenKhoa { get; set; }
-    public List<String> nghanh { get;set; }
-  }
-  
-  List<Khoa> dulieu;
-  public Frm4() 
-  {
-    InitializeComponent();
-    LoadData();
-    AddBingding();
-  }
-  
-  void LoadData() {
-    dulieu = new List<Khoa>() {
-      new Khoa() {
-        maKhoa = "010",
-        tenKhoa = "Khoa kỹ thuật công nghệ",
-        nghanh = new List<string>() {
+          class Khoa
+          {
+          public String maKhoa { get; set; }
+          public String tenKhoa { get; set; }
+          public List<String> nghanh { get;set; }
+          }
+          
+          List<Khoa> dulieu;
+          public Frm4() 
+          {
+          InitializeComponent();
+          LoadData();
+          AddBingding();
+          }
+          
+          void LoadData() {
+          dulieu = new List<Khoa>() {
+          new Khoa() {
+          maKhoa = "010",
+          tenKhoa = "Khoa kỹ thuật công nghệ",
+          nghanh = new List<string>() {
             "Cơ khí",
             "Xây dựng",
             "Cầu đường",
             "Giao thông",
             "CNTT"
           } 
-      },
-      
-      new Khoa() {
-        maKhoa = "020",
-        tenKhoa = "Khoa ngoại ngữ",
-        nghanh = new List<string>() {
+          },
+          
+          new Khoa() {
+          maKhoa = "020",
+          tenKhoa = "Khoa ngoại ngữ",
+          nghanh = new List<string>() {
           "Anh Văn",
           "Pháp Văn"
-        }
-      },
-  
-      new Khoa() {
-        maKhoa = "030",
-        tenKhoa = "Khoa Ngữ văn",
-        nghanh = new List<string>() {
+          }
+          },
+          
+          new Khoa() {
+          maKhoa = "030",
+          tenKhoa = "Khoa Ngữ văn",
+          nghanh = new List<string>() {
           "Ngữ văn",
           "Đông Phương học"  
-        }
-      },
-  
-      new Khoa() {
-        maKhoa = "040",
-        tenKhoa = "Khoa nông nghiệp",
-        nghanh = new List<string>() {
+          }
+          },
+          
+          new Khoa() {
+          maKhoa = "040",
+          tenKhoa = "Khoa nông nghiệp",
+          nghanh = new List<string>() {
           "Thực phẩm",
           "Hóa học"  
-        }
-      }
-    };
-    cmbMaKhoa.DataSource = dulieu;
-    cmbMaKhoa.DisplayMember = "maKhoa";
-  }
-  
-  void AddBingding() {
-    txtTenKhoa.DataBindings.Add("Text", cmbMaKhoa.DataSource, "tenKhoa");
-  }
-  
-  private void cmbMaKhoa_SelectedValueChanged(object sender, EventArgs e) {
-    if (cmbMaKhoa.SelectedValue != null) {
-      Khoa k = cmbMaKhoa.SelectedValue as Khoa;
-      cmbNghanh.DataSource = k.nghanh;
-    }
-  }
+          }
+          }
+          };
+          cmbMaKhoa.DataSource = dulieu;
+          cmbMaKhoa.DisplayMember = "maKhoa";
+          }
+          
+          void AddBingding() {
+          txtTenKhoa.DataBindings.Add("Text", cmbMaKhoa.DataSource, "tenKhoa");
+          }
+          
+          private void cmbMaKhoa_SelectedValueChanged(object sender, EventArgs e) {
+          if (cmbMaKhoa.SelectedValue != null) {
+          Khoa k = cmbMaKhoa.SelectedValue as Khoa;
+          cmbNghanh.DataSource = k.nghanh;
+          }
+          }
                   </pre>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    
             `],
-            ['Picturebox', 'LTUDWindows28', `
+      ['Picturebox', 'LTUDWindows28', `
             <h4>Picturebox</h4>
 
           <p><img src="./assets/img/LTUDWindows/Chap4/img23.png" alt=""> dùng để hiển thị hình ảnh</p>
@@ -1331,7 +1419,7 @@ public Form1() {
 private void cmbImage_SelectedValueChanged(object sender, EventArgs e) {
   if (cmbImage.SelectedValue != null) {
     Bitmap bm;
-    bm = new Bitmap(Application.StartupPath+"\\HinhAnh\\"+cmbImage.SelectedValue.ToString()+".jpg");
+    bm = new Bitmap(Application.StartupPath+"//HinhAnh//"+cmbImage.SelectedValue.ToString()+".jpg");
     pcbImage.Image = bm;
   }
 }
@@ -1348,11 +1436,14 @@ private void cmbImage_SelectedValueChanged(object sender, EventArgs e) {
             </div>
           </div>
             `],
-            ['ListView', 'LTUDWindows29', `
+      ['ListView', 'LTUDWindows29', `
             <h4>ListView</h4>
 
             <p><img src="./assets/img/LTUDWindows/Chap4/img26.png" alt=""> dùng để hiển thị danh sách các phần tử với nhiều hình dạng khác nhau</p>
-  
+
+            
+
+
             <center>
               <p><b>Các thuộc tính thường dùng</b></p>
               <table>
@@ -1472,13 +1563,150 @@ private void cmbImage_SelectedValueChanged(object sender, EventArgs e) {
                 </div>
               </div>
             </div>
-            `]
-        ]
-    },
-    LTUDWindows3: {
-        title: `Điều khiển nâng cao`,
-        index: [
-            ['MenuStrip', 'LTUDWindows31', `
+            `],
+      ['ListBox', 'LTUDWindows30', `
+
+        <p>Tham khảo: <a href="https://freetuts.net/combobox-listbox-trong-lap-trinh-c-winforms-3433.html" target="_blank">Link</a></p>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows301" role="button" aria-expanded="false" aria-controls="LTUDWindows301">
+            Giới thiệu ListBox
+          </a>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows302" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Thao tác cơ bản
+          </a>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#LTUDWindows303" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Thuộc tính thường dùng
+          </a>
+        </p>
+        <div>
+          <div class="collapse" id="LTUDWindows301">
+            <div class="card card-body">
+              <p><b>ListBox</b> được dùng để hiển thị một danh sách các lựa chọn, người dùng có thể chọn một hoặc nhiều lựa chọn cùng lúc</p>
+
+              <center>
+                <img class="w-100" src=".assets/img/LTUDWindows/Chap4/img40.png" />
+              </center>
+            </div>
+          </div>
+          <div class="collapse" id="LTUDWindows302">
+            <div class="card card-body">
+              <p><b>Một số phương thức với ListBox</b></p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Thao tác</th>
+                    <th>Chức năng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Add()</td>
+                      <td>Thêm một mục chọn vào cuối danh sách ListBox.</td>
+                    </tr>
+                    <tr>
+                      <td>Insert()</td>
+                      <td>Chèn thêm mục vào vị trí i</td>
+                    </tr>
+                    <tr>
+                      <td>Count</td>
+                      <td>Trả về số mục chọn hiện đang có</td>
+                    </tr>
+                    <tr>
+                      <td>Item()</td>
+                      <td>Trả về mục chọn ở vị trí i</td>
+                    </tr>
+                    <tr>
+                      <td>Remove()</td>
+                      <td>Bỏ chọn mục</td>
+                    </tr>
+                    <tr>
+                      <td>RemoveAt()</td>
+                      <td>Bỏ mục chọn tại vị trí i</td>
+                    </tr>
+                    <tr>
+                      <td>Contains()</td>
+                      <td>Trả về True nếu có mục chọn trong danh sách và trả về False nếu không có mục chọn trong danh sách</td>
+                    </tr>
+                    <tr>
+                      <td>Clear</td>
+                      <td>Xóa tất cả các mục chọn</td>
+                    </tr>
+                    <tr>
+                      <td>IndexOf()</td>
+                      <td>Trả về vị trí mục chọn trong danh sách, nếu không tìm thấy sẽ trả về -1</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="collapse" id="LTUDWindows303">
+            <div class="card card-body">
+              <p><b>Một số thuộc tính của ListBox thường dùng</b></p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Thuộc tính</th>
+                    <th>Mô tả</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>DataSource</td>
+                    <td>Chọn tập dữ liệu điền vào ListBox. Tập dữ liệu có thể là mảng, chuỗi, ArrayList</td>
+                  </tr>
+                  <tr>
+                    <td>DisplayMember</td>
+                    <td>Dữ liệu thành viên sẽ được hiển thị trên ListBox</td>
+                  </tr>
+                  <tr>
+                    <td>ValueMember</td>
+                    <td>Thuộc tính này chỉ định dẽ liệu thành viên sẽ cung cấp giá trị cho ListBox</td>
+                  </tr>
+                  <tr>
+                    <td>SelectedValue</td>
+                    <td>Trả về giá trị của mục chọn nếu ListBox có liên kết dữ liệu. Nếu không liên kết với dữ liệu hoặc thuộc tính ValueMember không được thiết lập thì giá trị thuộc tính SelectedValue là giá trị chuỗi của thuộc tính SelectedItem</td>
+                  </tr>
+                  <tr>
+                    <td>Items</td>
+                    <td>Các mục chứa trong ListBox</td>
+                  </tr>
+                  <tr>
+                    <td>SelectedItem</td>
+                    <td>Trả về mục được chọn</td>
+                  </tr>
+                  <tr>
+                    <td>SelectedIndex</td>
+                    <td>Lấy chỉ số mục được chọn, chỉ số mục chọn đầu tiên là 0</td>
+                  </tr>
+                  <tr>
+                    <td>SelectionMode</td>
+                    <td>Cho phép chọn một hoặc nhiều dòng dữ liệu trên ListBox, bao gồm:
+                      <br>
+                      <ul style="list-style-type: '- '">
+                        <li>One: Chỉ chọn một giá trị</li>
+                        <li>MultiSimple: Cho phép chọn nhiều, chọn bằng cách Click vào mục chọn, bỏ chọn bằng cách Click vào mục đã chọn</li>
+                        <li>MultiExtended: Chọn nhiều bằng cách nhấn kết hợp với Shift hoặc Ctrl</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>SelectedItems</td>
+                    <td>
+                    Được sử dụng khi SelectionMode là MultiSimple hoặc MultiExtended. Thộc tính SelectedItems chứa các chỉ số của các dòng dữ liệu được chọn
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `]
+    ]
+  },
+  LTUDWindows3: {
+    title: `Điều khiển nâng cao`,
+    index: [
+      ['MenuStrip', 'LTUDWindows31', `
             <p><b>MenuStrip</b></p>
           <p><img src="./assets/img/LTUDWindows/Chap4/img29.png" alt=""> Cho phép lập trình viên thiết kế Menu trên Form với các điều
             khiển: ToolStripMenu (Menu con), ToolStripComboBox (ComboBox),
@@ -1587,7 +1815,7 @@ private void bai2ToolStripMenuItem_Click(object sender, EventArgs e) {
 }
           </pre>
             `],
-            ['ToolTip', 'LTUDWindows32', `
+      ['ToolTip', 'LTUDWindows32', `
             <p><b>ToolTip</b></p>
           <p><img src="./assets/img/LTUDWindows/Chap4/img32.png" alt=""> Hiển thị cửa sổ nhỏ để diễn giải khi người dùng rê chuột vào
             điều khiển.</p>
@@ -1644,7 +1872,7 @@ private void btnBang_Click(object sender, EventArgs e)
             </div>
           </div>
             `],
-            ['ContextMenuStrip', 'LTUDWindows33', `
+      ['ContextMenuStrip', 'LTUDWindows33', `
             <p><b>ContextMenuStrip</b></p>
           <p><i>ContextMenuStrip</i> dùng để thiết kế <i>Menu</i> dạng <i>Popup</i> cho phép hiển thị điều khiển khi người dùng nhấn chuột phải vào đối tượng sử dụng điều khiển.</p>
 
@@ -1668,7 +1896,7 @@ private void binhThuongToolStripMenuItem_Click(object sender, EventArgs e)
 }
                 </pre>
             `],
-            ['Timer', 'LTUDWindows34', `
+      ['Timer', 'LTUDWindows34', `
             <p><b>Timer</b></p>
           <p><img src="./assets/img/LTUDWindows/Chap4/img38.png" alt=""> dùng để lặp đi lặp lại một công việc với khoảng thời gian nhất định mà không làm ảnh hưởng đến các tiến trình khác</p>
           <center>
@@ -1792,6 +2020,6 @@ private void btnBatDau_Click(object sender, EventArgs e)
 }
           </pre>
             `]
-        ]
-    }
+    ]
+  }
 }
