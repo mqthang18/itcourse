@@ -1121,6 +1121,35 @@ const Subject = [
                 </div>
                 `,
                 tableContent: LTUDWindows4
+            },
+            LTUDWindows5: {
+                title: `Lập trình cơ sở dữ liệu`,
+                outside: `
+<div id="tableContent">
+    <h4>Nội dung</h4>
+
+    <ol>
+        <li>Giới thiệu về ADO.NET</li>
+        <li>Đối tượng SQLCONNECTION</li>
+        <li>Đối tượng SQLCOMMAND</li>
+        <li>Đối tượng SQLDATAREADER</li>
+        <li>Đối tượng DATA - DATASET</li>
+        <li>Tạo báo biểu (REPORT)</li>
+    </ol>
+    </div>
+
+    <div id="aim">
+    <h4>Mục tiêu của bài học</h4>
+    <ol>
+        <li>Giúp học viên hiểu rõ hơn về khái niệm ADO.NET</li>
+        <li>Học viện hiểu các khái niệm và sử dụng được các đối tượng:
+        Connection, Command, DataReader, Dataset, DataAdapter</li>
+        <li>Giúp học viên tạo được báo biểu (report)</li>
+        <li>Lập trình được một phần mềm quản lý</li>
+    </ol>
+</div>
+                `,
+                tableContent: LTUDWindows5
             }
         }
     },
