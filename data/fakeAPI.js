@@ -1017,7 +1017,43 @@ const Subject = [
             },
             PTTKHT6: {
                 title: `Phân tích và thiết kế hệ thống thông tin theo hướng đối tượng`,
-                outside: ``,
+                outside: `
+                <div id="init">
+    <h4>Tình huống khởi động bài</h4>
+
+    <p>
+      Một Công ty muốn xây dựng HTTT để phục vụ và quản lý các hoạt động kinh doanh. Công ty có nhiều điểm
+      bán hàng đầu cuối (POST: Point Of Sale Terminal), đó là những cửa hàng, siêu thị,... Do đó, hệ thống cần phải
+      ghi nhận các hoạt động bán hàng và xử lý các công việc thanh toán với khách hàng, chủ yếu khách hàng mua
+      lẻ. Ngoài ra hệ thống còn giúp lãnh đạo Công ty theo dõi được các hoạt động kinh doanh, tự động kiểm kê các
+      mặt hàng tồn đọng trong kho, các mặt hàng bán chạy,... để hỗ trợ ra quyết định trong các hoạt động kinh
+      doanh của Công ty. Trong mỗi cửa hàng đầu cuối đều có các thiết bị phần cứng như: máy tính, máy đọc mã
+      vạch và phần mềm hệ thống để chạy hệ thống sẽ được xây dựng”
+    </p>
+
+    <p>Câu hỏi</p>
+    <ul>
+      <li>Hệ thống được xây dựng nhằm mục đích gì?</li>
+      <li>Có những đối tượng nào phát sinh trong hệ thống?</li>
+    </ul>
+  </div>
+
+  <div id="aim">
+    <h4>Mục tiêu bài học</h4>
+    <ul>
+      <li>Xác định được các kiểu HTTT và mô hình hệ thống dựa vào cách tiếp cận hướng đối tượng. Các khái niệm
+        đối tượng và lớp, đóng gói, quan hệ giữa các lớp sẽ được xem xét ở mức độ vừa phải đủ để sinh viên có
+        cái nhìn tổng quan về những kiến thức lập trình hướng đối tượng.</li>
+      <li>Hướng dẫn phân tích và thiết kế hướng đối tượng.
+        <ul>
+          <li>Phần phân tích đề cập đến việc xác định các lớp và quan hệ giữa các lớp, các thuộc tính.</li>
+          <li>Phần thiết kế trình bày ánh xạ mô hình lớp phân tích thành mô hình lớp thiết kế, xử lý lưu trữ với cơ sở
+            dữ liệu quan hệ, một số vấn đề liên quan đến giao diện người sử dụng, thiết kế các dịch vụ nghiệp vụ.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+                `,
                 tableContent: PTTKHT6
             }
         }
@@ -1293,6 +1329,64 @@ const Subject = [
             
                 `,
                 tableContent: TKPTDL3
+            },
+            TKPTDL4: {
+                title: 'Kiểm định giá thuyết thống kê',
+                outside: `
+                  <div id="init">
+    <h4>Tình huống khởi động bài</h4>
+
+    <ul>
+      <li>Ta có file dữ liệu igfdata.csv lưu trữ thông tin thu thập về các đối tượng. Trong nghiên cứu này, ngoài
+        các chỉ số liên quan đến giới tính, độ tuổi, trọng lượng, chiều cao và chủng tộc, chúng tôi đo lường các
+        hormone liên quan đến tình trạng tăng trưởng như igfi, igfbp3, als, và các chỉ số liên quan đến sự chuyển
+        hóa của xương pinp, ictp và pinp. Có 100 đối tượng nghiên cứu.</li>
+      <li>Mục tiêu:
+        <ul>
+          <li>giới tính có bị chênh lệch không?</li>
+          <li>Giới tính trong các chủng tộc có như nhau không?</li>
+          <li>Có sự khác biệt về chỉ số igfi giữa nam và nữ không?</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div id="aim">
+    <h4>Mục tiêu bài học</h4>
+    <ul>
+      <li>Hiểu được về bài toán kiểm định giả thuyết</li>
+      <li>Đưa ra được một số quyết định dựa vào dữ liệu thu được và kiểm tra nhận xét đưa ra là đúng
+        hay sai</li>
+      <li>Sử dụng được phần mềm R để xử lý với dữ liệu.</li>
+    </ul>
+  </div>
+
+                `,
+                tableContent: TKPTDL4
+            },
+            TKPTDL5: {
+                title: 'Phân tích tương quan và hồi quy',
+                outside: `
+                <div id="init">
+    <h4>Tình huống khởi động bài</h4>
+    <ul>
+      <li>Chúng ta có một tập dữ liệu về khách hàng tiềm năng</li>
+      <li>Dựa vào thông tin để có thể phán đoán khách có mua hàng hay không</li>
+      <li>Dựa vào đó để đưa ra chiến lước bán hàng hợp lý với từng khách hàng</li>
+    </ul>
+  </div>
+
+  <div id="aim">
+    <h4>Mục tiêu bài học</h4>
+    <ul>
+      <li>Học cách phân tích và dự báo dựa vào mô hình hồi quy.</li>
+      <li>Lựa chọn mô hình phù hợp với dữ liệu.</li>
+      <li>Biết sử dụng phần mềm để phân tích bài toán hồi quy.</li>
+    </ul>
+  </div>
+
+                `,
+                tableContent: TKPTDL5
             }
         }
     }
