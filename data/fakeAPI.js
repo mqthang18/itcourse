@@ -1219,6 +1219,15 @@ const Subject = [
                   <li>Vận dụng được các kiến thức trên để giải quyết một số bài toán mẫu hoặc bài toán thực tế.</li>
                 </ul>
               </div>
+
+              <div id="3">
+                <h3>Công cụ sử dụng</h3>
+                <p>Ngôn ngữ R</p>
+                <ul>
+                    <li>Offline: R</li>
+                    <li>Online: <a href="https://colab.research.google.com/notebook#create=true&language=r" target="_blank">Link</a></li>
+                </ul>
+              </div>
                 `,
                 tableContent: TKPTDL1
             },
