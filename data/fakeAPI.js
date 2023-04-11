@@ -1228,6 +1228,12 @@ const Subject = [
                     <li>Online: <a href="https://colab.research.google.com/notebook#create=true&language=r" target="_blank">Link</a></li>
                 </ul>
               </div>
+
+
+              <div>
+                <h3>Tìm giá trị phân phối Poisson bằng máy tính</h3>
+                <p>Clip hướng dẫn: <a href="https://youtu.be/wbOBX-EhPv0" target="__blank">Link</a></p>
+              </div>
                 `,
                 tableContent: TKPTDL1
             },
