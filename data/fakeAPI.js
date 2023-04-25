@@ -1425,6 +1425,21 @@ const Subject = [
                 </div>
                 `,
                 tableContent: ATTT1
+            },
+            ATTT2: {
+                title: `Cơ sở toán học`,
+                outside: `
+                    <div id="tableContent">
+                        <h4>Nội dung</h4>
+                    
+                        <ol>
+                        <li>Lý thuyết thông tin</li>
+                        <li>Lý thuyết độ phức tạp</li>
+                        <li>Lý thuyết toán học</li>
+                        </ol>
+                    </div>            
+                `,
+                tableContent: ATTT2
             }
         }
     }
