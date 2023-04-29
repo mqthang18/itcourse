@@ -1440,6 +1440,32 @@ const Subject = [
                     </div>            
                 `,
                 tableContent: ATTT2
+            },
+            ATTT3: {
+                title: `Phân loại các thuật toán mã hóa`,
+                outside: `
+                    <div id="tableContent">
+                        <ul>
+                            <li>Thuật toán mã hóa cổ điển
+                                <ul>
+                                    <li>Thuật toán thay thế (Substitution)</li>
+                                    <li>Thuật toán chuyển vị (Tranposition)</li>
+                                </ul>
+                            </li>
+                            <li>Thuật toán mã hóa hiện đại
+                                <ul>
+                                    <li>Mã hóa đối xứng hay khóa bí mật SKC</li>
+                                    <li>Mã hóa bất đối xứng hay khóa công khai và khóa riêng PKC (Public and Private Keys cryptography)
+                                    </li>
+                                    <li>Hàm băm (Hash function)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        
+
+                `,
+                tableContent: ATTT3
             }
         }
     }
