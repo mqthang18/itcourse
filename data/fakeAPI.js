@@ -1466,6 +1466,24 @@ const Subject = [
 
                 `,
                 tableContent: ATTT3
+            },
+            ATTT4: {
+                title: `Mã đối xứng hiện đại (Mordern symmetric-key ciphers)`,
+                outside: `
+                <div id="tableContent">
+                    <h3>Nội dung</h3>
+                
+                    <ol>
+                    <li>Khái niệm</li>
+                    <li>Tiêu chuẩn mã hóa dữ liệu (DES)</li>
+                    <li>Tiêu chuẩn mã hóa tiên tiến (AES)</li>
+                    <li>Ưu/nhược điểm và phạm vi sử dụng của mã hóa đối xứng</li>
+                    <li>Một số phần mềm mã hóa đối xứng</li>
+                    </ol>
+                </div>
+            
+                `,
+                tableContent: ATTT4
             }
         }
     }
