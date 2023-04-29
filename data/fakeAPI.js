@@ -1484,6 +1484,51 @@ const Subject = [
             
                 `,
                 tableContent: ATTT4
+            },
+            ATTT5: {
+                title: `Chuẩn mã hóa dữ liệu DES`,
+                outside: `
+                    <div id="tableContent">
+                        <h4>Nội dung</h4>
+                    
+                        <ul>
+                        <li>Tổng quan DES
+                            <ul>
+                            <li>Các thuật ngữ</li>
+                            <li>Giới thiệu</li>
+                            <li>Đặc điểm</li>
+                            </ul>
+                        </li>
+                        <li>Lưu đồ thuật toán DES</li>
+                        <li>Thuật toán sinh khóa con</li>
+                        <li>Hoán vị khởi tạo IP và IP<sup>-1</sup></li>
+                        <li>Thuật toán sinh khóa, hàm mở rộng E</li>
+                        <li>Hộp S-BOX</li>
+                        <li>Hộp P-BOX</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="1">
+                        <h3>Một số thuật ngữ sử dụng</h3>
+                    
+                        <ul>
+                        <li>Encipher - Bộ mã hóa</li>
+                        <li>Decipher - Bộ giải mã</li>
+                        <li>Plaintext - Bản rõ là dữ liệu gốc chưa được mã hóa</li>
+                        <li>Ciphertext - Bản mã là dữ liệu đã được mã hóa</li>
+                        <li>Key - Khóa mã là một giá trị được sử dụng để mã hóa và giải mã</li>
+                        <li>Round Key - khóa vòng là những giá trị trung gian được tạo ra từ khóa mã trong suốt quá trình mã hóa và giải
+                            mã</li>
+                        </ul>
+                    
+                        <h3>Mã hóa khối</h3>
+                        <center>
+                        <img src="./assets/img/ATTT/Chap5/img1.png" alt="" class="col-12 col-sm-10">
+                        </center>
+                    </div>
+            
+                `,
+                tableContent: ATTT5
             }
         }
     }

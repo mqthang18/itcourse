@@ -438,7 +438,7 @@ var ATTT2 = {
     ATTT03: {
         title: 'Một số ký hiệu toán học',
         index: [
-            ['Ký hiệu Jacobi (Jacobi Symbol)', '', `
+            ['Ký hiệu Jacobi (Jacobi Symbol)', 'ATTT031', `
             
             <p>Ký hiệu Jacobi được viết là J(a,n), nó là sự khái quát hóa của ký hiệu Lagrang, nó định nghĩa cho bất kỳ cặp số
             nguyên a và n nào. Ký hiệu Jacobi là một chức năng trên tập số thặng dư thấp của ước số n và có thể tính toán
