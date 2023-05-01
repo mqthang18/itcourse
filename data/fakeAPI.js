@@ -1531,6 +1531,56 @@ const Subject = [
                 tableContent: ATTT5
             }
         }
+    },
+    {
+        id: 'CNPM',
+        label: 'Công nghệ phần mềm',
+        chapter: {
+            CNPM1: {
+                title: 'Tổng quan về Công nghệ phần mềm',
+                outside: `
+                    <div id="aim">
+                        <ul>
+                            <li>Nắm được các khái niệm CNPM</li>
+                            <li>Hiểu được phần mềm là gì? Các lớp phần mềm?</li>
+                            <li>Hiểu được tiến trình phần mềm là gì? Và các công việc trong CNPM?</li>
+                            <li>Nắm được một số mô phát triển của phần mềm?</li>
+                        </ul>
+                    </div>
+                
+                    <div id="tableContent">
+                        <ul>
+                            <li>Khái niệm Công nghệ phần mềm</li>
+                            <li>Phần mềm và lớp phần mềm</li>
+                            <li>Các công việc trong CNPM</li>
+                            <li>Mô hình phát triển phần mềm</li>
+                        </ul>
+                    </div>
+                `,
+                tableContent: CNPM1
+            },
+            CNPM2: {
+                title: 'Quản lý dự án',
+                outside: `
+                <div id="aim">
+                    <ul>
+                        <li>Nắm được các giai đoạn trong quản lý dự án tin học</li>
+                        <li>Lập được kế hoạch cho dự án tin học</li>
+                        <li>Nắm được các công việc trong quản lý dự án tin học</li>
+                        <li>Ứng dụng quản lý nhóm, quản lý dự án</li>
+                    </ul>
+                </div>
+
+                <div id="tableContent">
+                    <ul>
+                        <li>Các giai đoạn quản lý dự án phần mềm</li>
+                        <li>Các công việc quản lý dự án</li>
+                    </ul>
+                </div>
+                `,
+                tableContent: CNPM2
+            }
+        }
     }
 ]
 
