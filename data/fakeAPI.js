@@ -1581,6 +1581,50 @@ const Subject = [
                 tableContent: CNPM2
             }
         }
+    },
+    {
+        id: 'LTTBDD',
+        label: 'Lập trình thiết bị di động',
+        chapter: {
+            LTTBDD1: {
+                title: 'Giới thiệu về Android', 
+                outside: `
+                <div id="init">
+                    <h3>Tình huống khởi động bài</h3>
+
+                    <ul>
+                    <li>Tú muốn xây dựng một ứng dụng Android, vậy Tú cần phải bắt đầu như thế nào?</li>
+                    <li>Trước hết Tú cần hiểu hệ thống Android</li>
+                    <li>Hiểu kiến trước hệ thống Android để có thể triển khai ứng dụng</li>
+                    <li>Biết cách sử dụng môi trường phát triển Android Studio</li>
+                    </ul>
+
+                    <p>=> Bài học này giúp Tú hiểu kiến trúc hệ thống android và sử dụng công cụ phát triển Android Studio</p>
+                </div>
+
+                <div id="aim">
+                    <ul>
+                    <li>Nắm được lịch sử phát triển của Android</li>
+                    <li>Xác định được kiến trúc và môi trường phát triển của Android</li>
+                    <li>Hiểu được cách tạo project Android trên Eclipse</li>
+                    <li>Hiểu và xác định được cấu trúc project</li>
+                    <li>Biên dịch và gỡ lỗi ứng dụng</li>
+                    </ul>
+                </div>
+
+                <div id="tableContent">
+                    <h3>Cấu trúc nội dung</h3>
+
+                    <ul>
+                    <li>Giới thiệu về Android</li>
+                    <li>Sử dụng Android Studio</li>
+                    </ul>
+                </div>
+
+                `,
+                tableContent: LTTBDD1
+            }
+        }
     }
 ]
 
