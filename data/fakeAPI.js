@@ -1663,6 +1663,29 @@ const Subject = [
                 </div>
                 `,
                 tableContent: LTTBDD2
+            },
+            LTTBDD3: {
+                title: 'Giao diện người dùng',
+                outside: `
+                <div id="init">
+                <ul>
+                  <li>Sau khi đã hiểu thành phần của ứng dụng android, giờ đây muốn xây dựng giao diện thì Tú cần phải bắt đầu như
+                    thế nào?</li>
+                  <li>Đầu tiên Tú nắm được hệ thống layout trong android</li>
+                  <li>Tiếp theo Tú phải biết cách sử dụng các widget trong android</li>
+                </ul>
+            
+                <p>=>Bài học này giúp Tú hiểu về các layout cũng như các widget trong ứng dụng android</p>
+              </div>
+            
+              <div id="aiming">
+                <ul>
+                  <li>Hiểu và thiết kế giao diện Mobile</li>
+                  <li>Sử dụng layout của ứng dụng Android, các widget cơ bản</li>
+                </ul>
+              </div>
+                `,
+                tableContent: LTTBDD3
             }
         }
     }
