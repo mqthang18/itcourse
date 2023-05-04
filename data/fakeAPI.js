@@ -1686,6 +1686,79 @@ const Subject = [
               </div>
                 `,
                 tableContent: LTTBDD3
+            },
+            LTTBDD4: {
+                title: 'INTENT, INTENT FILTER, CUSTOM LISVIEW',
+                outside: `
+                <div id="init">
+                <h4>Tình huống khởi động bài</h4>
+            
+                <p>Sau khi đã thiết kế xong giao diện người dùng. Tú cần thực hiện truyền dữ liệu giữa các Activity, vậy Tú cần làm
+                  gì?</p>
+            
+                <ul>
+                  <li>Trước hết Tú cần tìm hiểu về Intent và Intent filter</li>
+                  <li>Biết cách sử dụng bundle</li>
+                  <li>Biết cách sử dụng bộ lọc filter</li>
+                </ul>
+            
+                <p>-> Bài học này giúp Tú hiểu về Intent và Intent Filter cũng như cách sử dụng Bundle trong android</p>
+              </div>
+            
+              <div id="aim">
+                <h4>Mục tiêu bài học</h4>
+                <ul>
+                  <li>Nắm được khái niệm URI</li>
+                  <li>Hiểu được ứng dụng Intent và Intent filter</li>
+                  <li>Xác định được các loại Intent, tham số của Intent</li>
+                  <li>Hiểu và vận dụng được Action/data trong Intent, Bundle và truyền tải dữ liệu, Custom ListView</li>
+                </ul>
+              </div>
+            
+              <div id="tableContent">
+                <h4>Cấu trúc nội dung</h4>
+                <ol>
+                  <li>Intent và Intent filter</li>
+                  <li>Custom ListView</li>
+                </ol>
+              </div>
+                `,
+                tableContent: LTTBDD4
+            },
+            LTTBDD5: {
+                title: 'Giới thiệu SQLite',
+                outside: `
+                <div id="init">
+    <h4>Tính huống khởi động bài</h4>
+
+    <p>Sau khi có thể sử dụng Intent thành thạo, vậy Tú cần làm gì để lưu trữ dữ liệu?</p>
+    <ul>
+      <li>Trước hết Tú hiểu về SQLite</li>
+      <li>Biết cách sử dụng kiểu dữ liệu trong SQLite</li>
+      <li>Biết cách tạo CSDL, bảng dữ liệu và lớp OpenHelper trong SQLite</li>
+    </ul>
+    <p>=> Bài học này giúp Tú hiểu về SQLite, tạo CSDL SQLite, tạo bảng dữ liệu và lớp OpenHelper</p>
+  </div>
+
+  <div id="aim">
+    <h4>Mục tiêu bài học</h4>
+    <ul>
+      <li>Xác định được tính năng và các kiểu dữ liệu SQLite</li>
+      <li>Sử dụng được SQLiteOpenHelper</li>
+      <li>Hiểu và biết cách tạo Database và Table</li>
+    </ul>
+  </div>
+
+  <div id="tableContent">
+    <h4>Cấu trúc nội dung</h4>
+    <ol>
+      <li>SQLite</li>
+      <li>SQLiteOpenHelper</li>
+      <li>Giới thiệu chung về SharedPreference</li>
+    </ol>
+  </div>
+                `,
+                tableContent: LTTBDD5
             }
         }
     }
