@@ -1180,5 +1180,410 @@ const CNPM4 = {
         </div>
             `]
         ]
+    },
+    CNPM03: {
+        title: 'Phần 2',
+        index: [
+            ['Nội dung', 'CNPM031', `
+            <div id="1">
+        <h3>Mô hình dữ liệu mức luận lý</h3>
+
+        <ul>
+            <li>Được sinh ra từ mô dữ liệu mức quan niệm bằng cách sử dụng các quy tắc chuyển đổi từ mô hình thực thể
+                liên kết sang mô hình quan niệm</li>
+            <li>Áp dụng các quy tắc để chuyển đổi từ mô hình thực thể liên kết sang mô hình quan hệ</li>
+        </ul>
+
+        <div>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse11" role="button"
+                    aria-expanded="false" aria-controls="collapse11">
+                    Quy tắc 1
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse12" role="button"
+                    aria-expanded="false" aria-controls="collapse12">
+                    Quy tắc 2
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse13" role="button"
+                    aria-expanded="false" aria-controls="collapse13">
+                    Quy tắc 3
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse14" role="button"
+                    aria-expanded="false" aria-controls="collapse14">
+                    Quy tắc 4
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse15" role="button"
+                    aria-expanded="false" aria-controls="collapse15">
+                    Quy tắc 5
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse16" role="button"
+                    aria-expanded="false" aria-controls="collapse16">
+                    Quy tắc 6
+                </a>
+            </p>
+            <div>
+                <div class="collapse" id="collapse11">
+                    <div class="card card-body">
+                        <h4>Quy tắc 1</h4>
+
+                        <p><b>Mỗi thực thể trong mô hình CDM được chuyển thành một quan hệ (bảng) trong mô hình quan
+                                hệ</b></p>
+
+                        <ul>
+                            <li>Tên quan hệ là tên thực thể và các thuộc tính của thực thể trở thành các thuộc tính của
+                                quan hệ tương đương</li>
+                            <li>Khóa chính của thực thể &lt;=&gt; khóa chính của quan hệ</li>
+                            <li>Các khóa thay thể trở thành các khóa thay thế của quan hệ</li>
+                        </ul>
+
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img22.png" alt="" class="col-12 col-sm-8">
+                        </center>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse12">
+                    <div class="card card-body">
+                        <h4>Quy tắc 2</h4>
+                        <p>Các thực thể tổng quát hóa/chuyên biệt hóa trong mô hình thực thể - liên kết khi chuyển sang
+                            mô hình quan hệ có thể sử dụng 1 trong 3 cách:</p>
+                        <ul>
+                            <li>Cách 1: Xóa đi các thực thể chuyên biệt hóa, chỉ sinh ra đúng một quan hệ với tên của
+                                thực thể tổng quát</li>
+                            <li>Cách 2: Xóa thực thể tổng quát</li>
+                            <li>Cách 3: Mỗi thực thể tổng quát xóa hay chuyên biệt hóa đều được chuyển thành một quan hệ
+                                tương ứng trong LDM</li>
+                        </ul>
+
+                        <p><b>Ví dụ</b>. Áp dụng quy tắc 2</p>
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img23.png" alt="" class="col-12 col-sm-8">
+                        </center>
+                        <ul>
+                            <li><b>Cách 1</b>
+                                <br>
+                                CONGCHUC(<b>MSCB</b>, HOTEN, NGAYSINH, NGHIEPVU, CHUCDANH)
+                            </li>
+                            <li>
+                                <b>Cách 2</b>
+                                <br>
+                                CHUYENVIEN(<b>MSCB</b>, HOTEN, NGAYSINH, NGHIEPVU)
+                                <br>
+                                GIANGVIEN(<b>MSCB</b>, HOTEN, NGAYSINH, CHUCDANH)
+                            </li>
+                            <li>
+                                <b>Cách 3</b>
+                                <br>
+                                CONGCHUC(<b>MSCB</b>, HOTEN, NGAYSINH)
+                                <br>
+                                CHUYENVIEN(<b>MSCB</b>, NGHIEPVU)
+                                <br>
+                                GIANGVIEN(<b>MSCB</b>, CHUCDANH)
+
+                                <br>Tham chiếu <br>
+                                CHUYENVIEN(MSCB) -> CONGCHUC(MSCB)
+                                <br>
+                                GIANGVIEN(MSCB) -> CONGCHUC(MSCB)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse13">
+                    <div class="card card-body">
+                        <h4>Quy tắc 3</h4>
+                        <p><b>Mối quan hệ nhiều - nhiều (Many - to - Many) sẽ được chuyển thành một bảng trong mô hình
+                                quan hệ</b></p>
+                        <ul>
+                            <li>Bảng này có tên là tên của quan hệ, các thuộc tính là các thuộc tính khóa của các thực
+                                thể có liên quan. Khóa chính của bảng là tổ hợp tất cả các thuộc tính</li>
+                            <li>Các tham chiếu tương ứng cũng được tạo</li>
+                        </ul>
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img24.png" alt="" class="col-12 col-sm-10">
+                        </center>
+                        <h4>Mô hình quan hệ tương ứng</h4>
+                        <p>SINHVIEN(<b>MSSV</b>, HOTEN, PHAI, NGAYSINH, QUEQUAN)</p>
+                        <p>LOP_HP(<b>MALOP_HP</b>, TUANDAY, TIET_BD, THU, SOTIET)</p>
+                        <p>DANGKY(<b>MSSV</b>, <b>MALOP_HP</b>)</p>
+                        <h4>Các tham chiếu</h4>
+                        <p>DANGKY(MSSV) -> SINHVIEN(MSSV)</p>
+                        <p>DANGKY(MALOP_HP) -> LOP_HP(MALOP_HP)</p>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse14">
+                    <div class="card card-body">
+                        <h4>Quy tắc 4</h4>
+                        <p>Với mỗi quan hệ One-to-many sẽ chuyển thành một tham chiếu trong mô hình quan hệ</p>
+                        <ul>
+                            <li>Một quan hệ One-to-many sẽ trở thành một tham chiếu "bảng con đến bảng cha"
+                                <br>
+                                <center>
+                                    <img src="./assets/img/CNPM/Chap4/img25.png" alt="" class="col-12 col-sm-8">
+                                </center>
+                            </li>
+                            <li>Mô hình quan hệ tương ứng:
+                                <br>
+                                SINHVIEN(<b>MSSV</b>, HOTEN, PHAI, NGAYSINH, QUEQUAN)
+                                <br>
+                                LOP(<b>MALOP</b>, TENLOP)
+                                <br>
+                                Tham chiếu: SINHVIEN(MALOP) -> LOP(MALOP)
+                            </li>
+                        </ul>
+                        <p>Với mỗi quan hệ One-to-many sẽ chuyển thành một tham chiếu trong mô hình quan hệ</p>
+                        <ul>
+                            <li>Với mỗi phụ thuộc hàm khóa chính của thực thể bên 1 vừa đóng vai trò khóa ngoại, vừa là
+                                thành phần khóa chính bên nhiều
+                                <br>
+                                <center>
+                                    <img src="./assets/img/CNPM/Chap4/img26.png" alt="" class="col-12 col-sm-10">
+                                </center>
+                            </li>
+                            <li>Mô hình quan hệ tương ứng
+                                <br>
+                                TANG(<b>STT_TANG</b>, DIENGIAI), PHONG(<b>STT_PHONG</b>, SUCCHUA)
+                            </li>
+                            <li>Tham chiếu:
+                                PHONG(STT_TANG) -> TANG(STT_TANG)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse15">
+                    <div class="card card-body">
+                        <h4>Quy tắc 5</h4>
+                        <p><b>Chuyển quan hệ One-to-One thành quan hệ One-to-Many và áp dụng quy tắc 4</b></p>
+
+                        <ul>
+                            <li>Chuyển bản số 1 thành nhiều thường dựa vào kinh nghiệm của người phân tích thiết kế</li>
+                            <li>Có thể dựa vào việc nhận biết lớp nào có trước, lớp đối tượng nào là chủ sở hữu của lớp
+                                đối tượng nào để điều chỉnh bản số</li>
+                        </ul>
+
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img27.png" alt="" class="col-12 col-sm-8">
+                        </center>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse16">
+                    <div class="card card-body">
+                        <h4>Quy tắc 6</h4>
+                        <p><b>Một bản số của quan hệ có dạng Optional - One là quan hệ sẽ được chuyển thành bảng</b></p>
+
+                        <ul>
+                            <li>Bảng mới sẽ có tên của quan hệ cùng khóa chính là các thuộc tính khóa chính của thực thể
+                                có liên quan
+                                <br>
+                                <center>
+                                    <img src="./assets/img/CNPM/Chap4/img28.png" alt="" class="col-12 col-sm-8">
+                                </center>
+                            </li>
+                            <li>Mô hình quan hệ tương ứng:
+                                <br>
+                                NHANVIEN(<b>MANV</b>, HOTENNV, GIOITINH, NGAYSINH, DIACHINV)
+                                <br>
+                                TONGIAO(<b>MATG</b>, TENTG)
+                                <br>
+                                COTONGIAO(<b>MANV</b>, MATG)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="2">
+        <h3>Thiết kế dữ liệu mức vật lý</h3>
+
+        <div>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button"
+                    aria-expanded="false" aria-controls="collapse21">
+                    Thiết kế CSDL
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse22" role="button"
+                    aria-expanded="false" aria-controls="collapse22">
+                    Mô hình dữ liệu mức vật lý
+                </a>
+            </p>
+            <div>
+                <div class="collapse" id="collapse21">
+                    <div class="card card-body">
+                        <h4>Thiết kế CSDL</h4>
+
+                        <ul>
+                            <li>Phục vụ cho mục tiêu xây dựng được một CSDL có cấu trúc ổn định và mở rộng</li>
+                            <li>Việc thiết kế mô hình dữ liệu mức luận lý thể hiện qua 4 bước:
+                                <ul>
+                                    <li>Phát triển một mô hình dữ liệu mức luận lý từ mỗi giao diện người dùng</li>
+                                    <li>Tích hợp khung nhìn</li>
+                                    <li>Sinh mô hình dữ liệu mức luận lý từ mô hình quan niệm</li>
+                                    <li>So sánh, điều chỉnh CSDL luận lý</li>
+                                </ul>
+                            </li>
+                            <li>Một số các quan hệ có thể thừa, nó có thể chri đến các thực thể giống nhau</li>
+                            <li>Đây được coi là bước cuối cùng trong thiết kế CSDL luận lý và CSDL</li>
+                            <li>Các vấn đề thường gặp phải:
+                                <ul>
+                                    <li>Từ đồng nghĩa</li>
+                                    <li>Tên trùng nhau</li>
+                                    <li>Phụ thuộc giữa các thuộc tính không phải khóa</li>
+                                    <li>Hai lớp đối tượng trong cùng quan hệ</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse211" role="button" aria-expanded="false" aria-controls="collapse211">
+                                    Từ đồng nghĩa
+                                  </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse212" role="button" aria-expanded="false" aria-controls="collapse212">
+                                    Tên trùng nhau
+                                  </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse213" role="button" aria-expanded="false" aria-controls="collapse213">
+                                    Phụ thuộc giữa các thuộc tính không phải khóa
+                                  </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse214" role="button" aria-expanded="false" aria-controls="collapse214">
+                                    Hai lớp đối tượng trong cùng quan hệ
+                                  </a>
+                            </p>
+                            <div>
+                                <div class="collapse" id="collapse211">
+                                    <div class="card card-body">
+                                      <h4>Từ đồng nghĩa</h4>
+                                      <ul>
+                                        <li>2 hoặc nhiều thuộc tính có thể được định danh với tên khác nhau nhưng y nghĩa như nhau</li>
+                                        <li>Trường hợp này cần xác định một tên chuẩn, thay thế các từ đồng nghĩa khác bởi tên chuẩn này</li>
+                                        <li>Ví dụ:
+                                            <br>
+                                            SINHVIEN1(<u>MASV</u>, HOTEN)
+                                            <br>
+                                            SINHVIEN2(<u>MSSV</u>, HOTEN, DIACHI)
+                                            <br>
+                                            => Hợp nhất: SINHVIEN(<u>MSV</u>, HOTEN, DIACHI)
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                <div class="collapse" id="collapse212">
+                                    <div class="card card-body">
+                                      <h4>Tên trùng nhau</h4>
+                                      <p>Trường hợp mà các thuộc tính khác nhau của cùng một đối tượng của các đối tượng khác nhau lại được định nghĩa giống nhau</p>
+                                      <p>Ví dụ</p>
+                                      <p>SINHVIEN1(<u>MSV</u>, HOTEN, DIACHI) - DIACHI lưu tại địa chỉ trường</p>
+                                      <p>SINHVIEN2(<u>MSV</u>, HOTEN, PHONE, DIACHI) - DIACHI lưu tại địa chỉ nhà</p>
+                                      <p>=> Giải quyết: Tạo tên thuộc tính mới và hợp nhất</p>
+                                      <p>SINHVIEN(<u>MSV</u>, HOTEN, PHONE, DIACHITRUONG, DIACHINHA)</p>
+                                    </div>
+                                  </div>
+                                <div class="collapse" id="collapse213">
+                                    <div class="card card-body">
+                                      <h4>Phụ thuộc giữa các thuộc tính không phải khóa</h4>
+                                      <p>Khi 2 quan hệ thỏa dạng chuẩn được hợp nhất thành quan hệ, phụ thuộc giữa các thuộc tính không phải khóa có thể xảy ra</p>
+
+                                      <p><b>Ví dụ</b></p>
+                                      <p>STUDENT1(Student_ID, Major)</p>
+                                      <p>STUDENT2(Student_ID, Adviser)</p>
+                                      <p>=> Hợp nhất 2 quan hệ STUDENT(Student_ID, Major, Adviser)</p>
+                                    </div>
+                                  </div>
+                                <div class="collapse" id="collapse214">
+                                    <div class="card card-body">
+                                      <h4>Hai lớp đối tượng trong cùng quan hệ</h4>
+                                      <p>Giả sử ta có 2 quan hệ biểu diễn cho 2 lớp đối tượng bệnh nhân khác nhau tại một cơ sở điều trị, bệnh nhân ngoại trú và nội trú</p>
+                                      <ul>
+                                        <li>PATENT1(PATENT_ID, Name, Address, Date_Treated)</li>
+                                        <li>PATENT2(PATENT_ID, Room_Number)</li>
+                                        <li>Thực hiện tách như sau:
+                                            <br>
+                                            <ul>
+                                                <li>PATENT(PATENT_ID, Name, Address, Date_Treated)</li>
+                                                <li>INPATENT(PATENT_ID, Room_Number)</li>
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse22">
+                    <div class="card card-body">
+                        <h4>Mô hình dữ liệu vật lý</h4>
+
+                        <ul>
+                            <li>Được sử dụng để đưa ra bản thiết kế mức vật lý đầy đủ</li>
+                            <li>Công việc thực hiện:
+                                <ul>
+                                    <li>Xem xét các định nghĩa của từng thuộc tính để có thể đi đến lựa chọn kiểu dữ liệu phù hợp</li>
+                                    <li>Mô tả nơi nào và khi nào dữ liệu được nhập vào hệ thống, được truy cập và cập nhật</li>
+                                    <li>Lựa chọn cách thức tổ chức dữ liệu (tập trung hay phân tán)</li>
+                                </ul>
+                            </li>
+                            <li>Dữ liệu có thể được phân nhóm theo tính chất như sau:
+                                <ul>
+                                    <li>Dữ liệu thường trực</li>
+                                    <li>Dữ liệu gốc</li>
+                                    <li>Dữ liệu tạm thời</li>
+                                </ul>
+                            </li>
+                            <center>
+                                <img src="./assets/img/CNPM/Chap4/img29.png" alt="" class="col-12 col-sm-10">
+                            </center>
+                        </ul>
+
+                        <div>
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse221" role="button" aria-expanded="false" aria-controls="collapse221">
+                                    Dữ liệu thường trực
+                                  </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse222" role="button" aria-expanded="false" aria-controls="collapse222">
+                                    Dữ liệu gốc
+                                  </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse223" role="button" aria-expanded="false" aria-controls="collapse223">
+                                    Dữ liệu tạm thời
+                                  </a>
+                            </p>
+                            <div>
+
+                                <div class="collapse" id="collapse221">
+                                    <div class="card card-body">
+                                     <h4>Dữ liệu thường trực</h4>
+                                     <ul>
+                                        <li>Dữ liệu cơ sở, dữ liệu danh mục: là dữ liệu làm cơ sở cho dữ liệu khác</li>
+                                        <li>Đặc tính cơ bản là không thay đổi</li>
+                                        <li>Ví dụ: Dữ liệu về môn học được xem là dữ liệu thường trực</li>
+                                     </ul>
+                                    </div>
+                                  </div>
+                                <div class="collapse" id="collapse222">
+                                    <div class="card card-body">
+                                     <h4>Dữ liệu gốc</h4>
+                                     <ul>
+                                        <li>Thuộc loại dữ liệu lý lịch, dữ liệu lịch sử, hoặc dữ liệu tình trạng để biểu thị cho các sự kiện xảy ra theo thời gian, không gian</li>
+                                        <li>Dữ liệu này phát sinh hằng ngày</li>
+                                        <li>Căn cứ vào thực tế để lựa chọn cách thức tổ chức dữ liệu</li>
+                                        <li>Ví dụ: Quản lý siêu thị có chi nhánh ở nhiều địa phương khác nhau</li>
+                                     </ul>
+                                    </div>
+                                  </div>
+                                <div class="collapse" id="collapse223">
+                                    <div class="card card-body">
+                                     <h4>Dữ liệu tạm thời</h4>
+                                     <p>Chỉ sử dụng trong một thời gian nào đó hoặc phục vụ cho một chức năng nào đó và vì thế khi không cần có thể xóa đi</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            `]
+        ]
     }
 }

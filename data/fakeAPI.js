@@ -1647,6 +1647,16 @@ const Subject = [
                             <li>Ứng dụng bài đã học vào việc thiết kế một chương trình thực tế</li>
                         </ul>
                     </div>
+
+                    <div id="aim">
+                        <h3>Mục tiêu phần 2</h3>
+                        <ul>
+                            <li>Nắm được cơ bản về mô hình dữ liệu mức luận lý, quá trình chuyển đổi từ mô hình CDM sang mô hình dữ liệu
+                                mức luận lý</li>
+                            <li>Áp dụng các quy tắc chuyển đổi để thực hiện chuyển đổi mô hình</li>
+                            <li>Áp dụng giải quyết được bài toán thiết kế dự án</li>
+                        </ul>
+                    </div>
                 `,
                 tableContent: CNPM4
             }
