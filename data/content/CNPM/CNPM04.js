@@ -1,0 +1,784 @@
+const CNPM4 = {
+    CNPM01: {
+        title: 'Phần 0',
+        index: [
+            ['Nội dung', 'CNPM011', `
+            <div id="1">
+            <h4>Quá trình thiết kế</h4>
+    
+            <div>
+                <ul>
+                    <li>Đây là bước đầu tiên</li>
+                    <li>Thiết kế là quy trình định nghĩa ra kiến trúc, thành phần, interfaces và các thuộc tính khác của một
+                        hệ thống hoặc một thành phần</li>
+                    <li>Mục tiêu: tạo ra mô hình hay biểu diễn một thực thể sau này sẽ sử dụng</li>
+                    <li>Thiết kế phần mềm là trung tâm kỹ thuật của tiến trình công nghệ phần mềm</li>
+                    <li>Theo ISO/IEC/IEEE, thiết kế phần mềm được chia làm 4 hoạt động chính:
+                        <ul>
+                            <li>Thiết kế kiến trúc</li>
+                            <li>Thiết kế chi tiết</li>
+                            <li>Thiết kế giao diện</li>
+                            <li>Thiết kê thuật toán</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>=> Đầu ra là tập mô hình và tài liệu thiết kế</p>
+            </div>
+        </div>
+    
+        <div id="2">
+            <h4>Các nội dung thiết kế</h4>
+    
+    
+            <div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button"
+                        aria-expanded="false" aria-controls="collapse21">
+                        Nguyên tắc thiết kế phần mềm
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse22" role="button"
+                        aria-expanded="false" aria-controls="collapse22">
+                        Nội dung thiết kế
+                    </a>
+                </p>
+                <div>
+                    <div class="collapse" id="collapse21">
+                        <div class="card card-body">
+                            <p><b>Nguyên tắc thiết kế phần mềm</b></p>
+                            <ul>
+                                <li>Trừu tượng hóa (Abstraction)</li>
+                                <li>Ghép nối và liên kế (Coupling and Conhesion)</li>
+                                <li>Phân rã và module hóa (decomposition and modularization)</li>
+                                <li>Đóng gói/ẩn thông tin (Encapsulation/information hiding)</li>
+                                <li>Tách giao diện và thực hiện (Separation of interface and implementation)</li>
+                                <li>Đầy đủ, toàn vẹn và nguyên thủy (Sufficiency, completeness, and primitiveness)</li>
+                                <li>Tách mối quan tâm (Separation of cencerns)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse22">
+                        <div class="card card-body">
+                            <p><b>Nội dung thiết kế</b></p>
+                            <div>
+                                <p>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse221" role="button"
+                                        aria-expanded="false" aria-controls="collapse221">
+                                        Thiết kế kiến trúc
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse222" role="button"
+                                        aria-expanded="false" aria-controls="collapse222">
+                                        Thiết kế dữ liệu
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse223" role="button"
+                                        aria-expanded="false" aria-controls="collapse223">
+                                        Thiết kế giao diện
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse224" role="button"
+                                        aria-expanded="false" aria-controls="collapse224">
+                                        Thiết kế thủ tục (thuật toán)
+                                    </a>
+                                </p>
+                                <div>
+                                    <div class="collapse" id="collapse221">
+                                        <div class="card card-body">
+                                            <p><b>Thiết kế kiến trúc</b></p>
+    
+                                            <ul>
+                                                <li>Một nghành học rộng liên quan đến việc nghiên cứu các cấu trúc và kiến
+                                                    trúc theo một cách chung</li>
+                                                <li>Các vấn đề cần quan tâm
+                                                    <ul>
+                                                        <li>Cấu trúc và góc nhìn</li>
+                                                        <li>Kiểu kiến trúc</li>
+                                                        <li>Mẫu thiết kế (Design Patterns)</li>
+                                                        <li>Những quyết định thiết kế kiến trúc</li>
+                                                        <li>Tương tự giữa chương trình và Framework</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+    
+                                            <div>
+                                                <p>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse2211" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2211">
+                                                        Góc nhìn
+                                                    </a>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse2212" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2212">
+                                                        Kiểu kiến trúc
+                                                    </a>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse2213" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2213">
+                                                        Mẫu thiết kế
+                                                    </a>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse2214" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2214">
+                                                        Những quyết định thiết kế kiến trúc
+                                                    </a>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse2215" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2215">
+                                                        Tương tự giữa chương trình và framework
+                                                    </a>
+                                                </p>
+                                                <div>
+                                                    <div class="collapse" id="collapse2211">
+                                                        <div class="card card-body">
+                                                            <p><b>Góc nhìn</b></p>
+    
+                                                            <ul>
+                                                                <li>Là khía cạnh mức cao khác nhau của thiết kế phần mềm
+                                                                </li>
+                                                                <li>Các góc nhìn thích hợp với những vấn đề khác nhau liên
+                                                                    quan đến phần mềm</li>
+                                                            </ul>
+    
+                                                            <p><b>Ví dụ</b></p>
+                                                            <ul>
+                                                                <li>Góc nhìn logic</li>
+                                                                <li>Góc nhìn tiến trình</li>
+                                                                <li>Góc nhìn vật lý</li>
+                                                                <li>Góc nhìn phát triển</li>
+                                                                <li>...</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2212">
+                                                        <div class="card card-body">
+                                                            <p><b>Kiểu kiến trúc</b></p>
+    
+                                                            <ul>
+                                                                <li>Là chuyên môn hóa của phần tử và các loại liên quan</li>
+                                                                <li>Một số kiến trúc chính
+                                                                    <ul>
+                                                                        <li>Kiến trúc thường</li>
+                                                                        <li>Các hệ thống phân tán</li>
+                                                                        <li>Các hệ thống tương tác</li>
+                                                                        <li>Các hệ thống mô phỏng</li>
+                                                                        <li>Các kiểu khác (ví dụ: batch, interperters,
+                                                                            process control, rule-based)</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2213">
+                                                        <div class="card card-body">
+                                                            <p><b>Mẫu thiết kế</b></p>
+    
+                                                            <ul>
+                                                                <li>Là một giải pháp phổ biến để giải quyết các vấn đề phổ
+                                                                    biến trong ngữ cảnh đưa ra</li>
+                                                                <li>Mẫu thiết kế mức thấp bao gồm:
+                                                                    <ul>
+                                                                        <li>Mẫu tạo</li>
+                                                                        <li>Mẫu cấu trúc</li>
+                                                                        <li>Mẫu hành vi</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2214">
+                                                        <div class="card card-body">
+                                                            <p><b>Những quyết định thiết kế kiến trúc</b></p>
+                                                            <ul>
+                                                                <li>Thiết kế kiến trúc là quá trình sáng tạo</li>
+                                                                <li>Phải tạo ra quyết định cơ bản ảnh hưởng sâu sắc tới các
+                                                                    phần mềm và quy trình phát triển phần mềm</li>
+                                                                <li>Thiết kế kiến trúc tạo thành từ quan điểm</li>
+                                                                <li>Cơ sở quyết định tác động vào chất lượng thuộc tính và
+                                                                    hoán đổi giữa các thuộc tính cạnh tranh</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2215">
+                                                        <div class="card card-body">
+                                                            <h4>Tương tự giữa chương trình và framework</h4>
+    
+                                                            <ul>
+                                                                <li>Xác định sự tương đồng giữa phần mềm bằng cách thiết kế
+                                                                    các thành phần tái sử dụng và tùy vào sự khác nhau của
+                                                                    phần mềm</li>
+                                                                <li>Khung trong lập trình hướng đối tượng:
+                                                                    <br>
+                                                                    Một phần hệ thống phần mềm hoàn toàn có thể được mở rộng
+                                                                    bằng cách cài đặt các công cụ thích hợp
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse222">
+                                        <div class="card card-body">
+                                            <p><b>Thiết kế dữ liệu</b></p>
+    
+                                            <ul>
+                                                <li>Mục đích: Mô tả cách thức tổ chức lưu trữ dữ liệu của phần mềm bên trong
+                                                    máy tính</li>
+                                                <li>Mỗi hệ thống sẽ sử dụng một CSDL riêng</li>
+                                                <li>PT&TK CSDL tiến hành đồng thời với PT&TK hệ thống hoặc tiến hành riêng
+                                                </li>
+                                                <li>Xây dựng CSDL giảm tối đa sự dư thừa dữ liệu đồng thời để khôi phục và
+                                                    bảo trì</li>
+                                            </ul>
+    
+                                            <div>
+                                                <p>
+                                                    <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse"
+                                                        href="#collapse2221" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2221">
+                                                        Các khái niệm về dữ liệu
+                                                    </a>
+                                                    <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse"
+                                                        href="#collapse2222" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2222">
+                                                        Thiết kế dữ liệu
+                                                    </a>
+                                                    <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse"
+                                                        href="#collapse2224" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2224">
+                                                        Thiết kế dữ liệu với tính đúng đắn
+                                                    </a>
+                                                    <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse"
+                                                        href="#collapse2225" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2225">
+                                                        Thiết kế dữ liệu với tính tiến hóa
+                                                    </a>
+                                                    <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse"
+                                                        href="#collapse2226" role="button" aria-expanded="false"
+                                                        aria-controls="collapse2226">
+                                                        Thiết kế dữ liệu với yêu cầu hệ thống
+                                                    </a>
+                                                </p>
+                                                <div>
+                                                    <div class="collapse" id="collapse2221">
+                                                        <div class="card card-body">
+                                                            <p><b>Các khái niệm về dữ liệu</b></p>
+                                                            <ul>
+                                                                <li>CSDL: Kho chứa bộ sưu tập có tổ chức các file dữ liệu,
+                                                                    các bản ghi và các trường</li>
+                                                                <li>Hệ quản trị CSDL: là phần mềm điều khiển mọi truy nhập
+                                                                    đối với CSDL</li>
+                                                                <li>Phân loại HQTCSDL:
+                                                                    <ul>
+                                                                        <li>HQTCSDL phần cấp ứng với mô hình phân cấp</li>
+                                                                        <li>HQTCSDL mạng ứng với mô hình mạng</li>
+                                                                        <li>HQTCSDL quan hệ ứng với mô hình quan hệ</li>
+                                                                        <li>HQTCSDL hướng đối tượng ứng với mô hình hướng
+                                                                            đối tượng</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                            <center>
+                                                                <img src="./assets/img/CNPM/Chap4/chap1.png" alt="">
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2222">
+                                                        <div class="card card-body">
+                                                            <p><b>Thiết kế dữ liệu cần quan tâm</b></p>
+                                                            <ul>
+                                                                <li>Thiết kế dữ liệu với tính đúng đắn</li>
+                                                                <li>Thiết kế dữ liệu với tính biến hóa</li>
+                                                                <li>Thiết kế dữ liệu với yêu cầu hệ thống</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2224">
+                                                        <div class="card card-body">
+                                                            <p><b>Thiết kế dữ liệu với tính đúng đắn</b></p>
+                                                            <ul>
+                                                                <li>Bảo đảm lưu trữ đầy đủ và chính xác về mặt ngữ nghĩa
+                                                                </li>
+                                                                <li>Các bước thực hiện
+                                                                    <ul>
+                                                                        <li>Bước 1. Chọn yêu cầu - Lập sơ đồ logic cho yêu
+                                                                            cầu đó</li>
+                                                                        <li>Bước 2.
+                                                                            <ul>
+                                                                                <li>Bổ sung yêu cầu mới</li>
+                                                                                <li>Nếu sơ đồ logic vẫn đáp ứng thì sang
+                                                                                    bước 3. Ngược lại, bổ sung vào sơ đồ
+                                                                                    logic (*)
+                                                                                    <br>
+                                                                                    <ul>
+                                                                                        <li>Thuộc tính mới (ưu tiên 1)</li>
+                                                                                        <li>(hoặc) Bảng dữ liệu mới (ưu tiên
+                                                                                            2)</li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Bước 3. Lặp bước 2 cho đến khi đã xem xét mọi
+                                                                            yêu cầu </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                            <p><b>Lưu ý: Khi thiết kế dữ liệu với tính đúng đắn</b></p>
+                                                            <ul>
+                                                                <li><b>Yêu cầu mới</b>: Tìm trong quy trình, tài liệu yêu
+                                                                    cầu xem có thông tin mới cần lưu trữ hay không? Nếu có
+                                                                    thì lưu trữ ở đâu (Có cần tạo bảng mới)?</li>
+                                                                <li>Khóa của các bảng dữ liệu phải dựa vào ngữ nghĩa tương
+                                                                    ứng để xác định (Có thể tạo thêm thuộc tính để làm thuộc
+                                                                    tính khóa).</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2225">
+                                                        <div class="card card-body">
+                                                            <p><b>Thiết kế dữ liệu với tính tiến hóa</b></p>
+                                                            <ul>
+                                                                <li>Thiết kế dữ liệu đảm bảo các thông tin phù hợp với yêu
+                                                                    cầu chất lượng phần mềm:
+                                                                    <ul>
+                                                                        <li>Tiến hóa</li>
+                                                                        <li>Hiệu quả</li>
+                                                                        <li>Tiện dụng</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>Xây dựng CSDL cần xem xét tới giới hạn là các tham số
+                                                                    (tên) với miền giá trị của nó</li>
+                                                            </ul>
+                                                            <center>
+                                                                <img src="./assets/img/CNPM/Chap4/chap2.png" alt="">
+                                                            </center>
+                                                            <p>Xây dựng CSDL cần xem xét tới giới hạn là các tham số (tên)
+                                                                với miền giá trị của nó</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapse2226">
+                                                        <div class="card card-body">
+                                                            <p><b>Thiết kế dữ liệu với yêu cầu hệ thống</b></p>
+                                                            <p>Là quá trình thiết kế các bảng CSDL để phân quyền cho hệ
+                                                                thống. Có 3 dạng phân quyền</p>
+                                                            <center>
+                                                                <img src="./assets/img/CNPM/Chap4/img3.png" alt=""
+                                                                    class="col-12 col-sm-10">
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse223">
+                                    <div class="card card-body">
+                                        <p><b>Thiết kế giao diện</b></p>
+    
+                                        <ul>
+                                            <li>Là một phần quan trọng trong quá trình thiết kế phần mềm</li>
+                                            <li>Một số vấn đề trong thiết kế giao diện
+                                                <ol>
+                                                    <li>Nguyên tắc cơ bản trong thiết kế giao diện:
+                                                        <ul>
+                                                            <li>Dễ học</li>
+                                                            <li>Quen thuộc với người dùng</li>
+                                                            <li>TÍnh nhất quán</li>
+                                                            <li>Ngạc nhiên tối thiểu</li>
+                                                            <li>Khôi phục được</li>
+                                                            <li>Hướng dẫn người dùng</li>
+                                                            <li>Người dùng đa dạng</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Vấn đề trong thiết kế giao diện: Cần xem xét:
+                                                        <ul>
+                                                            <li>Cung cấp thông tin bằng cách nào?</li>
+                                                            <li>Trình bày thông tin ra sao?</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Các kiểu tương tác
+                                                        <br>
+                                                        <center>
+                                                            <img src="./assets/img/CNPM/Chap4/img4.png" alt=""
+                                                                class="col-12 col-sm-10">
+                                                        </center>
+                                                    </li>
+                                                    <li>Biểu diễn thông tin
+                                                        <ul>
+                                                            <li>Thông tin có thể được trình bày trực tiếp (VD: text trong
+                                                                một trình soạn thảo)</li>
+                                                            <li>Biến đổi thành một dạng biểu diễn khác (VD: dạng đồ họa)
+                                                            </li>
+                                                            <li>Model - View - Controller là cách tiếp cận hỗ trợ nhiều kiểu
+                                                                biểu diễn dữ liệu</li>
+                                                        </ul>
+                                                        <center>
+                                                            <img src="./assets/img/CNPM/Chap4/img5.png"
+                                                                class="col-12 col-sm-10" alt="">
+                                                        </center>
+                                                        <ul>
+                                                            <li>Có 2 loại thông tin cần được biểu diễn
+                                                                <ul>
+                                                                    <li>Thông tin tĩnh</li>
+                                                                    <li>Thông tin động</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Các kỹ thuật hiển thị lượng lớn thông tin
+                                                                <ul>
+                                                                    <li>Hình ảnh</li>
+                                                                    <li>Màu sắc</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Hướng dẫn sử dụng màu sắc
+                                                                <ul>
+                                                                    <li>Hạn chế số màu và mức độ sặc sỡ</li>
+                                                                    <li>Dùng sự thay đổi màu để báo hiệu</li>
+                                                                    <li>Dùng kí hiệu màu (color coding) để hỗ trợ công việc
+                                                                    </li>
+                                                                    <li>Dùng kí hiệu màu một cách cẩn trọng và nhất quán
+                                                                    </li>
+                                                                    <li>Cẩn thận về hiệu ứng cặp đôi của màu sắc</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Quy trình thiết kế giao diện
+                                                                <ul>
+                                                                    <li>Một quy trình lặp đi lặp lại với sự liên lạc giữa
+                                                                        người dùng và người thiết kế</li>
+                                                                    <li>Có 3 hoạt động chính:
+                                                                        <ul>
+                                                                            <li>User analysis</li>
+                                                                            <li>System prototyping</li>
+                                                                            <li>Interface evaluation</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Quốc tế hóa và địa phương hóa
+                                                                <ul>
+                                                                    <li>Phần mềm thích ứng với sự khác nhau về khu vực, ngôn
+                                                                        ngữ và yêu cầu kỹ thuật của thị trường</li>
+                                                                    <li>Quốc tế hóa là quá trình thiết kế một ứng dụng bao
+                                                                        gồm nhiều ngôn ngữ</li>
+                                                                    <li>Địa phương hóa: Sự thích ứng của quốc tế hóa với khu
+                                                                        vực hoặc ngôn ngữ cụ thể bằng cách thêm các thành
+                                                                        phần của địa phương và dịch văn bản</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Biểu tượng và khái niệm sự quen thuộc
+                                                                <ul>
+                                                                    <li>Tạo sự quen thuộc giữa các thành phần với những hệ
+                                                                        thống
+                                                                        khác. Ví dụ: Chức năng xóa tập tin có thể gắn biểu
+                                                                        tượng
+                                                                        thùng rác</li>
+                                                                    <li>Không được sử dụng biểu tượng có nhiều hơn một ý
+                                                                        nghĩa.</li>
+                                                                    <li>Một số lưu ý khi thiết kế giao diện:
+                                                                        <ul>
+                                                                            <li>Nên có sự đồng nhất giữa các giao diện
+                                                                                (menu, lệnh, hiển
+                                                                                thị...)</li>
+                                                                            <li>Đặt tên nhãn ngắn gọn, dễ nhớ.</li>
+                                                                            <li>Tối ưu trong trình bày hộp thoại và di
+                                                                                chuyển chuột</li>
+                                                                            <li>Hạn chế nhập dữ liệu trực tiếp, nếu có thể,
+                                                                                nên cho người
+                                                                                dùng chọn lựa từ một số dữ liệu có sẵn.</li>
+                                                                            <li>Yêu cầu xác nhận những tác vụ mang tính phá
+                                                                                hủy (xoá
+                                                                                dữ liệu).</li>
+                                                                            <li>Chấp nhận lỗi từ phía người sử dụng.</li>
+                                                                            <li>Nên cung cấp feedback cho người dùng.</li>
+                                                                            <li>Tạo ra thông báo lỗi có ý nghĩa.</li>
+                                                                            <li>Cung cấp trợ giúp</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse224">
+                                    <div class="card card-body">
+                                        <p><b>Thiết kế thủ tục (Thuật toán) </b></p>
+                                        <ul>
+                                            <li>Là quá trình giải thích cho người lập trình biết được quá trình xử lý từ
+                                                Input đến Output</li>
+                                            <li>Việc thiết kế cần quan tâm đến:
+                                                <ul>
+                                                    <li>Cấp bậc điều khiển</li>
+                                                    <li>Cấu trúc dữ liệu</li>
+                                                </ul>
+                                            </li>
+                                            <li>Cấu trúc chương trình. Biểu thị cho cách tổ chức các thành phần module khác.
+                                            </li>
+                                            <li>Một số chỉ số cần quan tâm:
+                                                <ul>
+                                                    <li>Chiều rộng</li>
+                                                    <li>Thuộc cấp</li>
+                                                    <li>Độ sâu</li>
+                                                    <li>Tính thấy được</li>
+                                                    <li>Số module ra</li>
+                                                    <li>Số module vào</li>
+                                                    <li>Tính cố kết</li>
+                                                    <li>Thượng cấp</li>
+                                                    <li>...</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+    
+                                        <p>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2241"
+                                                role="button" aria-expanded="false" aria-controls="collapse2241">
+                                                Cấu trúc chương trình và các chỉ số được minh họa
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2242"
+                                                role="button" aria-expanded="false" aria-controls="collapse2242">
+                                                Cấu trúc dữ liệu
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2243"
+                                                role="button" aria-expanded="false" aria-controls="collapse2243">
+                                                Một số vấn đề trong thiết kế
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2244"
+                                                role="button" aria-expanded="false" aria-controls="collapse2244">
+                                                Đặc trưng của thiết kế hoàn thiện
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2245"
+                                                role="button" aria-expanded="false" aria-controls="collapse2245">
+                                                Các thuộc tính về cách sử dụng
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2246"
+                                                role="button" aria-expanded="false" aria-controls="collapse2246">
+                                                Kỹ thuật đánh giá và phân tích
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2247"
+                                                role="button" aria-expanded="false" aria-controls="collapse2247">
+                                                Biện pháp
+                                            </a>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2248"
+                                                role="button" aria-expanded="false" aria-controls="collapse2248">
+                                                Tài liệu thiết kế
+                                            </a>
+                                        </p>
+                                        <div>
+                                            <div class="collapse" id="collapse2241">
+                                                <div class="card card-body">
+                                                    <h4>Cấu trúc chương trình và các chỉ số được minh họa</h4>
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img7.png" alt=""
+                                                            class="col-12 col-sm-10">
+                                                    </center>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2242">
+                                                <div class="card card-body">
+                                                    <h4>Cấu trúc dữ liệu</h4>
+    
+                                                    <ul>
+                                                        <li>Biểu diễn mối quan hệ logic giữa các phần dữ liệu riêng lẻ,..
+                                                        </li>
+                                                        <li>Một cấu trúc dữ liệu thường sử dụng
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <ul>
+                                                                            <li>Khoảng mục vô hướng</li>
+                                                                            <li>Vector tuần tự</li>
+                                                                            <li>Danh sách móc nối</li>
+                                                                            <li>Không gian n chiều</li>
+                                                                            <li>Cây cấp bậc</li>
+                                                                            <li>...</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <img src="./assets/img/CNPM/Chap4/img6.png" alt=""
+                                                                            class="col-12">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2243">
+                                                <div class="card card-body">
+                                                    <h4>Một số vấn đề trong thiết kế</h4>
+                                                    <div>
+                                                        <p>
+                                                            <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                                href="#collapse22431" role="button" aria-expanded="false"
+                                                                aria-controls="collapse22431">
+                                                                Thiết kế cộng tác
+                                                            </a>
+                                                            <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                                href="#collapse22432" role="button" aria-expanded="false"
+                                                                aria-controls="collapse22432">
+                                                                Sự đồng thời
+                                                            </a>
+                                                        </p>
+                                                        <div>
+                                                            <div class="collapse" id="collapse22431">
+                                                                <div class="card card-body">
+                                                                    <h4>Thiết kế cộng tác</h4>
+                                                                    <ul>
+                                                                        <li>Đa phần hệ thống phần mềm đều sử dụng</li>
+                                                                        <li>Một số vấn đề phát sinh:
+                                                                            <ul>
+                                                                                <li>Ai là người phù hợp nhất?</li>
+                                                                                <li>Viết tài liệu thiết kế như thế nào?</li>
+                                                                                <li>Làm sao để kết hợp...?</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Nguyên nhân: do sự khác biệt về kinh nghiệm, sự
+                                                                            hiểu biết và sở thích mỗi cá nhân</li>
+                                                                        <li>Cách giải quyết: thống nhất các vấn đề trước khi
+                                                                            đưa vào thực hiện</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="collapse" id="collapse22432">
+                                                                <div class="card card-body">
+                                                                    <h4>Sự đồng thời</h4>
+                                                                    <ul>
+                                                                        <li><b>Các vấn đề nảy sinh</b>
+                                                                            <ul>
+                                                                                <li>Tính nhất quán của dữ liệu được chia sẻ
+                                                                                </li>
+                                                                                <li>Đảm bảo rằng một hoạt động không can
+                                                                                    thiệp vào các hoạt động khác</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li><b>Cách giải quyết</b>
+                                                                            <ul>
+                                                                                <li>Sự đồng bộ</li>
+                                                                                <li>Loại trừ lẫn nhau</li>
+                                                                                <li>Giảm sát</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2244">
+                                                <div class="card card-body">
+                                                    <h4>Đặc trưng của thiết kế hoàn thiện</h4>
+    
+                                                    <p><b>Cần quan tâm</b></p>
+                                                    <ul>
+                                                        <li>Đánh giá đầy đủ và toàn bộ thì quá đắt và không thực tế cho hầu
+                                                            hết các hệ thống</li>
+                                                        <li>Một giao diện cần dược đánh giá theo một đặc tả về tính sử dụng
+                                                        </li>
+                                                        <li>Cần thực hiện một số đánh giá UI để đánh giá mức độ thích hợp
+                                                        </li>
+                                                        <li>Các thuộc tính về tính sử dụng</li>
+                                                        <li>Kỹ thuật đánh giá và phân tích</li>
+                                                        <li>Biện pháp</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2245">
+                                                <div class="card card-body">
+                                                    <h4>Các thuộc tính về cách sử dụng</h4>
+                                                    <table class="col-12 col-sm-10">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Thuộc tính</th>
+                                                                <th>Mô tả</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Khả năng học</td>
+                                                                <td>Người dùng mới cần bao lâu để có thể hoạt động hiệu quả
+                                                                    với hệ thống?</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Tốc độ vận hành</td>
+                                                                <td>Tốc độ phản ứng của hệ thống có đáp ứng tốt công việc
+                                                                    của người dùng</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Chịu lỗi</td>
+                                                                <td>Mức độ dung thứ lỗi của hệ thống đối với lỗi người dùng
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Khả năng khôi phục</td>
+                                                                <td>Khả năng hệ thống khôi phục từ lỗi của người dùng</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Tương thích</td>
+                                                                <td>Hệ thống gắn bó chặt chẽ với một kiểu làm việc đến đâu?
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2246">
+                                                <div class="card card-body">
+                                                    <h4>Kỹ thuật đánh giá và phân tích</h4>
+                                                    <ul>
+                                                        <li>Câu hỏi điều tra để lấy phản hồi của người dùng</li>
+                                                        <li>Quay video về việc sử dụng hệ thống rồi sau đó đánh giá nội dung
+                                                        </li>
+                                                        <li>Cải cách đoạn mã thu thập thông tin về các tiện ích được sử dụng
+                                                            và lỗi của người dùng</li>
+                                                        <li>Phần mềm có chức năng thu thập phản hồi trực tuyến của người
+                                                            dùng</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2247">
+                                                <div class="card card-body">
+                                                    <h4>Biện pháp</h4>
+                                                    <ul>
+                                                        <li>Sử dụng để phân tích và đánh giá các khía cạnh khác nhau của
+                                                            việc thiết kế phần mềm</li>
+                                                        <li>Chia thành 2 loại:
+                                                            <ul>
+                                                                <li>Chức năng dựa trên thiết kế: Chức năng được xây dựng
+                                                                    bằng cách phân tích các giao diện của hệ thống</li>
+                                                                <li>Thiết kế hướng đối tượng: Sử dụng lớp các đối tượng làm
+                                                                    trung tâm, từ đó xây dựng ra chức năng và giao diện</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="collapse" id="collapse2248">
+                                                <div class="card card-body">
+                                                    <h4>Tài liệu thiết kế</h4>
+                                                    <p><b>Bao gồm các phần</b></p>
+                                                    <ul>
+                                                        <li>Mục nếu lý do cơ bản của thiết kế</li>
+                                                        <li>Phác thảo những vấn đề then chốt và các thỏa hiệp</li>
+                                                        <li>Mục mô tả về các thành phần của hệ thống</li>
+                                                        <li>Mục xác định cách mà người dùng tương tác với hệ thống</li>
+                                                        <li>Tập các biểu đồ và ký pháp hình thức mô tả toàn bộ tổ chức và
+                                                            cấu trúc của hệ thống</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            `]
+        ]
+    }
+}
