@@ -1657,6 +1657,15 @@ const Subject = [
                             <li>Áp dụng giải quyết được bài toán thiết kế dự án</li>
                         </ul>
                     </div>
+
+                    <div id="aim">
+                        <h3>Mục tiêu phần 3</h3>
+                
+                        <ul>
+                            <li>Nắm được các khái niệm liên quan đến thiết kế xử lý</li>
+                            <li>Xây dựng được sơ đồ xử lý của chương trình ở mức cơ bản cấp 0, cấp 1</li>
+                        </ul>
+                    </div>
                 `,
                 tableContent: CNPM4
             }

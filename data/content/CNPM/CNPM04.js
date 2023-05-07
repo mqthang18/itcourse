@@ -1585,5 +1585,462 @@ const CNPM4 = {
     </div>
             `]
         ]
+    },
+    CNPM04: {
+        title: 'Phần 3',
+        index: [
+            ['Nội dung', 'CNPM041', `
+            <div id="tableContent">
+            <h3>Nội dung</h3>
+            <ul>
+                <li>Các khái niệm liên quan đến thiết kế xử lý</li>
+                <li>Lưu đồ dòng dữ liệu và các khái niệm liên quan</li>
+            </ul>
+        </div>
+    
+        <div id="1">
+            <h4>Thiết kế xử lý</h4>
+    
+            <ul>
+                <li>Để biểu diễn việc xử lý dữ liệu, người ta thường dùng lưu đồ dòng dữ liệu (Data flow diagram - DFD)</li>
+                <li>CDM:
+    
+                    <ul>
+                        <li>Làm rõ mối quan hệ và ngữ nghĩa giữa các dữ liệu</li>
+                        <li>Không thể hiện cách thức các dữ liệu này sẽ được tạo ra, thay đổi và luân chuyển trong hệ thống
+                        </li>
+                    </ul>
+                </li>
+                <li>Giải pháp: Xây dựng thành phần xử lý DFD
+                    <ul>
+                        <li>Tiệp cận cổ điển</li>
+                        <li>Tiếp cận hiện đại
+                            <ul>
+                                <li>Theo kiểu Bắc Mỹ: Mô hình DFD (Có 2 mức: mức quan niệm và mức vật lý)</li>
+                                <li>Theo kiểu châu Âu: Mô hình MERISE (có 3 mức: mức quan niệm, mức logic, mức vật lý)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+    
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse11" role="button"
+                        aria-expanded="false" aria-controls="collapse11">
+                        Lưu đồ Dòng dữ liệu (DFD)
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse12" role="button"
+                        aria-expanded="false" aria-controls="collapse12">
+                        Mục đích của 1 DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse13" role="button"
+                        aria-expanded="false" aria-controls="collapse13">
+                        Các khái niệm
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse14" role="button"
+                        aria-expanded="false" aria-controls="collapse14">
+                        Kết hợp các khái niệm trên 1 ô xử lý
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse15" role="button"
+                        aria-expanded="false" aria-controls="collapse15">
+                        Các cấp DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse16" role="button"
+                        aria-expanded="false" aria-controls="collapse16">
+                        Các luật về DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse17" role="button"
+                        aria-expanded="false" aria-controls="collapse17">
+                        Cân bằng các DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse18" role="button"
+                        aria-expanded="false" aria-controls="collapse18">
+                        Các nguyên tắc dừng phân rã DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse19" role="button"
+                        aria-expanded="false" aria-controls="collapse19">
+                        Đặc tả ô xử lý
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse20" role="button"
+                        aria-expanded="false" aria-controls="collapse20">
+                        Mối quan hệ giữa CDM và DFD
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button"
+                        aria-expanded="false" aria-controls="collapse21">
+                        Các bước phát triển DFD
+                    </a>
+                </p>
+                <div>
+                    <div class="collapse" id="collapse11">
+                        <div class="card card-body">
+                            <h4>Lưu đồ Dòng dữ liệu (DFD)</h4>
+                            <ul>
+                                <li>DFD biểu diễn sự kết nối giữa các hoạt động của hệ thống thông qua việc trao đổi dữ liệu
+                                    khi hệ
+                                    thống hoạt động</li>
+                                <li>Lưu đồ dòng dữ liệu phải thể hiện được:
+                                    <ul>
+                                        <li>Xử lý nào phụ thuộc vào các xử lý nào?</li>
+                                        <li>Dữ liệu cần cho mỗi xử lý</li>
+                                    </ul>
+                                </li>
+                                <li><b>Phương pháp tạo DFD</b>: <i>phân rã các hoạt động chi tiết</i> dần đến khi có thể
+                                    chuyển cho
+                                    người lập trình triển khai</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse12">
+                        <div class="card card-body">
+                            <h4>Một DFD sẽ mô tả:</h4>
+                            <ul>
+                                <li>Các quá trình xử lý bên trong hệ thống</li>
+                                <li>Các kho lưu trữ hỗ trợ cho các thao tác của hệ thống</li>
+                                <li>Các dòng thông tin trong hệ thống</li>
+                                <li>Ranh giới của hệ thống</li>
+                                <li>Sự giao tiếp với các thực thể bên ngoài</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse13">
+                        <div class="card card-body">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse131" role="button"
+                                    aria-expanded="false" aria-controls="collapse131">
+                                    Quá trình xử lý/ô xử lý
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse132" role="button"
+                                    aria-expanded="false" aria-controls="collapse132">
+                                    Dòng dữ liệu: Dữ liệu vào & Dữ liệu ra
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse133" role="button"
+                                    aria-expanded="false" aria-controls="collapse133">
+                                    Nguồn / đích
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse134" role="button"
+                                    aria-expanded="false" aria-controls="collapse134">
+                                    Kho dữ liệu
+                                </a>
+                            </p>
+                            <div>
+                                <div class="collapse" id="collapse131">
+                                    <div class="card card-body">
+                                        <ul>
+                                            <li>Gồm nhiều thao tác trong một lĩnh vực nào đó</li>
+                                            <li>Môt ô xử lý tương đương với một quá trình xử lý trong thế giới thực</li>
+                                            <li>Tên ô xử lý thường là một động từ</li>
+                                            <li>
+                                                Ký hiệu
+                                                <br>
+    
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img30.png" alt=""
+                                                        class="col-12 col-sm-6">
+                                                </center>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse132">
+                                    <div class="card card-body">
+                                        <h4>Dòng dữ liệu</h4>
+                                        <ul>
+                                            <li><b>Dữ liệu vào:</b> Các đối tượng tham gia vào quá trình xử lý, đó là giá
+                                                trị của các thuộc tính của các đối tượng đó</li>
+                                            <li><b>Dữ liệu ra:</b> Là kết quả của một quá trình xử lý trong thế giới thực,
+                                                thường là một vật chứng nào đó (danh sách, hóa đơn,...)</li>
+                                            <li>Ký hiệu dòng dữ liệu
+                                                <br>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img31.png" alt=""
+                                                        class="col-12 col-sm-8">
+                                                </center>
+                                                <br>
+                                                => Dữ liệu ra của ô xử lý này có thể là dữ liệu vào của ô xử lý khác
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse133">
+                                    <div class="card card-body">
+                                        <h4>Nguồn / Đích</h4>
+                                        <ul>
+                                            <li><b>Là các thực thể bên ngoài hệ thống</b>
+                                                <br>
+                                                <ul>
+                                                    <li>Nguồn tác động vào hệ thống khởi tạo các quá trình xử lý</li>
+                                                    <li>Đích là đối tượng mà hệ thống phải cung cấp cho</li>
+                                                </ul>
+                                            </li>
+                                            <li>Ký hiệu:
+                                                <br>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img32.png" alt=""
+                                                        class="col-12 col-sm-10">
+                                                </center>
+                                            </li>
+                                            <li>Một nguồn/đích có thể là:
+                                                <ul>
+                                                    <li>Một tổ chức khác hay đơn vị khác của tổ chức gửi dữ liệu hoặc nhận
+                                                        thông tin từ hệ thống được phân tích.
+                                                        <br>
+                                                        VD: bộ phận cung cấp hàng
+                                                    </li>
+                                                    <li>Một người bên trong hoặc bên ngoài đơn vị kinh doanh hỗ trợ bởi hệ
+                                                        thống đang phân tích và tương tác với hệ thống. <br>
+                                                        VD. Khách hàng
+                                                    </li>
+                                                    <li>Một hệ thống thông tin khác có trao đổi thông tin với hệ thống đang
+                                                        được phân tích</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse134">
+                                    <div class="card card-body">
+                                        <h4>Kho dữ liệu</h4>
+                                        <ul>
+                                            <li>Là nơi chứa dữ liệu mà quá trình xử lý cần tham khảo hoặc cần lưu trữ lại
+                                                sau quá trình xử lý</li>
+                                            <li>Ký hiệu
+                                                <br>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img33.png" alt=""
+                                                        class="col-12 col-sm-8">
+                                                </center>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse14">
+                        <div class="card card-body">
+                            <h4>Kết hợp các khái niệm trên 1 ô xử lý</h4>
+                            <center>
+                                <img src="./assets/img/CNPM/Chap4/img34.png" alt="" class="col-12">
+                            </center>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse15">
+                        <div class="card card-body">
+                            <h4>Các cấp DFD</h4>
+    
+                            <p>Việc phân tích thành phần xử lý bằng DFD là phương pháp phân tích đi xuống (top-down), từ
+                                tổng quát đến chi tiêt</p>
+    
+                            <div>
+                                <p>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse151" role="button"
+                                        aria-expanded="false" aria-controls="collapse151">
+                                        DFD cấp 0
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse152" role="button"
+                                        aria-expanded="false" aria-controls="collapse152">
+                                        DFD cấp n
+                                    </a>
+                                </p>
+                                <div>
+                                    <div class="collapse" id="collapse151">
+                                        <div class="card card-body">
+                                            <h4>DFD cấp 0</h4>
+    
+                                            <ul>
+                                                <li>Là cấp thấp nhất hay còn gọi là sơ đồ ngữ cảnh (Context diagram)</li>
+                                                <li>Trong đó toàn bộ hệ thống là một quá trình xử lý</li>
+                                                <li>Ký hiệu
+                                                    <br>
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img35.png" alt=""
+                                                            class="col-12 col-sm-10">
+                                                    </center>
+                                                </li>
+                                            </ul>
+    
+                                            <p><b>Vd: DFD cấp 0 của HT đặt thức ăn</b></p>
+    
+                                            <center>
+                                                <img src="./assets/img/CNPM/Chap4/img36.png" alt=""
+                                                    class="col-12 col-sm-10">
+                                            </center>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse152">
+                                        <div class="card card-body">
+                                            <h4>DFD cấp n</h4>
+                                            <ul>
+                                                <li>Các cấp cao hơn có được bằng cách chi tiết hóa từng ô xử lý của cấp
+                                                    trước</li>
+                                                <li>Cấp n có được bằng cách phân rã mỗi ô xử lý cấp n - 1 thành nhiều ô xử
+                                                    lý cấp n</li>
+                                                <li>Việc dừng ở mức nào là tùy hệ thống, thường là tới mức mà mọi người đều
+                                                    chấp nhận trong việc nhận thức về thành phần xử lý của hệ thống</li>
+                                            </ul>
+    
+                                            <p><b>Ví dụ</b>. DFD cấp 1 của HT đặt thức ăn</p>
+                                            <center>
+                                                <img src="./assets/img/CNPM/chap4/img37.png" alt=""
+                                                    class="col-12 col-sm-10">
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse16">
+                        <div class="card card-body">
+                            <h4>Các luật về DFD</h4>
+    
+                            <p>Các luật cơ bản mà tất cả các DFD phải tuân theo</p>
+                            <ul>
+                                <li>Dữ liệu vào và dữ liệu ra của một ô xử lý phải luôn luôn khác nhau</li>
+                                <li>Các ô xử lý, các kho dữ liệu và các nguồn/đích phải có một tên duy nhất
+                                    <br>
+                                    Tuy nhiên, để làm cho sơ đồ không bị rối, ta có thể vẽ lặp lại các kho dữ liệu và các
+                                    nguồn/đích trên một sơ đồ
+                                </li>
+                            </ul>
+    
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <p><b>Ô xử lý</b></p>
+                                        <ul style="list-style-type: '';">
+                                            <li>A. Không có ô xử lý nào chỉ có dữ liệu ra (Phép lạ?)</li>
+                                            <li>B. Không có ô xử lý nào chỉ có dữ liệu vào (Lỗ đen?)</li>
+                                            <li>C. Tên của một ô xử lý phải là động từ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <p><b>Kho dữ liệu</b></p>
+                                        <ul style="list-style-type: '';">
+                                            <li>D. Dữ liệu không thể di chuyển trực tiếp từ một kho này sang một kho khác
+                                            </li>
+                                            <li>E. Dữ liệu không thể di chuyển trực tiếp từ một nguồn vào một kho</li>
+                                            <li>F. Dữ liệu không thể di chuyển trực tiếp từ một kho vào một đích</li>
+                                            <li>Tên kho dữ liệu phải là danh từ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <p><b>Nguồn/đích</b></p>
+                                        <ul style="list-style-type: '';">
+                                            <li>H. Dữ liệu không thể di chuyển trực tiếp từ một nguồn sang một đích</li>
+                                            <li>I. Tên của một nguồn/đích là một danh từ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <p><b>Dòng dữ liệu</b></p>
+                                        <ul style="list-style-type: '';">
+                                            <li>J. Một dòng dữ liệu chỉ có một hướng</li>
+                                            <li>K. Một ký hiệu phân nhánh cho biết chính xác cùng một dữ liệu xuất ra từ một nơi và đi đến 2 hay nhiều ô xử lý hay nguồn/đích khác</li>
+                                        </ul>
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img38.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <ul>
+                                <li>Một điểm kết thể hiện chính xác cùng một dữ liệu đến từ bất kỳ hai hay nhiều ô xử lý, kho dữ liệu hay nguồn/đích và đi đến cùng một nơi</li>
+                                <li>Một dòng dữ liệu không thể đi trở lại chính ô xử lý đã xuất ra nó một cách trực tiếp</li>
+                                <li>Một dòng dữ liệu đi đến một kho dữ liệu có nghĩa đây là một hoạt động cập nhật</li>
+                                <li>Một dòng dữ liệu đi ra từ một kho dữ liêu có nghĩa đây là một hoạt động truy xuất hay sử dụng dữ liệu</li>
+                                <li>Một dòng dữ liệu phải có một nhã là danh từ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse17">
+                        <div class="card card-body">
+                            <h4>Cân bằng các DFD</h4>
+                            <ul>
+                                <li>Khi phân rã một DFD, ta phải bảo toàn các dữ liệu vào và các dòng dữ liệu ra khỏi một ô xử lý ở mức kế tiếp.</li>
+                                <li>Điều này gọi là cân bằng</li>
+                                <li>Ví dụ: DFD mức 0 và mức 1 của HT đặt thức ăn đã đề cập ở trên</li>
+                            </ul>
+                            <p><b>Ví dụ</b>. Tập các DFD <b style="color: red;">không</b> cân bằng</p>
+                            <center>
+                                <img src="./assets/img/CNPM/Chap4/img39.png" alt="" class="col-12 col-sm-10">
+                            </center>
+                            <p><b>Ví dụ</b>. Tập các DFD cân bằng</p>
+                            <center>
+                                <img src="./assets/img/CNPM/Chap4/img40.png" alt="" class="col-12 col-sm-10">
+                            </center>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse18">
+                        <div class="card card-body">
+                            <h4>Các nguyên tắc để dừng phân rã DFD</h4>
+    
+                            <ul>
+                                <li>Khi mỗi ô xử lý là một quyết định, một tính toán hay một thao tác trên CSDL (thêm, sửa, xóa)</li>
+                                <li>Khi mỗi kho dữ liệu đại diện cho một thực thể</li>
+                                <li>Khi người dùng của hệ thống không quan tâm đến các chi tiết nhỏ hơn nữa</li>
+                                <li>Khi mỗi dòng dữ liệu không cần phải chia ra nhỏ hơn để thể hiện chúng được xử lý khác nhau</li>
+                                <li>Khi bạn tin rằng đã có một ô xử lý cho mỗi chọn lựa của các tùy chọn ở cấp thấp nhất trên menu hệ thống</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse19">
+                        <div class="card card-body">
+                            <h4>Đặc tả ô xử lý</h4>
+                            <ul>
+                                <li>Là những hướng dẫn, giải thích để làm rõ nội dung của ô xử lý</li>
+                                <li>Sử dụng các công cụ sau để mô tả:
+                                    <ul>
+                                        <li>Văn bản có cấu trúc</li>
+                                        <li>Mã giả</li>
+                                        <li>Bảng quyết định</li>
+                                        <li>Lưu đò</li>
+                                    </ul>
+                                </li>
+                                <li>Yêu cầu: Phải nên được trình tự logic của các thao tác, tính chất mỗi thao tác</li>
+                                <li>Ví dụ: đặc tả ô xử lý "Lập hóa đơn bán hàng"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse20">
+                        <div class="card card-body">
+                            <h4>Mối quan hệ giữa CDM và DFD</h4>
+                            <ul>
+                                <li>Để đặc tả các ô xử lý, ta xét mối quan hệ giữa CDM và DFD</li>
+                                <li>Mỗi ô xử lý thuộc loại ghi nhận dữ liệu có mối liên quan tới một sơ đồ con trong mô hình CDM</li>
+                                <li>Ta có thể làm rõ mối quan hệ này bằng cách vẽ một đường con khép kín bao quanh các thực thể liên quan tới một ô xử lý</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse21">
+                        <div class="card card-body">
+                            <p><b>Phát triển Top-Down</b></p>
+                            <ol>
+                                <li>Liệt kê danh sách các công việc mà hệ thống thực hiện, từ đó xác định các nguồn/đích, dòng dữ liệu, ô xử lý, kho dữ liệu</li>
+                                <li>Tạo sơ đồ mức ngữ cảnh (context diagram): Biểu diễn giao tiếp giữa hệ thống và các nguồn/đích. 
+                                    <br>
+                                    Chú ý: Trong sơ đồ ngữ cảnh không có kho dữ liệu hoặc bất kỳ ô xử lý chi tiết nào
+                                </li>
+                                <li>Vẽ các sơ đồ ở mức tiếp theo</li>
+                                <li>Kiểm tra các luật và cách đặt tên</li>
+                            </ol>
+                            <center>
+                                <img src="./assets/img/CNPM/Chap4/img41.png" alt="" class="col-12 col-sm-10">
+                                <img src="./assets/img/CNPM/Chap4/img42.png" alt="" class="col-12 col-sm-10">
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            `]
+        ]
     }
 }
