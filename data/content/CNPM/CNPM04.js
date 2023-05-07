@@ -780,5 +780,405 @@ const CNPM4 = {
         </div>
             `]
         ]
+    },
+    CNPM02: {
+        title: 'Phần 1',
+        index: [
+            ['Nội dung', 'CNPM021', `
+            <div id="tableContent">
+            <h3>Nội dung</h3>
+            <ul>
+                <li>Mô hình hóa dữ liệu</li>
+                <li>Mô hình hóa dữ liệu mức quan niệm</li>
+            </ul>
+        </div>
+    
+        <div id="1">
+            <h3>Mô hình hóa dữ liệu</h3>
+            <ul>
+                <li>Mô hình hóa là quá trình không thể thiếu</li>
+                <li>Thiết kế và xây dựng dữ liệu cần phải chú trọng đến các thông tin cần thiết để hỗ trợ quy trình nghiệp
+                    vụ khác nhau của các đơn vị hay tổ chức</li>
+                <li>Ví dụ: Thiết kế hệ thống cho ngân hàng, cơ sở y tế</li>
+                <li>Mô hình hóa được bắt đầu sau khi xác định được yêu cầu phần mềm</li>
+                <li>Mô hình hóa dữ liệu cung cấp phương pháp và phương tiện để mô tả</li>
+                <li>Mô hình dữ liệu phục vụ cho mục tiêu
+                    <ul>
+                        <li>Giúp người dùng và các bên liên quan hiểu về CSDL sẽ được cài đặt</li>
+                        <li>Giúp người quản trị CSDL có thể cài đặt chính xác</li>
+                    </ul>
+                </li>
+            </ul>
+            <center>
+                <img src="./assets/img/CNPM/Chap4/img8.png" alt="" class="col-12 col-sm-10">
+            </center>
+            <ul>
+                <li>Mô hình hóa dữ liệu được dùng để biểu diễn thông tin ở <b style="color: red;">nhiều mức khác nhau</b>
+                    <ul>
+                        <li><b>Mô hình dữ liệu mức <span style="color: red;">quan niệm</span>:</b> Mức trừu tượng cao nhất
+                            trong việc biểu diễn nhu cầu thông tin của một đơn vị tổ chức. Mục tiêu: vừa rõ ràng vừa dễ hiểu
+                        </li>
+                        <li><b>Mô hình dữ liệu mức <span style="color: red;">luận lý</span>:</b> Mang dữ liệu đến gần cấu
+                            trúc cài đặt hơn</li>
+                        <li><b>Mô hình dữ liệu mức <span style="color: red;">vật lý</span>:</b> được sử dụng như phương tiện
+                            giao tiếp giữa các chuyên gia</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+        <div id="2">
+            <h3>Mô hình dữ liệu mức quan niệm</h3>
+    
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <p><b>Là mô hình chi tiết mô tả toàn bộ cấu trúc dữ liệu tổ chức mà nó không phụ thuộc bất kỳ một hệ
+                                quản trị CSDL nào hay sự xem xét việc cài đặt dữ liệu</b></p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img9.png" alt="" class="col-12">
+                        </center>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse12" role="button"
+                        aria-expanded="false" aria-controls="collapse12">
+                        Mô hình quan hệ thực thể
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse13" role="button"
+                        aria-expanded="false" aria-controls="collapse13">
+                        Lược đồ quan hệ thực thể
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse19" role="button"
+                        aria-expanded="false" aria-controls="collapse19">
+                        Bản số trong quan hệ
+                    </a>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse110" role="button"
+                        aria-expanded="false" aria-controls="collapse20">
+                        Tổng quát hóa/chuyên biệt hóa
+                    </a>
+                </p>
+                <div>
+                    <div class="collapse" id="collapse12">
+                        <div class="card card-body">
+                            <h4>Mô hình quan hệ thực thể (E-R model)</h4>
+                            <ul>
+                                <li>Là một mô hình biểu diễn mức độ hợp lý, chi tiết về dữ liệu của một tổ chức</li>
+                                <li>Là mô hình biểu diễn các thực thể, các quan hệ (hay các sự kết hợp) giữa các thực thể,
+                                    các thuộc tính của thực thể và các thuộc tính chung (trong mỗi quan hệ giữa các thực
+                                    thể) của một tổ chức</li>
+                                <li>Sơ đồ quan hệ thực thể (E-R Diagram) là một cách biểu diễn mô hình quan hệ thực thể dưới
+                                    dạng các ký hiệu hình ảnh trực quan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse13">
+                        <div class="card card-body">
+                            <h4>Lược đồ quan hệ thực thể</h4>
+    
+                            <p><b>Bao gồm các khái niệm liên quan</b></p>
+                            <div>
+                                <p>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse131" role="button"
+                                        aria-expanded="false" aria-controls="collapse131">
+                                        Thực thể (Entity)
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse132" role="button"
+                                        aria-expanded="false" aria-controls="collapse132">
+                                        Kiểu thực thể (Entity type)
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse133" role="button"
+                                        aria-expanded="false" aria-controls="collapse133">
+                                        Thể hiện thực thể (Entity Instance)
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse134" role="button"
+                                        aria-expanded="false" aria-controls="collapse134">
+                                        Thuộc tính (Attribute)
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse135" role="button"
+                                        aria-expanded="false" aria-controls="collapse135">
+                                        Kiểu của thuộc tính (Attribute Type)
+                                    </a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse136" role="button"
+                                        aria-expanded="false" aria-controls="collapse136">
+                                        Quan hệ (Relationship)
+                                    </a>
+                                </p>
+                                <div>
+                                    <div class="collapse" id="collapse131">
+                                        <div class="card card-body">
+                                            <h4>Thực thể (Entity)</h4>
+    
+                                            <ul>
+                                                <li>Một thực thể là một con người, một nơi, một đối tượng hay một sự kiện
+                                                    hay một khải niệm trong môi trường người dùng mà tổ chức đó muốn duy trì
+                                                    dữ liệu</li>
+                                                <li>Mỗi thực thể có một nhận dạng riêng biệt</li>
+                                                <li>Ví dụ:
+                                                    <ul>
+                                                        <li>Con người: công nhân, sinh viên,...</li>
+                                                        <li>Nơi: cửa hàng, kho, tiểu bang,...</li>
+                                                        <li>Đối tượng: hàng hóa, tòa nhà, xe mô tô,...</li>
+                                                        <li>Sự kiện: việc bán hàng, sự đăng ký,....</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse132">
+                                        <div class="card card-body">
+                                            <h4>Kiểu thực thể (Entity Type)</h4>
+                                            <ul>
+                                                <li>Là một tập hợp các thực thế có cùng đặc điểm và tính chất</li>
+                                                <li>Cách biểu diễn:
+                                                    <br>
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img10.png" alt=""
+                                                            class="col-12 col-sm-10">
+                                                    </center>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse133">
+                                        <div class="card card-body">
+                                            <h4>Thể hiện thực thể (Entity Instance)</h4>
+                                            <ul>
+                                                <li>Thể hiện thực thể: là 1 hiện thực của một thực thể</li>
+                                                <li>Ví dụ:
+                                                    <br>
+                                                    Trong một công ty có một kiểu thực thể NHANVIEN nhưng có thể có hàng
+                                                    trăm triệu hiện thực của kiểu thực thể NHANVIEN được lưu trong CSDL
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse134">
+                                        <div class="card card-body">
+                                            <h4>Thuộc tính (Attribute)</h4>
+                                            <ul>
+                                                <li><b>Mỗi thuộc tính</b>: sẽ mô tả một tính chất hay một đặc điểm của một
+                                                    kiểu thực thể
+                                                    <br>
+                                                    Ví dụ: mã nhân viên, họ tên, ngày sinh và giới tính là các thuộc tính mô
+                                                    tả thông tin của kiểu thực thể Nhân viên
+                                                </li>
+                                                <li><b>Miền trị của thuộc tính (Attribute domain)</b> là một tập hợp các giá
+                                                    trị có thể gán được cho một thuộc tính
+                                                    <br>
+                                                    Ví dụ: thuộc tính giới tính chỉ có một trong hai giá trị là nam hoặc nữ.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse135">
+                                        <div class="card card-body">
+                                            <h4>Các kiểu thuộc tính (Attribute Types)</h4>
+                                            <ul>
+                                                <li>Thuộc tính đơn (Simple attribute): là 1 thuộc tính tạo thành bởi một
+                                                    thành phần tồn tại độc lập
+                                                    <br>
+                                                    Ví dụ: Mã nhân viên, giới tính, ngày sinh
+                                                </li>
+                                                <li>Thuộc tính phức hợp (Composite attribute): Là một thuộc tính tạo thành
+                                                    bởi nhiều thành phần tồn tại độc lập
+                                                    <br>
+                                                    Ví dụ: Địa chỉ của nhân viên
+                                                </li>
+                                                <li>Thuộc tính đơn trị (Single-value attribute): là một thuộc tính chỉ chứa
+                                                    một giá trị cho mỗi thể hiện thực thể
+                                                    <br>
+                                                    Ví dụ: Mã nhân viên, Mã sinh viên
+                                                </li>
+                                                <li>Thuộc tính đa trị (Multi-value attribute): là một thuộc tính có thể chứa
+                                                    nhiều giá trị cho mỗi thể hiện
+                                                    <br>
+                                                    VÍ dụ: Tel_No của chi nhánh
+                                                </li>
+                                                <li>Thuộc tính dẫn xuất (Derived attribute) là thuộc tính có giá trị dẫn
+                                                    xuất từ giá trị của một thuộc tính hoặc một tập thuộc tính có liên quan
+                                                    (Có thể không nằm trong thực thể).
+                                                    <br>
+                                                    Ví dụ: thuộc tính Tuổi
+                                                </li>
+                                                <li>Khóa ứng viên (Candidate key): là một thuộc tính hay một tập hợp các
+                                                    thuộc tính có thể xác định duy nhất một thực thể của một kiểu thực thể
+                                                </li>
+                                                <li>Khóa chính (Primary key): là một khóa ứng viên được chọn là khóa chính
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="collapse136">
+                                        <div class="card card-body">
+                                            <h4>Quan hệ</h4>
+                                            <ul>
+                                                <li><b>Quan hệ</b>: là 1 sự kết hợp giữa các thể hiện của một hay nhiều kiểu
+                                                    thực thể mà nó liên quan đến tổ chức</li>
+                                                <li><b>Bậc của quan hệ (Degree)</b>: Là số kiểu thực thể tham gia trong một
+                                                    quan hệ</li>
+                                                <li><b>Quan hệ một ngôi hay quan hệ đệ qui (Unary Relationship/Recrursive
+                                                        Relationship)</b></li>
+                                                <li>Quan hệ 2 ngôi (Binary Relationship)</li>
+                                                <li>Quan hệ 3 ngôi (Ternary Relationship)</li>
+                                            </ul>
+    
+                                            <div>
+                                                <p>
+                                                    <a class="btn btn-primary" data-bs-toggle="collapse"
+                                                        href="#collapse1361" role="button" aria-expanded="false"
+                                                        aria-controls="collapse1361">
+                                                        Các kiểu quan hệ (Relationship types)
+                                                    </a>
+                                                </p>
+                                                <div>
+                                                    <div class="collapse" id="collapse1361">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li>Quan hệ một - một
+                                                                    <br>
+                                                                    <center>
+                                                                        <img src="./assets/img/CNPM/Chap4/im11.png" alt=""
+                                                                            class="col-12 col-sm-10">
+                                                                    </center>
+                                                                </li>
+                                                                <li>Quan hệ một - nhiều
+                                                                    <br>
+                                                                    <center>
+                                                                        <img src="./assets/img/CNPM/Chap4/img11.png" alt=""
+                                                                            class="col-12 col-sm-10">
+                                                                    </center>
+                                                                </li>
+                                                                <li>Quan hệ nhiều - nhiều
+                                                                    <br>
+                                                                    <center>
+                                                                        <img src="./assets/img/CNPM/Chap4/img12.png" alt=""
+                                                                            class="col-12 col-sm-10">
+                                                                    </center>
+                                                                </li>
+                                                                <li>Các quan hệ đặc biệt
+                                                                    <ul>
+                                                                        <li>Quan hệ đệ qui
+                                                                            <br>
+                                                                            <center>
+                                                                                <img src="./assets/img/CNPM/Chap4/img13.png"
+                                                                                    alt="" class="col-12 col-sm-10">
+                                                                            </center>
+                                                                        </li>
+                                                                        <li>Quan hệ phụ thuộc hàm
+                                                                            <br>
+    
+                                                                            <center>
+                                                                                <img src="./assets/img/CNPM/Chap4/img14.png"
+                                                                                    alt="" class="col-12 col-sm-10">
+                                                                            </center>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse19">
+                        <div class="card card-body">
+                            <h4>Bản số trong quan hệ (Cadinality)</h4>
+                            <p>Bản số của thực thể B trong mối kết hợp với thực thể A là số thể hiện của thực thể B có thể
+                                kết hợp với mỗi thể hiện của thực thể A</p>
+    
+                            <center>
+                                <table class="col-12 col-sm-10">
+                                    <thead>
+                                        <tr>
+                                            <th>Quan hệ</th>
+                                            <th>Nội dung</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img16.png" alt="" class="col-12">
+                                                </center>
+                                            </td>
+                                            <td>Mỗi thực thể A kết hợp với một và chỉ một thực thể B. Mỗi thực thể B có thể
+                                                không được kết hợp hay kết hợp chỉ một thực thể A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img17.png" alt="" class="col-12">
+                                                </center>
+                                            </td>
+                                            <td>
+                                                Mỗi thực thể A kết hợp một hay nhiều thực thể B. Mỗi thực thể B có thể không
+                                                kết hợp hay kết hợp chỉ một thực thể A
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img18.png" alt="" class="col-12">
+                                                </center>
+                                            </td>
+                                            <td>Mỗi thực thể A kết hợp với một hay nhiều thực thể B và mỗi thực thể B được
+                                                kết hợp một hay nhiều thực thể A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img19.png" alt="" class="col-12">
+                                                </center>
+                                            </td>
+                                            <td>Đôi khi một kiểu thực thể lại quan hệ với chính nó với ý nghĩa kết hợp như
+                                                giữa 2 kiểu thực thể khác nhau</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img21.png" alt="" class="col-12">
+                                                </center>
+                                            </td>
+                                            <td>Mỗi thực thể A kết hợp một hay nhiều thực thể B. Mỗi thực thể B chỉ kết hợp
+                                                với một thực thể A. Đặc biệt, khi chuyển sang cơ sở dữ liệu thì khóa của
+                                                thực thể A sẽ tham gia vừa là khóa ngoại vừa là thành phần khóa chính của
+                                                bảng B</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapse110">
+                        <div class="card card-body">
+                            <h4>Tổng quát hóa/chuyên biệt hóa</h4>
+                            <ul>
+                                <li>Tổng quát hóa (Generalization): là gộp các thực thể thành một thực thể bao hàm tất cả
+                                    các thể hiện của các thực thể con</li>
+                                <li>Chuyên biệt hóa (Specialization): là phân hoạch một thực thể thành các tập hợp con (Các
+                                    chuyên biệt hóa)
+                                    <center>
+                                        <img src="./assets/img/CNPM/Chap4/img15.png" alt="" class="col-12 col-sm-10">
+                                    </center>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            `]
+        ]
     }
 }

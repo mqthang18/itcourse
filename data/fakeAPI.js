@@ -1630,15 +1630,23 @@ const Subject = [
             CNPM4: {
                 title: 'Phân tích và thiết kế phần mềm',
                 outside: `
-                <div id="aim">
-                <h4>Mục tiêu phần 0</h4>
-        
-                <ul>
-                    <li>Nắm được lý thuyết liên quan đến phân tích và thiết kế phần mềm</li>
-                    <li>Nắm được nội dung cơ bản của thiết kế kiến trúc, thiết kế chi tiết, thiết kế giao diện, thiết kế thuật
-                        toán làm nền tảng để học các phần tiếp theo</li>
-                </ul>
-            </div>
+                    <div id="aim">
+                    <h3>Mục tiêu phần 0</h3>
+            
+                        <ul>
+                            <li>Nắm được lý thuyết liên quan đến phân tích và thiết kế phần mềm</li>
+                            <li>Nắm được nội dung cơ bản của thiết kế kiến trúc, thiết kế chi tiết, thiết kế giao diện, thiết kế thuật
+                                toán làm nền tảng để học các phần tiếp theo</li>
+                        </ul>
+                    </div>
+
+                    <div class="aim">
+                        <h3>Mục tiêu phần 1</h3>
+                        <ul>
+                            <li>Nắm được các khái niệm cơ bản liên quan đến thiết kế CSDL</li>
+                            <li>Ứng dụng bài đã học vào việc thiết kế một chương trình thực tế</li>
+                        </ul>
+                    </div>
                 `,
                 tableContent: CNPM4
             }
