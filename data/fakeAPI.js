@@ -1666,6 +1666,16 @@ const Subject = [
                             <li>Xây dựng được sơ đồ xử lý của chương trình ở mức cơ bản cấp 0, cấp 1</li>
                         </ul>
                     </div>
+
+                    <div id="aim">
+                    <h3>Mục tiêu phần 4</h3>
+                    <ul>
+                        <li>Nắm được nguyên lý thiết kế tổng quát cho việc thiết kế giao diện người dùng</li>
+                        <li>Nắm được các kiểu tương tác khác nhau và ứng dụng của chúng</li>
+                        <li>Biết cách sử dụng các công cụ để biểu diễn thông tin</li>
+                        <li>Nắm được các thuộc tính dùng được (usability) và các cách đánh giá hệ thống</li>
+                    </ul>
+                </div>
                 `,
                 tableContent: CNPM4
             }

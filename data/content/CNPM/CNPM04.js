@@ -2042,5 +2042,1217 @@ const CNPM4 = {
     
             `]
         ]
+    },
+    CNPM05: {
+        title: 'Phần 4',
+        index: [
+            ['Nội dung', 'CNPM051', `
+            <div id="tableContent">
+        <h4>Nội dung</h4>
+
+        <ul>
+            <li>Các vấn đề khi thiết kế</li>
+            <li>Quy trình thiết kế UI</li>
+            <li>Phân tích người dùng</li>
+            <li>User interface prototyping</li>
+            <li>Đánh giá giao diện</li>
+        </ul>
+    </div>
+
+    <div id="1">
+        <h3>Các vấn đề khi thiết kế</h3>
+
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse11" role="button" aria-expanded="false"
+                aria-controls="collapse11">
+                Giao diện người dùng
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse12" role="button" aria-expanded="false"
+                aria-controls="collapse12">
+                Các yếu tố ảnh hưởng thiết kế giao diện
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse13" role="button" aria-expanded="false"
+                aria-controls="collapse13">
+                Các nguyên tắc thiết kế UI
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse14" role="button" aria-expanded="false"
+                aria-controls="collapse14">
+                Các kiểu tương tác
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse15" role="button" aria-expanded="false"
+                aria-controls="collapse15">
+                Biểu diễn thông tin
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse16" role="button" aria-expanded="false"
+                aria-controls="collapse15">
+                Các dạng kiến trúc
+            </a>
+        </p>
+        <div>
+            <div class="collapse" id="collapse11">
+                <div class="card card-body">
+
+                    <h4>Giao diện người dùng</h4>
+
+                    <ul>
+                        <li>Nên được thiết kế cho phù hợp với kĩ năng, kinh nghiệm và sự trông đợi của người dùng
+                            tương lai của hệ
+                            thống</li>
+                        <li>Người dung hệ thống thường đánh giá một hệ thống theo giao diện thay vì chức năng</li>
+                        <li>Một giao diện thiết kế tế:
+                            <ul>
+                                <li>Có thể đẫn đến việc người dùng phạm những lỗi nghiêm trọng</li>
+                                <li>Là lí do vì sao nhiều hệ thống phần mềm không bao giờ được đem ra sử dụng</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="collapse12">
+                <div class="card card-body">
+                    <h4>Các yếu tố ảnh hưởng thiết kế giao diện</h4>
+
+                    <p><b>Con người là nhân tố ảnh hưởng trực tiếp. Có 7 nhân tố:</b></p>
+                    <ul>
+                        <li>Trí nhớ ngắn hạn</li>
+                        <li>Nhầm lẫn là chuyện thường</li>
+                        <li>Mỗi người có năng lực cao thấp khác nhau</li>
+                        <li>Mỗi người hợp với những kiểu tương tác khác nhau</li>
+                        <li>Phải xét để nhu cầu của người dùng hệ thống</li>
+                        <li>Nhận thức được những hạn chế của hệ thống và nhầm lẫn</li>
+                        <li>Các nguyên tắc thiết kế là nền tảng cho các thiết kế giao diện</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="collapse13">
+                <div class="card card-body">
+
+                    <h4>Các nguyên tắc thiết kế UI</h4>
+                    <center>
+                        <table class="col-12 col-sm-10">
+                            <thead>
+                                <tr>
+                                    <th>Nguyên tắc</th>
+                                    <th>Mô tả</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Quen thuộc với người dùng</td>
+                                    <td>Giao diện nên dùng các thuật ngữ và khái niệm rút ra từ kinh nghiệm của
+                                        những người sẽ dùng
+                                        hệ thống nhiều nhất</td>
+                                </tr>
+                                <tr>
+                                    <td>Nhất quán</td>
+                                    <td>Giao diện cần nhất quán sao cho các thao tác gần giống nhau có thể được kích
+                                        hoạt theo cùng
+                                        kiểu</td>
+                                </tr>
+                                <tr>
+                                    <td>Ngạc nhiên tối thiểu</td>
+                                    <td>Người dùng không bao giờ bị bất ngờ về hành vi của hệ thống</td>
+                                </tr>
+                                <tr>
+                                    <td>Khôi phục được</td>
+                                    <td>Giao điện nên có các cơ chế cho phép người dùng khôi phục lại tình trạng
+                                        hoạt động bình
+                                        thường sau khi gặp lỗi</td>
+                                </tr>
+                                <tr>
+                                    <td>Hướng dẫn người dùng</td>
+                                    <td>Giao diện nên có phản hồi có nghĩa là khi xảy ra lỗi và cung cấp các tiện
+                                        ích trợ giúp theo
+                                        ngữ cảnh</td>
+                                </tr>
+                                <tr>
+                                    <td>Người dùng đa dạng</td>
+                                    <td>Giao diện nên cung cấp các tiện ích tương tác thích hợp cho các loại người
+                                        dùng hệ thống
+                                        khác nhau</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+
+                    <p><b>2 vấn đề cần xem xét</b></p>
+                    <ul>
+                        <li>Người dùng cung cấp thông tin cho hệ thống bằng cách nào?</li>
+                        <li>Hệ thống nên trình bày thông tin (output) cho người dùng như thế nào?</li>
+                    </ul>
+                    <center>
+                        <img src="./assets/img/CNPM/Chap4/img43.png" alt="" class="col-12 col-sm-8">
+                    </center>
+
+                </div>
+            </div>
+            <div class="collapse" id="collapse14">
+                <div class="card card-body">
+                    <h4>Các kiểu tương tác</h4>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <ul>
+                                    <li>Thao tác trực tiếp - Direct manipulation</li>
+                                    <li>Chọn lựa bằng menu - Menu selection</li>
+                                    <li>Điền form - Form fill-in</li>
+                                    <li>Dòng lệnh - Command Language</li>
+                                    <li>Ngôn ngữ tự nhiên - a Natural language</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <center>
+                                    <img src="./assets/img/CNPM/Chap4/img44.png" alt="" class="col-12">
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <center>
+                        <table class="col-12">
+                            <thead>
+                                <tr>
+                                    <th>Kiểu tương tác</th>
+                                    <th>Ưu điểm chính</th>
+                                    <th>Nhược điểm chính</th>
+                                    <th>Ví dụ ứng dụng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Direct manipulation</td>
+                                    <td>Tương tác nhanh và trực quan</td>
+                                    <td>Có thể khó cài đặt
+                                        <br>
+                                        Chỉ thích hợp khi có ẩn dụ hình ảnh cho các tác vụ và đối tượng
+                                    </td>
+                                    <td>Trờ chơi điện tử
+                                        <br>
+                                        Các hệ thống dòng drag-and-drop
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Menu selection</td>
+                                    <td>Tránh lỗi người dùng
+                                        <br>
+                                        Không phải gõ nhiều
+                                    </td>
+                                    <td>Chậm chạp đối với người dùng nhiều kinh nghiệm
+                                        <br>
+                                        Có thể phức tạp nếu có nhiều lựa chọn menu
+                                    </td>
+                                    <td>Đa số các hệ thống thông dụng</td>
+                                </tr>
+                                <tr>
+                                    <td>Form fill-in</td>
+                                    <td>Nhập dữ liệu đơn giản
+                                        <br>
+                                        Dễ học
+                                        <br>
+                                        Kiểm tra được
+                                    </td>
+                                    <td>Tốn không gian màn hình
+                                        <br>
+                                        Gây rắc rối khi các lựa chọn của người dùng không khớp với các trường của form
+                                    </td>
+                                    <td>Khai thuế, xử lý nợ cá nhân</td>
+                                </tr>
+                                <tr>
+                                    <td>Command language</td>
+                                    <td>mạch và linh động</td>
+                                    <td>Khó học xử lý lỗi kém</td>
+                                    <td>hệ điều hành</td>
+                                </tr>
+                                <tr>
+                                    <td>Natural language</td>
+                                    <td>Đáp ứng được người dùng không chuyên. Dễ mở rộng</td>
+                                    <td>Cần gõ nhiều
+                                        <br>
+                                        Các hệ thống hiểu ngôn ngữ tự nhiên không đáng tin cây
+                                    </td>
+                                    <td>Information retrieval systems</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+            <div class="collapse" id="collapse15">
+                <div class="card card-body">
+                    <h4>Biểu diễn thông tin</h4>
+
+                    <ul>
+                        <li>Trình bày thông tin hệ thống cho người dùng biết</li>
+                        <li>Thông tin có thể được trình bày trực tiếp (VD. text trong một trình soạn thảo) hoặc được
+                            biến đổi thành
+                            một dạng biểu diễn khác (VD dạng đồ họa)</li>
+                    </ul>
+
+                    <center>
+                        <img src="./assets/img/CNPM/Chap4/img44.png" alt="" class="col-12 col-sm-10">
+                    </center>
+                </div>
+            </div>
+            <div class="collapse" id="collapse16">
+                <div class="card card-body">
+                    <h4>Các dạng kiến trúc</h4>
+
+                    <center>
+                        <img src="./assets/img/CNPM/Chap4/img56.png" alt="" class="col-12 col-sm-8 col-lg-4">
+                    </center>
+
+                    <div>
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse161" role="button"
+                                aria-expanded="false" aria-controls="collapse161">
+                                Biểu diễn thông tin
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse162" role="button"
+                                aria-expanded="false" aria-controls="collapse162">
+                                Các thông số khi hiển thị thông tin
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse163" role="button"
+                                aria-expanded="false" aria-controls="collapse163">
+                                Biểu diễn số hay biểu diễn tương tự
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse164" role="button"
+                                aria-expanded="false" aria-controls="collapse164">
+                                Trực quan dữ liệu (Data visualisation)
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse165" role="button"
+                                aria-expanded="false" aria-controls="collapse165">
+                                Hiển thị màu
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse166" role="button"
+                                aria-expanded="false" aria-controls="collapse166">
+                                Nguyên tắc dùng màu
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse167" role="button"
+                                aria-expanded="false" aria-controls="collapse167">
+                                Các thông báo lỗi
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse168" role="button"
+                                aria-expanded="false" aria-controls="collapse168">
+                                Các nhân tố khi thiết kế nội dung các thông điệp
+                            </a>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse169" role="button"
+                                aria-expanded="false" aria-controls="collapse169">
+                                Lỗi người dùng
+                            </a>
+                        </p>
+                        <div>
+                            <div class="collapse" id="collapse161">
+                                <div class="card card-body">
+                                    <h4>Biểu diễn thông tin</h4>
+
+                                    <ul>
+                                        <li>Thông tin tĩnh
+                                            <br>
+                                            <ul>
+                                                <li>Khởi tạo ở đầu session. Không thay đổi trong suốt session</li>
+                                                <li>Có thể là số hoặc văn bản text</li>
+                                            </ul>
+                                        </li>
+                                        <li>Thông tin động
+                                            <br>
+                                            <ul>
+                                                <li>Thay đổi trong session và phải được thông báo với mọi người dùng
+                                                </li>
+                                                <li>Có thể là số hoặc văn bản text</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse162">
+                                <div class="card card-body">
+                                    <h4>Các thông số khi hiển thị thông tin</h4>
+                                    <ul>
+                                        <li>Người dùng quan tâm đến con số chính xác hay mối tương
+                                            quan giữa các số liệu?</li>
+                                        <li>Các giá trị của thông tin thay đổi nhanh chậm ra sao? Có
+                                            phải lập tức thông báo khi có thay đổi?</li>
+                                        <li>Người dùng có phải hành động để phản ứng với một thay
+                                            đổi?</li>
+                                        <li>Có giao diện thao tác trực tiếp (direct manipulation) không?</li>
+                                        <li>Thông tin dạng số hay text? Các giá trị tương đối có quan
+                                            trong không?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse163">
+                                <div class="card card-body">
+                                    <h4>Biểu diễn số hay biểu diễn tương tự</h4>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <ul>
+                                                    <li>Biểu diễn số - Digital presentation
+                                                        <ul>
+                                                            <li>Ngắn gọn - chiếm ít không gian màn hình;</li>
+                                                            <li>Cho biết giá trị chính xác</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Biểu diễn tương tự - Analogue presentation
+                                                        <ul>
+                                                            <li>Có thể biểu diễn các giá trị tương đối;</li>
+                                                            <li>Dễ thấy các giá trị dữ liệu đặc biêt;</li>
+                                                            <li>Nhanh chóng lấy được ấn tượng về một giá trị</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <center>
+                                                    <img src="./assets/img/CNPM/Chap4/img57.png" alt=""
+                                                        class="col-12 col-sm-6">
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <img src="./assets/img/CNPM/Chap4/img58.png" alt=""
+                                            class="col-12 col-sm-6 col-lg-4">
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse164">
+                                <div class="card card-body">
+                                    <h4>Trực quan dữ liệu (Data visualisation)</h4>
+
+                                    <ul>
+                                        <li>Các kĩ thuật hiển thị lượng lớn thông tin</li>
+                                        <li>Hình ảnh có thể cho thấy quan hệ giữa các thực thể và các xu hướng của dữ
+                                            liệu</li>
+                                        <li>Các ví dụ:
+                                            <br>
+                                            <ul>
+                                                <li>Thông tin thời tiết thu thập từ nhiều nguồn</li>
+                                                <li>Trạng thái của một mạng điện thoại dưới dạng một tập các nút được
+                                                    kết nối với nhau</li>
+                                                <li>Một mô hình phân tử hiển thị dạng 3 chiều</li>
+                                                <li>Các trang web hiển thị dạng một cây hyperbol</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse165">
+                                <div class="card card-body">
+                                    <h4>Hiển thị màu</h4>
+
+                                    <ul>
+                                        <li>Màu sắc bổ sung thêm một chiều cho một giao diện và
+                                            giúp người dùng hiểu các cấu trúc thông tin phức tạp.</li>
+                                        <li>Có thể dùng màu để highlight các thông tin đặc biệt.</li>
+                                        <li>Các lỗi thường gặp trong việc dùng màu sắc trong thiết
+                                            kế UI:
+                                            <ul>
+                                                <li>Dùng màu sắc đề diễn đạt ý nghĩa;</li>
+                                                <li>Lạm dụng màu sắc trong trình bày</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse166">
+                                <div class="card card-body">
+                                    <h4>Nguyên tắc dùng màu</h4>
+                                    <ul>
+                                        <li>Hạn chế số màu và mức độ sặc sở</li>
+                                        <li>Dùng sự thay đổi màu để báo hiệu thay đổi trong trạng thái hệ thống</li>
+                                        <li>Dùng kí hiệu màu (color coding) để hỗ trợ công việc người dùng đang cố làm
+                                        </li>
+                                        <li>Dùng kí hiệu màu một cách cẩn trọng và nhất quán</li>
+                                        <li>Cẩn thận về hiệu ứng cặp đôi của màu sắc</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse167">
+                                <div class="card card-body">
+                                    <h4>Các thông báo lỗi</h4>
+
+                                    <ul>
+                                        <li>Thiết kế thông báo lỗi là việc rất quan trọng
+                                            <br>
+                                            Các thông báo lỗi kém có thể dẫn đến việc người dùng không chấp nhận sử dụng
+                                            một hệ thống
+                                        </li>
+                                        <li>Các thông báo nên lịch sự, ngắn gọn, nhất quán và mang tính xây dựng</li>
+                                        <li>Nên xét đến background và kinh nghiệm của người dùng như là nhân tố quyết
+                                            định khi thiết kế các thông
+                                            báo lỗi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapse168">
+                                <h4>Các nhân tố khi thiết kế nội dung các thông điệp</h4>
+
+                                <center>
+                                    <table class="col-12 col-sm-10">
+                                        <thead>
+                                            <tr>
+                                                <th>Nhân tố</th>
+                                                <th>Miêu tả</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ngữ cảnh</td>
+                                                <td>
+                                                    Các thông điệp do hệ thống tạo ra cần phản ánh ngữ cảnh sử dụng hiện
+                                                    tại bất cứ khi nào có
+                                                    thể. Hệ thống cần cố gắng nhận biết được người dùng đang làm gì và
+                                                    nên tạo các thông điệp có
+                                                    liên quan đến hoạt động hiện tại của họ
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kinh nghiệm</td>
+                                                <td>
+                                                    Khi người dùng quen dần với một hệ thống, họ sẽ trở nên khó chịu bởi
+                                                    các thông điệp dài 'có
+                                                    ý nghĩa'. Tuy nhiên, những người mới dùng lại thấy những thông báo
+                                                    ngắn gọn khó hiểu. Bạn
+                                                    nên cung cấp cả hai loại thông điệp và để cho người dùng kiểm soát
+                                                    mức độ xúc tích của các
+                                                    thông báo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trình độ kĩ năng</td>
+                                                <td>
+                                                    Các thông điệp nên được điều chỉnh theo trình độ kĩ năng cũng như
+                                                    kinh nghiệm của người
+                                                    dùng. Thông điệp dành cho các loại người dùng khác nhau có thể được
+                                                    diễn đạt theo các cách
+                                                    khác nhau tùy theo bộ thuật ngữ quen thuộc với người đọc.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phong cách</td>
+                                                <td>
+                                                    Các thông điệp nên mang tính tích cực hơn là tiêu cực, nên dùng thể
+                                                    chủ động hơn là bị động,
+                                                    không bao giờ nên có giọng xúc phạm hoặc cố pha trò
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Văn hóa</td>
+                                                <td>
+                                                    Nếu có thể, người thiết kế nên là người quen thuộc với văn hóa của
+                                                    đất nước nơi hệ thống sẽ
+                                                    được bán. Có những khác biệt văn hóa rõ rệt giữa châu Âu, châu Á và
+                                                    châu Mỹ. Một thông điệp
+                                                    phù hợp với nền văn hóa này có thể không chấp nhận được ở một nền
+                                                    văn hóa khác
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </center>
+                            </div>
+                            <div class="collapse" id="collapse169">
+                                <div class="card card-body">
+                                    <h4>Lỗi người dùng</h4>
+                                    <center>
+                                        <img src="./assets/img/CNPM/Chap4/img59.png" alt="" class="col-12 col-sm-10">
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="2">
+        <h4>Quy trình thiết kế UI</h4>
+
+        <ul>
+            <li>Thiết kế UI là một quy trình lặp đi lặp lại với sự liên lạc chặt chẽ giữa người dùng và người thiết kế
+            </li>
+            <li>3 hoạt động chính trong quy Trình
+                <ul>
+                    <li><b>User analysis</b>: Tìm hiểu người dùng sẽ làm gì với hệ thống</li>
+                    <li><b>System prototyping</b>: phát triển một loại các bản mẫu để thử nghiệm;</li>
+                    <li><b>Interface evaluation</b>: thử nghiệm các bản mẫu cùng với người dùng</li>
+                </ul>
+            </li>
+        </ul>
+
+        <center>
+            <img src="./assets/img/CNPM/Chap4/img60.png" alt="" class="col-12 col-sm-10">
+        </center>
+    </div>
+    
+
+    <div id="3">
+        <h4>Phân tích người dùng</h4>
+
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse31" role="button" aria-expanded="false"
+                aria-controls="collapse31">
+                Giới thiệu
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse32" role="button" aria-expanded="false"
+                aria-controls="collapse32">
+                Các yêu cầu rút từ kịch bản
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse33" role="button" aria-expanded="false"
+                aria-controls="collapse33">
+                Các yêu cầu rút từ kịch bản
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse34" role="button" aria-expanded="false"
+                aria-controls="collapse34">
+                Văn hóa
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse35" role="button" aria-expanded="false"
+                aria-controls="collapse35">
+                Hồ sơ tìm hiểu từ văn hóa
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse36" role="button" aria-expanded="false"
+                aria-controls="collapse36">
+                Rút ra từ tìm hiểu văn hóa
+            </a>
+        </p>
+        <div>
+            <div class="collapse" id="collapse31">
+                <div class="card card-body">
+                    <ul>
+                        <li>Nếu bạn không hiểu người dùng muốn làm gì với một hệ thống, bạn khó có thể thiết kế một giao
+                            diện hiệu
+                            quả</li>
+                        <li>Các phân tích người dùng phải được mô tả theo cách mà cả người dùng lẫn người thiết kế đều
+                            có thể hiểu
+                            được</li>
+                        <li>Các kịch bản mà bạn đang dùng để miêu tả các tình huống sử dụng điển hình là một cách để mô
+                            tả các phân
+                            tích này</li>
+                        <li>Kịch bản tương tác</li>
+                    </ul>
+
+                    <p>Jane là một sinh viên của Tôn giáo học và đang làm việc trên một bài luận về kiến trúc Ấn Độ và
+                        nó bị ảnh
+                        hưởng như thế nào bởi các thực hành tôn giáo. Để giúp cô hiểu điều này, cô ấy muốn truy cập một
+                        số hình ảnh
+                        chi tiết về các tòa nhà đáng chú ý nhưng không thể tìm thấy bất cứ thứ gì trong thư viện địa
+                        phương của cô.
+                    </p>
+                    <p>Cô tiếp cận thư viện chuyên đề để thảo luận về nhu cầu của mình và ông đề suất một số thuật ngữ
+                        tìm kiếm có
+                        thể được dùng. Ông cũng gợi ý một số thư viện ở New Delhi và London có thể có tài liệu này để họ
+                        đăng nhập
+                        vào danh mục thư viện và thực hiện tìm kiếm bằng các thuật ngữ này. Họ tìm thấy một số tài liệu
+                        nguồn và yêu
+                        cầu photocopy ảnh với chi tiết kiến trúc được gửi trực tiếp đến Jane</p>
+                </div>
+            </div>
+            <div class="collapse" id="collapse32">
+                <div class="card card-body">
+                    <ul>
+                        <li>Người dùng có thể không nhận ra các từ khóa tìm kiếm thích hợp, do đó cần có cách giúp đỡ họ
+                            chọn từ
+                            khóa</li>
+                        <li>Người dùng phải có khả năng chọn collection cần tìm tại đó</li>
+                        <li>Người dùng phải có khả năng thực hiện tìm kiếm và yêu cầu bản sao của tài liệu liên quan
+                        </li>
+                        <li>Các kỹ thuật:
+                            <ul>
+                                <li>Phân tích tác vụ - Task analysis</li>
+                                <li>Phỏng vấn và câu hỏi điều tra (questionaire)</li>
+                                <li>Văn hóa</li>
+                            </ul>
+                        </li>
+                        <center>
+                            <img src="./assets/img/CNPM/Chap4/img61.png" alt="" class="col-12 col-sm-8">
+                        </center>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="collapse33">
+                <div class="card card-body">
+                    <h4>Phỏng vấn</h4>
+
+                    <ul>
+                        <li>Tổ chức các cuộc phỏng vấn có cấu trúc linh động dựa trên các câu hỏi mở</li>
+                        <li>Khi đó người dùng có thể cung cấp các thông tin mà họ cho đó là quan trọng; không chỉ các
+                            thông tin mà
+                            bạn đã định thu thập</li>
+                        <li>Phỏng vấn theo nhóm tạo điều kiện để người dùng thảo luận với nhau về công việc của họ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="collapse34">
+                <div class="card card-body">
+                    <h4>Văn hóa</h4>
+
+                    <ul>
+                        <li>Một người quan sát người dùng khi họ đang làm việc và hỏi về công việc của họ (không theo
+                            kịch bản)</li>
+                        <li>Có giá trị vì nhiều tác vụ của người dùng mang tính trực quan và họ cảm thấy rất khó miêu tả
+                            và giải
+                            thích các tác vụ</li>
+                        <li>Giúp hiểu về vai trò của các ảnh hưởng xã hội và tổ chức đối với công việc</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="collapse35">
+                <div class="card card-body">
+                    <h4>Hồ sơ tìm hiểu từ văn hóa</h4>
+
+                    <div class="container" style="background-color: rgb(200, 223, 212);">
+                        <div class="row">
+                            <div class="col-12">
+                                <p style="text-align: justify;">Một trạm điều khiển không lưu có một số "bàn" điều
+                                    khiển, trong đó
+                                    các bàn điều khiển các vùng
+                                    không gian cạnh nhau cũng được đặt cạnh nhau. Các chuyến bay trong một vùng được
+                                    biểu diễn bằng
+                                    các băng giấy lồng vào các giá gỗ theo thứ tự phản ánh vị trí của chúng trong vùng.
+                                    Nếu không
+                                    còn đủ chỗ trên giá (nghĩa là khi vùng không gian đó rất đông máy bay), những người
+                                    điều khiển
+                                    trải các băng giấy lên cái bàn viết đặt trước cái giá gỗ</p>
+                                <p style="text-align: justify;">
+                                    Khi chúng tôi quan sát những người điều khiển, chúng tôi nhận thấy cứ một lúc họ lại
+                                    nhìn sang
+                                    giá treo các băng giấy của vùng bên cạnh. Chúng tôi hỏi tại sao. Họ trả lời rằng,
+                                    nếu bàn điều
+                                    khiển bên cạnh phải trải giấy lên bàn, điều đó có nghĩa sẽ có nhiều chuyến bay bay
+                                    vào vùng của
+                                    họ. Vì vậy, họ sẽ cố gắng tăng tốc các chuyến bay trong vùng của mình để 'lấy chỗ'
+                                    cho các
+                                    chuyến bay đang đến.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="collapse36">
+                <div class="card card-body">
+                    <h4>Rút ra từ tìm hiểu văn hóa</h4>
+
+                    <ul>
+                        <li>Những người điều khiển phải nhìn thấy tất cả các chuyến bay trong một vùng. Do đó, phải
+                            tránh kiểu hiện
+                            thị với thanh kéo mà trong đó các chuyến bay trên đỉnh và dưới đáy màn hình có thể biến mất.
+                        </li>
+                        <li>Giao điện phải có cách nào đó để báo cho người điều khiển về số chuyến bay tại các vùng giáp
+                            ranh để họ
+                            có thể lập kế hoạch cho công việc của mình</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="4">
+        <h4>User interface prototyping</h4>
+
+        <div>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse41" role="button"
+                    aria-expanded="false" aria-controls="collapse41">
+                    Bản mẫu UI
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse42" role="button"
+                    aria-expanded="false" aria-controls="collapse42">
+                    Bản mẫu trên giấy
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse43" role="button"
+                    aria-expanded="false" aria-controls="collapse43">
+                    Các kỹ thuật làm bản mẫu
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse44" role="button"
+                    aria-expanded="false" aria-controls="collapse44">
+                    Đánh giá UI
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse45" role="button"
+                    aria-expanded="false" aria-controls="collapse45">
+                    Các thuộc tính usability
+                </a>
+            </p>
+            <div>
+                <div class="collapse" id="collapse41">
+                    <div class="card card-body">
+                        <h4>Bản mẫu UI</h4>
+
+                        <ul>
+                            <li>Mục tiêu của bản mẫu là cho phép người dùng có được trải nghiệm trực tiếp đối với giao
+                                diện</li>
+                            <li>Nếu không có trải nghiệm trực tiếp, không thể đánh giá khả năng sử dụng một giao diện
+                            </li>
+                            <li>Quy trình làm bản mẫu có thể có 2 bước
+                                <ul>
+                                    <li>Lúc đầu, có thể dùng bản mẫu trên giấy;</li>
+                                    <li>Sau đó tinh chỉnh thiết kế, và phát triển các bản mẫu tự động hóa với độ phức
+                                        tạp ngày càng tăng
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse42">
+                    <div class="card card-body">
+                        <h4>Bản mẫu trên giấy</h4>
+
+                        <ul>
+                            <li>Dùng các bản vẽ nháp về UI để duyệt qua các kịch bản</li>
+                            <li>Dùng storyboard để trình bày một chuỗi tương tác với hệ thống</li>
+                            <li>Bản mẫu giấy là cách thu thập phản ứng của người dùng đối với một đề xuất thiết kế</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse43">
+                    <div class="card card-body">
+                        <h4>Các kỹ thuật làm bản mẫu</h4>
+
+                        <ul>
+                            <li>Script-driven prototyping
+                                <ul>
+                                    <li>Viết một loạt các script và screen bằng các công cụ như Macromedia Director</li>
+                                    <li>Khi người dùng tương tác, screen sẽ chuyển sang hiển thị màn hình tiếp theo</li>
+                                </ul>
+                            </li>
+                            <li>Visual programming
+                                <br>
+                                Dùng một ngôn ngữ chuyên dụng cho phát triển nhanh như Visual Basic
+                            </li>
+                            <li>Internet based prototyping
+                                <br>
+                                Dùng một trình duyệt web browser và các script kèm theo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse44">
+                    <div class="card card-body">
+                        <h4>Đánh giá UI</h4>
+
+                        <ul>
+                            <li>Cần thực hiện một số đánh giá UI để đánh giá mức độ thích hợp</li>
+                            <li>Đánh giá đầy đủ và toàn bộ thì quả đắt và không thực tế cho hầu hết các hệ thống</li>
+                            <li>Về lí tưởng, một giao diện cần được đánh giá theo một đặc tả về usability. Tuy nhiên,
+                                người ta hiếm khi
+                                viết các đặc tả đó</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse45">
+                    <div class="card card-body">
+                        <h4>Các thuộc tính usability</h4>
+
+                        <center>
+                            <table class="col-12 col-sm-10">
+                                <thead>
+                                    <tr>
+                                        <th>Thuộc tính</th>
+                                        <th>Miêu tả</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Khả năng học</td>
+                                        <td>Người dùng mới cần bao lâu để có thể hoạt động hiệu quả với hệ thống</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Tốc độ vận hành</td>
+                                        <td>Tốc độ phản ứng của hệ thống có đáp ứng tốt công việc của người dùng?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chịu lỗi</td>
+                                        <td>Mức độ dung thứ lỗi của hệ thống đối với lỗi người dùng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khả năng khôi phục</td>
+                                        <td>Khả năng hệ thống khôi phục từ lỗi của người dùng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tương thích</td>
+                                        <td>Hệ thống gắn bó chặt chẽ với một kiểu làm việc đến đâu?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="5">
+        <h3>Đánh giá giao diện</h3>
+
+        <div>
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse51" role="button"
+                    aria-expanded="false" aria-controls="collapse51">
+                    Các kĩ thuật đánh giá đơn giản
+                </a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse52" role="button"
+                    aria-expanded="false" aria-controls="collapse52">
+                    Thành phần giao diện
+                </a>
+
+            </p>
+            <div>
+                <div class="collapse" id="collapse51">
+                    <div class="card card-body">
+                        <h4>Các kĩ thuật đánh giá đơn giản</h4>
+
+                        <ul>
+                            <li>Câu hỏi điều tra để phản hồi của người dùng</li>
+                            <li>Quay video về việc sử dụng hệ thống rồi sau đó đánh giá nội dung</li>
+                            <li>Cài các đoạn mã thu thập thông tin về các tiện ích được sử dụng và lỗi của người dùng
+                            </li>
+                            <li>Phần mềm có chức năng thu thập phản hồi trực tuyến của người dùng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="collapse52">
+                    <div class="card card-body">
+                        <h4>Thành phần giao diện</h4>
+
+                        <ul>
+                            <li>Cửa sổ làm việc chỉ làm 3 vùng
+                                <ul>
+                                    <li>Vùng điều hướng ở trên</li>
+                                    <li>Vùng làm việc ở giữa</li>
+                                    <li>Vùng trạng thái ở đáy</li>
+                                </ul>
+                            </li>
+                            <li>Các thành phần giao diện được chia làm 3 nhóm chính
+                                <ul>
+                                    <li>Nhóm điều khiển nhập liệu: checkboxes, radio buttons,...</li>
+                                    <li>Nhóm thành phần điều hướng: breadcrumb, slider,...</li>
+                                    <li>Nhóm thành phần cung cấp thông tin: tooltips, icons,...</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse521" role="button"
+                                    aria-expanded="false" aria-controls="collapse521">
+                                    checkboxes
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse522" role="button"
+                                    aria-expanded="false" aria-controls="collapse522">
+                                    Radio buttons
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse523" role="button"
+                                    aria-expanded="false" aria-controls="collapse523">
+                                    Dropdown list
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse524" role="button"
+                                    aria-expanded="false" aria-controls="collapse524">
+                                    Listboxes
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse525" role="button"
+                                    aria-expanded="false" aria-controls="collapse525">
+                                    Button
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse526" role="button"
+                                    aria-expanded="false" aria-controls="collapse526">
+                                    Toggles
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse527" role="button"
+                                    aria-expanded="false" aria-controls="collapse527">
+                                    Text field
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse528" role="button"
+                                    aria-expanded="false" aria-controls="collapse528">
+                                    Date and Time picker
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse529" role="button"
+                                    aria-expanded="false" aria-controls="collapse529">
+                                    Breadcrumb
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5230" role="button"
+                                    aria-expanded="false" aria-controls="collapse5230">
+                                    Slider
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5231" role="button"
+                                    aria-expanded="false" aria-controls="collapse5231">
+                                    Pagination
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5232" role="button"
+                                    aria-expanded="false" aria-controls="collapse5232">
+                                    Menu
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5233" role="button"
+                                    aria-expanded="false" aria-controls="collapse5233">
+                                    Tooltips
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5234" role="button"
+                                    aria-expanded="false" aria-controls="collapse5234">
+                                    Progress bar
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse5235" role="button"
+                                    aria-expanded="false" aria-controls="collapse5235">
+                                    Cửa sổ thông báo
+                                </a>
+                            </p>
+                            <div>
+                                <div class="collapse" id="collapse521">
+                                    <div class="card card-body">
+                                        <h4>checkboxes</h4>
+
+                                        <p><b>Mục đích</b>: Cung cấp cho người dùng khả năng chọn và không chọn một đối
+                                            tượng nào đó</p>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img62.png" alt=""
+                                                class="col-12 col-sm-10">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse522">
+                                    <div class="card card-body">
+                                        <h4>Radio buttons</h4>
+
+                                        <ul>
+                                            <li>Cho phép người dùng đưa ra sự chọn lựa duy nhất</li>
+                                            <li>Thông thường có một phương án được đánh dấu chọn mặc định</li>
+                                        </ul>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img63.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse523">
+                                    <div class="card card-body">
+                                        <h4>Dropdown list</h4>
+
+                                        <ul>
+                                            <li>Chọn lựa một phần tử tại một thời điểm</li>
+                                            <li>Hỗ trợ thêm phần tử "Select one" để giúp người dùng biết mình cần chọn 1
+                                                trong số các phần tử sẵn có
+                                            </li>
+                                        </ul>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img64.png" alt="" class="col-12 col-sm-6">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse524">
+                                    <div class="card card-body">
+                                        <h4>Listboxes</h4>
+
+                                        <p>Giống như checkboxes cho phép người dùng chọn cùng lúc nhiều phần tử nhưng
+                                            tiết kiệm không gian hiển thị</p>
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img65.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse525">
+                                    <div class="card card-body">
+                                        <h4>Button</h4>
+
+                                        <ul>
+                                            <li>Thực hiện một hoạt động thích hợp khi mà người dùng bấm chọn</li>
+                                            <li>Thông thường được gán nhãn bằng chuỗi hoặc bằng hình ảnh, có khi cả 2
+                                            </li>
+                                        </ul>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img66.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse526">
+                                    <div class="card card-body">
+                                        <h4>Toggles</h4>
+
+                                        <p>Cho phép người dùng chuyển đổi cấu hình qua lại giữa 2 trạng thái</p>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img67.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse527">
+                                    <div class="card card-body">
+                                        <h4>Text field</h4>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <ul>
+                                                        <li>Cho phép người dùng nhập vào chuỗi ký tự, nó có thể là dòng
+                                                            đơn hoặc nhiều dòng</li>
+                                                        <li>Có thể tùy chọn để người dùng có thể nhập vào mật khẩu hoặc
+                                                            một định dạng nào đó</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <center>
+                                                        <img src="" alt="" class="col-12 col-sm-8">
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse528">
+                                    <div class="card card-body">
+                                        <h4>Date and Time picker</h4>
+
+                                        <ul>
+                                            <li>Cho phép chọn ngày hoặc giờ cụ thể</li>
+                                            <li>Hiển thị tùy thuộc vào hệ thống</li>
+                                        </ul>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img69.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse529">
+                                    <div class="card card-body">
+                                        <h4>Breadcrumb</h4>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <p>Cho phép người dùng xác định được vị trí hiện của mình bên trong
+                                                        hệ thống, đồng thời cung cấp khả
+                                                        năng quay lui lại các vị trí đã duyệt qua</p>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img70.png" alt=""
+                                                            class="col-12 col-sm-6">
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5230">
+                                    <div class="card card-body">
+                                        <h4>Slider</h4>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <p>Cho phép người dùng thay đổi hoặc thiết lập một giá trị kiểu số
+                                                    </p>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img71.png" alt=""
+                                                            class="col-12 col-sm-8">
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5231">
+                                    <div class="card card-body">
+                                        <h4>Pagination</h4>
+
+                                        <p>Giải pháp phân chia thông tin cần biểu diễn ra thành nhiều trang hiển thị
+                                            khác nhau trong đó người dùng
+                                            chuyển qua lại giữa các trang thông tin</p>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img72.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5232">
+                                    <div class="card card-body">
+                                        <h4>Menu</h4>
+
+                                        <ul>
+                                            <li>Là một dạng thành phần điều hướng được sử dụng rộng rãi hiện nay</li>
+                                            <li>Menu là danh sách phân cấp các lệnh hoặc các tùy chọn được thiết kế sẵn
+                                                và sẵn dùng đối với người dùng
+                                            </li>
+                                            <li>Hiển thị danh sách các nhãn</li>
+                                        </ul>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img73.png" alt=""
+                                                            class="col-12">
+                                                    </center>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <center>
+                                                        <img src="./assets/img/CNPM/Chap4/img74.png" alt=""
+                                                            class="col-12">
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5233">
+                                    <div class="card card-body">
+                                        <h4>Tooltips</h4>
+
+                                        <p>Cho phép người dùng xem được thông tin gợi ý bằng cách ghê chuột qua</p>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img75.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5234">
+                                    <div class="card card-body">
+                                        <h4>Progress bar</h4>
+
+                                        <ul>
+                                            <li>Cung cấp thông tin cho người dùng về việc họ đã tiến triển đến đâu trong
+                                                quy trình thực hiện</li>
+                                            <li>Có 2 loại: determinate progress bar và interdeterminate progress bar
+                                            </li>
+                                        </ul>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img76.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="collapse5235">
+                                    <div class="card card-body">
+                                        <p>Là một cửa sổ nhỏ cung cấp thông tin cho người dùng và yêu câu họ thực hiện
+                                            một hành đồng nào đó</p>
+
+                                        <center>
+                                            <img src="./assets/img/CNPM/Chap4/img77.png" alt="" class="col-12 col-sm-8">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+            `]
+        ]
     }
 }
