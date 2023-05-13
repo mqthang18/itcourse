@@ -1,31 +1,26 @@
 
+
+
+
+
+
 var templateContent = `
     <div id="content">
         <center><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUYWqsDpb03q_fsrCXr-sHLuPTmUP55IfEmictGyVZzRy9tAodF4oXXrjH8S--wgYkCuSB2L0W7OCC/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 400px;" scrolling="no"></iframe></center>
     </div>
 `
-// var templateTableContent = `
-//     <ul>
-//         <li>Text 1</li>
-//         <li>Text 2</li>
-//         <li>Text 3</li>
-//     </ul>
-// `;
-
-
-
 
 function GetContent(dataAPI, subjectid, chapid) {
-    var content = new Vue ({
+    var content = new Vue({
         el: "#content",
         template: dataAPI,
         data: {
             chapid: chapid,
-            subjectid: subjectid, 
+            subjectid: subjectid,
             Subjects: Subject
         }
     })
-    
+
 }
 
 function GetTableContent(dataAPI, subjectid, chapid) {
@@ -43,7 +38,7 @@ function GetTableContent(dataAPI, subjectid, chapid) {
 GetContent(templateContent)
 // GetTableContent(tableContentTemplate)
 
-var subjectList = new Vue ({
+var subjectList = new Vue({
     el: "#subject-list",
     template: subjectTemplate,
     data: {
@@ -58,20 +53,17 @@ var subjectList = new Vue ({
         },
         collapsible(el, id) {
             el = document.getElementById(el)
-            console.log(el.children[0].className)
-            // console.log(el.childNodes[1].className)
-            if ($('div#'+id)[0].className.includes('show-not')) {
-                $('div#'+id).removeClass('show-not').addClass('show');
+            if ($('div#' + id)[0].className.includes('show-not')) {
+                $('div#' + id).removeClass('show-not').addClass('show');
                 el.children[0].className = 'fa fa-angle-down';
             } else {
-                $('div#'+id).removeClass('show').addClass('show-not');
+                $('div#' + id).removeClass('show').addClass('show-not');
                 el.children[0].className = 'fa fa-angle-right';
             }
         },
-        GetTemplate(subjectID, ChapID) {
-            // console.log(ChapID);
-            // console.log(subjectID)
-            var tableContentTemplate = `
+        GetTemplate(subjectID, ChapID, i) {
+
+                var tableContentTemplate = `
                     <div id="tableContent">
                         <center><h3>Mục lục</h3></center>
                         <div v-for="subject in Subjects">
@@ -134,9 +126,31 @@ var subjectList = new Vue ({
                     </div>
                 `
                 GetContent(content, subjectID, ChapID)
+            
+        },
+        UpdateData(subjectID, ChapID) {
+            if ($('#' + ChapID).length == 0) {
+                $("<script />", {
+                    id: ChapID,
+                    src: ListData[subjectID][ChapID].src
+                }).appendTo("head");
+            }
+            var i = 0
+            for (i = 0; i < Subject.length; i++) {
+                if (Subject[i].id == subjectID) {
+                    if ($('#' + ChapID).length != 0) {
+                        this.Subjects[i].chapter[ChapID].tableContent = eval(ListData[subjectID][ChapID].varName)
+                        Subject[i].chapter[ChapID].tableContent = eval(ListData[subjectID][ChapID].varName)
+                    }
+                    break;
+                }
+            }
+
+            this.GetTemplate(subjectID, ChapID, i)
+
         }
     },
     computed: {
-        
+
     }
 })

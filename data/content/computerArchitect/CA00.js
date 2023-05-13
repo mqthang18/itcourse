@@ -290,9 +290,9 @@ var CA_chap0 = {
     'CA03': {
         'title': 'Các mạch điện tử số trong máy vi tính',
         'index': [
-            ['Đại số logic', 'CA031'],
-            ['Các mạch điện tử logic', 'CA032'],
-            ['Mạch số học và logic (ALU)', 'CA033']
+            ['Đại số logic', 'CA031', ``],
+            ['Các mạch điện tử logic', 'CA032', ``],
+            ['Mạch số học và logic (ALU)', 'CA033', ``]
         ]
     }
 }

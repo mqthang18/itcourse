@@ -1,5 +1,5 @@
 var TKPTDL4 = {
-    TKPTDL1: {
+    TKPTDL01: {
         title: 'Giới thiệu về kiểm định giả thuyết thống kê',
         index: [
             ['Một số khái niệm cơ bản', 'TKPTDL11', `
@@ -117,7 +117,7 @@ var TKPTDL4 = {
             `],
         ]
     },
-    TKPTDL2: {
+    TKPTDL02: {
         title: 'Kiểm định phân phối chuẩn',
         index: [
             ['Nội dung chính', 'TKPTDL21', `
@@ -141,7 +141,7 @@ var TKPTDL4 = {
             `]
         ]
     },
-    TKPTDL3: {
+    TKPTDL03: {
         title: 'Kiểm định hai phương sai',
         index: [
             ['Nội dung chính', 'TKPTDL31', `
@@ -179,7 +179,7 @@ var.test(x, y, ratio = 1,
             `]
         ]
     },
-    TKPTDL4: {
+    TKPTDL04: {
         title: 'Kiểm định T-test',
         index: [
             ['Kiểm định 1 mẫu cho giá trị trung bình', 'TKPTDL41', `
@@ -373,7 +373,7 @@ var.test(x, y, ratio = 1,
             `]
         ]
     },
-    TKPTDL5: {
+    TKPTDL05: {
         title: 'Kiểm định Wilcoxon',
         index: [
             ['Nội dung chính','TKPTDL51',`
@@ -398,7 +398,7 @@ wilcox.test(als ~ sex)
             `]
         ]
     },
-    TKPTDL6: {
+    TKPTDL06: {
         title: 'Kiểm định tỷ lệ',
         index: [
             ['Lập bảng tần số, tần suất', 'TKPTDL61', `
@@ -530,7 +530,7 @@ wilcox.test(als ~ sex)
             `]
         ]
     },
-    TKPTDL7: {
+    TKPTDL07: {
         title: 'Kiểm định tính độc lập của hai biến',
         index: [
             ['Nội dung chính', 'TKPTDL71', `

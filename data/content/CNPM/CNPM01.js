@@ -1,5 +1,5 @@
 const CNPM1 = {
-    CNPM1: {
+    CNPM01: {
         title: 'Khái niệm Công nghệ phần mềm?',
         index: [
             ['Khái niệm cơ bản', 'CNPM011', `
@@ -163,7 +163,7 @@ const CNPM1 = {
             `]
         ]
     },
-    CNPM2: {
+    CNPM02: {
         title: 'Các công việc trong công nghệ phần mềm',
         index: [
             ['Các bước phát triển phần mềm', 'CNPM021', `

@@ -1,5 +1,5 @@
 var TKPTDL5 = {
-    TKPTDL1: {
+    TKPTDL01: {
         title: 'Hệ số tương quan (Pearson)',
         index: [
             ['Nội dung chính', 'TKPTDL11', `
@@ -53,7 +53,7 @@ var TKPTDL5 = {
             `]
         ]
     },
-    TKPTDL2: {
+    TKPTDL02: {
         title: 'Mô hình hồi quy tuyến tính',
         index: [
             ['Mô hình hồi quy tuyến tính đơn', 'TKPTDL21', `
@@ -172,7 +172,7 @@ var TKPTDL5 = {
             `]
         ]
     },
-    TKPTDL3: {
+    TKPTDL03: {
         title: 'Mô hình hồi quy logistic',
         index: [
             ['Nội dung chính', 'TKPTDL31', `

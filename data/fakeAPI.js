@@ -1,5 +1,3 @@
-
-
 var subjectTemplate = `
 <div id="subject" class="bg-light min-vh-30 rounded">
     <div v-for="subject in Subjects">
@@ -8,48 +6,374 @@ var subjectTemplate = `
         <a :href="'#'+subject.id" class="text-decoration-none">{{subject.label}}</a>
         </button>
         <div v-bind:id="subject.id" class="child-chap show-not">
-            <p v-for="chap in Object.keys(subject.chapter)"><a class="text-dark text-decoration-none cc-chap" v-bind:href="'#'+chap" v-on:click="GetTemplate(subject.id, chap)">{{subject.chapter[chap].title}}</a></p>
-            
+            <p v-for="chap in Object.keys(subject.chapter)">
+            <a class="text-dark text-decoration-none cc-chap" 
+                v-bind:href="'#'+chap" 
+                v-on:click="UpdateData(subject.id, chap)">{{subject.chapter[chap].title}}</a>
+            </p>
         </div>
     </div>
 </div>
 `
 
+const ListData = {
+    database: {
+        database_1: {
+            src: './data/content/database/database01.js',
+            varName: 'database01'
+        },
+        database_2: {
+            src: './data/content/database/database02.js',
+            varName: 'database02'
+        },
+        database_3: {
+            src: './data/content/database/database03.js',
+            varName: 'database03'
+        },
+        database_4: {
+            src: './data/content/database/database04.js',
+            varName: 'database04'
+        },
+        database_5: {
+            src: './data/content/database/database05.js',
+            varName: 'database05'
+        }
+    },
+    computerArchitect: {
+        CA_chap0: {
+            src: './data/content/computerArchitect/CA00.js',
+            varName: 'CA_chap0'
+        },
+        CA_chap1: {
+            src: './data/content/computerArchitect/CA01.js',
+            varName: 'CA_chap1'
+        },
+        CA_chap2: {
+            src: './data/content/computerArchitect/CA02.js',
+            varName: 'CA_chap2'
+        },
+        CA_chap3: {
+            src: './data/content/computerArchitect/CA03.js',
+            varName: 'CA_chap3'
+        },
+        CA_chap4: {
+            src: './data/content/computerArchitect/CA04.js',
+            varName: 'CA_chap4'
+        },
+        CA_chap5: {
+            src: './data/content/computerArchitect/CA05.js',
+            varName: 'CA_chap5'
+        },
+        CA_chap6: {
+            src: './data/content/computerArchitect/CA06.js',
+            varName: 'CA_chap6'
+        }
+    },
+    computerNetwork: {
+        CN_chap0: {
+            src: './data/content/computerNetwork/CN00.js',
+            varName: 'CN00'
+        },
+        CN_chap1: {
+            src: './data/content/computerNetwork/CN01.js',
+            varName: 'CN01'
+        },
+        CN_chap2: {
+            src: './data/content/computerNetwork/CN02.js',
+            varName: 'CN02'
+        },
+        CN_chap3: {
+            src: './data/content/computerNetwork/CN03.js',
+            varName: 'CN03'
+        },
+        CN_chap4: {
+            src: './data/content/computerNetwork/CN04.js',
+            varName: 'CN04'
+        },
+    },
+    ComputerSystem: {
+        CS_chap1: {
+            src: 'data/content/computerSystem/Cs01.js',
+            varName: 'CS01'
+        },
+        CS_chap2: {
+            src: 'data/content/computerSystem/Cs02.js',
+            varName: 'CS02'
+        },
+        CS_chap3: {
+            src: 'data/content/computerSystem/Cs03.js',
+            varName: 'CS03'
+        },
+        CS_chap4: {
+            src: 'data/content/computerSystem/Cs04.js',
+            varName: 'CS04'
+        },
+        CS_chap5: {
+            src: 'data/content/computerSystem/Cs05.js',
+            varName: 'Cs05'
+        },
+    },
+    LTDT: {
+        LTDT_chap1: {
+            src: './data/content/LTDT/LTDT01.js',
+            varName: 'LTDT01'
+        },
+        LTDT_chap2: {
+            src: './data/content/LTDT/LTDT02.js',
+            varName: 'LTDT02'
+        },
+        LTDT_chap3: {
+            src: './data/content/LTDT/LTDT03.js',
+            varName: 'LTDT03'
+        },
+        LTDT_chap4: {
+            src: './data/content/LTDT/LTDT04.js',
+            varName: 'LTDT04'
+        }
+    },
+    webdesign: {
+        Webdesign1: {
+            src: './data/content/webdesign/webdesign01.js',
+            varName: 'webdesign01'
+        },
+        Webdesign2: {
+            src: './data/content/webdesign/webdesign02.js',
+            varName: 'webdesign02'
+        },
+        Webdesign3: {
+            src: './data/content/webdesign/webdesign03.js',
+            varName: 'webdesign03'
+        },
+        Webdesign4: {
+            src: './data/content/webdesign/webdesign04.js',
+            varName: 'webdesign04'
+        },
+        Webdesign5: {
+            src: './data/content/webdesign/webdesign05.js',
+            varName: 'webdesign05'
+        }
+    },
+    LTXH: {
+        LTXH1: {
+            src: './data/content/LTXH/LTXH01.js',
+            varName: 'LTXH01'
+        },
+        LTXH2: {
+            src: './data/content/LTXH/LTXH02.js',
+            varName: 'LTXH02'
+        },
+        LTXH3: {
+            src: './data/content/LTXH/LTXH03.js',
+            varName: 'LTXH03'
+        },
+        LTXH4: {
+            src: './data/content/LTXH/LTXH04.js',
+            varName: 'LTXH04'
+        }
+    },
+    TMDT: {
+        TMDT1: {
+            src: './data/content/TMDT/TMDT01.js',
+            varName: 'TMDT01'
+        },
+        TMDT2: {
+            src: './data/content/TMDT/TMDT02.js',
+            varName: 'TMDT02'
+        },
+        TMDT3: {
+            src: './data/content/TMDT/TMDT03.js',
+            varName: 'TMDT03'
+        },
+        TMDT4: {
+            src: './data/content/TMDT/TMDT04.js',
+            varName: 'TMDT04'
+        },
+        TMDT5: {
+            src: './data/content/TMDT/TMDT05.js',
+            varName: 'TMDT05'
+        },
+        TMDT6: {
+            src: './data/content/TMDT/TMDT06.js',
+            varName: 'TMDT06'
+        },
+        TMDT7: {
+            src: './data/content/TMDT/TMDT07.js',
+            varName: 'TMDT07'
+        }
+    },
+    PTTKHT: {
+        PTTKHT1: {
+            src: './data/content/PTTKHT/PTTKHT1.js',
+            varName: 'PTTKHT1'
+        },
+        PTTKHT2: {
+            src: './data/content/PTTKHT/PTTKHT2.js',
+            varName: 'PTTKHT2'
+        },
+        PTTKHT3: {
+            src: './data/content/PTTKHT/PTTKHT3.js',
+            varName: 'PTTKHT3'
+        },
+        PTTKHT4: {
+            src: './data/content/PTTKHT/PTTKHT4.js',
+            varName: 'PTTKHT4'
+        },
+        PTTKHT5: {
+            src: './data/content/PTTKHT/PTTKHT5.js',
+            varName: 'PTTKHT5'
+        },
+        PTTKHT6: {
+            src: './data/content/PTTKHT/PTTKHT6.js',
+            varName: 'PTTKHT6'
+        }
+    },
+    LTUDWindows: {
+        LTUDWindows1: {
+            src: './data/content/LTUDWindows/LTUDWindows1.js',
+            varName: 'LTUDWindows1'
+        },
+        LTUDWindows2: {
+            src: './data/content/LTUDWindows/LTUDWindows2.js',
+            varName: 'LTUDWindows2'
+        },
+        LTUDWindows3: {
+            src: './data/content/LTUDWindows/LTUDWindows3.js',
+            varName: 'LTUDWindows3'
+        },
+        LTUDWindows4: {
+            src: './data/content/LTUDWindows/LTUDWindows4.js',
+            varName: 'LTUDWindows4'
+        },
+        LTUDWindows5: {
+            src: './data/content/LTUDWindows/LTUDWindows5.js',
+            varName: 'LTUDWindows5'
+        },
+        LTUDWindows6: {
+            src: './data/content/LTUDWindows/LTUDWindows6.js',
+            varName: 'LTUDWindows6'
+        },
+    },
+    TKPTDL: {
+        TKPTDL1: {
+            src: './data/content/TKPTDL/TKPTDL1.js',
+            varName: 'TKPTDL1'
+        },
+        TKPTDL2: {
+            src: './data/content/TKPTDL/TKPTDL2.js',
+            varName: 'TKPTDL2'
+        },
+        TKPTDL3: {
+            src: './data/content/TKPTDL/TKPTDL3.js',
+            varName: 'TKPTDL3'
+        },
+        TKPTDL4: {
+            src: './data/content/TKPTDL/TKPTDL4.js',
+            varName: 'TKPTDL4'
+        },
+        TKPTDL5: {
+            src: './data/content/TKPTDL/TKPTDL5.js',
+            varName: 'TKPTDL5'
+        }
+    },
+    ATTT: {
+        ATTT1: {
+            src: './data/content/ATTT/ATTT1.js',
+            varName: 'ATTT1'
+        },
+        ATTT2: {
+            src: './data/content/ATTT/ATTT2.js',
+            varName: 'ATTT2'
+        },
+        ATTT3: {
+            src: './data/content/ATTT/ATTT3.js',
+            varName: 'ATTT3'
+        },
+        ATTT4: {
+            src: './data/content/ATTT/ATTT4.js',
+            varName: 'ATTT4'
+        },
+        ATTT5: {
+            src: './data/content/ATTT/ATTT5.js',
+            varName: 'ATTT5'
+        }
+    },
+    CNPM: {
+        CNPM1: {
+            src: './data/content/CNPM/CNPM01.js',
+            varName: 'CNPM1'
+        },
+        CNPM2: {
+            src: './data/content/CNPM/CNPM02.js',
+            varName: 'CNPM2'
+        },
+        CNPM3: {
+            src: './data/content/CNPM/CNPM03.js',
+            varName: 'CNPM3'
+        },
+        CNPM4: {
+            src: './data/content/CNPM/CNPM04.js',
+            varName: 'CNPM4'
+        }
+    },
+    LTTBDD: {
+        LTTBDD1: {
+            src: './data/content/LTTBDD/LTTBDD1.js',
+            varName: 'LTTBDD1'
+        },
+        LTTBDD2: {
+            src: './data/content/LTTBDD/LTTBDD2.js',
+            varName: 'LTTBDD2'
+        },
+        LTTBDD3: {
+            src: './data/content/LTTBDD/LTTBDD3.js',
+            varName: 'LTTBDD3'
+        },
+        LTTBDD4: {
+            src: './data/content/LTTBDD/LTTBDD4.js',
+            varName: 'LTTBDD4'
+        },
+        LTTBDD5: {
+            src: './data/content/LTTBDD/LTTBDD5.js',
+            varName: 'LTTBDD5'
+        }
+    }
+}
+
 
 const Subject = [
     {
-        'id': 'database',
-        'label': 'Cơ sở dữ liệu',
-        'chapter': {
-            'database_1': {
+        id: 'database',
+        label: 'Cơ sở dữ liệu',
+        chapter: {
+            database_1: {
                 'title': 'Các cách tiếp cận cơ sở dữ liệu',
                 'outside': `
                     <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=GeneralDB_chapI.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1R5tvKChKTXWmztn8L3qn1eyf-WiF5hu6%26export%3Ddownload"></iframe>
                 `,
                 'tableContent': {}
             },
-            'database_2': {
+            database_2: {
                 title: 'Đại số quan hệ',
                 outside: `
                     <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1KpBw-aNd9zObe7s6iKjIxhNuaOags8fh"></iframe>
                 `,
                 tableContent: {}
             },
-            'database_3': {
+            database_3: {
                 title: 'Ràng buộc toàn vẹn CSDL',
                 outside: `
                     <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1ATCJoJR14LZmvyUc5dilhYRU5j_PJIG3"></iframe>
                 `,
                 tableContent: {}
             },
-            'database_4': {
+            database_4: {
                 title: 'Chuẩn hóa lược đồ quan hệ',
                 outside: `
                     <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1qCTkQBqR5dzGgqptKmBMSmP063BdlLDo"></iframe>
                 `,
                 tableContent: {}
             },
-            'database_5': {
+            database_5: {
                 title: 'Ngôn ngữ SQL',
                 outside: `
                     <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1toYp02rb46PRFBMhQpm2iY9PQXd2yIqv"></iframe>
@@ -59,24 +383,24 @@ const Subject = [
         }
     },
     {
-        'id': 'computerArchitect',
-        'label': 'Kiến trúc máy tính',
-        'chapter': {
-            'CA_chap0': {
-                'title': 'Kiến trúc cơ bản của máy vi tính',
-                'tableContent': CA_chap0
+        id: 'computerArchitect',
+        label: 'Kiến trúc máy tính',
+        chapter: {
+            CA_chap0: {
+                title: 'Kiến trúc cơ bản của máy vi tính',
+                tableContent: {}
             },
-            'CA_chap1': {
-                'title': 'Đơn vị xử lý trung tâm',
-                'tableContent': CA_chap1
+            CA_chap1: {
+                title: 'Đơn vị xử lý trung tâm',
+                tableContent: {}
             },
-            'CA_chap2': {
-                'title': 'Tổ chức bộ nhớ trong máy tính',
-                'tableContent': CA_chap2
+            CA_chap2: {
+                title: 'Tổ chức bộ nhớ trong máy tính',
+                tableContent: {}
             },
-            'CA_chap3': {
-                'title': 'Cấu trúc BUS trong máy vi tính',
-                'outside': `
+            CA_chap3: {
+                title: 'Cấu trúc BUS trong máy vi tính',
+                outside: `
                 <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1XRSxXYSWJILak_WUKE2cshLow3qVhc6t"></iframe>
                     <center>
                         <img src="./assets/img/CA/CA04/Diagram_Devices.png" alt="cpu-types"></img>
@@ -94,187 +418,69 @@ const Subject = [
                     </ul>
                     Một hệ thống máy tính thường có nhiều loại bus
                 `,
-                'tableContent': CA_chap3
+                tableContent: {}
             },
-            'CA_chap4': {
-                'title': 'Các chip bổ trợ trong máy vi tính',
-                'outside': `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap5.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1PFbcY83jz3tRyvnklYkxwS6SfYEtbWbE%26export%3Ddownload"></iframe>`,
-                'tableContent': CA_chap4
+            CA_chap4: {
+                title: 'Các chip bổ trợ trong máy vi tính',
+                outside: `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap5.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1PFbcY83jz3tRyvnklYkxwS6SfYEtbWbE%26export%3Ddownload"></iframe>`,
+                tableContent: {}
             },
-            'CA_chap5': {
-                'title': 'Bộ nhớ ngoài của máy vi tính',
-                'outside': `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap6.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D131ordGFAN8yokY5CUMBrWmADkrhE25D6%26export%3Ddownload"></iframe>`,
-                'tableContent': CA_chap5
+            CA_chap5: {
+                title: 'Bộ nhớ ngoài của máy vi tính',
+                outside: `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap6.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D131ordGFAN8yokY5CUMBrWmADkrhE25D6%26export%3Ddownload"></iframe>`,
+                tableContent: {}
             },
-            'CA_chap6': {
-                'title': 'Ghép nối máy vi tính với thiết bị ngoại vi',
-                'outside': `
+            CA_chap6: {
+                title: 'Ghép nối máy vi tính với thiết bị ngoại vi',
+                outside: `
                 <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap7.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1b9zuGe8SRmNQ6dN7K8tszUQqLb5qYA4M%26export%3Ddownload"></iframe>
                 `,
-                'tableContent': CA_chap6
+                tableContent: {}
             }
         }
     },
     {
-        'id': 'computerNetwork',
-        'label': 'Mạng máy tính',
-        'chapter': {
-            'CN_chap0': {
-                'title': 'Tổng quan về mạng máy tính',
-                'outside': `<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ChapI.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1HMXNn5VEX5RB1m8W3Y2zxFTq1fpf-z3s%26export%3Ddownload"></iframe>`,
-                'tableContent': {
-                    'CN11': {
-                        'title': 'Giới thiệu mạng máy tính',
-                        'index': [
-                            ['Khái niệm', 'CN111', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/khai_niem_CN.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Máy tính và các thiết bị mạng', 'CN112', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/maytinh_va_cacthietbi.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Kiến trúc mạng', 'CN113', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/kientrucmang.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Giao thức mạng (protocol)', 'CN114', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/giaothucmang.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Phân loại mạng', 'CN115', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/phanloaimang.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Dịch vụ mạng', 'CN116', `
-                            
-                                <center>
-                                    <img src="./assets/img/CN/CN1/dichvumang.png" style="width:100%;">
-                                </center>
-                            `],
-                        ]
-                    },
-                    'CN12': {
-                        'title': 'Cấu trúc mạng máy tính',
-                        'index': [
-                            ['Biên mạng', 'CN121', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/bienmang.png" style="width:100%;">
-                                </center>
-                            `],
-                            ['Lõi mạng', 'CN122', `
-                                <center>
-                                    <img src="./assets/img/CN/CN1/loimang.png" style="width: 100%;">
-                                </center>
-                            `]
-                        ]
-                    },
-                    'CN13': {
-                        'title': 'Độ trễ, độ mất gói, thông lượng mạng chuyển mạch gói',
-                        'index': [
-
-                        ]
-                    },
-                    'CN14': {
-                        'title': 'Kiến trúc phân tầng và mô hình OSI',
-                        'index': [
-
-                        ]
-                    },
-                    'CN15': {
-                        'title': 'Mô hình TCP/IP',
-                        'index': [
-
-                        ]
-                    },
-                    'CN16': {
-                        'title': 'Bài tập',
-                        'index': [
-                            ['Đề 1', 'CA161', `
-                                R1 gửi một gói tin kích thước 512B tới nút mạng R2. Bỏ qua d(proc) và d(queuing), tính d(R1-to-R2) (tốc độ lan truyền trên liên kết là 3×l0^8 m/s).
-
-                                <center>
-                                    <img src="./assets/img/CN/CN1/de1.png" class="img-f-scale img-scale">
-                                </center>
-
-                                <br>
-                                <h5>Giải</h5>
-                                <br>
-                                <center>
-                                    <img src="./assets/img/CN/CN1/giai_de1.png" class="img-f-scale img-scale">
-                                </center>
-
-                                <br>
-                                Bỏ qua d<sub>proc</sub> và d<sub>queuing</sub> => Cho 2 d này bằng 0
-                                <br> Tính d<sub>trans</sub> và d<sub>prop</sub>, ta có: 
-                                <ul>
-                                    <li>d<sub>trans</sub> = L/R(s) = 512/100 (B/Mbps) = (512x8)/(100x10^6) (b/bps hay s)</li>
-                                    <li>d<sub>prop</sub> = d/s = 150/3×l0^8</li>
-                                </ul>
-                                
-
-                                <br>=> d<sub>nodal</sub> = 0 + 0 + d<sub>trans</sub> + d<sub>prop</sub> = (512x8)/(100x10^6) + (150/3×l0^8)
-                                <br>
-                                Tham khảo để chuyển Mbps thành bps <a href="https://thietbimaycongnghiep.net/mbps-la-gi/" target="_blank">Link</a>
-                            `],
-                            ['Đề 2', 'CA162', `
-                                <p style="text-align: justify;">
-                                Tính hai tham số quan trọng trong hiệu năng mạng máy tính là propagation delay và transmission delay. Cho hai nút mạng A và B kết nối bởi một liên kết có tốc độ là R bps. Giả sử hai nút mạng có khoảng cách là m mét và tốc độ lan truyền trên liên kết là s mét/giây. Nút mạng A gửi một gói tin kích thước L tới nút mạng B. <br>
-                                a) Tính propagation delay, dprop, theo m và s <br>
-                                b) Tính thời gian truyền của gói tin, dtrans, theo L và R <br>
-                                c) Bỏ qua processing delay và queuing delay, tính the end-to-end delay <br>
-                                d) Giả sử nút mạng A bắt đầu truyền gói tin tại t = 0. Tại t = d<sub>trans</sub>, bit cuối cùng của gói tin đang ở nút mạng A, trên đường truyền, hay đã tới nút mạng B? <br>
-                                e) Giả sử d<sub>prop</sub> lớn hơn d<sub>trans</sub>. Tại t = d<sub>trans</sub>, bit đầu tiên của gói tin đang ở nút mạng A, trên đường truyền, hay đã tới nút mạng B? <br>
-                                f) Giả sử d<sub>prop</sub> nhỏ hơn d<sub>trans</sub>. Tại t = d<sub>trans</sub>, bit đầu tiên của gói tin đang ở nút mạng A, trên đường truyền, hay đã tới nút mạng B? <br>
-                                g) Giả sử s = 2,5 . 108 m/s, L = 120 bit, R = 56 kbps. Tìm khoảng cách m để dprop bằng d<sub>trans</sub>.                                
-                                </p>
-                                <br> 
-                                a) d<sub>prop</sub> = L/R (s)
-                                b) d<sub>trans</sub> = d/s (s)
-                                c) t = 0 mà tốc độ truyền là R bps => bit cuối cùng của gói tin đang ở nút mạng A
-                            `]
-                        ]
-                    }
-                }
+        id: 'computerNetwork',
+        label: 'Mạng máy tính',
+        chapter: {
+            CN_chap0: {
+                title: 'Tổng quan về mạng máy tính',
+                outside: `<iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ChapI.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1HMXNn5VEX5RB1m8W3Y2zxFTq1fpf-z3s%26export%3Ddownload"></iframe>`,
+                tableContent: {}
             },
-            'CN_chap1': {
-                'title': 'Tầng ứng dụng (Application layer)',
-                'outside': `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1bqxF66L9o4BJ_VuHe11mWZWu_CSg6UCL"></iframe>`,
-                'tableContent': CN01
+            CN_chap1: {
+                title: 'Tầng ứng dụng (Application layer)',
+                outside: `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1bqxF66L9o4BJ_VuHe11mWZWu_CSg6UCL"></iframe>`,
+                tableContent: {}
             },
-            'CN_chap2': {
-                'title': 'Tầng giao vận (Transport layer)',
-                'outside': `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ChapIII_TransportLayer.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1txy2aMa8W4SMPZSbpfb_rqDZgRwreOz7%26export%3Ddownload"></iframe>`,
-                'tableContent': CN02
+            CN_chap2: {
+                title: 'Tầng giao vận (Transport layer)',
+                outside: `<iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ChapIII_TransportLayer.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1txy2aMa8W4SMPZSbpfb_rqDZgRwreOz7%26export%3Ddownload"></iframe>`,
+                tableContent: {}
             },
-            'CN_chap3': { 'title': 'Tầng mạng (Network layer)', 'tableContent': CN03 },
-            'CN_chap4': { 'title': 'Tầng liên kết (Link layer)', 'tableContent': CN04 },
+            CN_chap3: { title: 'Tầng mạng (Network layer)', tableContent: {} },
+            CN_chap4: { title: 'Tầng liên kết (Link layer)', tableContent: {} },
         }
     },
     {
-        'id': 'ComputerSystem',
-        'label': 'Hệ thống máy tính',
-        'chapter': {
-            'CS_chap1': {
-                'title': 'Tổng quan về hệ điều hành',
-                'tableContent': CS01
+        id: 'ComputerSystem',
+        label: 'Hệ thống máy tính',
+        chapter: {
+            CS_chap1: {
+                title: 'Tổng quan về hệ điều hành',
+                tableContent: {}
             },
-            'CS_chap2': {
-                'title': 'Quản lý tiến trình',
-                'tableContent': CS02
+            CS_chap2: {
+                title: 'Quản lý tiến trình',
+                tableContent: {}
             },
-            'CS_chap3': {
-                'title': 'Lập lịch',
-                'tableContent': CS03
+            CS_chap3: {
+                title: 'Lập lịch',
+                tableContent: {}
             },
-            'CS_chap4': {
-                'title': 'Cấp phát và quản lý bộ nhớ',
-                'outside': `
+            CS_chap4: {
+                title: 'Cấp phát và quản lý bộ nhớ',
+                outside: `
                     <h4>MỤC TIÊU BÀI HỌC</h4>
                     <ul>
                         <li>Nắm được các khái niệm cơ bản về bộ nhớ</li>
@@ -282,22 +488,22 @@ const Subject = [
                         <li>Hiểu được các cơ chế và mô hình quản lý bộ nhớ</li>
                     </ul>
                 `,
-                'tableContent': CS04
+                tableContent: {}
             },
-            'CS_chap5': {
-                'title': 'Hệ thống tệp tin',
-                'outside': outside_CS5,
-                'tableContent': Cs05
+            CS_chap5: {
+                title: 'Hệ thống tệp tin',
+                outside: `outside_CS5`,
+                tableContent: {}
             }
         }
     },
     {
-        'id': 'LTDT',
-        'label': 'Lý thuyết đồ thị',
-        'chapter': {
-            'LTDT_chap1': {
-                'title': 'Đại cương về đồ thị',
-                'outside': `
+        id: 'LTDT',
+        label: 'Lý thuyết đồ thị',
+        chapter: {
+            LTDT_chap1: {
+                title: 'Đại cương về đồ thị',
+                outside: `
                 <iframe frameborder="0" style="width:100%;height:600px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap1.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1vmP8XybulFOfLNvGcwrt8KGN0ggM1mDp%26export%3Ddownload"></iframe>
                     <h2>Mục lục</h2>
                     <ul>
@@ -306,28 +512,28 @@ const Subject = [
                         <li>3. Các đơn đồ thị đặc biệt và sự đẳng cấu</li>
                     </ul>
                 `,
-                'tableContent': LTDT01
+                tableContent: {}
             },
-            'LTDT_chap2': {
-                'title': 'Các bài toán về đường đi',
-                'outside': `
+            LTDT_chap2: {
+                title: 'Các bài toán về đường đi',
+                outside: `
                 `,
-                'tableContent': LTDT02
+                tableContent: {}
             },
-            'LTDT_chap3': {
-                'title': 'Đồ thị phẳng',
-                'outside': `
+            LTDT_chap3: {
+                title: 'Đồ thị phẳng',
+                outside: `
                     <h2>Giới thiệu</h2>
                     <center>
                         <img style="width: 100%;" src="./assets/img/LTDT/3/dothiphang.jpg" alt="dothiphang">
                     </center>
                     <p>Có thể vẽ đồ thị K<sub>3,3</sub> trên một mặt phẳng sao cho không có hai cạnh nào cặt nhau?</p>
                 `,
-                'tableContent': LTDT03
+                tableContent: {}
             },
-            'LTDT_chap4': {
-                'title': 'Cây',
-                'outside': `
+            LTDT_chap4: {
+                title: 'Cây',
+                outside: `
                     <h2>Nội dung</h2>
                     <ol>
                         <li>Các khái niệm cơ bản về cây</li>
@@ -335,18 +541,18 @@ const Subject = [
                         <li>Bài toán tìm cây khung nhỏ nhất</li>
                     </ol>
                 `,
-                'tableContent': LTDT04
+                tableContent: {}
             }
         }
         // https://youtube.com/playlist?list=PLux-_phi0Rz3Kx5SPqIRyGR1gDVb5DY1x
     },
     {
-        'id': 'webdesign',
-        'label': 'Thiết kế Web',
-        'chapter': {
-            'Webdesign1': {
-                'title': 'Tổng quan về thiết kế web',
-                'outside': `
+        id: 'webdesign',
+        label: 'Thiết kế Web',
+        chapter: {
+            Webdesign1: {
+                title: 'Tổng quan về thiết kế web',
+                outside: `
                     <h3>Mục tiêu ngược học đạt được</h3>
                     <ul>
                         <li>Xác định Internet và các thuật ngữ chính có liên quan</li>
@@ -359,11 +565,11 @@ const Subject = [
                         <li>Tạo và xem một trang web HTML</li>
                     </ul>     
                 `,
-                'tableContent': webdesign01,
+                tableContent: {},
             },
-            'Webdesign2': {
-                'title': 'Ngôn ngữ HTML',
-                'outside': `
+            Webdesign2: {
+                title: 'Ngôn ngữ HTML',
+                outside: `
                     <h2>Mục tiêu người học đạt được:</h2>
                     <ul>
                         <li>Xác định cấu trúc trang HTML</li>
@@ -379,11 +585,11 @@ const Subject = [
                         </li>
                     </ul>
                 `,
-                'tableContent': webdesign02,
+                tableContent: {},
             },
-            'Webdesign3': {
-                'title': 'Bảng định kiểu CSS',
-                'outside': `
+            Webdesign3: {
+                title: 'Bảng định kiểu CSS',
+                outside: `
                     <h2>Mục tiêu người học đạt được:</h2>
                     <ul>
                         <li>Xác định cú pháp CSS</li>
@@ -399,11 +605,11 @@ const Subject = [
                         </li>
                     </ul>
                 `,
-                'tableContent': webdesign03,
+                tableContent: {},
             },
-            'Webdesign4': {
-                'title': 'Ngôn ngữ Javascript',
-                'outside': `
+            Webdesign4: {
+                title: 'Ngôn ngữ Javascript',
+                outside: `
                     <h2>Mục tiêu người học đạt được</h2>
                     <ul>
                         <li>Xác định cách nhúng mã nguồn Javascript (JS) vào trang HTML</li>
@@ -417,11 +623,11 @@ const Subject = [
                         <li>Cài đặt hàm kiểm tra dữ liệu trên form</li>
                     </ul>
                 `,
-                'tableContent': webdesign04,
+                tableContent: {},
             },
-            'Webdesign5': {
-                'title': 'Thiết kế responsive',
-                'outside': `
+            Webdesign5: {
+                title: 'Thiết kế responsive',
+                outside: `
                     <h2>Mục tiêu người học đạt được</h2>
                     <ul>
                         <li>Xác định các thông tin tổng quan về Bootstrap</li>
@@ -435,7 +641,7 @@ const Subject = [
                         </li>
                     </ul>
                 `,
-                'tableContent': webdesign05,
+                tableContent: {},
             }
         }
 
@@ -445,8 +651,8 @@ const Subject = [
         label: 'Lý thuyết xếp hàng',
         chapter: {
             LTXH1: {
-                'title': 'Tổng quan về lý thuyết xếp hàng',
-                'outside': `
+                title: 'Tổng quan về lý thuyết xếp hàng',
+                outside: `
                     <h4>Mục tiêu</h4>
                     <ul>
                         <li>Hiểu và nắm vững các khái niệm lý thuyết xếp hang, xích Markov
@@ -472,7 +678,7 @@ const Subject = [
                         <li>Phương pháp Đồ thị cân bằng ngẫu nhiên</li>
                     </ol>
                 `,
-                'tableContent': LTXH01
+                tableContent: {}
             },
             LTXH2: {
                 title: 'Lý thuyết xếp hàng',
@@ -492,7 +698,7 @@ const Subject = [
                         <li>Hệ thống M/M/s</li>
                     </ol>
                 `,
-                tableContent: LTXH02
+                tableContent: {}
             },
             LTXH3: {
                 title: 'Phân tích và đánh giá hệ thống',
@@ -508,7 +714,7 @@ const Subject = [
                     <li>Ứng dụng mô hình xếp hàng</li>
                 </ol>
                 `,
-                tableContent: LTXH03
+                tableContent: {}
             },
             LTXH4: {
                 title: 'Các công thức cần nhớ',
@@ -566,7 +772,7 @@ const Subject = [
                     </div>
             
                 `,
-                tableContent: TMDT01
+                tableContent: {}
             },
             TMDT2: {
                 title: 'Nền tảng hạ tầng của thương mại điện tử',
@@ -608,11 +814,11 @@ const Subject = [
                         <p>2.4. Ứng dụng wordpress xây dựng website thương mại điện tử</p>
                     </div>
                 `,
-                tableContent: TMDT02
+                tableContent: {}
             },
             TMDT3: {
-                'title': 'Các mô hình kinh doanh trong thương mại điện tử',
-                'outside': `
+                title: 'Các mô hình kinh doanh trong thương mại điện tử',
+                outside: `
                     <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
                     <div>
                     <p>Thương mại điện tử Tiki kinh doanh theo mô hình kết nối giữa doanh nghiệp, người bán hàng nhỏ lẻ với người
@@ -648,11 +854,11 @@ const Subject = [
                     <p>3.4 Chính phủ điện tử</p>
                     </div>
                 `,
-                'tableContent': TMDT03
+                tableContent: {}
             },
             TMDT4: {
-                'title': 'Thanh toán trong thương mại điện tử',
-                'outside': `
+                title: 'Thanh toán trong thương mại điện tử',
+                outside: `
                     <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
                     <div>
                         <p>Nhằm giảm thiểu ô nhiễm môi trường và giải quyết vấn đề tắc nghẽn giao thông, Ủy ban nhân dân Thành phố
@@ -679,11 +885,11 @@ const Subject = [
                         <p>4.3 Các công cụ thanh toán khác</p>
                     </div>
                 `,
-                'tableContent': TMDT04
+                tableContent: {}
             },
             TMDT5: {
-                'title': 'Chiến lược kinh doanh thương mại điện tử và marketing trực tuyến',
-                'outside': `
+                title: 'Chiến lược kinh doanh thương mại điện tử và marketing trực tuyến',
+                outside: `
                     <h2>Tình huống khởi động bài</h2>
                     <div>
                         <p>Tequila Cascahuin được thành lập năm 1904 tại Jalisco, Mexico. Năm 1999 công ty sử dụng 80 lao động, chủ yếu
@@ -723,11 +929,11 @@ const Subject = [
                         <p>5.4 Mối quan hệ giữa thương mại điện tử và marketing trực tuyến</p>
                     </div>
                 `,
-                'tableContent': TMDT05
+                tableContent: {}
             },
             TMDT6: {
-                'title': 'An ninh/an toàn thương mại điện tử',
-                'outside': `                
+                title: 'An ninh/an toàn thương mại điện tử',
+                outside: `                
                     <h2>TÌNH HUỐNG KHỞI ĐỘNG BÀI</h2>
                     <div>
                         <p>Trong bài nghiên cứu đăng trên trang web của Viện Chính sách công và các vấn đề toàn cầu của Canada,
@@ -761,7 +967,7 @@ const Subject = [
                         <p>6.4 Chính sách và pháp luật của Việt Nam về thương mại điện tử</p>
                     </div>
                 `,
-                'tableContent': TMDT06
+                tableContent: {}
             },
             TMDT7: {
                 title: 'Một số câu hỏi khó nhớ',
@@ -822,7 +1028,7 @@ const Subject = [
                     </ol>
                 </div>
                 `,
-                tableContent: PTTKHT1
+                tableContent: {}
             },
             PTTKHT2: {
                 title: `Khảo sát và lập kế hoạch`,
@@ -867,7 +1073,7 @@ const Subject = [
                         </ol>
                     </div>
                 `,
-                tableContent: PTTKHT2
+                tableContent: {}
             },
             PTTKHT3: {
                 title: `Phân tích hệ thống hướng chức năng`,
@@ -922,7 +1128,7 @@ const Subject = [
     </ul>
   </div>
                 `,
-                tableContent: PTTKHT3
+                tableContent: {}
             },
             PTTKHT4: {
                 title: `Thiết kế hệ thống`,
@@ -965,7 +1171,7 @@ const Subject = [
                 </ol>
               </div>
                 `,
-                tableContent: PTTKHT4
+                tableContent: {}
             },
             PTTKHT5: {
                 title: `Thiết kế cơ sở dữ liệu`,
@@ -1013,7 +1219,7 @@ const Subject = [
                     </ol>
                     </div>
                 `,
-                tableContent: PTTKHT5
+                tableContent: {}
             },
             PTTKHT6: {
                 title: `Phân tích và thiết kế hệ thống thông tin theo hướng đối tượng`,
@@ -1054,12 +1260,12 @@ const Subject = [
     </ul>
   </div>
                 `,
-                tableContent: PTTKHT6
+                tableContent: {}
             }
         }
     },
     {
-        id: 'LTUDWindowws',
+        id: 'LTUDWindows',
         label: 'Lập trình ứng dụng Windows',
         chapter: {
             LTUDWindows1: {
@@ -1076,7 +1282,7 @@ const Subject = [
 
                 <p><b>Hướng dẫn cài đặt run C# trên VS code:</b> <a href="https://www.youtube.com/watch?v=RdFgAXUvhYY&feature=youtu.be&ab_channel=GhostTogether" target="_blank">Link Youtube</a></p>
                 `,
-                tableContent: LTUDWindows1
+                tableContent: {}
             },
             LTUDWindows2: {
                 title: `NGÔN NGỮ LẬP TRÌNH C#`,
@@ -1102,7 +1308,7 @@ const Subject = [
                         </ol>
                     </div>
                 `,
-                tableContent: LTUDWindows2
+                tableContent: {}
             },
             LTUDWindows3: {
                 title: `Hướng đối tượng`,
@@ -1131,7 +1337,7 @@ const Subject = [
                     </ol>
                 </div>
                 `,
-                tableContent: LTUDWindows3
+                tableContent: {}
             },
             LTUDWindows4: {
                 title: `Lập trình Windows (Winforms)`,
@@ -1156,7 +1362,7 @@ const Subject = [
                   </ol>
                 </div>
                 `,
-                tableContent: LTUDWindows4
+                tableContent: {}
             },
             LTUDWindows5: {
                 title: `Lập trình cơ sở dữ liệu`,
@@ -1185,7 +1391,7 @@ const Subject = [
     </ol>
 </div>
                 `,
-                tableContent: LTUDWindows5
+                tableContent: {}
             }
         }
     },
@@ -1235,7 +1441,7 @@ const Subject = [
                 <p>Clip hướng dẫn: <a href="https://youtu.be/wbOBX-EhPv0" target="__blank">Link</a></p>
               </div>
                 `,
-                tableContent: TKPTDL1
+                tableContent: {}
             },
             TKPTDL2: {
                 title: `Phân tích thống kê mô tả`,
@@ -1286,7 +1492,7 @@ const Subject = [
   </div>
 
                 `,
-                tableContent: TKPTDL2
+                tableContent: {}
             },
             TKPTDL3: {
                 title: 'Phân tích dữ liệu bằng biểu đồ',
@@ -1343,7 +1549,7 @@ const Subject = [
               </div>
             
                 `,
-                tableContent: TKPTDL3
+                tableContent: {}
             },
             TKPTDL4: {
                 title: 'Kiểm định giá thuyết thống kê',
@@ -1377,7 +1583,7 @@ const Subject = [
   </div>
 
                 `,
-                tableContent: TKPTDL4
+                tableContent: {}
             },
             TKPTDL5: {
                 title: 'Phân tích tương quan và hồi quy',
@@ -1401,7 +1607,7 @@ const Subject = [
   </div>
 
                 `,
-                tableContent: TKPTDL5
+                tableContent: {}
             }
         }
     },
@@ -1424,7 +1630,7 @@ const Subject = [
                     </ol>
                 </div>
                 `,
-                tableContent: ATTT1
+                tableContent: {}
             },
             ATTT2: {
                 title: `Cơ sở toán học`,
@@ -1439,7 +1645,7 @@ const Subject = [
                         </ol>
                     </div>            
                 `,
-                tableContent: ATTT2
+                tableContent: {}
             },
             ATTT3: {
                 title: `Phân loại các thuật toán mã hóa`,
@@ -1465,7 +1671,7 @@ const Subject = [
         
 
                 `,
-                tableContent: ATTT3
+                tableContent: {}
             },
             ATTT4: {
                 title: `Mã đối xứng hiện đại (Mordern symmetric-key ciphers)`,
@@ -1483,7 +1689,7 @@ const Subject = [
                 </div>
             
                 `,
-                tableContent: ATTT4
+                tableContent: {}
             },
             ATTT5: {
                 title: `Chuẩn mã hóa dữ liệu DES`,
@@ -1528,7 +1734,7 @@ const Subject = [
                     </div>
             
                 `,
-                tableContent: ATTT5
+                tableContent: {}
             }
         }
     },
@@ -1557,7 +1763,7 @@ const Subject = [
                         </ul>
                     </div>
                 `,
-                tableContent: CNPM1
+                tableContent: {}
             },
             CNPM2: {
                 title: 'Quản lý dự án',
@@ -1578,7 +1784,7 @@ const Subject = [
                     </ul>
                 </div>
                 `,
-                tableContent: CNPM2
+                tableContent: {}
             },
             CNPM3: {
                 title: 'Xác định yêu cầu',
@@ -1625,7 +1831,7 @@ const Subject = [
         </ul>
     </div>
                 `,
-                tableContent: CNPM3
+                tableContent: {}
             },
             CNPM4: {
                 title: 'Phân tích và thiết kế phần mềm',
@@ -1677,7 +1883,7 @@ const Subject = [
                     </ul>
                 </div>
                 `,
-                tableContent: CNPM4
+                tableContent: {}
             }
         }
     },
@@ -1686,7 +1892,7 @@ const Subject = [
         label: 'Lập trình thiết bị di động',
         chapter: {
             LTTBDD1: {
-                title: 'Giới thiệu về Android', 
+                title: 'Giới thiệu về Android',
                 outside: `
                 <div id="init">
                     <h3>Tình huống khởi động bài</h3>
@@ -1721,7 +1927,7 @@ const Subject = [
                 </div>
 
                 `,
-                tableContent: LTTBDD1
+                tableContent: {}
             },
             LTTBDD2: {
                 title: 'Các thành phần cơ bản của ứng dụng Android',
@@ -1761,7 +1967,7 @@ const Subject = [
                     </ul>
                 </div>
                 `,
-                tableContent: LTTBDD2
+                tableContent: {}
             },
             LTTBDD3: {
                 title: 'Giao diện người dùng',
@@ -1784,7 +1990,7 @@ const Subject = [
                 </ul>
               </div>
                 `,
-                tableContent: LTTBDD3
+                tableContent: {}
             },
             LTTBDD4: {
                 title: 'INTENT, INTENT FILTER, CUSTOM LISVIEW',
@@ -1822,7 +2028,7 @@ const Subject = [
                 </ol>
               </div>
                 `,
-                tableContent: LTTBDD4
+                tableContent: {}
             },
             LTTBDD5: {
                 title: 'Giới thiệu SQLite',
@@ -1857,11 +2063,17 @@ const Subject = [
     </ol>
   </div>
                 `,
-                tableContent: LTTBDD5
+                tableContent: {}
             }
         }
     }
 ]
+
+
+
+
+
+
 
 // console.log(Subject[0].chapter.CA_chap0.tableContent.P11.title)
 // console.log(Object.keys(Subject[0].chapter.CA_chap0.tableContent))

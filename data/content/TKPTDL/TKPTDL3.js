@@ -1,5 +1,5 @@
 var TKPTDL3 = {
-    TKPTDL1: {
+    TKPTDL01: {
         title: 'Cửa sổ biểu đồ trong R',
         index: [
             ['Package chuyên dụng và thao tác cơ bản', 'TKPTDL11', `
@@ -41,7 +41,7 @@ par(mfrow=c(1,1))
             `]
         ]
     },
-    TKPTDL2: {
+    TKPTDL02: {
         title: 'Đặt tên cho trục biểu đồ',
         index: [
             ['Nội dung chính', 'TKPTDL21', `
@@ -115,7 +115,7 @@ par(mfrow=c(1,1))
             `]
         ]
     },
-    TKPTDL3: {
+    TKPTDL03: {
         title: `Biểu đồ thanh (bar plot) và biểu đồ bánh (pie chart)`,
         index: [
             ['Tạo dữ liệu để vẽ biểu đồ','TKPTDL31',`
@@ -270,7 +270,7 @@ par(mfrow=c(1,1))
             `]
         ]
     },
-    TKPTDL4: {
+    TKPTDL04: {
         title: 'Biểu đồ phân bố (HISTOGRAM)',
         index: [
             ['Nội dung chính', 'TKPTDL41', `
@@ -305,7 +305,7 @@ par(mfrow=c(1,1))
             `]
         ]
     },
-    TKPTDL5: {
+    TKPTDL05: {
         title: 'Biểu đồ hộp (BOX PLOT)',
         index: [
             ['Nội dung chính','TKPTDL51',`
@@ -346,7 +346,7 @@ par(mfrow=c(1,1))
             `]
         ]
     },
-    TKPTDL6:{
+    TKPTDL06:{
         title: `Biểu đồ tán xạ (SCATTER PLOT)`,
         index: [
             ['Nội dung chính','TKPTDL61',`

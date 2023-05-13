@@ -1,5 +1,5 @@
 var TKPTDL1 = {
-    TKPTDL1: {
+    TKPTDL01: {
         title: 'Bổ túc về giải tích kết hợp',
         index: [
             ['Quy tắc cộng','TKPTDL11',`
@@ -187,7 +187,7 @@ var TKPTDL1 = {
             `],
         ]
     },
-    TKPTDL2: {
+    TKPTDL02: {
         title: 'Biến cố và quan hệ giữa các biến cố',
         index: [
             ['Biến cố','TKPTDL21',`
@@ -454,7 +454,7 @@ var TKPTDL1 = {
             `]
         ]
     },
-    TKPTDL3: {
+    TKPTDL03: {
         title: 'Xác xuất và một số công thức tính xác xuất',
         index: [
             ['Một số định nghĩa xác xuất','TKPTDL31',`
@@ -673,7 +673,7 @@ var TKPTDL1 = {
             `]
         ]
     },
-    TKPTDL4: {
+    TKPTDL04: {
         title: 'Dãy phép thử Bernoulli',
         index: [
             ['Mô tả','TKPTDL41',`
@@ -713,7 +713,7 @@ var TKPTDL1 = {
             `]
         ]
     },
-    TKPTDL5: {
+    TKPTDL05: {
         title: 'Biến ngẫu nhiên và phân phối xác xuất',
         index: [
             ['Biến ngẫu nhiên và phân loại','TKPTDL51',`
@@ -997,7 +997,7 @@ var TKPTDL1 = {
             `]
         ]
     },
-    TKPTDL6: {
+    TKPTDL06: {
         title: 'Một số luật phân phối xác suất thông dụng',
         index: [
             ['Phân phối nhị thức','TKPTDL61',`
@@ -1209,7 +1209,7 @@ var TKPTDL1 = {
             `],
         ]
     },
-    TKPTDL7: {
+    TKPTDL07: {
         title: 'Giới thiệu và cài đặt R',
         index: [
             ['Hai giao diện sử dụng R','TKPTDL71',`

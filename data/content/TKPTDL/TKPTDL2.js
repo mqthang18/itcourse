@@ -1,5 +1,5 @@
 var TKPTDL2 = {
-    TKPTDL1: {
+    TKPTDL01: {
         title: 'Tổng thể và mẫu',
         index: [
             ['Tổng thể', 'TKPTDL11', `
@@ -43,7 +43,7 @@ var TKPTDL2 = {
             `],
         ]
     },
-    TKPTDL2: {
+    TKPTDL02: {
         title: 'Biến định tính và định lượng',
         index: [
             ['Biến định tính', 'TKPTDL21', `
@@ -106,7 +106,7 @@ var TKPTDL2 = {
             `],
         ]
     },
-    TKPTDL3: {
+    TKPTDL03: {
         title: 'Thống kê mô tả và các chỉ số',
         index: [
             ['Trình bày một mẫu dữ liệu', 'TKPTDL31', `
@@ -159,7 +159,7 @@ var TKPTDL2 = {
             `],
         ]
     },
-    TKPTDL4: {
+    TKPTDL04: {
         title: 'Cách nhập liệu vào R',
         index: [
             ['Nhập số liệu trực tiếp', 'TKPTDL41', `
@@ -302,7 +302,7 @@ var TKPTDL2 = {
             `],
         ]
     },
-    TKPTDL5: {
+    TKPTDL05: {
         title: 'Biên tập dữ liệu với R',
         index: [
             ['Tách rời dữ liệu', 'TKPTDL71', `
