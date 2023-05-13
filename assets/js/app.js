@@ -61,7 +61,7 @@ var subjectList = new Vue({
                 el.children[0].className = 'fa fa-angle-right';
             }
         },
-        GetTemplate(subjectID, ChapID, i) {
+        GetTemplate(subjectID, ChapID) {
 
                 var tableContentTemplate = `
                     <div id="tableContent">
@@ -146,7 +146,7 @@ var subjectList = new Vue({
                 }
             }
 
-            this.GetTemplate(subjectID, ChapID, i)
+            this.GetTemplate(subjectID, ChapID)
 
         }
     },

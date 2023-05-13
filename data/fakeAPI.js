@@ -335,6 +335,10 @@ const ListData = {
         LTTBDD5: {
             src: './data/content/LTTBDD/LTTBDD5.js',
             varName: 'LTTBDD5'
+        },
+        LTTBDD6: {
+            src: './data/content/LTTBDD/LTTBDD6.js',
+            varName: 'LTTBDD6'
         }
     }
 }
@@ -2060,6 +2064,43 @@ const Subject = [
       <li>SQLite</li>
       <li>SQLiteOpenHelper</li>
       <li>Giới thiệu chung về SharedPreference</li>
+    </ol>
+  </div>
+                `,
+                tableContent: {}
+            },
+            LTTBDD6: {
+                title: 'Xử lý dữ liệu với SQLite',
+                outside: `
+                <div id="init">
+    <h4>Khởi động bài</h4>
+    <p>Sau khi Tú đã tạo cơ sở dữ liệu và bảng dữ liệu, làm thế nào để Tú có thể lưu trữ dữu liệu trong SQLite?</p>
+
+    <ul>
+      <li>Trước hết Tú cần tổ chức theo cấu trúc ứng dụng</li>
+      <li>Biết cách viết function trong Class DAO</li>
+      <li>Biết xử lý các tác vụ Thêm, Sửa, Xóa, Hiển thị dữ liệu</li>
+    </ul>
+
+    <p>-> Bài học này giúp Tú thực hiện các công việc trên</p>
+  </div>
+
+
+  <div id="aim">
+    <h4>Mục tiêu bài học</h4>
+    <ul>
+      <li>Hiểu được cách tổ chức cấu trúc ứng dụng</li>
+      <li>Biết cách tạo Class DAO</li>
+      <li>Sử dụng được các thao tác xem, thêm, xóa, sửa</li>
+      <li>Nắm được webview</li>
+    </ul>
+  </div>
+
+  <div id="tableContent">
+    <ol>
+      <li>Tổ chức cấu trúc ứng dụng</li>
+      <li>Thao tác với database</li>
+      <li>WebView</li>
     </ol>
   </div>
                 `,
