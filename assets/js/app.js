@@ -10,7 +10,25 @@ var templateContent = `
     </div>
 `
 
+function Home(dataAPI, subjectid, chapid) {
+    $('#tableContent').css('display', 'none');
+    
+    var content = new Vue({
+        el: "#content",
+        template: dataAPI,
+        data: {
+            chapid: chapid,
+            subjectid: subjectid,
+            Subjects: Subject
+        }
+    })
+
+    
+}
+
+
 function GetContent(dataAPI, subjectid, chapid) {
+    $('#tableContent').css('display', 'block');
     var content = new Vue({
         el: "#content",
         template: dataAPI,
@@ -148,8 +166,5 @@ var subjectList = new Vue({
             this.GetTemplate(subjectID, ChapID)
 
         }
-    },
-    computed: {
-
     }
 })
