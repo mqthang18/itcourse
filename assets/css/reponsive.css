@@ -8,8 +8,23 @@
     width: 460px;
 }
 
+
+.fixed-pos {
+    position: fixed;
+    top: 3vh;
+    width: 23vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .fixed-pos {
+        position: unset;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .img-scale { 
+    .img-scale {
         width: 100%;
     }
+
+
 }

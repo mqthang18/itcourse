@@ -1,5 +1,13 @@
 
+window.onscroll = function() {PosScroll()};
 
+function PosScroll() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.getElementById("tableContent").className = "fixed-pos";
+      } else {
+        document.getElementById("tableContent").className = "";
+      }
+}
 
 
 
@@ -146,6 +154,7 @@ var subjectList = new Vue({
             
         },
         UpdateData(subjectID, ChapID) {
+            $('loading').css('visibility', 'visible')
             if ($('#' + ChapID).length == 0) {
                 $("<script />", {
                     id: ChapID,

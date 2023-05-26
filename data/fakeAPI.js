@@ -295,6 +295,18 @@ const ListData = {
         ATTT5: {
             src: './data/content/ATTT/ATTT5.js',
             varName: 'ATTT5'
+        },
+        ATTT6: {
+            src: './data/content/ATTT/ATTT6.js',
+            varName: 'ATTT6'
+        },
+        ATTT7: {
+            src: './data/content/ATTT/ATTT7.js',
+            varName: 'ATTT7'
+        },
+        ATTT8: {
+            src: './data/content/ATTT/ATTT8.js',
+            varName: 'ATTT8'
         }
     },
     CNPM: {
@@ -313,6 +325,14 @@ const ListData = {
         CNPM4: {
             src: './data/content/CNPM/CNPM04.js',
             varName: 'CNPM4'
+        },
+        CNPM5: {
+            src: './data/content/CNPM/CNPM05.js',
+            varName: 'CNPM5'
+        },
+        CNPM6: {
+            src: './data/content/CNPM/CNPM06.js',
+            varName: 'CNPM6'
         }
     },
     LTTBDD: {
@@ -1739,6 +1759,62 @@ const Subject = [
             
                 `,
                 tableContent: {}
+            },
+            ATTT6: {
+                title: 'Chuẩn mã hóa cao cấp AES',
+                outside: `
+                    <div id="Content">
+                        <h3>Nội dung</h3>
+                    
+                        <ol>
+                        <li>Tổng quan về AES</li>
+                        <li>Các khái niệm và định nghĩa</li>
+                        <li>Các ký hiệu và quy ước</li>
+                        <li>Quá trình mã hóa và giải mã</li>
+                        </ol>
+                    </div>
+                `,
+                tableContent: {}
+            },
+            ATTT7: {
+                title: `
+                Mã hóa khóa bất đối xứng
+                (Asymmetric-key cryptographyre)
+                
+                `,
+                outside: `
+                <div id="TableContent">
+                    <ul>
+                    <li>Khái niệm khóa công khai</li>
+                    <li>Hệ mã RSA</li>
+                    <li>Giới thiệu một số giải thuật PKC phổ biến
+                        <ul>
+                        <li>Hệ mã Trapdoor Knapsack</li>
+                        <li>Hệ mã ElGamal</li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>            
+                `,
+                tableContent: {}
+            },
+            ATTT8: {
+                title: `Hàm băm mật mã (Cryptographic hash functions)`,
+                outside: `
+                <div id="tableContent">
+                    <h4>Nội dung</h4>
+
+                    <ol>
+                    <li>Khái niệm hàm băm</li>
+                    <li>Phương pháp băm</li>
+                    <li>Các hàm băm thông dụng</li>
+                    <li>Công dụng của hàm băm</li>
+                    <li>Hàm băm MD5</li>
+                    <li>Hàm băm SHA1</li>
+                    </ol>
+                </div>
+                `,
+                tableContent: []
             }
         }
     },
@@ -1884,6 +1960,47 @@ const Subject = [
                         <li>Nắm được các kiểu tương tác khác nhau và ứng dụng của chúng</li>
                         <li>Biết cách sử dụng các công cụ để biểu diễn thông tin</li>
                         <li>Nắm được các thuộc tính dùng được (usability) và các cách đánh giá hệ thống</li>
+                    </ul>
+                </div>
+                `,
+                tableContent: {}
+            },
+            CNPM5: {
+                title: 'Thực thi',
+                outside: `
+                <div id="aim">
+                    <h4>Mục tiêu</h4>
+                    <ul>
+                        <li>Nắm được các khái niệm liên quan đến thực thi</li>
+                        <li>Hiểu được việc lựa chọn ngôn ngữ lập trình, cấu trúc dữ liệu,...</li>
+                        <li>Nắm được các nguyên tắc về lập trình</li>
+                        <li>Ứng dụng vào việc tìm một chương trình lập trình phù hợp với nhu cầu sử dụng</li>
+                    </ul>
+                </div>
+
+                `,
+                tableContent: {}
+            },
+            CNPM6: {
+                title: 'Kiểm thử phần mềm',
+                outside: `
+                <div id="aim">
+                    <h4>Mục tiêu</h4>
+
+                    <ul>
+                        <li>Nắm được các khái niệm về kiểm thử</li>
+                        <li>Nắm được các dạng kiểm thử và ứng dụng giải bài tập</li>
+                        <li>Nắm được kiểm thử hệ thống và các phương pháp kiểm thử hệ thống</li>
+                        <li>Nắm được phương pháp để viết tài liệu kiểm thử</li>
+                    </ul>
+                </div>
+
+                <div id="tableContent">
+                    <h4>Nội dung</h4>
+                    <ul>
+                        <li>Phần 1: Kiểm thử chương trình</li>
+                        <li>Phần 2: Kiểm thử hệ thống</li>
+                        <li>Phần 3: Ước lượng lỗi và thời gian kiểm thử (Tìm hiểu thêm)</li>
                     </ul>
                 </div>
                 `,

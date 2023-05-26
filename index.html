@@ -53,6 +53,11 @@
 <body>
 
     <div class="container-fluid">
+        <div id="loading" class="row w-100 position-fixed" style="margin-top: 20vh; visibility: hidden;">
+            <center>
+                <img class="w-15" src="./assets/img/Loading.gif" alt="">
+            </center>
+        </div>
         <div id="header" class="row content bg-primary">
             <center>
                 <a type="button" onclick="Home(templateContent)"><h2 class="text-white">IT courses</h2></a>
@@ -64,7 +69,7 @@
                 <div class="tableContent" id="tableContent"></div>
             </div>
 
-            <div class="col-lg-6 col-sm-9">
+            <div class="col-sm-6 col-lg-6">
                 <div id="content">
 
                 </div>
@@ -73,7 +78,7 @@
                 </div> -->
             </div>
 
-            <div class="col-lg-3 col-sm-12 sidenav">
+            <div class="col-sm-3 col-lg-3 sidenav">
                 <div id="subject-list" class="bg-light min-vh-30 rounded">
 
                 </div>
@@ -93,5 +98,3 @@
 </body>
 
 </html>
-
-
