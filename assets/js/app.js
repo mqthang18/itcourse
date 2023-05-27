@@ -1,26 +1,85 @@
 
-window.onscroll = function() {PosScroll()};
+window.onscroll = function () { PosScroll() };
 
 function PosScroll() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("tableContent").className = "fixed-pos";
-      } else {
+    } else {
         document.getElementById("tableContent").className = "";
-      }
+    }
 }
 
+const GetPracticeQuestion = async (sheetname) => {
+    let query = "SELECT A,B, C"
+
+    // https://docs.google.com/spreadsheets/d/e/2PACX-1vSUYWqsDpb03q_fsrCXr-sHLuPTmUP55IfEmictGyVZzRy9tAodF4oXXrjH8S--wgYkCuSB2L0W7OCC/pubhtml
+    let id = "1EbxWHV84ZAz_2CiycP_R4MVWIzxq2qhMpqzdnrG0Fqc"
+    query = encodeURIComponent(query);
+    try {
+        let api = await axios({
+            url: 'https://docs.google.com/spreadsheets/d/' + id + '/gviz/tq?sheet={sheetname}&tq=' + query,
+            data: {},
+            method: 'get',
+            headers: {
+                Accept: 'application/json'
+            }
+        })
+
+        console.log(api)
+        console.log(JSON.parse(api.data.substr(47).slice(0, -2)).table);
+
+        let col = JSON.parse(api.data.substr(47).slice(0, -2)).table.cols;
+        let row = JSON.parse(api.data.substr(47).slice(0, -2)).table.rows;
+        row.shift()
+
+        var temp = `<div class="accordion" id="content">`;
+            row.map((element, index) => {
+                temp += `
+                    <div class="accordion-item">\n
+                        <h2 class="accordion-header">\n
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#`+ element.c[1].v + `" aria-expanded="true" aria-controls="` + element.c[1].v + `">
+                                `+ element.c[0].v + `
+                            </button>
+                        </h2>\n
+                        <div id="`+ element.c[1].v + `" class="accordion-collapse collapse" data-bs-parent="#content">
+                            <div class="accordion-body">\n        
+                                <center>
+                                    <iframe class="col-12" src="`+ element.c[2].v + `" height="300px" scrolling="no"></iframe>
+                                </center>
+                            </div>\n
+                        </div>\n
+                    </div>    
+                `;
+
+                
+            });
+        temp += `</div>`;
+        
 
 
+        Home(dataAPI = temp)
+    } catch (err) {
+        console.log(err);
+    }
+}
 
+// GetPracticeQuestion(sheetname = 'General')
+// console.log(GetQuestion("LTUDWindows"))
+
+// https://docs.google.com/spreadsheets/d/e/2PACX-1vSUYWqsDpb03q_fsrCXr-sHLuPTmUP55IfEmictGyVZzRy9tAodF4oXXrjH8S--wgYkCuSB2L0W7OCC
 var templateContent = `
     <div id="content">
         <center><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUYWqsDpb03q_fsrCXr-sHLuPTmUP55IfEmictGyVZzRy9tAodF4oXXrjH8S--wgYkCuSB2L0W7OCC/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 400px;" scrolling="no"></iframe></center>
     </div>
 `
 
-function Home(dataAPI, subjectid, chapid) {
-    $('#tableContent').css('display', 'none');
-    
+
+
+
+async function Home(dataAPI, subjectid, chapid) {
+    $('#left-col').css('display', 'none');
+    $('#middle-col').attr('class', 'col-sm-9 col-lg-9');
+    // console.log(dataAPI)
     var content = new Vue({
         el: "#content",
         template: dataAPI,
@@ -31,12 +90,13 @@ function Home(dataAPI, subjectid, chapid) {
         }
     })
 
-    
+
 }
 
 
 function GetContent(dataAPI, subjectid, chapid) {
-    $('#tableContent').css('display', 'block');
+    $('#left-col').css('display', 'block');
+    $('#middle-col').attr('class', 'col-sm-6 col-lg-6');
     var content = new Vue({
         el: "#content",
         template: dataAPI,
@@ -60,7 +120,7 @@ function GetTableContent(dataAPI, subjectid, chapid) {
     })
 }
 
-GetContent(templateContent)
+
 // GetTableContent(tableContentTemplate)
 
 var subjectList = new Vue({
@@ -88,7 +148,7 @@ var subjectList = new Vue({
         },
         GetTemplate(subjectID, ChapID) {
 
-                var tableContentTemplate = `
+            var tableContentTemplate = `
                     <div id="tableContent">
                         <center><h3>Mục lục</h3></center>
                         <div v-for="subject in Subjects">
@@ -113,10 +173,10 @@ var subjectList = new Vue({
                         </div>
                     </div>
                 `
-                GetTableContent(tableContentTemplate, subjectID, ChapID)
+            GetTableContent(tableContentTemplate, subjectID, ChapID)
 
 
-                content = `
+            content = `
                     <div id="content">
                         
                         <div v-for="subject in Subjects">
@@ -150,8 +210,8 @@ var subjectList = new Vue({
                         </div>
                     </div>
                 `
-                GetContent(content, subjectID, ChapID)
-            
+            GetContent(content, subjectID, ChapID)
+
         },
         UpdateData(subjectID, ChapID) {
             $('loading').css('visibility', 'visible')
@@ -177,3 +237,5 @@ var subjectList = new Vue({
         }
     }
 })
+
+window.onload = function () { GetPracticeQuestion(sheetname = 'General'); }
