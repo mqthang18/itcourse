@@ -3,7 +3,10 @@ window.onscroll = function () { PosScroll() };
 
 function PosScroll() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        document.getElementById("tableContent").className = "fixed-pos";
+
+        if ($("#tableContent").height() < 600) {
+            document.getElementById("tableContent").className = "fixed-pos";
+        }
     } else {
         document.getElementById("tableContent").className = "";
     }
@@ -33,8 +36,8 @@ const GetPracticeQuestion = async (sheetname) => {
         row.shift()
 
         var temp = `<div class="accordion" id="content">`;
-            row.map((element, index) => {
-                temp += `
+        row.map((element, index) => {
+            temp += `
                     <div class="accordion-item">\n
                         <h2 class="accordion-header">\n
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#`+ element.c[1].v + `" aria-expanded="true" aria-controls="` + element.c[1].v + `">
@@ -51,10 +54,10 @@ const GetPracticeQuestion = async (sheetname) => {
                     </div>    
                 `;
 
-                
-            });
+
+        });
         temp += `</div>`;
-        
+
 
 
         Home(dataAPI = temp)
