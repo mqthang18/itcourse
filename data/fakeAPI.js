@@ -307,6 +307,10 @@ const ListData = {
         ATTT8: {
             src: './data/content/ATTT/ATTT8.js',
             varName: 'ATTT8'
+        },
+        ATTT9: {
+            src: './data/content/ATTT/ATTT9.js',
+            varName: 'ATTT9'
         }
     },
     CNPM: {
@@ -1813,6 +1817,19 @@ const Subject = [
                     <li>Hàm băm SHA1</li>
                     </ol>
                 </div>
+                `,
+                tableContent: []
+            },
+            ATTT9: {
+                title: `Chữ ký số và chứng thực điện tử (Digital signature)`,
+                outside: `
+                    <h4>Nội dung</h4>
+
+                    <p>Chữ ký điện tử</p>
+                    <ul>
+                    <li>Định nghĩa</li>
+                    <li>Ứng dụng của chữ ký điện tử</li>
+                    </ul>
                 `,
                 tableContent: []
             }

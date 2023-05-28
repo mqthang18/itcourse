@@ -8,10 +8,9 @@
     width: 460px;
 }
 
-
 .fixed-pos {
     position: fixed;
-    top: 3vh;
+    top: 4vh;
     width: 23vw;
 }
 
