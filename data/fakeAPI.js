@@ -1646,6 +1646,8 @@ const Subject = [
             ATTT1: {
                 title: `Giới thiệu`,
                 outside: `
+                <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ChapI_Intro.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1sTvnM-zk4W-kEElXEn1x9BmNW2d4JWvY%26export%3Ddownload"></iframe>
+
                 <div id="tableContent">
                     <ol>
                     <li>Nhu cầu về bảo mật thông tin</li>
