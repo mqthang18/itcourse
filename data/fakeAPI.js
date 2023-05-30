@@ -1665,6 +1665,8 @@ const Subject = [
             ATTT2: {
                 title: `Cơ sở toán học`,
                 outside: `
+                    
+
                     <div id="tableContent">
                         <h4>Nội dung</h4>
                     
@@ -1844,6 +1846,7 @@ const Subject = [
             CNPM1: {
                 title: 'Tổng quan về Công nghệ phần mềm',
                 outside: `
+                <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1I56FCYN20b-HDic6-HWg3SeOrMzAhjvQ"></iframe>
                     <div id="aim">
                         <ul>
                             <li>Nắm được các khái niệm CNPM</li>
