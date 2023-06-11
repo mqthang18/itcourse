@@ -31,7 +31,7 @@ const ATTT3 = {
     ATTT02: {
         title: `Thuật toán chuyển vị (Tranposition)`,
         index: [
-            ['Ví dụ','ATTT021',`
+            ['Ví dụ', 'ATTT021', `
             <p><b>Ví dụ</b></p>
             <p>Đổi chỗ cột đơn giản, bản rõ được viết theo hàng ngang trên trang giấy với độ dài cố định, và bản
                 mã được đọc theo hàng dọc</p>
@@ -40,7 +40,7 @@ const ATTT3 = {
                 <img class="col-12 col-sm-10" src="./assets/img/ATTT/Chap3/img7.png" alt="">
             </center>
             `],
-            ['Đảo ngược toàn bộ bản rõ','ATTT022',`
+            ['Đảo ngược toàn bộ bản rõ', 'ATTT022', `
             <p><b>Đảo ngược toàn bộ bản rõ</b></p>
 
             <p>Nghĩa là bản rõ được viết theo thứ tự ngược lại để tạo ra bản mã. Đây là phương pháp mã hóa đơn
@@ -77,7 +77,7 @@ const ATTT3 = {
     ATTT04: {
         title: `Một số hệ mã cổ điển`,
         index: [
-            ['Các hệ mã cổ điển', 'ATTT041',`
+            ['Các hệ mã cổ điển', 'ATTT041', `
                 <ul>
                     <li>Hệ mã Caesar</li>    
                     <li>Hệ mã Affine</li>    
@@ -184,6 +184,15 @@ const ATTT3 = {
 
             <p>RSA</p>
             `]
+        ]
+    },
+    ATTT08: {
+        title: 'Video bài giảng',
+        index: [
+            ['ĐH Trà Vinh', 'ATTT081', `
+                      <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong3.mp4" target="_blank">Link</a></p>
+                  `],
+            ['Youtube', 'ATTT082', ``],
         ]
     }
 }

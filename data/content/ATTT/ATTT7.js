@@ -1,8 +1,8 @@
 const ATTT7 = {
-    ATTT01: {
-        title: 'Giới thiệu',
-        index: [
-            ['Nội dung', 'ATTT011', `
+  ATTT01: {
+    title: 'Giới thiệu',
+    index: [
+      ['Nội dung', 'ATTT011', `
             <ul>
                 <li><b>Mã hóa đối xứng</b></li>
                 <li><b>Mã hóa công khai</b></li>
@@ -17,12 +17,12 @@ const ATTT7 = {
                 </li>
             </ul>
             `]
-        ]
-    },
-    ATTT02: {
-        title: 'Mã hóa công khai',
-        index: [
-            ['Nội dung', 'ATTT021', `
+    ]
+  },
+  ATTT02: {
+    title: 'Mã hóa công khai',
+    index: [
+      ['Nội dung', 'ATTT021', `
             <p>
       <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse" href="#collapse01" role="button" aria-expanded="false"
         aria-controls="collapse01">
@@ -108,12 +108,12 @@ const ATTT7 = {
       </div>
     </div>
             `]
-        ]
-    },
-    ATTT03: {
-        title: 'Thuật toán RSA',
-        index: [
-            ['Nội dung', 'ATTT031', `
+    ]
+  },
+  ATTT03: {
+    title: 'Thuật toán RSA',
+    index: [
+      ['Nội dung', 'ATTT031', `
             <div>
       <p>
         <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse31" role="button" aria-expanded="false"
@@ -267,12 +267,12 @@ const ATTT7 = {
     </div>
             
             `]
-        ]
-    },
-    ATTT04: {
-        title: 'Một số hệ mật mã khóa công khai khác',
-        index: [
-            ['Nội dung', 'ATTT032', `
+    ]
+  },
+  ATTT04: {
+    title: 'Một số hệ mật mã khóa công khai khác',
+    index: [
+      ['Nội dung', 'ATTT032', `
             <h4>Một số hệ mật mã khóa công khai khác</h4>
     <ul>
       <li>Hệ mật mã ElGamal: Dựa trên bài toán Logarit rời rạc</li>
@@ -391,6 +391,15 @@ const ATTT7 = {
       </div>
     </div>
             `]
-        ]
-    },
+    ]
+  },
+  ATTT011: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'ATTT0111', `
+                      <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong7.mp4" target="_blank">Link</a></p>
+                  `],
+      ['Youtube', 'ATTT0112', ``],
+    ]
+  }
 }

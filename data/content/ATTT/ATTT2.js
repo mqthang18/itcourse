@@ -1,8 +1,8 @@
 var ATTT2 = {
-    ATTT01: {
-        title: 'Lý thuyết thông tin',
-        index: [
-            ['Giới thiệu Entropy và trường hợp tổng quát', 'ATTT011', `
+  ATTT01: {
+    title: 'Lý thuyết thông tin',
+    index: [
+      ['Giới thiệu Entropy và trường hợp tổng quát', 'ATTT011', `
             <h5>Giới thiệu Entropy và trường hợp tổng quát</h5>
 
             <ul>
@@ -53,7 +53,7 @@ var ATTT2 = {
             </div>
   
             `],
-            ['Tốc độ của ngôn ngữ (Rate of Language)', 'ATTT012', `
+      ['Tốc độ của ngôn ngữ (Rate of Language)', 'ATTT012', `
             
             <h5>Tốc độ của ngôn ngữ</h5>
   
@@ -74,7 +74,7 @@ var ATTT2 = {
               <li>Ví dụ: đối với tiếng Anh gồm 26 chữ cái, tốc độ tuyệt đối là log<sub>2</sub>26 = 4.7 bits/chữ cái</li>
             </ul>
             `],
-            ['Độ dư thừa (Redundancy)', 'ATTT013', `
+      ['Độ dư thừa (Redundancy)', 'ATTT013', `
             <h5>Độ dư thừa (Redundancy)</h5>
             <ul>
               <li>Độ dư thừa (Redundancy) của một ngôn ngữ ký hiệu là D và D tiếng Anh:
@@ -86,7 +86,7 @@ var ATTT2 = {
               <li>Như vậy mỗi chữ cái có 1.3 bit nghĩa và 3.4 bit dư thừa (xấp xỉ 72%)</li>
             </ul>
             `],
-            ['Tính an toàn của hệ thống mã hóa', 'ATTT014', `
+      ['Tính an toàn của hệ thống mã hóa', 'ATTT014', `
             <h5>Tính an toàn của hệ thống mã hóa</h5>
             <ul>
               <li>Mục đích của người dò mã là:
@@ -112,7 +112,7 @@ var ATTT2 = {
               </li>
             </ul>
             `],
-            ['Độ an toàn của hệ thống mã mật (Unicity Distance)', 'ATTT015', `
+      ['Độ an toàn của hệ thống mã mật (Unicity Distance)', 'ATTT015', `
             <h5>Unicity Distance</h5>
 
           <ul>
@@ -133,7 +133,7 @@ var ATTT2 = {
               bản rõ</li>
           </ul>
             `],
-            ['2 kỹ thuật che dấu sự dư thừa thông tin', 'ATTT016', `
+      ['2 kỹ thuật che dấu sự dư thừa thông tin', 'ATTT016', `
             <h5>2 kỹ thuật cơ bản để che dấu sự dư thừa thông tin:</h5>
             <ul>
               <li>Kỹ thuật lộn xộn (Confusion): che dấu mối quan hệ giữa bản rõ và bản gốc. Kỹ thuật này làm thất bại các
@@ -146,12 +146,12 @@ var ATTT2 = {
                 nhất tạo ra sự rườm rà là thông qua việc đổi chỗ (hay còn gọi là kỹ thuật hoán vị)</li>
             </ul>
             `]
-        ]        
-    },
-    ATTT02: {
-        title: 'Lý thuyết độ phức tạp',
-        index: [
-            ['Giới thiệu', 'ATTT021', `
+    ]
+  },
+  ATTT02: {
+    title: 'Lý thuyết độ phức tạp',
+    index: [
+      ['Giới thiệu', 'ATTT021', `
             <ul>
               <li>Lý thuyết độ phức tạp cung cấp một phương pháp để phân tích độ phức tạp tính toán của thuật toán và các
                 kỹ thuật mã hóa khác nhau. Nó so sánh các thuật toán mã hóa, kỹ thuật và phát hiện ra độ an toàn của các
@@ -164,7 +164,7 @@ var ATTT2 = {
                 hoạt động được tập trung một bước (chẳng hạn như các vòng lặp, các lời gọi hàm...)</li>
             </ul>
             `],
-            ['Độ an toàn tính toán', 'ATTT022', `
+      ['Độ an toàn tính toán', 'ATTT022', `
             <h5>Độ an toàn tính toán</h5>
           <ul>
             <li>Định nghĩa: Một hệ mật được gọi là an toàn về mặt tính toán nếu có một thuật toán tốt nhất để phá bỏ nó
@@ -177,7 +177,7 @@ var ATTT2 = {
               coi là khó</li>
           </ul>
             `],
-            ['Độ an toàn không điều kiện', 'ATTT023', `
+      ['Độ an toàn không điều kiện', 'ATTT023', `
             <h5>Độ an toàn không điều kiện</h5>
             <ul>
               <li>Một hệ mật được coi là an toàn không điều kiện khi nó không thể bị phá ngay cả với khả năng tính
@@ -194,7 +194,7 @@ var ATTT2 = {
               xuất bằng nhau, bằng 1/|K| và với mỗi x &sub; P, mỗi y &sub; C có một khóa K duy nhất sao cho eK(x) = y.[5]
             </p>
             `],
-            ['Lý thuyết toán học', 'ATTT024', `
+      ['Lý thuyết toán học', 'ATTT024', `
             <h5>Lý thuyết toán học</h5>
 
             <p>
@@ -433,12 +433,12 @@ var ATTT2 = {
               </div>
             </div>
             `]
-        ]
-    },
-    ATTT03: {
-        title: 'Một số ký hiệu toán học',
-        index: [
-            ['Ký hiệu Jacobi (Jacobi Symbol)', 'ATTT031', `
+    ]
+  },
+  ATTT03: {
+    title: 'Một số ký hiệu toán học',
+    index: [
+      ['Ký hiệu Jacobi (Jacobi Symbol)', 'ATTT031', `
             
             <p>Ký hiệu Jacobi được viết là J(a,n), nó là sự khái quát hóa của ký hiệu Lagrang, nó định nghĩa cho bất kỳ cặp số
             nguyên a và n nào. Ký hiệu Jacobi là một chức năng trên tập số thặng dư thấp của ước số n và có thể tính toán
@@ -457,6 +457,15 @@ var ATTT2 = {
           </ul>
 
             `],
-        ]
-    }
+    ]
+  },
+  ATTT04: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'ATTT041', `
+                  <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong2.mp4" target="_blank">Link</a></p>
+              `],
+      ['Youtube', 'ATTT042', ``],
+    ]
+  }
 }

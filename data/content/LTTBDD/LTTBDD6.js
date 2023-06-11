@@ -1,8 +1,8 @@
 const LTTBDD6 = {
-    LTTBDD01: {
-        title: 'Tổ chức cấu trúc ứng dụng',
-        index: [
-            ['Nội dung', 'LTTBDD011', `
+  LTTBDD01: {
+    title: 'Tổ chức cấu trúc ứng dụng',
+    index: [
+      ['Nội dung', 'LTTBDD011', `
             <div id="1">
             <h3>Tổ chức cấu trúc ứng dụng</h3>
             <p>
@@ -134,12 +134,12 @@ const LTTBDD6 = {
             </div>
           </div>
             `]
-        ]
-    },
-    LTTBDD02: {
-        title: 'Thao tác với database',
-        index: [
-            ['Nội dung', 'LTTBDD021', `
+    ]
+  },
+  LTTBDD02: {
+    title: 'Thao tác với database',
+    index: [
+      ['Nội dung', 'LTTBDD021', `
             <div id="2">
     <h3>Thao tác với database</h3>
 
@@ -265,12 +265,12 @@ const LTTBDD6 = {
     </div>
   </div>
             `]
-        ]
-    },
-    LTTBDD03: {
-        title: 'WebView',
-        index: [
-            ['Nội dung', 'LTTBDD031', `
+    ]
+  },
+  LTTBDD03: {
+    title: 'WebView',
+    index: [
+      ['Nội dung', 'LTTBDD031', `
             <div id="3">
     <h3>WebView</h3>
 
@@ -324,6 +324,15 @@ const LTTBDD6 = {
     </div>
   </div>
             `]
-        ]
-    },
+    ]
+  },
+  LTTBDD04: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'LTTBDD041', `
+              <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Video_Bai6_Trim.mp4" target="_blank">Link</a></p>
+          `],
+      ['Youtube', 'LTTBDD042', ``],
+    ]
+  }
 }

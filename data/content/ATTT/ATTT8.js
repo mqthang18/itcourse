@@ -1,8 +1,8 @@
 const ATTT8 = {
-    ATTT01: {
-        title: 'Khái niệm',
-        index: [
-            ['Nội dung', 'ATTT011', `
+  ATTT01: {
+    title: 'Khái niệm',
+    index: [
+      ['Nội dung', 'ATTT011', `
                 <p>Dùng để lấy một bộ phần nhỏ của thông điệp là một giải thuật toán học (một ánh xạ một - một (một chiều)) ứng với
                 mỗi khối dữ liệu một giá trị băm duy nhất.</p>
 
@@ -15,12 +15,12 @@ const ATTT8 = {
 
                 
             `]
-        ]
-    },
-    ATTT02: {
-        title: 'Phương pháp băm',
-        index: [
-            ['Các phương pháp tạo hàm băm', 'ATTT021', `
+    ]
+  },
+  ATTT02: {
+    title: 'Phương pháp băm',
+    index: [
+      ['Các phương pháp tạo hàm băm', 'ATTT021', `
                 <h4>Các phương pháp tạo hàm băm</h4>
 
                 <ul>
@@ -40,7 +40,7 @@ const ATTT8 = {
                     </li>
                 </ul>
             `],
-            ['Phương pháp băm kiểu cộng và nhân', 'ATTT022', `
+      ['Phương pháp băm kiểu cộng và nhân', 'ATTT022', `
             <h4>Phương pháp băm kiểu cộng và nhân</h4>
 
           <ul>
@@ -50,18 +50,18 @@ const ATTT8 = {
             <li>Giá trị tăng thêm ứng với mỗi phân tử thường được tính dưới dạng nhân với một số nguyên tố nào đó</li>
           </ul>
             `],
-            ['Phương pháp băm bằng cách quay vòng', 'ATTT023', `
+      ['Phương pháp băm bằng cách quay vòng', 'ATTT023', `
             <h4>Phương pháp băm bằng cách quay vòng</h4>
 
             <p>Cộng thêm vào mỗi phần tử trong dãy một giá trị giống như phương pháp băm kiểu cộng <b>nhưng giá trị cộng
                 thêm được xét từ cả hai phía, bên trái và bên phải, tính toán để cộng thêm vào tại mỗi phần tử</b></p>
             `]
-        ]
-    },
-    ATTT03: {
-        title: 'Các dạng hàm băm thông dụng',
-        index: [
-            ['Nội dung', 'ATTT031', `
+    ]
+  },
+  ATTT03: {
+    title: 'Các dạng hàm băm thông dụng',
+    index: [
+      ['Nội dung', 'ATTT031', `
             <ul>
       <li><b>RS Hash Function:</b> Một hàm băm đơn giản từ thuật toán Robert Sedgwicks</li>
       <li><b>JS Hash Function:</b> Hàm băm tính từ hai phía do Justin Sobel đề xuất</li>
@@ -84,12 +84,12 @@ const ATTT8 = {
     </ul>
             
             `]
-        ]
-    },
-    ATTT04: {
-        title: 'Công dụng của hàm băm',
-        index: [
-            ['Nội dung', 'ATTT041', `
+    ]
+  },
+  ATTT04: {
+    title: 'Công dụng của hàm băm',
+    index: [
+      ['Nội dung', 'ATTT041', `
             <ul>
       <li>Hàm băm thường được dùng để xây dựng các bảng băm tức là bảng ghi các giá trị băm ứng với một số khối dữ liệu mẫu: khi cần so sánh hai khối dữ liệu nào đó (thường có kích thước rất lớn) ta chỉ cần so sánh các giá trị băm có kích thước rất nhỏ của chúng: điều này rất có ích
         <center>
@@ -110,12 +110,12 @@ const ATTT8 = {
       </li>
     </ul>
             `]
-        ]
-    },
-    ATTT05: {
-        title: 'Hàm băm MD5',
-        index: [
-            ['Nội dung', 'ATTT051', `
+    ]
+  },
+  ATTT05: {
+    title: 'Hàm băm MD5',
+    index: [
+      ['Nội dung', 'ATTT051', `
             <ul>
       <li>MD5 được phát minh bởi Ron Rivest ,người đã tham gia xây dựng RSA.MD5 viết tắt của chữ Message Digest,được phát triển lên từ MD4 và trước đó là MD2,do MD2 và MD4 không còn an toàn.</li>
       <li>Kích thước của MD5 là 128 bit được tính giá trị của thông điệp có kích thước tối đa 2^4 bit</li>
@@ -131,18 +131,27 @@ const ATTT8 = {
       </li>
     </ul>
             `]
-        ]
-    },
-    ATTT06: {
-        title: 'Hàm băm SHA1',
-        index: [
-            ['Nội dung', 'ATTT061', `
+    ]
+  },
+  ATTT06: {
+    title: 'Hàm băm SHA1',
+    index: [
+      ['Nội dung', 'ATTT061', `
             <ul>
       <li>SHA được phát triển bởi cục quốc gia an ninh Hoa Kỳ gọi tắt là(NSA) và được xuất bản thành chuẩn của chính phủ Hoa Kỳ bởi viện công nghệ và chuẩn quốc gia Hoa Kỳ(NIST) vào năm 1993 và được gọi là SHA-0.</li>
       <li>Năm thuật giải SHA là SHA-1 (trả lại kết quả dài 160 bit), SHA-224 (trả lại kết quả dài 224 bit), SHA-256 (trả lại kết quả dài 256 bit), SHA-384 (trả lại kết quả dài 384 bit), và SHA-512 (trả lại kết quả dài 512 bit).</li>
       <li>SHA-1 được sử dụng rộng rãi trong nhiều ứng dụng và giao thức an ninh khác nhau, bao gồm TLS và SSL, PGP, SSH, S/MIME, và IPSec.SHA-1 được coi là thuật giải thay thế MD5, một thuật giải băm 128 bit phổ biến khác.</li>
     </ul>
             `]
-        ]
-    }
+    ]
+  },
+  ATTT011: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'ATTT0111', `
+                    <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong8.mp4" target="_blank">Link</a></p>
+                `],
+      ['Youtube', 'ATTT0112', ``],
+    ]
+  }
 }

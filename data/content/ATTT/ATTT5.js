@@ -216,5 +216,14 @@ const ATTT5 = {
             </div>
             `]
         ]
+    },
+    ATTT011: {
+      title: 'Video bài giảng',
+      index: [
+        ['ĐH Trà Vinh', 'ATTT0111', `
+                    <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong5.mp4" target="_blank">Link</a></p>
+                `],
+        ['Youtube', 'ATTT0112', ``],
+      ]
     }
 }

@@ -1,8 +1,8 @@
 const ATTT6 = {
-    ATTT01: {
-        title: 'Nội dung', 
-        index: [
-            ['Nội dung', 'ATTT011', `
+  ATTT01: {
+    title: 'Nội dung',
+    index: [
+      ['Nội dung', 'ATTT011', `
             <div>
     <p>
       <a class="btn btn-primary mt-2 mb-2" data-bs-toggle="collapse" href="#collapse1" role="button"
@@ -416,6 +416,15 @@ const ATTT6 = {
     </div>
   </div>
             `]
-        ]
-    }
+    ]
+  },
+  ATTT011: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'ATTT0111', `
+                    <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220126_AntoanvaBaomatThongtin/Video/Chuong6.mp4" target="_blank">Link</a></p>
+                `],
+      ['Youtube', 'ATTT0112', ``],
+    ]
+  }
 }

@@ -1,5 +1,5 @@
 const LTTBDD3 = {
-    LTTBDD1: {
+    LTTBDD01: {
         title: 'Layout của ứng dụng ANDROID',
         index: [
             ['Tổng quát layout', 'LTTBDD11', `
@@ -480,7 +480,7 @@ const LTTBDD3 = {
             `],
         ]
     },
-    LTTBDD2: {
+    LTTBDD02: {
         title: 'Một số thành phần cơ bản',
         index: [
             ['TextView', 'LTTBDD21', `
@@ -572,5 +572,14 @@ const LTTBDD3 = {
           </div>
             `],
         ]
+    },
+    LTTBDD03: {
+      title: 'Video bài giảng',
+      index: [
+        ['ĐH Trà Vinh', 'CNPM031', `
+              <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Bai3.mp4" target="_blank">Link</a></p>
+          `],
+        ['Youtube', 'CNPM032', ``],
+      ]
     }
 }

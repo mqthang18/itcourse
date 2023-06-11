@@ -398,5 +398,14 @@ const CNPM2 = {
         </div>
             `]
         ]
+    },
+    CNPM03: {
+        title: 'Video bài giảng',
+        index: [
+            ['ĐH Trà Vinh', 'CNPM031', `
+                <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong2.mp4" target="_blank">Link</a></p>
+            `],
+            ['Youtube', 'CNPM032', ``],
+        ]
     }
 }

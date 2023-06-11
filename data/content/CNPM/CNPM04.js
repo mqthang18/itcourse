@@ -3254,5 +3254,18 @@ const CNPM4 = {
     </div>
             `]
         ]
+    },
+    CNPM06: {
+        title: 'Video bài giảng',
+        index: [
+            ['ĐH Trà Vinh', 'CNPM061', `
+                <p>Bài giảng 1 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong4_P1.mp4" target="_blank">Link</a></p>
+                <p>Bài giảng 2 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong4_P2.mp4" target="_blank">Link</a></p>
+                <p>Bài giảng 3 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong4_P3.mp4" target="_blank">Link</a></p>
+                <p>Bài giảng 4 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong4_P4.mp4" target="_blank">Link</a></p>
+                <p>Bài giảng 5 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220055_CongNghePhanMem/Video/Chuong4_P5.mp4" target="_blank">Link</a></p>
+            `],
+            ['Youtube', 'CNPM062', ``],
+        ]
     }
 }

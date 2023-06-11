@@ -1,8 +1,8 @@
 const LTTBDD1 = {
-    LTTBDD01: {
-        title: 'Giới thiệu về Android',
-        index: [
-            ['Nội dung', 'LTTBDD011', `
+  LTTBDD01: {
+    title: 'Giới thiệu về Android',
+    index: [
+      ['Nội dung', 'LTTBDD011', `
             <ul>
       <li>Android là nền tảng phần mềm mã nguồn mở được Google và Open Handset Alliance tạo ra</li>
       <li>Các dịch vụ hệ thống cơ bản của Android được xây dựng trên Linux 2.6</li>
@@ -161,12 +161,12 @@ const LTTBDD1 = {
       </div>
     </div>
             `]
-        ]
-    },
-    LTTBDD02: {
-        title: 'Các thao tác cơ bản với Android',
-        index: [
-            ['Tạo project Android trên Android Studio', 'LTTBDD021', `
+    ]
+  },
+  LTTBDD02: {
+    title: 'Các thao tác cơ bản với Android',
+    index: [
+      ['Tạo project Android trên Android Studio', 'LTTBDD021', `
             <p><b>Tạo project Android trên Android Studio</b></p>
 
             <p><b>Bước 1. Tải và cài đặt android studio</b></p>
@@ -185,7 +185,7 @@ const LTTBDD1 = {
             </ul>
   
             `],
-            ['Cấu trúc project', 'LTTBDD022', `
+      ['Cấu trúc project', 'LTTBDD022', `
             <p><b>Cấu trúc project</b></p>
             <div>
               <p>
@@ -258,7 +258,7 @@ const LTTBDD1 = {
             </div>
   
             `],
-            ['Biên dịch và gỡ lỗi ứng dụng', 'LTTBDD023', `
+      ['Biên dịch và gỡ lỗi ứng dụng', 'LTTBDD023', `
             <p><b>Biên dịch và gỡ lỗi ứng dụng</b></p>
 
             <p>
@@ -320,6 +320,16 @@ const LTTBDD1 = {
               </div>
             </div>
             `],
-        ]
-    }
+    ]
+  },
+  LTTBDD03: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'CNPM031', `
+            <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Bai1.mp4" target="_blank">Link</a></p>
+        `],
+      ['Youtube', 'CNPM032', ``],
+    ]
+
+  }
 }

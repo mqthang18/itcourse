@@ -1,8 +1,8 @@
 const LTTBDD2 = {
-    LTTBDD01: {
-        title: 'Các thành phần của Android',
-        index: [
-            ['Giới thiệu tổng quát', 'LTTBDD11', `
+  LTTBDD01: {
+    title: 'Các thành phần của Android',
+    index: [
+      ['Giới thiệu tổng quát', 'LTTBDD11', `
             <div>
 <p>
 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse11" role="button" aria-expanded="false"
@@ -156,7 +156,7 @@ aria-controls="collapse14">
 </div>
 </div>
             `],
-            ['Thành phần chính', 'LTTBDD12', `
+      ['Thành phần chính', 'LTTBDD12', `
             <div>
 <p>
 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse21" role="button" aria-expanded="false"
@@ -373,12 +373,12 @@ FLAG_ACTIVITY_NO_ANIMATION
 </div>
 </div>
             `]
-        ]
-    },
-    LTTBDD02: {
-        title: 'Activity và vòng đời',
-        index: [
-            ['Activity - Task, stack', 'LTTBDD21', `
+    ]
+  },
+  LTTBDD02: {
+    title: 'Activity và vòng đời',
+    index: [
+      ['Activity - Task, stack', 'LTTBDD21', `
             <p><b>Activity - Task, Stack</b></p>
 <div class="container-fluid">
 <div class="row">
@@ -430,7 +430,7 @@ FLAG_ACTIVITY_NO_ANIMATION
 <img src="./assets/img/LTTBDD/chap2/img14.png" alt="" class="col-12 col-sm-8">
 </center>
             `],
-            ['Vòng đời của Activity', 'LTTBDD22', `
+      ['Vòng đời của Activity', 'LTTBDD22', `
             <p><b>Vòng đời</b></p>
             <p>Ba trạng thái</p>
             <ul>
@@ -470,6 +470,16 @@ FLAG_ACTIVITY_NO_ANIMATION
               </div>
             </div>
             `]
-        ]
-    }
+    ]
+  },
+  LTTBDD03: {
+    title: 'Video bài giảng',
+    index: [
+      ['ĐH Trà Vinh', 'CNPM031', `
+            <p>Bài giảng 1 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Bai2_Phan1.mp4" target="_blank">Link</a></p>
+            <p>Bài giảng 2 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Bai2_Phan2.mp4" target="_blank">Link</a></p>
+        `],
+      ['Youtube', 'CNPM032', ``],
+    ]
+  }
 }

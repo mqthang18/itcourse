@@ -452,5 +452,14 @@ const LTTBDD4 = {
             </ul>
             `],
         ]
+    },
+    LTTBDD03: {
+      title: 'Video bài giảng',
+      index: [
+        ['ĐH Trà Vinh', 'CNPM031', `
+              <p>Bài giảng <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220071_LapTrinhThietBiDiDong/Video/Video_Bai4_Trim.mp4" target="_blank">Link</a></p>
+          `],
+        ['Youtube', 'CNPM032', ``],
+      ]
     }
 }
