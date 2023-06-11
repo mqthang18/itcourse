@@ -1893,47 +1893,47 @@ const Subject = [
                 title: 'Xác định yêu cầu',
                 outside: `
                 <div id="aim">
-                <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1K4a2mhPQN3WST06Z5d8Ks4aVSxIVEbjy"></iframe>
-        <h4>Mục tiêu</h4>
-        <ol>
-            <li>Xác định được các nguyên nhân thất bại của dự án</li>
-            <li>Nắm được quy trình xác định yêu cầu của dự án</li>
-            <li>Phân tích được các yêu cầu trong quá trình phát triển phần mềm</li>
-            <li>Ứng dụng xác định yêu cầu của dự án bài tập</li>
-        </ol>
-    </div>
+                    <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1K4a2mhPQN3WST06Z5d8Ks4aVSxIVEbjy"></iframe>
+                    <h4>Mục tiêu</h4>
+                    <ol>
+                        <li>Xác định được các nguyên nhân thất bại của dự án</li>
+                        <li>Nắm được quy trình xác định yêu cầu của dự án</li>
+                        <li>Phân tích được các yêu cầu trong quá trình phát triển phần mềm</li>
+                        <li>Ứng dụng xác định yêu cầu của dự án bài tập</li>
+                    </ol>
+                </div>
 
-    <div id="IdenticalRequire">
-        <h4>Xác định yêu cầu</h4>
+                <div id="IdenticalRequire">
+                    <h4>Xác định yêu cầu</h4>
 
-        <ul>
-            <li>Xác định yêu cầu là 1 bước quan trọng</li>
-            <li>Các yếu tố gây ra thất bại
-                <ul>
-                    <li>Không hoàn chỉnh</li>
-                    <li>Thiếu sự hỗ trợ về quản lý</li>
-                    <li>Thiếu sự quan tâm</li>
-                    <li>Thay đổi các yêu cầu và đặc tả</li>
-                    <li>Mong muốn không thực tế</li>
-                    <li>Thiếu việc lập kế hoạch</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+                    <ul>
+                        <li>Xác định yêu cầu là 1 bước quan trọng</li>
+                        <li>Các yếu tố gây ra thất bại
+                            <ul>
+                                <li>Không hoàn chỉnh</li>
+                                <li>Thiếu sự hỗ trợ về quản lý</li>
+                                <li>Thiếu sự quan tâm</li>
+                                <li>Thay đổi các yêu cầu và đặc tả</li>
+                                <li>Mong muốn không thực tế</li>
+                                <li>Thiếu việc lập kế hoạch</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-    <div id="tableContent">
-        <h4>Nội dung</h4>
+                <div id="tableContent">
+                    <h4>Nội dung</h4>
 
-        <ul>
-            <li>Quy trình xác định các yêu cầu</li>
-            <li>Thu thập các yêu cầu</li>
-            <li>Phân loại yêu cầu</li>
-            <li>Các đặc trưng của yêu cầu</li>
-            <li>Các ký hiệu mô hình hóa</li>
-            <li>Các ngôn ngữ đặc tả</li>
-            <li>Lập bản mẫu cho các yêu cầu</li>
-        </ul>
-    </div>
+                    <ul>
+                        <li>Quy trình xác định các yêu cầu</li>
+                        <li>Thu thập các yêu cầu</li>
+                        <li>Phân loại yêu cầu</li>
+                        <li>Các đặc trưng của yêu cầu</li>
+                        <li>Các ký hiệu mô hình hóa</li>
+                        <li>Các ngôn ngữ đặc tả</li>
+                        <li>Lập bản mẫu cho các yêu cầu</li>
+                    </ul>
+                </div>
                 `,
                 tableContent: {}
             },
