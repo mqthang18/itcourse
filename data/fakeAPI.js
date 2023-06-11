@@ -1893,6 +1893,7 @@ const Subject = [
                 title: 'Xác định yêu cầu',
                 outside: `
                 <div id="aim">
+                <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1K4a2mhPQN3WST06Z5d8Ks4aVSxIVEbjy"></iframe>
         <h4>Mục tiêu</h4>
         <ol>
             <li>Xác định được các nguyên nhân thất bại của dự án</li>
