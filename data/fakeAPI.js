@@ -1870,6 +1870,7 @@ const Subject = [
             CNPM2: {
                 title: 'Quản lý dự án',
                 outside: `
+                <iframe frameborder="0" style="width:100%;height:800px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#G1YlnAwEDJSpFNarEHLzufGYswanRJjv2Y"></iframe>
                 <div id="aim">
                     <ul>
                         <li>Nắm được các giai đoạn trong quản lý dự án tin học</li>
