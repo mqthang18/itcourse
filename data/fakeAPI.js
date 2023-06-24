@@ -364,11 +364,159 @@ const ListData = {
             src: './data/content/LTTBDD/LTTBDD6.js',
             varName: 'LTTBDD6'
         }
+    },
+    HQTCSDL: {
+        HQTCSDL1: {
+            src: './data/content/HQTCSDL/HQTCSDL1.js',
+            varName: 'HQTCSDL1'
+        },
+        HQTCSDL2: {
+            src: './data/content/HQTCSDL/HQTCSDL2.js',
+            varName: 'HQTCSDL2'
+        },
+        HQTCSDL3: {
+            src: './data/content/HQTCSDL/HQTCSDL3.js',
+            varName: 'HQTCSDL3'
+        },
+        HQTCSDL4: {
+            src: './data/content/HQTCSDL/HQTCSDL4.js',
+            varName: 'HQTCSDL4'
+        },
+        HQTCSDL5: {
+            src: './data/content/HQTCSDL/HQTCSDL5.js',
+            varName: 'HQTCSDL5'
+        },
+        HQTCSDL6: {
+            src: './data/content/HQTCSDL/HQTCSDL6.js',
+            varName: 'HQTCSDL6'
+        },
+        
+    },
+    CSTTNT: {
+        CSTTNT1: {
+            src: './data/content/CSTTNT/CSTTNT1.js',
+            varName: 'CSTTNT1'
+        }
     }
 }
 
 
 const Subject = [
+    {
+        id: 'HQTCSDL',
+        label: 'Hệ quản trị cơ sở dữ liệu',
+        chapter: {
+            HQTCSDL1: {
+                title: 'Tổng quan về hệ quản trị CSDL',
+                outside: ``,
+                tableContent: {}
+            },
+            HQTCSDL2: {
+                title: 'Lịch giao tác',
+                outside: ``,
+                tableContent: {}
+            },
+            HQTCSDL3: {
+                title: 'Điều khiển đồng thời',
+                outside: ``,
+                tableContent: {}
+            },
+            HQTCSDL4: {
+                title: 'Khôi phục dữ liệu',
+                outside: ``,
+                tableContent: {}
+            },
+            HQTCSDL5: {
+                title: 'Cấu trúc lưu trữ của dữ liệu trên đĩa',
+                outside: ``,
+                tableContent: {}
+            },
+            HQTCSDL6: {
+                title: 'Ước lượng chi phí thực hiện câu truy vấn',
+                outside: ``,
+                tableContent: {}
+            }
+        }
+    },
+    {
+        id: 'CSTTNT',
+        label: 'Trí tuệ nhân tạo',
+        chapter: {
+            CSTTNT1: {
+                title: 'Cơ sở trí tuệ nhân tạo',
+                outside: `
+                <div id="aiming">
+                <h4>Mục tiêu</h4>
+            
+                <ul>
+                  <li>Biết khái quát về lịch sử hình thành và phát triển của TTNT</li>
+                  <li>Biết các định nghĩa về TTNT</li>
+                  <li>Hiểu và dẫn chứng được một số lĩnh vực ứng dụng của TTNT</li>
+                </ul>
+              </div>
+            
+              <div id="tableContent">
+                <h4>Nội dung</h4>
+                <ol>
+                  <li>Trí tuệ nhân tạo là gì</li>
+                  <li>Các giai đoạn phát triển của trí tuệ nhân tạo</li>
+                  <li>Một số bài toán dẫn nhập</li>
+                  <li>Ứng dụng của trí tuệ nhân tạo</li>
+                  <li>Các nghiên cứu về trí tuệ nhân tạo trong tương lai</li>
+                </ol>
+              </div>
+                `,
+                tableContent: {}
+            },
+            CSTTNT2: {
+                title: 'Đồ thị không gian trạng thái',
+                outside: `
+                    <div id="aim">
+                        <h4>Mục tiêu</h4>
+                        <ul>
+                        <li>Hiểu được cách biểu diễn không gian trạng thái cho bài toán tìm kiếm</li>
+                        <li>Nắm được các mô hình bài toán tìm kiếm tổng quát trong không gian trạng thái</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="tableContent">
+                        <ol>
+                        <li>Giải quyết vấn đề bằng bài toán tìm kiếm</li>
+                        <li>Biểu diễn trong không gian tìm kiếm</li>
+                        <li>Biểu diễn không gian trạng thái dưới dạng đồ thị</li>
+                        <li>Các chiến lược tìm kiếm</li>
+                        </ol>
+                    </div>
+                `,
+                tableContent: {}
+            },
+            CSTTNT3: {
+                title: 'Các giải thuật tìm kiếm để giải quyết một số bài toán',
+                outside: ``,
+                tableContent: {}
+            },
+            CSTTNT4: {
+                title: 'Áp dụng các cách biểu diễn và xử lý tri thức',
+                outside: ``,
+                tableContent: {}
+            },
+            CSTTNT5: {
+                title: 'Lập luận không chắc chắn và suy diễn dựa trên xác suất',
+                outside: ``,
+                tableContent: {}
+            },
+            CSTTNT6: {
+                title: 'Trình bày một số nội dung cơ bản về hệ chuyên gia',
+                outside: ``,
+                tableContent: {}
+            },
+            CSTTNT7: {
+                title: 'Học máy',
+                outside: ``,
+                tableContent: {}
+            }
+        }
+    },
     {
         id: 'database',
         label: 'Cơ sở dữ liệu',
