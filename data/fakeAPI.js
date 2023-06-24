@@ -396,6 +396,10 @@ const ListData = {
         CSTTNT1: {
             src: './data/content/CSTTNT/CSTTNT1.js',
             varName: 'CSTTNT1'
+        },
+        CSTTNT2: {
+            src: './data/content/CSTTNT/CSTTNT2.js',
+            varName: 'CSTTNT2'
         }
     }
 }

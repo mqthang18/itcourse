@@ -25,28 +25,31 @@ const CSTTNT2 = {
     CSTTNT02: {
         title: "Biểu diễn vấn đề trong không gian tìm kiếm",
         index: [
-            ['Nội dung', 'CSTTNT021', `
+            ['Giới thiệu', 'CSTTNT021', `
             <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <ul>
-            <li>Trạng thái ban đầu</li>
-            <li>Một tập hơp các toán tử. Trong đó mỗi toán tử mô tả một hành động hoặc một phép biến đổi có thể đưa một
-              trạng thái tới một trạng thái khá</li>
-            <li>Tập hợp tất cả các trạng thái có thể đạt tới từ trạng thái ban đầu bằng cách áp dụng một dãy toán tử,
-              lập thành không gian trạng thái của vấn đề</li>
-            <li>Ký hiệu:
-              <br>
-              <ul>
-                <li>Không gian trạng thái U, trạng thái ban đầu u<sub>0</sub> (u<sub>0</sub> &isin; U)</li>
-                <li>Toán tử R: ánh xạ R: U -> u<sub>0</sub></li>
-              </ul>
-            </li>
-            <li>Một tập hợp T các trạng thái kết thúc (trạng thái đích). T là tập con của không gian U.</li>
-          </ul>
-
-          <div>
-            <h5><b>Ví dụ</b>. Bài toán triệu phú và kẻ cướp</h5>
+              <div class="row">
+                <div class="col-12">
+                  <ul>
+                    <li>Trạng thái ban đầu</li>
+                    <li>Một tập hơp các toán tử. Trong đó mỗi toán tử mô tả một hành động hoặc một phép biến đổi có thể đưa một
+                      trạng thái tới một trạng thái khá</li>
+                    <li>Tập hợp tất cả các trạng thái có thể đạt tới từ trạng thái ban đầu bằng cách áp dụng một dãy toán tử,
+                      lập thành không gian trạng thái của vấn đề</li>
+                    <li>Ký hiệu:
+                      <br>
+                      <ul>
+                        <li>Không gian trạng thái U, trạng thái ban đầu u<sub>0</sub> (u<sub>0</sub> &isin; U)</li>
+                        <li>Toán tử R: ánh xạ R: U -> u<sub>0</sub></li>
+                      </ul>
+                    </li>
+                    <li>Một tập hợp T các trạng thái kết thúc (trạng thái đích). T là tập con của không gian U.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            `],
+            ['Bài toán triệu phú và kẻ cướp', 'CSTTNT022', `
+            <div>
             <p>Có ba nhà triệu phú và ba tên cướp ở bên bờ phải một con sông, cùng một chiếc thuyền chở được một hoặc
               hai người. Hãy tìm cách đưa mọi người qua sông sao cho không để lại ở bên bờ sông kẻ cướp nhiều hơn triệu
               phú</p>
@@ -67,9 +70,8 @@ const CSTTNT2 = {
             </ul>
 
           </div>
-
-          <div>
-            <h5><b>Ví dụ</b>. Bài toán đố tám ô</h5>
+            `],
+            ['Bài toán đố tám ô', 'CSTTNT023', `
             <p>Cho hình chữ nhật được chia thành chín ô như trên hình dưới, trong đó tám ô được đánh số từ 1 đến 8 và
               một ô trống. Có thể thay đổi vị trí các số bằng cách di chuyển ô trống. Mỗi lần di chuyển, ô trống có thể
               đổi chỗ với một ô số ở ngay phía trên, phía dưới, bên phải hoặc bên trái. Yêu cầu của bài toán là thực
@@ -103,28 +105,24 @@ const CSTTNT2 = {
                 </ol>
               </li>
             </ul>
-          </div>
-
-          <div>
-            <h5>Bài toán đong nước</h5>
-
-            <p>Sử dụng ba can 3 lít, 5 lít và 9 lít, làm thế nào để đong được 7 lít nước</p>
-            <p>Bài toán này được phát biểu lại theo 5 thành phần như sau:</p>
-            <ul>
-              <li>Trạng thái: Gọi số nước có trong 3 can lần lượt là a,b,c (a &le; 3, b &lt; 5, c &lt; 9), khi đó bộ ba
-                (a,b,c) là trạng thái của bài toán</li>
-              <li>Trạng thái đầu: (0, 0, 0) // cả ba can đều rỗng</li>
-              <li>Trạng thái đích: (-, -, 7) // can thứ 3 chứa 7 lít nước</li>
-              <li>Phép chuyển trạng thái: từ trạng thái (a,b,c) có thể chuyển sang trạng thái (x,y,z) thông qua các thao
-                tác nhu làm rỗng 1 can, chuyển từ can này sang can kia đến khi hết nước ở can nguồn hoặc can đích bị đầy
-              </li>
-              <li>Chi phí mỗi phép chuyển trạng thái: mỗi phép chuyển trạng thái có chi phí là 1</li>
-            </ul>
-          </div>
-
-          <div>
-            <h5>Bài toán trò chơi 8 số</h5>
-
+            `],
+            ['Bài toán đong nước', 'CSTTNT024', `
+              <div>
+                <p>Sử dụng ba can 3 lít, 5 lít và 9 lít, làm thế nào để đong được 7 lít nước</p>
+                <p>Bài toán này được phát biểu lại theo 5 thành phần như sau:</p>
+                <ul>
+                  <li>Trạng thái: Gọi số nước có trong 3 can lần lượt là a,b,c (a &le; 3, b &lt; 5, c &lt; 9), khi đó bộ ba
+                    (a,b,c) là trạng thái của bài toán</li>
+                  <li>Trạng thái đầu: (0, 0, 0) // cả ba can đều rỗng</li>
+                  <li>Trạng thái đích: (-, -, 7) // can thứ 3 chứa 7 lít nước</li>
+                  <li>Phép chuyển trạng thái: từ trạng thái (a,b,c) có thể chuyển sang trạng thái (x,y,z) thông qua các thao
+                    tác nhu làm rỗng 1 can, chuyển từ can này sang can kia đến khi hết nước ở can nguồn hoặc can đích bị đầy
+                  </li>
+                  <li>Chi phí mỗi phép chuyển trạng thái: mỗi phép chuyển trạng thái có chi phí là 1</li>
+                </ul>
+              </div>
+            `],
+            ['Bài toán trò chơi 8 số', 'CSTTNT025', `
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12 col-sm-6">
@@ -161,21 +159,15 @@ const CSTTNT2 = {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <h5>Không gian trạng thái của bài toán tháp hà nội N = 3</h5>
+            `],
+            ['Không gian trạng thái của bài toán tháp hà nội N = 3', 'CSTTNT026', `
             <ul>
               <li>T = {(x1, x2, x3)/xi &isin; {1,2,3}}</li>
               <li>S = (1, 1, 1)</li>
               <li>G = {(3, 3, 3)}</li>
               <li>F = Tập các khả năng có thể chuyển đĩa đã xác định trong phần trước</li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-            `]
+            `],
         ]
     },
     CSTTNT03: {
