@@ -401,6 +401,36 @@ const ListData = {
             src: './data/content/CSTTNT/CSTTNT2.js',
             varName: 'CSTTNT2'
         }
+    },
+    KKDL: {
+        KKDL1: {
+            src: './data/content/KKDL/KKDL1.js',
+            varName: 'KKDL1'
+        },
+        KKDL2: {
+            src: './data/content/KKDL/KKDL2.js',
+            varName: 'KKDL2'
+        },
+        KKDL3: {
+            src: './data/content/KKDL/KKDL3.js',
+            varName: 'KKDL3'
+        },
+        KKDL4: {
+            src: './data/content/KKDL/KKDL4.js',
+            varName: 'KKDL4'
+        },
+        KKDL5: {
+            src: './data/content/KKDL/KKDL5.js',
+            varName: 'KKDL5'
+        },
+        KKDL6: {
+            src: './data/content/KKDL/KKDL6.js',
+            varName: 'KKDL6'
+        },
+        KKDL7: {
+            src: './data/content/KKDL/KKDL7.js',
+            varName: 'KKDL7'
+        }
     }
 }
 
@@ -519,6 +549,47 @@ const Subject = [
                 outside: ``,
                 tableContent: {}
             }
+        }
+    },
+    {
+        id: 'KKDL',
+        label: 'Khai khoáng dữ liệu',
+        chapter: {
+            KKDL1: {
+                title: 'Tổng quan về khai phá dữ liệu',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL2: {
+                title: 'Hiểu về dữ liệu và tiền xử lý dữ liệu',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL3: {
+                title: 'Kho dữ liệu và kỹ thuật olap',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL4: {
+                title: 'Luật kết hợp',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL5: {
+                title: 'Bài toán phân lớp dữ liệu',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL6: {
+                title: 'Bài toán phân cụm dữ liệu',
+                outside: ``,
+                tableContent: {}
+            },
+            KKDL7: {
+                title: 'Khai thác văn bản và web',
+                outside: ``,
+                tableContent: {}
+            },
         }
     },
     {
