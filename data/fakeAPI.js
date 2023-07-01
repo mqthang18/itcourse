@@ -557,7 +557,18 @@ const Subject = [
         chapter: {
             KKDL1: {
                 title: 'Tổng quan về khai phá dữ liệu',
-                outside: ``,
+                outside: `
+                <div id="tableContent">
+                    <ol>
+                    <li>Nhu cầu của khai phá dữ liệu</li>
+                    <li>Khái niệm KPDL và phát hiện tri thức trong CSDL</li>
+                    <li>KPDL và xử lý CSDL truyền thông</li>
+                    <li>Kiểu dữ liệu trong KPDL</li>
+                    <li>Các bài toán khai phá dữ liệu điển hình</li>
+                    <li>Tính liên nghành của khai phá dữ liệu</li>
+                    </ol>
+                </div>
+                `,
                 tableContent: {}
             },
             KKDL2: {
