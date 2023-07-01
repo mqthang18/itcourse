@@ -573,7 +573,34 @@ const Subject = [
             },
             KKDL2: {
                 title: 'Hiểu về dữ liệu và tiền xử lý dữ liệu',
-                outside: ``,
+                outside: `
+                    <div id="aiming">
+                        <h3>Mục tiêu học tập</h3>
+                        <ul>
+                        <li>Nẵm vững và hiểu được vai trò của hiểu dữ liệu trong KPDL</li>
+                        <li>Hiểu về các đối tướng DL và kiểu thuộc tính</li>
+                        <li>Nắm vững các kỹ thuật thu thập dữ liệu</li>
+                        <li>Biết cách mô tả thống kê cơ bản của DL và biểu diễn trực quan hóa dữ liệu</li>
+                        <li>Biết cách tiền xử lý dữ liệu</li>
+                        </ul>
+                    </div>
+
+                    <div id="content">
+                        <h3>Nội dung</h3>
+                        <ol>
+                        <li>Vai trò của hiểu dữ liệu</li>
+                        <li>Đối tượng DL và kiểu dữ liệu</li>
+                        <li>Mô tả thống kê cơ bản của DL</li>
+                        <li>Trực quan hóa DL</li>
+                        <li>Độ đo tương tự và không tượng tự của DL</li>
+                        <li>Tiền xử lý dữ liệu</li>
+                        <li>Làm sạch dữ liệu</li>
+                        <li>Tích hợp dữ liệu</li>
+                        <li>Rút gọn dữ liệu</li>
+                        <li>Chuyển thể và rời rạc hóa dữ liệu</li>
+                        </ol>
+                    </div>
+                `,
                 tableContent: {}
             },
             KKDL3: {
