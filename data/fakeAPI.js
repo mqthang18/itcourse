@@ -17,6 +17,73 @@ var subjectTemplate = `
 `
 
 const ListData = {
+    HQTCSDL: {
+        HQTCSDL1: {
+            src: './data/content/HQTCSDL/HQTCSDL1.js',
+            varName: 'HQTCSDL1'
+        },
+        HQTCSDL2: {
+            src: './data/content/HQTCSDL/HQTCSDL2.js',
+            varName: 'HQTCSDL2'
+        },
+        HQTCSDL3: {
+            src: './data/content/HQTCSDL/HQTCSDL3.js',
+            varName: 'HQTCSDL3'
+        },
+        HQTCSDL4: {
+            src: './data/content/HQTCSDL/HQTCSDL4.js',
+            varName: 'HQTCSDL4'
+        },
+        HQTCSDL5: {
+            src: './data/content/HQTCSDL/HQTCSDL5.js',
+            varName: 'HQTCSDL5'
+        },
+        HQTCSDL6: {
+            src: './data/content/HQTCSDL/HQTCSDL6.js',
+            varName: 'HQTCSDL6'
+        }
+        
+    },
+    CSTTNT: {
+        CSTTNT1: {
+            src: './data/content/CSTTNT/CSTTNT1.js',
+            varName: 'CSTTNT1'
+        },
+        CSTTNT2: {
+            src: './data/content/CSTTNT/CSTTNT2.js',
+            varName: 'CSTTNT2'
+        }
+    },
+    KKDL: {
+        KKDL1: {
+            src: './data/content/KKDL/KKDL1.js',
+            varName: 'KKDL1'
+        },
+        KKDL2: {
+            src: './data/content/KKDL/KKDL2.js',
+            varName: 'KKDL2'
+        },
+        KKDL3: {
+            src: './data/content/KKDL/KKDL3.js',
+            varName: 'KKDL3'
+        },
+        KKDL4: {
+            src: './data/content/KKDL/KKDL4.js',
+            varName: 'KKDL4'
+        },
+        KKDL5: {
+            src: './data/content/KKDL/KKDL5.js',
+            varName: 'KKDL5'
+        },
+        KKDL6: {
+            src: './data/content/KKDL/KKDL6.js',
+            varName: 'KKDL6'
+        },
+        KKDL7: {
+            src: './data/content/KKDL/KKDL7.js',
+            varName: 'KKDL7'
+        }
+    },
     database: {
         database_1: {
             src: './data/content/database/database01.js',
@@ -365,73 +432,7 @@ const ListData = {
             varName: 'LTTBDD6'
         }
     },
-    HQTCSDL: {
-        HQTCSDL1: {
-            src: './data/content/HQTCSDL/HQTCSDL1.js',
-            varName: 'HQTCSDL1'
-        },
-        HQTCSDL2: {
-            src: './data/content/HQTCSDL/HQTCSDL2.js',
-            varName: 'HQTCSDL2'
-        },
-        HQTCSDL3: {
-            src: './data/content/HQTCSDL/HQTCSDL3.js',
-            varName: 'HQTCSDL3'
-        },
-        HQTCSDL4: {
-            src: './data/content/HQTCSDL/HQTCSDL4.js',
-            varName: 'HQTCSDL4'
-        },
-        HQTCSDL5: {
-            src: './data/content/HQTCSDL/HQTCSDL5.js',
-            varName: 'HQTCSDL5'
-        },
-        HQTCSDL6: {
-            src: './data/content/HQTCSDL/HQTCSDL6.js',
-            varName: 'HQTCSDL6'
-        },
-        
-    },
-    CSTTNT: {
-        CSTTNT1: {
-            src: './data/content/CSTTNT/CSTTNT1.js',
-            varName: 'CSTTNT1'
-        },
-        CSTTNT2: {
-            src: './data/content/CSTTNT/CSTTNT2.js',
-            varName: 'CSTTNT2'
-        }
-    },
-    KKDL: {
-        KKDL1: {
-            src: './data/content/KKDL/KKDL1.js',
-            varName: 'KKDL1'
-        },
-        KKDL2: {
-            src: './data/content/KKDL/KKDL2.js',
-            varName: 'KKDL2'
-        },
-        KKDL3: {
-            src: './data/content/KKDL/KKDL3.js',
-            varName: 'KKDL3'
-        },
-        KKDL4: {
-            src: './data/content/KKDL/KKDL4.js',
-            varName: 'KKDL4'
-        },
-        KKDL5: {
-            src: './data/content/KKDL/KKDL5.js',
-            varName: 'KKDL5'
-        },
-        KKDL6: {
-            src: './data/content/KKDL/KKDL6.js',
-            varName: 'KKDL6'
-        },
-        KKDL7: {
-            src: './data/content/KKDL/KKDL7.js',
-            varName: 'KKDL7'
-        }
-    }
+   
 }
 
 
@@ -452,7 +453,28 @@ const Subject = [
             },
             HQTCSDL3: {
                 title: 'Điều khiển đồng thời',
-                outside: ``,
+                outside: `
+                    <div id="tableContent">
+                        <h3>Nội dung</h3>
+                        <ol>
+                        <li>Các vấn đề trong truy xuất đồng thời
+                            <ul>
+                            <li>Mất dữ liệu cập nhật</li>
+                            <li>Không đọc lại được dữ liệu</li>
+                            <li>Bóng ma</li>
+                            <li>Đọc phải dữ liệu rác</li>
+                            </ul>
+                        </li>
+                        <li>Các kỹ thuật điều khiển đồng thời
+                            <ul>
+                            <li>Kỹ thuật khóa</li>
+                            <li>Kỹ thuật khóa trong SQL Server</li>
+                            <li>Kỹ thuật nhãn thời gian</li>
+                            </ul>
+                        </li>
+                        </ol>
+                    </div>
+                `,
                 tableContent: {}
             },
             HQTCSDL4: {
