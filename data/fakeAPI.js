@@ -52,7 +52,19 @@ const ListData = {
         CSTTNT2: {
             src: './data/content/CSTTNT/CSTTNT2.js',
             varName: 'CSTTNT2'
-        }
+        },
+        CSTTNT3: {
+            src: './data/content/CSTTNT/CSTTNT3.js',
+            varName: 'CSTTNT3'
+        },
+        CSTTNT4: {
+            src: './data/content/CSTTNT/CSTTNT4.js',
+            varName: 'CSTTNT4'
+        },
+        CSTTNT5: {
+            src: './data/content/CSTTNT/CSTTNT5.js',
+            varName: 'CSTTNT5'
+        },
     },
     KKDL: {
         KKDL1: {
