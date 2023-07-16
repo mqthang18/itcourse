@@ -237,7 +237,19 @@ var subjectList = new Vue({
 
             this.GetTemplate(subjectID, ChapID)
 
-        }
+        },
+        SetPlaySpeedDefault() {
+            let vid = document.getElementsByTagName("video");
+    
+            if (vid === undefined || vid === null) {
+                alert("Không tồn tại video trong chương này")
+            } else {
+                Object.keys(vid).forEach(element => {
+                vid[element].playbackRate = 2
+                });
+                alert("Thiết lập thành công")
+            }
+        }  
     }
 })
 

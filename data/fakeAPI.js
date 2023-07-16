@@ -1,5 +1,9 @@
 var subjectTemplate = `
 <div id="subject" class="bg-light min-vh-30 rounded">
+    <p style="text-align: center">
+        <button type="button" class="btn btn-primary" v-on:click="SetPlaySpeedDefault()">Set all video speed 2x</button>
+    </p>
+
     <div v-for="subject in Subjects">
         <button :id="'btn'+subject.id" type="button" class="btn btn-light w-100" v-on:click="collapsible('btn'+subject.id, subject.id)">
         <i class="fa fa-angle-right"></i>

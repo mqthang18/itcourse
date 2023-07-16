@@ -209,12 +209,23 @@
   </div>
 
   <script>
-    let vid = document.getElementsByTagName("video");
 
+    const SetPlaySpeedDefault = () => {
+      let vid = document.getElementsByTagName("video");
 
-    Object.keys(vid).forEach(element => {
-      vid[element].playbackRate = 1.75
-    });
+      if (vid === undefined || vid === null) {
+        alert("Không tồn tại video trong chương này")
+      } else {
+        Object.keys(vid).forEach(element => {
+          vid[element].playbackRate = 2
+        });
+        alert("Thiết lập thành công")
+      }
+
+      
+    }
+
+    
   </script>
 </body>
 
