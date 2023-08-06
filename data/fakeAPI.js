@@ -448,7 +448,12 @@ const ListData = {
             varName: 'LTTBDD6'
         }
     },
-   
+    TRR: {
+        TRR1: {
+            src: 'data\content\TRR\TRR1.js',
+            varName: 'TRR1'
+        }
+    }
 }
 
 
@@ -666,6 +671,19 @@ const Subject = [
                 outside: ``,
                 tableContent: {}
             },
+        }
+    },
+    {
+        id: 'TRR',
+        label: 'Toán rời rạc',
+        chapter: {
+            TRR1: {
+                title: 'Cơ sở logic',
+                outside: `
+                <iframe frameborder="0" style="width:100%;height:500px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Chap1.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1aMwJ8xOZ_i0SnvcJZDfLSiX9m5ACBS29%26export%3Ddownload"></iframe>
+                `,
+                tableContent: {}
+            }
         }
     },
     {
