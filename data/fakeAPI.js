@@ -589,7 +589,15 @@ const Subject = [
         chapter: {
             XDPMHDDT1: {
                 title: `Một số khái niệm về công nghệ phần mềm`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                        <source
+                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_01.CongNghePhanMem.mp4#t=0,92"
+                            type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT2: {
@@ -653,7 +661,9 @@ const Subject = [
             },
             QTDACNTT2: {
                 title: `Quản lý tích hợp dự án phần mềm`,
-                outside: ``,
+                outside: `
+                    
+                `,
                 tableContent: {}
             },
             QTDACNTT3: {
