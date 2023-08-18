@@ -450,14 +450,244 @@ const ListData = {
     },
     TRR: {
         TRR1: {
-            src: 'data\content\TRR\TRR1.js',
+            src: 'data/content/TRR/TRR1.js',
             varName: 'TRR1'
+        }
+    },
+    PTUDWMNM: {
+        PTUDWMNM1: {
+            src: 'data/content/PTUDWMNM/PTUDWMNM1.js',
+            varName: 'PTUDWMNM1'
+        },
+        PTUDWMNM2: {
+            src: 'data/content/PTUDWMNM/PTUDWMNM2.js',
+            varName: 'PTUDWMNM2'
+        },
+        PTUDWMNM3: {
+            src: 'data/content/PTUDWMNM/PTUDWMNM3.js',
+            varName: 'PTUDWMNM3'
+        },
+        PTUDWMNM4: {
+            src: 'data/content/PTUDWMNM/PTUDWMNM4.js',
+            varName: 'PTUDWMNM4'
+        },
+        PTUDWMNM5: {
+            src: 'data/content/PTUDWMNM/PTUDWMNM5.js',
+            varName: 'PTUDWMNM5'
+        }
+    },
+    XDPMHDDT: {
+        XDPMHDDT1: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT1.js',
+            varName: 'XDPMHDDT1'
+        },
+        XDPMHDDT2: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT2.js',
+            varName: 'XDPMHDDT2'
+        },
+        XDPMHDDT3: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT3.js',
+            varName: 'XDPMHDDT3'
+        },
+        XDPMHDDT4: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT4.js',
+            varName: 'XDPMHDDT4'
+        },
+        XDPMHDDT5: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT5.js',
+            varName: 'XDPMHDDT5'
+        },
+        XDPMHDDT6: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT6.js',
+            varName: 'XDPMHDDT6'
+        },
+        XDPMHDDT7: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT7.js',
+            varName: 'XDPMHDDT7'
+        },
+        XDPMHDDT8: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT8.js',
+            varName: 'XDPMHDDT8'
+        },
+        XDPMHDDT9: {
+            src: 'data/content/XDPMHDDT/XDPMHDDT9.js',
+            varName: 'XDPMHDDT9'
+        }
+    },
+    QTDACNTT: {
+        QTDACNTT1: {
+            src: 'data/content/QTDACNTT/QTDACNTT1.js', 
+            varName: 'QTDACNTT1'
+        },
+        QTDACNTT2: {
+            src: 'data/content/QTDACNTT/QTDACNTT2.js', 
+            varName: 'QTDACNTT2'
+        },
+        QTDACNTT3: {
+            src: 'data/content/QTDACNTT/QTDACNTT3.js', 
+            varName: 'QTDACNTT3'
+        },
+        QTDACNTT4: {
+            src: 'data/content/QTDACNTT/QTDACNTT4.js', 
+            varName: 'QTDACNTT4'
+        },
+        QTDACNTT5: {
+            src: 'data/content/QTDACNTT/QTDACNTT5.js', 
+            varName: 'QTDACNTT5'
+        },
+        QTDACNTT6: {
+            src: 'data/content/QTDACNTT/QTDACNTT6.js', 
+            varName: 'QTDACNTT6'
+        },
+        QTDACNTT7: {
+            src: 'data/content/QTDACNTT/QTDACNTT7.js', 
+            varName: 'QTDACNTT7'
+        },
+        QTDACNTT8: {
+            src: 'data/content/QTDACNTT/QTDACNTT8.js', 
+            varName: 'QTDACNTT8'
         }
     }
 }
 
 
 const Subject = [
+    {
+        id: 'PTUDWMNM',
+        label: 'Phát triển ứng dụng Web với mã nguồn mở',
+        chapter: {
+            PTUDWMNM1: {
+                title: 'Xây dựng giao diện web với HTML và CSS',
+                outside: ``,
+                tableContent: {}
+            },
+            PTUDWMNM2: {
+                title: 'Tương tác dữ liệu giữa Javascript và HTML',
+                outside: ``,
+                tableContent: {}
+            },
+            PTUDWMNM3: {
+                title: 'PHP và MySQL cơ bản',
+                outside: ``,
+                tableContent: {}
+            },
+            PTUDWMNM4: {
+                title: 'Lưu trữ dữ liệu với PHP và MySQL',
+                outside: ``,
+                tableContent: {}
+            },
+            PTUDWMNM5: {
+                title: 'Các thao tác dữ liệu trong PHP và MySQL',
+                outside: ``,
+                tableContent: {}
+            }
+        }
+    },
+    {
+        id: `XDPMHDDT`,
+        label: `Xây dựng phần mềm hướng đối tượng`,
+        chapter: {
+            XDPMHDDT1: {
+                title: `Một số khái niệm về công nghệ phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT2: {
+                title: `Khái quát các khái niệm của hướng đối tượng`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT3: {
+                title: `Phát triển phần mềm dựa trên công nghệ tái sử dụng`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT4: {
+                title: `Phân tích yêu cầu`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT5: {
+                title: `Mô hình hóa dữ liệu bằng mô hình lớp`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT6: {
+                title: `Sử dụng các mẫu thiết kế và phần công trách nhiệm cho lớp`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT7: {
+                title: `Thiết kế hướng người dùng và thiết kế giao diện`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT8: {
+                title: `Mô hình hóa tương tác và hành vi`,
+                outside: ``,
+                tableContent: {}
+            },
+            XDPMHDDT9: {
+                title: `Kiểm thử và đảm bảo chất lượng phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+        }
+    },
+    {
+        id: 'QTDACNTT',
+        label: `Quản trị dự án công nghệ thông tin`,
+        chapter: {
+            QTDACNTT1: {
+                title: `Tổng quan về quản lý dự án`,
+                outside: `
+                <center>
+                    <video class="col-12 col-sm-8" controls>
+                    <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/01_TongQuanQuanLyDuAn.mp4#t=0,89"
+                        type="video/mp4" />
+                    </video>
+                </center>
+                `,
+                tableContent: {}
+            },
+            QTDACNTT2: {
+                title: `Quản lý tích hợp dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT3: {
+                title: `Quản lý dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT4: {
+                title: `Ước lượng dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT5: {
+                title: `Lập kế hoạch tiến độ dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT6: {
+                title: `Kiểm soát dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT7: {
+                title: `Quản lý rủi ro dự án phần mềm`,
+                outside: ``,
+                tableContent: {}
+            },
+            QTDACNTT8: {
+                title: `Quản lý nguồn nhân lực dự án`,
+                outside: ``,
+                tableContent: {}
+            }
+        }
+    },
     {
         id: 'HQTCSDL',
         label: 'Hệ quản trị cơ sở dữ liệu',
@@ -505,7 +735,15 @@ const Subject = [
             },
             HQTCSDL5: {
                 title: 'Cấu trúc lưu trữ của dữ liệu trên đĩa',
-                outside: ``,
+                outside: `
+                    <center>
+                    <video class="col-12 col-sm-8" controls>
+                        <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220060_HeQuanTriCSDL/Video/Ly%20thuyet/Chuong5.mp4#t=0,35"
+                        type="video/mp4" />
+                    </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             HQTCSDL6: {
