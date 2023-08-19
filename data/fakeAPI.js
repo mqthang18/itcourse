@@ -670,13 +670,27 @@ const Subject = [
             QTDACNTT2: {
                 title: `Quản lý tích hợp dự án phần mềm`,
                 outside: `
-                    
+                <center>
+                    <video class="col-12 col-sm-8" controls>
+                    <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/02_QuanLyTichHopDuAn.mp4#t=0,107"
+                        type="video/mp4" />
+                    </video>
+                </center>
                 `,
                 tableContent: {}
             },
             QTDACNTT3: {
                 title: `Quản lý dự án phần mềm`,
-                outside: ``,
+                outside: `
+                <center>
+                    <video class="col-12 col-sm-8" controls>
+                    <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/03_QuanLyPhamViDuAn.mp4#t=0,67"
+                        type="video/mp4" />
+                    </video>
+                </center>
+                `,
                 tableContent: {}
             },
             QTDACNTT4: {
