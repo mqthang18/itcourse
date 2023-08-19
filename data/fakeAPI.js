@@ -602,7 +602,15 @@ const Subject = [
             },
             XDPMHDDT2: {
                 title: `Khái quát các khái niệm của hướng đối tượng`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                        <source
+                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_02.HuongDoiTuong.mp4#t=0,113"
+                            type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT3: {
