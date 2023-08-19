@@ -615,7 +615,13 @@ const Subject = [
             },
             XDPMHDDT3: {
                 title: `Phát triển phần mềm dựa trên công nghệ tái sử dụng`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_03.TaiSuDung.mp4#t=0,103" type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT4: {
