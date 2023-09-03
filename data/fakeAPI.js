@@ -46,7 +46,7 @@ const ListData = {
             src: './data/content/HQTCSDL/HQTCSDL6.js',
             varName: 'HQTCSDL6'
         }
-        
+
     },
     CSTTNT: {
         CSTTNT1: {
@@ -516,35 +516,35 @@ const ListData = {
     },
     QTDACNTT: {
         QTDACNTT1: {
-            src: 'data/content/QTDACNTT/QTDACNTT1.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT1.js',
             varName: 'QTDACNTT1'
         },
         QTDACNTT2: {
-            src: 'data/content/QTDACNTT/QTDACNTT2.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT2.js',
             varName: 'QTDACNTT2'
         },
         QTDACNTT3: {
-            src: 'data/content/QTDACNTT/QTDACNTT3.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT3.js',
             varName: 'QTDACNTT3'
         },
         QTDACNTT4: {
-            src: 'data/content/QTDACNTT/QTDACNTT4.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT4.js',
             varName: 'QTDACNTT4'
         },
         QTDACNTT5: {
-            src: 'data/content/QTDACNTT/QTDACNTT5.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT5.js',
             varName: 'QTDACNTT5'
         },
         QTDACNTT6: {
-            src: 'data/content/QTDACNTT/QTDACNTT6.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT6.js',
             varName: 'QTDACNTT6'
         },
         QTDACNTT7: {
-            src: 'data/content/QTDACNTT/QTDACNTT7.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT7.js',
             varName: 'QTDACNTT7'
         },
         QTDACNTT8: {
-            src: 'data/content/QTDACNTT/QTDACNTT8.js', 
+            src: 'data/content/QTDACNTT/QTDACNTT8.js',
             varName: 'QTDACNTT8'
         }
     }
@@ -626,7 +626,13 @@ const Subject = [
             },
             XDPMHDDT4: {
                 title: `Phân tích yêu cầu`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_04.PhanTichYeuCau.mp4#t=0,115" type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT5: {
