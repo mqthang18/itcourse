@@ -637,7 +637,13 @@ const Subject = [
             },
             XDPMHDDT5: {
                 title: `Mô hình hóa dữ liệu bằng mô hình lớp`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=0,153" type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT6: {
