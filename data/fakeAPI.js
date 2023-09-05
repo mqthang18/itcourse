@@ -659,7 +659,13 @@ const Subject = [
             },
             XDPMHDDT7: {
                 title: `Thiết kế hướng người dùng và thiết kế giao diện`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_07.ThietKeGiaoDien.mp4#t=0,102" type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT8: {
