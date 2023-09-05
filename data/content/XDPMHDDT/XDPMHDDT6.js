@@ -41,10 +41,7 @@ const XDPMHDDT6 = {
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_06.MauThietKe.mp4#t=1531,1660" type="video/mp4" />
                     </video>
                 </center>
-            `],
-            ["", "XDPMHDDT024", `
-                
-            `],
+            `]
         ]
     },
     XDPMHDDT03: {
@@ -93,7 +90,7 @@ const XDPMHDDT6 = {
                 </center>
             `]
         ]
-    }
+    },
     XDPMHDDT04: {
         title: 'Tổng kết',
         index: [
