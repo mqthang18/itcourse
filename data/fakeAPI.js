@@ -648,7 +648,13 @@ const Subject = [
             },
             XDPMHDDT6: {
                 title: `Sử dụng các mẫu thiết kế và phần công trách nhiệm cho lớp`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_06.MauThietKe.mp4#t=0,114" type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             XDPMHDDT7: {
