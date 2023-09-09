@@ -211,7 +211,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Ước lượng lịch biểu thời gian", "QTDACNTT051", `
+            ["Ước lượng lịch biểu thời gian", "QTDACNTT052", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -220,7 +220,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Chọn và sử dụng phương pháp UL", "QTDACNTT052", `
+            ["Chọn và sử dụng phương pháp UL", "QTDACNTT053", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -229,7 +229,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Các lưu ý khi ước lượng", "QTDACNTT053", `
+            ["Các lưu ý khi ước lượng", "QTDACNTT054", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
