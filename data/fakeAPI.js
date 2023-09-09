@@ -725,7 +725,15 @@ const Subject = [
             },
             QTDACNTT4: {
                 title: `Ước lượng dự án phần mềm`,
-                outside: ``,
+                outside: `
+                    <center>
+                        <video class="col-12 col-sm-8" controls>
+                        <source
+                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=0,44"
+                            type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             QTDACNTT5: {
