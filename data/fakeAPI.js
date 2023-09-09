@@ -738,7 +738,16 @@ const Subject = [
             },
             QTDACNTT5: {
                 title: `Lập kế hoạch tiến độ dự án phần mềm`,
-                outside: ``,
+                outside: `
+                
+                <center>
+                        <video class="col-12 col-sm-8" controls>
+                        <source
+                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/05.LapKeHoachTienDoDuAn.mp4#t=0,88"
+                            type="video/mp4" />
+                        </video>
+                    </center>
+                `,
                 tableContent: {}
             },
             QTDACNTT6: {
