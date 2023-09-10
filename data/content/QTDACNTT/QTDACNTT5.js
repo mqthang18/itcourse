@@ -320,6 +320,12 @@ const QTDACNTT5 = {
         index: [
             ["Video bài giảng", "XDPMHDDT011", `
             <p>Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/05.LapKeHoachTienDoDuAn.mp4">Link</a></p>
+            `],
+            ["Video thực hành", "XDPMHDDT012", `
+                <ul>
+                    <li>Thực hành phần 4 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/ThucHanh/ThucHanh04.mp4" target="__blank">Link</a></li>
+                    <li>Thực hành phần 5 <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/ThucHanh/ThucHanh05.mp4" target="__blank">Link</a></li>
+                </ul>
             `]
         ]
     }

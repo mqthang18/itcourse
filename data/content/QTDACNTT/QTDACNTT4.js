@@ -11,7 +11,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Tại sao cần phải ước lượng", "QTDACNTT012", `
+            ["Vị trí của ước lượng trong Quản lý dự án", "QTDACNTT012", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -20,7 +20,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Các yếu tố cần phải ước lượng", "QTDACNTT013", `
+            ["Tại sao cần phải ước lượng", "QTDACNTT013", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -56,7 +56,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Ai là người ước lượng?", "QTDACNTT017", `
+            ["Nguyên tắc ước lượng?", "QTDACNTT017", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -111,7 +111,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Trả giá để thắng", "QTDACNTT033", `
+            ["Từ trên xuống (Top-down)", "QTDACNTT033", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -120,7 +120,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Sử dụng công thức", "QTDACNTT034", `
+            ["Phương pháp trả giá để thắng", "QTDACNTT034", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -200,18 +200,41 @@ const QTDACNTT4 = {
         ]
     },
     QTDACNTT05: {
-        title: 'Ước lượng nỗ lực',
+        title: 'Ước lượng use case point',
         index: [
-            ["Giới thiệu", "QTDACNTT051", `
+            ["Giới thiệu","QTDACNTT071", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
-                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=2072,2810"
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=2072,2238"
                         type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Ước lượng lịch biểu thời gian", "QTDACNTT052", `
+            ["Các bước thực hiện","QTDACNTT072", `
+                <center>
+                    <video class="col-12 col-sm-8" controls>
+                    <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=2238,2739"
+                        type="video/mp4" />
+                    </video>
+                </center>
+            `]
+        ]
+    },
+    QTDACNTT06: {
+        title: 'Ước lượng nỗ lực',
+        index: [
+            ["Giới thiệu", "QTDACNTT061", `
+                <center>
+                    <video class="col-12 col-sm-8" controls>
+                    <source
+                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=2739,2810"
+                        type="video/mp4" />
+                    </video>
+                </center>
+            `],
+            ["Ước lượng lịch biểu thời gian", "QTDACNTT062", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -220,7 +243,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Chọn và sử dụng phương pháp UL", "QTDACNTT053", `
+            ["Chọn và sử dụng phương pháp UL", "QTDACNTT063", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -229,7 +252,7 @@ const QTDACNTT4 = {
                     </video>
                 </center>
             `],
-            ["Các lưu ý khi ước lượng", "QTDACNTT054", `
+            ["Các lưu ý khi ước lượng", "QTDACNTT064", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                     <source
@@ -240,10 +263,10 @@ const QTDACNTT4 = {
             `]
         ]
     },
-    QTDACNTT06: {
+    QTDACNTT07: {
         title: 'Tổng kết',
         index: [
-            ["Video bài giảng", "XDPMHDDT061", `
+            ["Video bài giảng", "XDPMHDDT071", `
             <p>Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4">Link</a></p>
             `]
         ]
