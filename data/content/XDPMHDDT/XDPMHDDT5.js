@@ -94,63 +94,63 @@ const XDPMHDDT5 = {
     XDPMHDDT04: {
         title: 'Liên kết',
         index: [
-            ["Lớp liên kết (association class)","XDPMHDDT041",`
+            ["Lớp liên kết (association class)", "XDPMHDDT041", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=1769,1841" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Liên kết do suy diễn (derived association)","XDPMHDDT042",`
+            ["Liên kết do suy diễn (derived association)", "XDPMHDDT042", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=1841,1961" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Liên kết có thẩm định (qualified association)","XDPMHDDT043",`
+            ["Liên kết có thẩm định (qualified association)", "XDPMHDDT043", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=1841,1961" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Liên kết nhiều chiều","XDPMHDDT044",`
+            ["Liên kết nhiều chiều", "XDPMHDDT044", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=1961,2062" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Quan hệ kết tập (aggregation relation)","XDPMHDDT045",`
+            ["Quan hệ giữa các lớp", "XDPMHDDT045", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=2062,2163" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Quan hệ cấu thành (composition)","XDPMHDDT046",`
+            ["Quan hệ cấu thành (composition)", "XDPMHDDT046", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=2163,2252" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Quan hệ cấu thành (composition)","XDPMHDDT047",`
+            ["Quan hệ kết tập (aggregation relation)", "XDPMHDDT047", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=2252,2330" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Quan hệ phụ thuộc (dependancy)","XDPMHDDT048",`
+            ["Quan hệ phụ thuộc (dependancy)", "XDPMHDDT048", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=2330,2376" type="video/mp4" />
                     </video>
                 </center>
             `],
-            ["Quan hệ thừa kế","XDPMHDDT049",`
+            ["Quan hệ thừa kế", "XDPMHDDT049", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=2376,2434" type="video/mp4" />
@@ -181,7 +181,7 @@ const XDPMHDDT5 = {
     XDPMHDDT06: {
         title: 'Chuyển sơ đồ lớp từ mức quan niệm sang mức luận lý',
         index: [
-            ["Giới thiệu","XDPMHDDT061", `
+            ["Giới thiệu", "XDPMHDDT061", `
                 <center>
                     <video class="col-12 col-sm-8" controls>
                         <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=3086" type="video/mp4" />
