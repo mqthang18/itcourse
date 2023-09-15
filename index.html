@@ -94,7 +94,17 @@
         </div>
     </div>
 
-
+    <script>
+        function VideoScript(url) {
+            return (
+                `<center>
+                    <video class="col-12 col-sm-8" controls>
+                        <source src="${url}" type="video/mp4" />
+                    </video>
+                </center>`
+            )
+        }
+    </script>
     <script src="./assets/js/controller.js"></script>
     <script src="./data/fakeAPI.js"></script>
     <script src="assets/js/app.js"></script>

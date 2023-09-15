@@ -1,4 +1,4 @@
-var subjectTemplate = `
+let subjectTemplate = `
 <div id="subject" class="bg-light min-vh-30 rounded">
     <p style="text-align: center">
         <button type="button" class="btn btn-primary" v-on:click="SetPlaySpeedDefault()">Set all video speed 2x</button>
@@ -578,7 +578,7 @@ const Subject = [
             },
             PTUDWMNM5: {
                 title: 'Các thao tác dữ liệu trong PHP và MySQL',
-                outside: ``,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220243_PhatTrienUDWebVoiMaNguonMo/Video/Bai5.mp4#t=0,38"),
                 tableContent: {}
             }
         }
@@ -589,93 +589,47 @@ const Subject = [
         chapter: {
             XDPMHDDT1: {
                 title: `Một số khái niệm về công nghệ phần mềm`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                        <source
-                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_01.CongNghePhanMem.mp4#t=0,92"
-                            type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_01.CongNghePhanMem.mp4#t=0,92"),
                 tableContent: {}
             },
             XDPMHDDT2: {
                 title: `Khái quát các khái niệm của hướng đối tượng`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                        <source
-                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_02.HuongDoiTuong.mp4#t=0,113"
-                            type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_02.HuongDoiTuong.mp4#t=0,113"),
                 tableContent: {}
             },
             XDPMHDDT3: {
                 title: `Phát triển phần mềm dựa trên công nghệ tái sử dụng`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_03.TaiSuDung.mp4#t=0,103" type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_03.TaiSuDung.mp4#t=0,103"),
                 tableContent: {}
             },
             XDPMHDDT4: {
                 title: `Phân tích yêu cầu`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_04.PhanTichYeuCau.mp4#t=0,115" type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_04.PhanTichYeuCau.mp4#t=0,115"),
                 tableContent: {}
             },
             XDPMHDDT5: {
                 title: `Mô hình hóa dữ liệu bằng mô hình lớp`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=0,153" type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_05.MoHinhLop.mp4#t=0,153"),
                 tableContent: {}
             },
             XDPMHDDT6: {
                 title: `Sử dụng các mẫu thiết kế và phần công trách nhiệm cho lớp`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_06.MauThietKe.mp4#t=0,114" type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_06.MauThietKe.mp4#t=0,114"),
                 tableContent: {}
             },
             XDPMHDDT7: {
                 title: `Thiết kế hướng người dùng và thiết kế giao diện`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                            <source src="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_07.ThietKeGiaoDien.mp4#t=0,102" type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_07.ThietKeGiaoDien.mp4#t=0,102"),
                 tableContent: {}
             },
             XDPMHDDT8: {
                 title: `Mô hình hóa tương tác và hành vi`,
-                outside: ``,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_08.MoTaTuongTacHanhVi.mp4#t=0,55"),
                 tableContent: {}
             },
             XDPMHDDT9: {
                 title: `Kiểm thử và đảm bảo chất lượng phần mềm`,
-                outside: ``,
+                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_09.KiemThu_DamBaoChatLuongPM.mp4#t=0,178'),
                 tableContent: {}
             },
         }
@@ -686,90 +640,42 @@ const Subject = [
         chapter: {
             QTDACNTT1: {
                 title: `Tổng quan về quản lý dự án`,
-                outside: `
-                <center>
-                    <video class="col-12 col-sm-8" controls>
-                    <source
-                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/01_TongQuanQuanLyDuAn.mp4#t=0,89"
-                        type="video/mp4" />
-                    </video>
-                </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/01_TongQuanQuanLyDuAn.mp4#t=0,89"),
                 tableContent: {}
             },
             QTDACNTT2: {
                 title: `Quản lý tích hợp dự án phần mềm`,
-                outside: `
-                <center>
-                    <video class="col-12 col-sm-8" controls>
-                    <source
-                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/02_QuanLyTichHopDuAn.mp4#t=0,107"
-                        type="video/mp4" />
-                    </video>
-                </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/02_QuanLyTichHopDuAn.mp4#t=0,107"),
                 tableContent: {}
             },
             QTDACNTT3: {
                 title: `Quản lý dự án phần mềm`,
-                outside: `
-                <center>
-                    <video class="col-12 col-sm-8" controls>
-                    <source
-                        src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/03_QuanLyPhamViDuAn.mp4#t=0,67"
-                        type="video/mp4" />
-                    </video>
-                </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/03_QuanLyPhamViDuAn.mp4#t=0,67"),
                 tableContent: {}
             },
             QTDACNTT4: {
                 title: `Ước lượng dự án phần mềm`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                        <source
-                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=0,44"
-                            type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/04.UocLuongDuAnPhanMem.mp4#t=0,44"),
                 tableContent: {}
             },
             QTDACNTT5: {
                 title: `Lập kế hoạch tiến độ dự án phần mềm`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                        <source
-                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/05.LapKeHoachTienDoDuAn.mp4#t=0,88"
-                            type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/05.LapKeHoachTienDoDuAn.mp4#t=0,88"),
                 tableContent: {}
             },
             QTDACNTT6: {
                 title: `Kiểm soát dự án phần mềm`,
-                outside: `
-                    <center>
-                        <video class="col-12 col-sm-8" controls>
-                        <source
-                            src="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/06_KiemSoatDuAn.mp4#t=0,78"
-                            type="video/mp4" />
-                        </video>
-                    </center>
-                `,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/06_KiemSoatDuAn.mp4#t=0,78"),
                 tableContent: {}
             },
             QTDACNTT7: {
                 title: `Quản lý rủi ro dự án phần mềm`,
-                outside: ``,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/07_QuanLyRuiRoDuAn.mp4#t=0,82"),
                 tableContent: {}
             },
             QTDACNTT8: {
                 title: `Quản lý nguồn nhân lực dự án`,
-                outside: ``,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/08_QuanLyNhanLucDuAn.mp4#t=0,116"),
                 tableContent: {}
             }
         }
