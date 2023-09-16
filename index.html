@@ -104,6 +104,20 @@
                 </center>`
             )
         }
+
+        function AddChildSection(id, parentId, title, url) {
+            $(`#${parentId} p`).append(`
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#${id}" role="button" aria-expanded="false" aria-controls="${id}">${title}</a>
+            `)
+
+            $(`#${parentId} div`).append(`
+                <div class="collapse" id="${id}">
+                    <div class="card card-body">
+                        ${VideoScript(url)}
+                    </div>
+                </div>
+            `)
+        }
     </script>
     <script src="./assets/js/controller.js"></script>
     <script src="./data/fakeAPI.js"></script>

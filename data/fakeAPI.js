@@ -558,12 +558,12 @@ const Subject = [
         chapter: {
             PTUDWMNM1: {
                 title: 'Xây dựng giao diện web với HTML và CSS',
-                outside: ``,
+                outside: VideoScript(`https://s3.cloud.cmctelecom.vn/tvu/IT/220243_PhatTrienUDWebVoiMaNguonMo/Video/Bai1.mp4#t=0,58`),
                 tableContent: {}
             },
             PTUDWMNM2: {
                 title: 'Tương tác dữ liệu giữa Javascript và HTML',
-                outside: ``,
+                outside: VideoScript("https://s3.cloud.cmctelecom.vn/tvu/IT/220243_PhatTrienUDWebVoiMaNguonMo/Video/Bai2.mp4#t=0,51"),
                 tableContent: {}
             },
             PTUDWMNM3: {
