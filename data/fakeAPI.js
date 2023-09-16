@@ -568,12 +568,12 @@ const Subject = [
             },
             PTUDWMNM3: {
                 title: 'PHP và MySQL cơ bản',
-                outside: ``,
+                outside: VideoScript(`https://s3.cloud.cmctelecom.vn/tvu/IT/220243_PhatTrienUDWebVoiMaNguonMo/Video/Bai3.mp4#t=0,33`),
                 tableContent: {}
             },
             PTUDWMNM4: {
                 title: 'Lưu trữ dữ liệu với PHP và MySQL',
-                outside: ``,
+                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220243_PhatTrienUDWebVoiMaNguonMo/Video/Bai4.mp4#t=0,63'),
                 tableContent: {}
             },
             PTUDWMNM5: {
