@@ -37,6 +37,13 @@ const QTDACNTT8 = {
         index: [
             ["Video bài giảng","XDPMHDDT011",`
             <p>Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/LyThuyet/08_QuanLyNhanLucDuAn.mp4">Link</a></p>
+            `],
+            ['Video thực hành', 'QTDACNTT021', `
+                <ul>
+                    <li>Phần 6: <a target="__blank" href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/ThucHanh/ThucHanh06.mp4">Link</a></li>
+                    <li>Phần 7: <a target="__blank" href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/ThucHanh/ThucHanh07.mp4">Link</a></li>
+                    <li>Phần 8: <a target="__blank" href="https://s3.cloud.cmctelecom.vn/tvu/IT/220078_QuanTriDuAnCNTT/Video/ThucHanh/ThucHanh08.TongKet.mp4">Link</a></li>
+                </ul>
             `]
         ]
     }

@@ -104,8 +104,18 @@ const XDPMHDDT9 = {
     XDPMHDDT06: {
         title: 'Tổng kết',
         index: [
-            ["Video bài giảng","XDPMHDDT011",`
+            ["Video bài giảng","XDPMHDDT061",`
             <p>Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/BaiGiang_Videos/Chuong_09.KiemThu_DamBaoChatLuongPM.mp4">Link</a></p>
+            `],
+            ['Video thực hành', 'XDPMHDDT062', `
+                <ul>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_GTTH.pdf">Xây dựng phần mềm hướng đối tượng</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/GioiThieu.mp4" target="__blank"></a></li>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_TH_P1.pdf">Xây dựng biểu đồ Use Case</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/ThucHanh01_UseCase_Diagram.mp4" target="__blank" >Link</a></li>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_TH_P2.pdf">Xây dựng biểu đồ lớp</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/ThucHanh02_ClassDiagram.mp4" target="__blank" >Link</a></li>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_TH_P3.pdf">Activity diagram</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/ThucHanh03_ActivityDiagram.mp4" target="__blank" >Link</a></li>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_TH_P4.pdf">Xây dựng biểu đồ tuần tự</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/ThucHanh04_SequenceDiagram.mp4" target="__blank" >Link</a></li>
+                    <li>Tài liệu: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/ThucHanh/220120_TH_P5.pdf">Xây dựng biểu đồ thành phần và bảng vẽ triển khai</a>| Video: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220120_XayDungPhanMemHDT/Video/ThucHanh_Videos/ThucHanh05_Component_Deloyment_Diagram.mp4" target="__blank" >Link</a></li>
+                </ul>
             `]
         ]
     }

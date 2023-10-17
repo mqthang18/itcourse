@@ -547,11 +547,225 @@ const ListData = {
             src: 'data/content/QTDACNTT/QTDACNTT8.js',
             varName: 'QTDACNTT8'
         }
+    },
+    XLA: {
+        XLA1: {
+            src: 'data/content/XLA/XLA1.js',
+            varName: `XLA1`
+        },
+        XLA2: {
+            src: 'data/content/XLA/XLA2.js',
+            varName: `XLA2`
+        },
+        XLA3: {
+            src: 'data/content/XLA/XLA3.js',
+            varName: `XLA3`
+        },
+        XLA4: {
+            src: 'data/content/XLA/XLA4.js',
+            varName: `XLA4`
+        },
+        XLA5: {
+            src: 'data/content/XLA/XLA5.js',
+            varName: `XLA5`
+        },
+        XLA6: {
+            src: 'data/content/XLA/XLA6.js',
+            varName: `XLA6`
+        },
+        XLA7: {
+            src: 'data/content/XLA/XLA7.js',
+            varName: `XLA7`
+        }
+    },
+    MHUD: {
+        MHUD1: {
+            src: 'data/content/MHUD/MHUD1.js',
+            varName: 'MHUD1'
+        },
+        MHUD2: {
+            src: 'data/content/MHUD/MHUD2.js',
+            varName: 'MHUD2'
+        },
+        MHUD3: {
+            src: 'data/content/MHUD/MHUD3.js',
+            varName: 'MHUD3'
+        },
+        MHUD4: {
+            src: 'data/content/MHUD/MHUD4.js',
+            varName: 'MHUD4'
+        },
+        MHUD5: {
+            src: 'data/content/MHUD/MHUD5.js',
+            varName: 'MHUD5'
+        },
+        MHUD6: {
+            src: 'data/content/MHUD/MHUD6.js',
+            varName: 'MHUD6'
+        }
+    },
+    LINUX: {
+        LINUX1: {
+            src: 'data/content/LINUX/LINUX1.js',
+            varName: 'LINUX1'
+        },
+        LINUX2: {
+            src: 'data/content/LINUX/LINUX2.js',
+            varName: 'LINUX2'
+        },
+        LINUX3: {
+            src: 'data/content/LINUX/LINUX3.js',
+            varName: 'LINUX3'
+        },
+        LINUX4: {
+            src: 'data/content/LINUX/LINUX4.js',
+            varName: 'LINUX4'
+        },
+        LINUX5: {
+            src: 'data/content/LINUX/LINUX5.js',
+            varName: 'LINUX5'
+        },
+        LINUX6: {
+            src: 'data/content/LINUX/LINUX6.js',
+            varName: 'LINUX6'
+        },
+        LINUX7: {
+            src: 'data/content/LINUX/LINUX7.js',
+            varName: 'LINUX7'
+        },
+        LINUX8: {
+            src: 'data/content/LINUX/LINUX8.js',
+            varName: 'LINUX8'
+        }
     }
 }
 
 
 const Subject = [
+    {
+        id: 'XLA',
+        label: 'Xử lý ảnh',
+        chapter: {
+            XLA1: {
+                title: 'Tổng quan về xử lý ảnh',
+                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Video/Chuong01.mp4#t=0,63'),
+                tableContent: {}
+            },
+            XLA2: {
+                title: 'Xử lý ảnh màu',
+                outside: VideoScript(`https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Video/Chuong02.mp4#t=0,50`),
+                tableContent: {}
+            },
+            XLA3: {
+                title: 'Biến đổi cường độ và lọc trong miền không gian',
+                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Video/Chuong03.mp4#t=0,'),
+                tableContent: {}
+            },
+            XLA4: {
+                title: 'Lọc trong miền tần số',
+                outside: '',
+                tableContent: {}
+            },
+            XLA5: {
+                title: 'Xử lý ảnh hình thái',
+                outside: '',
+                tableContent: {}
+            },
+            XLA6: {
+                title: 'Phân đoạn hình ảnh',
+                outside: '',
+                tableContent: {}
+            },
+            XLA7: {
+                title: 'Nén hình ảnh',
+                outside: '',
+                tableContent: {}
+            },
+
+        }
+    },
+    {
+        id: 'MHUD',
+        label: 'Máy học ứng dụng',
+        chapter: {
+            MHUD1: {
+                title: 'Tổng quan về Machine learning',
+                outside: '',
+                tableContent: {}
+            },
+            MHUD2: {
+                title: 'Các khái niệm cơ bản',
+                outside: '',
+                tableContent: {}
+            },
+            MHUD3: {
+                title: 'Mạng neuron nhân tạo',
+                outside: '',
+                tableContent: {}
+            },
+            MHUD4: {
+                title: 'Perceptron nhiều lớp',
+                outside: '',
+                tableContent: {}
+            },
+            MHUD5: {
+                title: 'Rút gọn chiều dữ liệu',
+                outside: '',
+                tableContent: {}
+            },
+            MHUD6: {
+                title: 'Deep learning',
+                outside: '',
+                tableContent: {}
+            },
+        }
+    },
+    {
+        id: 'LINUX',
+        label: 'Chuyên đề Linux',
+        chapter: {
+            LINUX1: {
+                title: 'Tổng quan về hệ điều hành Linux',
+                outside: ``,
+                tableContent: {}
+            },
+            LINUX2: {
+                title: 'Cài đặt hệ điều hành Ubuntu',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX3: {
+                title: 'Trình bày cấu trúc hệ thống cây thư mục',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX4: {
+                title: 'Trình bày các lệnh trong cơ chế dòng lệnh',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX5: {
+                title: 'Trình bày các chương trình ứng dụng',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX6: {
+                title: 'Quản lý các ứng dụng',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX7: {
+                title: 'Quản lý người dùng',
+                outside: '',
+                tableContent: {}
+            },
+            LINUX8: {
+                title: 'Trình bày các phần mềm bổ trợ',
+                outside: '',
+                tableContent: {}
+            }
+        }
+    },
     {
         id: 'PTUDWMNM',
         label: 'Phát triển ứng dụng Web với mã nguồn mở',

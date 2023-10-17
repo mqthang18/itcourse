@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+let url_MHUD3 = `https://s3.cloud.cmctelecom.vn/tvu/IT/220248_MayHocUngDung/Video/Bai3/`
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/img/logo/mylogo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
-  <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <title>Hệ quản trị CSDL</title>
-</head>
-
-<body>
-  <p class="d-inline-flex gap-1">
+let MHUD3 = {
+    MHUD01: {
+        title: 'Giới thiệu về phương trình đường thẳng',
+        index: [
+            ['Nhận xét đường thẳng', 'MHUD011', VideoScript(`${url_MHUD3}3.1.mp4#t=0,45`)],
+            ['Phương trình tổng quát của đường thẳng', 'MHUD012', VideoScript(`${url_MHUD3}3.1.mp4#t=45,112`)],
+            ['Xét trường hợp 2 đường thẳng khác nhau hệ số bias', 'MHUD013', VideoScript(`${url_MHUD3}3.1.mp4#t=112`)],
+        ]
+    },
+    MHUD02: {
+        title: 'Giới thiệu về mạng nơ-ron nhân tạo',
+        index: [
+            ['Phân lớp bằng phương trình đường thẳng', 'MHUD021', VideoScript(`${url_MHUD3}3.2.mp4#t=41,316`)],
+            ['Hoạt động của một noron thần kinh', 'MHUD022', `${VideoScript(`${url_MHUD3}3.2.mp4#t=316,400`)}`],
+            ['Mạng nơ-ron nhân tạo', 'MHUD023', `
+            <p class="d-inline-flex gap-1">
     <a 
       class="btn btn-primary" 
       data-bs-toggle="collapse" 
@@ -122,6 +123,7 @@
           <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse61" role="button" aria-expanded="false" aria-controls="collapse61">
             Phân loại kiến trúc mạng
           </a>
+          
           <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse62" role="button" aria-expanded="false" aria-controls="collapse62">
             Single-layer feed forward
           </a>
@@ -150,6 +152,32 @@
       </div>
     </div>
   </div>
-</body>
-
-</html>
+            `],
+        ]
+    },
+    MHUD03: {
+        title: 'Biểu diễn các tham số của mạng nơ-ron',
+        index: [
+            ['Video', 'MHUD031', VideoScript(`${url_MHUD3}3.3.mp4`)]
+        ]
+    },
+    MHUD04: {
+        title: 'Mạng Perceptron',
+        index: [
+            ['Video', 'MHUD041', VideoScript(`${url_MHUD3}3.4.mp4`)]
+        ]
+    },
+    MHUD05: {
+        title: 'Hồi quy tuyến tính P1',
+        index: [
+            ['Video 1', 'MHUD051', VideoScript(`${url_MHUD3}3.5_P1.mp4`)],
+            ['Video 2', 'MHUD052', VideoScript(`${url_MHUD3}3.5_P2.mp4`)],
+        ]
+    },
+    MHUD06: {
+        title: 'Kết thúc bài',
+        index: [
+            ['Video', 'MHUD061', VideoScript(`${url_MHUD3}KTB.mp4`)]
+        ]
+    }
+}
