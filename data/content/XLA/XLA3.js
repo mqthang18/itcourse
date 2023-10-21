@@ -56,4 +56,12 @@ XLA3 = {
             ['Giới thiệu và định nghĩa', 'XLA061', VideoScript(`${url_XLA3}#t=3644`)]
         ]
     },
+    XLA07: {
+        title: 'Tài liệu',
+        index: [
+            ['Tài liệu', 'XLA071', `
+                <p>Bài giảng: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Slide/Chuong3_v1.0.pdf">Link</a></p>
+            `]
+        ]
+    }
 }

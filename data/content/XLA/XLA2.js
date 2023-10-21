@@ -33,5 +33,13 @@ XLA2 = {
             ['Chuyển đổi CMYK sang RGB', 'XLA052', VideoScript(`${url_XLA2}#t=535,581`)],
             ['Chuyển RGB sang HSV và ngược lại', 'XLA053', VideoScript(`${url_XLA2}#t=581`)],
         ]
+    },
+    XLA06: {
+        title: 'Tài liệu',
+        index: [
+            ['Bài giảng', 'XLA061', `
+                <p>File bài giảng: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Slide/Chuong2_v1.0.pdf">Link</a></p>
+            `]
+        ]
     }
 }

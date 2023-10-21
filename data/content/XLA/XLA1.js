@@ -52,4 +52,12 @@ XLA1 = {
             ['Video', 'XLA061', VideoScript(`${url_XLA1}#t=1847`)]
         ]
     },
+    XLA07: {
+        title: 'Tài liệu',
+        index: [
+            ['Bài giảng', 'XLA071', `
+                <p>File bài giảng: <a href="https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Slide/Chuong1_v1.0.pdf">Link</a></p>
+            `]
+        ]
+    }
 }
