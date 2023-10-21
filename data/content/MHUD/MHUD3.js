@@ -168,10 +168,10 @@ let MHUD3 = {
         ]
     },
     MHUD05: {
-        title: 'Hồi quy tuyến tính P1',
+        title: 'Hồi quy tuyến tính',
         index: [
-            ['Video 1', 'MHUD051', VideoScript(`${url_MHUD3}3.5_P1.mp4`)],
-            ['Video 2', 'MHUD052', VideoScript(`${url_MHUD3}3.5_P2.mp4`)],
+            ['Phần 1', 'MHUD051', VideoScript(`${url_MHUD3}3.5_P1.mp4`)],
+            ['Phần 2', 'MHUD052', VideoScript(`${url_MHUD3}3.5_P2.mp4`)],
         ]
     },
     MHUD06: {
