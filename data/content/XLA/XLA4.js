@@ -7,7 +7,6 @@ XLA4 = {
         title: 'Miền Fourier',
         index: [
             ["Giới thiệu miền Fourier", "XLA011", `
-
             <div id="accordion">
                 <div class="card">
                     <div class="card-header">
