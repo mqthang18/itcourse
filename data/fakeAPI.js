@@ -658,7 +658,7 @@ const Subject = [
             },
             XLA3: {
                 title: 'Biến đổi cường độ và lọc trong miền không gian',
-                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Video/Chuong03.mp4#t=0,'),
+                outside: VideoScript('https://s3.cloud.cmctelecom.vn/tvu/IT/220057_XuLyAnh/Video/Chuong03.mp4#t=0,86'),
                 tableContent: {}
             },
             XLA4: {
